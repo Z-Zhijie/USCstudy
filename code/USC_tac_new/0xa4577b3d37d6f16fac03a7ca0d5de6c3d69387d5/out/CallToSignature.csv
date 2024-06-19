@@ -1,0 +1,2 @@
+0x1da6	onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)
+0x24f0	onERC1155Received(address,address,uint256,uint256,bytes)

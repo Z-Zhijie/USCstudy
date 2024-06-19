@@ -1,0 +1,9 @@
+0x0	__function_selector__
+0x62	()
+0x62	fallback()
+0x67	getOracleGas(uint256)
+0x95	posters(address)
+0x118	setOracle(address)
+0x15c	updatePosters(address[],uint256[])
+0x2a8	getRewards(uint256)
+0x2d6	init()

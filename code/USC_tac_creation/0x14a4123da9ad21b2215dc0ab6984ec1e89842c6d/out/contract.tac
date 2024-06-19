@@ -1,0 +1,62 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0xc, 0x10]
+    =================================
+    0x0: v0(0x80) = CONST 
+    0x2: v2(0x40) = CONST 
+    0x4: MSTORE v2(0x40), v0(0x80)
+    0x5: v5 = CALLVALUE 
+    0x7: v7 = ISZERO v5
+    0x8: v8(0x10) = CONST 
+    0xb: JUMPI v8(0x10), v7
+
+    Begin block 0xc
+    prev=[0x0], succ=[]
+    =================================
+    0xc: vc(0x0) = CONST 
+    0xf: REVERT vc(0x0), vc(0x0)
+
+    Begin block 0x10
+    prev=[0x0], succ=[0x28]
+    =================================
+    0x12: v12(0x23) = CONST 
+    0x15: v15 = CALLER 
+    0x16: v16(0x100000000) = CONST 
+    0x1c: v1c(0x28) = CONST 
+    0x20: v20(0x2800000000) = MUL v16(0x100000000), v1c(0x28)
+    0x21: v21(0x28) = DIV v20(0x2800000000), v16(0x100000000)
+    0x22: JUMP v21(0x28)
+
+    Begin block 0x28
+    prev=[0x10], succ=[0x23]
+    =================================
+    0x29: v29(0x40) = CONST 
+    0x2c: v2c = MLOAD v29(0x40)
+    0x2d: v2d(0x6f72672e7a657070656c696e6f732e70726f78792e6f776e6572000000000000) = CONST 
+    0x4f: MSTORE v2c, v2d(0x6f72672e7a657070656c696e6f732e70726f78792e6f776e6572000000000000)
+    0x51: v51 = MLOAD v29(0x40)
+    0x55: v55(0x0) = SUB v2c, v51
+    0x56: v56(0x1a) = CONST 
+    0x58: v58(0x1a) = ADD v56(0x1a), v55(0x0)
+    0x5a: v5a = SHA3 v51, v58(0x1a)
+    0x5b: SSTORE v5a, v15
+    0x5c: JUMP v12(0x23)
+
+    Begin block 0x23
+    prev=[0x28], succ=[0x5d]
+    =================================
+    0x24: v24(0x5d) = CONST 
+    0x27: JUMP v24(0x5d)
+
+    Begin block 0x5d
+    prev=[0x23], succ=[]
+    =================================
+    0x5e: v5e(0x4a3) = CONST 
+    0x62: v62(0x6c) = CONST 
+    0x65: v65(0x0) = CONST 
+    0x67: CODECOPY v65(0x0), v62(0x6c), v5e(0x4a3)
+    0x68: v68(0x0) = CONST 
+    0x6a: RETURN v68(0x0), v5e(0x4a3)
+
+}
+

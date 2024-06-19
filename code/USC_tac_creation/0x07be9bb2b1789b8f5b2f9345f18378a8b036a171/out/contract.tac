@@ -1,0 +1,24 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0x23c9]
+    =================================
+    0x0: v0(0x23c9) = CONST 
+    0x3: JUMP v0(0x23c9)
+
+    Begin block 0x23c9
+    prev=[0x0], succ=[]
+    =================================
+    0x23ca: v23ca(0x4) = CONST 
+    0x23cd: v23cd(0x23c9) = CONST 
+    0x23d0: v23d0(0x23c5) = SUB v23cd(0x23c9), v23ca(0x4)
+    0x23d1: v23d1(0x4) = CONST 
+    0x23d4: v23d4(0x0) = CONST 
+    0x23d6: CODECOPY v23d4(0x0), v23d1(0x4), v23d0(0x23c5)
+    0x23d7: v23d7(0x4) = CONST 
+    0x23da: v23da(0x23c9) = CONST 
+    0x23dd: v23dd(0x23c5) = SUB v23da(0x23c9), v23d7(0x4)
+    0x23de: v23de(0x0) = CONST 
+    0x23e0: RETURN v23de(0x0), v23dd(0x23c5)
+
+}
+

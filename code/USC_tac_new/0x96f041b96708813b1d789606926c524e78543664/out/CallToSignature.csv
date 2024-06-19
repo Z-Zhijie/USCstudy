@@ -1,0 +1,5 @@
+0xb92	getScriptExecutor(bytes)
+0x11e10x109a	canPerform(address,address,bytes32)
+0x11e10x132d	canPerform(address,address,bytes32)
+0x102dS0xad0	getApp(bytes32)
+0x8b7S0x2be	hasPermission(address,address,bytes32,bytes)

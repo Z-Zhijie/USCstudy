@@ -1,0 +1,7 @@
+0x1cae	canCall(address,address,bytes4)
+0xf27S0x5d9	addressOf(bytes32)
+0xfd6S0x5d9	encodeTokenIdForObjectContract(address,address,uint128)
+0x117dS0x67e	addressOf(bytes32)
+0x122cS0x67e	encodeTokenIdForObjectContract(address,address,uint128)
+0x1a97S0x8fc	receiveApproval(address,uint256,bytes)
+0x21b0S0x17cf	onERC721Received(address,address,uint256,bytes)

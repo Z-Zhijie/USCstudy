@@ -1,0 +1,3 @@
+0x9f9	isAdmin(address)
+0x1d6b	proxyCallAndReturnAddress(address,bytes)
+0x1e8c	isOperator(address)

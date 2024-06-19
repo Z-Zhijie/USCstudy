@@ -1,0 +1,7 @@
+0xe57	initialize(address,address,address,address,uint256[],address[])
+0xf01	editShield(address,bool)
+0x1007	transferProxyOwnership(address)
+0xc65S0x31f	balanceOf(address)
+0x89cS0x2ae	claimTokens(address)
+0x94aS0x2ae	balanceOf(address)
+0x9ccS0x2ae	transfer(address,uint256)

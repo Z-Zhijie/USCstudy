@@ -1,0 +1,6 @@
+0x1fc	genesisBlock()
+0x3eb	balanceOf(address)
+0x51e	balanceOf(address)
+0x610	transfer(address,uint256)
+0x6ad	genesisBlock()
+0x993	transfer(address,uint256)

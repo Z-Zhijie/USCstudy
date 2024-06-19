@@ -1,0 +1,8 @@
+0x1159	isOperator(address)
+0x280d	balanceOf(address)
+0x3664	decimals()
+0x3b76	authorizeTransfer(address,address,uint256,bool)
+0x3ca4	authorizeTransfer(address,address,uint256,bool)
+0x2a4a0x299c	authorizeTransfer(address,address,uint256,bool)
+0x4f9cS0x4e480x4554S0x2b9b	transferFrom(address,address,uint256)
+0x4f9cS0x4e480x4588S0x46d8	transfer(address,uint256)

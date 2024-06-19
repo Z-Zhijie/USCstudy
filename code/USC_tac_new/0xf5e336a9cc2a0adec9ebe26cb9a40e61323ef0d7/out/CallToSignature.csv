@@ -1,0 +1,3 @@
+0xc18	transfer(address,uint256)
+0x1057	transferFrom(address,address,uint256)
+0x1cc7	pricePerShare()

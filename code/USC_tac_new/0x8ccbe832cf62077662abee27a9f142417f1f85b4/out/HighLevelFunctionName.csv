@@ -1,0 +1,9 @@
+0x0	__function_selector__
+0x78	()
+0x78	fallback()
+0x198	contracts(uint256)
+0x1fb	version()
+0x25a	paused()
+0x287	setupCompleted()
+0x2b4	ownerAddress()
+0x309	managerAddress()

@@ -1,0 +1,4 @@
+0x756	latestAnswer()
+0x82d	getLastNewValueById(uint256)
+0x994	decimals()
+0xa0d	getAmountsOut(uint256,address[])

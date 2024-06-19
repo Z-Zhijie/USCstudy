@@ -1,0 +1,45 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0x37, 0x3b]
+    =================================
+    0x0: v0(0x80) = CONST 
+    0x2: v2(0x40) = CONST 
+    0x4: MSTORE v2(0x40), v0(0x80)
+    0x5: v5(0x251c) = CONST 
+    0x8: v8(0x9e) = CONST 
+    0xa: SSTORE v8(0x9e), v5(0x251c)
+    0xb: vb(0x8ac7230489e80000) = CONST 
+    0x14: v14(0x9f) = CONST 
+    0x16: SSTORE v14(0x9f), vb(0x8ac7230489e80000)
+    0x17: v17(0x84595161401484a000000) = CONST 
+    0x23: v23(0xa0) = CONST 
+    0x25: SSTORE v23(0xa0), v17(0x84595161401484a000000)
+    0x26: v26(0xa9) = CONST 
+    0x29: v29 = SLOAD v26(0xa9)
+    0x2a: v2a(0xff) = CONST 
+    0x2c: v2c(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00) = NOT v2a(0xff)
+    0x2d: v2d = AND v2c(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00), v29
+    0x2f: SSTORE v26(0xa9), v2d
+    0x30: v30 = CALLVALUE 
+    0x32: v32 = ISZERO v30
+    0x33: v33(0x3b) = CONST 
+    0x36: JUMPI v33(0x3b), v32
+
+    Begin block 0x37
+    prev=[0x0], succ=[]
+    =================================
+    0x37: v37(0x0) = CONST 
+    0x3a: REVERT v37(0x0), v37(0x0)
+
+    Begin block 0x3b
+    prev=[0x0], succ=[]
+    =================================
+    0x3d: v3d(0x5b9b) = CONST 
+    0x41: v41(0x4c) = CONST 
+    0x45: v45(0x0) = CONST 
+    0x47: CODECOPY v45(0x0), v41(0x4c), v3d(0x5b9b)
+    0x48: v48(0x0) = CONST 
+    0x4a: RETURN v48(0x0), v3d(0x5b9b)
+
+}
+

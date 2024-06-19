@@ -1,0 +1,59 @@
+3IR,blockname,leftvariable,rightvariable,option,functionname,functiontype,callersource,constant,memloc,succ
+    Begin block 0x0,0x0,0,0,0,0,0,False,0,0,
+"    prev=[], succ=[0x66]",0x0,0,0,0,0,0,False,0,0,0x66
+    =================================,0x0,0,0,0,0,0,False,0,0,0x66
+    0x0: v0(0x80) = CONST ,0x0,v0,0,CONST,0,0,False,0x80,0,0x66
+    0x2: v2(0x40) = CONST ,0x0,v2,0,CONST,0,0,False,0x40,0,0x66
+"    0x4: MSTORE v2(0x40), v0(0x80)",0x0,0,"0,v2,v0",MSTORE,0,0,False,0,0,0x66
+    0x5: v5(0x15) = CONST ,0x0,v5,0,CONST,0,0,False,0x15,0,0x66
+    0x8: v8(0x1) = CONST ,0x0,v8,0,CONST,0,0,False,0x1,0,0x66
+    0xa: va(0x1) = CONST ,0x0,va,0,CONST,0,0,False,0x1,0,0x66
+    0xc: vc(0xe0) = CONST ,0x0,vc,0,CONST,0,0,False,0xe0,0,0x66
+"    0xe: ve(0x100000000000000000000000000000000000000000000000000000000) = SHL vc(0xe0), va(0x1)",0x0,ve,"0,vc,va",SHL,0,0,False,0x100000000000000000000000000000000000000000000000000000000,0,0x66
+"    0xf: vf(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB ve(0x100000000000000000000000000000000000000000000000000000000), v8(0x1)",0x0,vf,"0,ve,v8",SUB,0,0,False,0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0,0x66
+    0x10: v10(0x66) = CONST ,0x0,v10,0,CONST,0,0,False,0x66,0,0x66
+"    0x13: v13(0x66) = AND v10(0x66), vf(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff)",0x0,v13,"0,v10,vf",AND,0,0,False,0x66,0,0x66
+    0x14: JUMP v13(0x66),0x0,0,"0,v13",JUMP,0,0,False,0,0,0x66
+    Begin block 0x66,0x66,0,0,0,0,0,False,0,0,0x66
+"    prev=[0x0], succ=[0x15]",0x66,0,0,0,0,0,False,0,0,0x15
+    =================================,0x66,0,0,0,0,0,False,0,0,0x15
+    0x67: v67 = CALLER ,0x66,v67,0,CALLER,0,0,True,0,0,0x15
+    0x69: JUMP v5(0x15),0x66,0,"0,v5",JUMP,0,0,False,0,0,0x15
+    Begin block 0x15,0x15,0,0,0,0,0,False,0,0,0x15
+"    prev=[0x66], succ=[0x6a]",0x15,0,0,0,0,0,False,0,0,0x6a
+    =================================,0x15,0,0,0,0,0,False,0,0,0x6a
+    0x16: v16(0x33) = CONST ,0x15,v16,0,CONST,0,0,False,0x33,0,0x6a
+    0x19: v19 = SLOAD v16(0x33),0x15,v19,"0,v16",SLOAD,0,0,False,0,0,0x6a
+    0x1a: v1a(0x1) = CONST ,0x15,v1a,0,CONST,0,0,False,0x1,0,0x6a
+    0x1c: v1c(0x1) = CONST ,0x15,v1c,0,CONST,0,0,False,0x1,0,0x6a
+    0x1e: v1e(0xa0) = CONST ,0x15,v1e,0,CONST,0,0,False,0xa0,0,0x6a
+"    0x20: v20(0x10000000000000000000000000000000000000000) = SHL v1e(0xa0), v1c(0x1)",0x15,v20,"0,v1e,v1c",SHL,0,0,False,0x10000000000000000000000000000000000000000,0,0x6a
+"    0x21: v21(0xffffffffffffffffffffffffffffffffffffffff) = SUB v20(0x10000000000000000000000000000000000000000), v1a(0x1)",0x15,v21,"0,v20,v1a",SUB,0,0,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x6a
+    0x22: v22(0xffffffffffffffffffffffff0000000000000000000000000000000000000000) = NOT v21(0xffffffffffffffffffffffffffffffffffffffff),0x15,v22,"0,v21",NOT,0,0,False,0xffffffffffffffffffffffff0000000000000000000000000000000000000000,0,0x6a
+"    0x23: v23 = AND v22(0xffffffffffffffffffffffff0000000000000000000000000000000000000000), v19",0x15,v23,"0,v22,v19",AND,0,0,False,0,0,0x6a
+    0x24: v24(0x1) = CONST ,0x15,v24,0,CONST,0,0,False,0x1,0,0x6a
+    0x26: v26(0x1) = CONST ,0x15,v26,0,CONST,0,0,False,0x1,0,0x6a
+    0x28: v28(0xa0) = CONST ,0x15,v28,0,CONST,0,0,False,0xa0,0,0x6a
+"    0x2a: v2a(0x10000000000000000000000000000000000000000) = SHL v28(0xa0), v26(0x1)",0x15,v2a,"0,v28,v26",SHL,0,0,False,0x10000000000000000000000000000000000000000,0,0x6a
+"    0x2b: v2b(0xffffffffffffffffffffffffffffffffffffffff) = SUB v2a(0x10000000000000000000000000000000000000000), v24(0x1)",0x15,v2b,"0,v2a,v24",SUB,0,0,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x6a
+"    0x2e: v2e = AND v2b(0xffffffffffffffffffffffffffffffffffffffff), v67",0x15,v2e,"0,v2b,v67",AND,0,0,True,0,0,0x6a
+"    0x2f: v2f = OR v2e, v23",0x15,v2f,"0,v2e,v23",OR,0,0,True,0,0,0x6a
+"    0x33: SSTORE v16(0x33), v2f",0x15,0,"0,v16,v2f",SSTORE,0,0,False,0,0,0x6a
+    0x34: v34(0x40) = CONST ,0x15,v34,0,CONST,0,0,False,0x40,0,0x6a
+    0x36: v36 = MLOAD v34(0x40),0x15,v36,"0,v34",MLOAD,0,0,False,0,0&m0x40,0x6a
+"    0x38: v38 = AND v2b(0xffffffffffffffffffffffffffffffffffffffff), v2f",0x15,v38,"0,v2b,v2f",AND,0,0,True,0,0,0x6a
+    0x3a: v3a(0x0) = CONST ,0x15,v3a,0,CONST,0,0,False,0x0,0,0x6a
+    0x3d: v3d(0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0) = CONST ,0x15,v3d,0,CONST,0,0,False,0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0,0,0x6a
+"    0x61: LOG3 v36, v3a(0x0), v3d(0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0), v3a(0x0), v38",0x15,0,"0,v36,v3a,v3d,v3a,v38",LOG3,0,0,False,0,0,0x6a
+    0x62: v62(0x6a) = CONST ,0x15,v62,0,CONST,0,0,False,0x6a,0,0x6a
+    0x65: JUMP v62(0x6a),0x15,0,"0,v62",JUMP,0,0,False,0,0,0x6a
+    Begin block 0x6a,0x6a,0,0,0,0,0,False,0,0,0x6a
+"    prev=[0x15], succ=[]",0x6a,0,0,0,0,0,False,0,0,0x6a
+    =================================,0x6a,0,0,0,0,0,False,0,0,0x6a
+    0x6b: v6b(0x1788) = CONST ,0x6a,v6b,0,CONST,0,0,False,0x1788,0,0x6a
+    0x6f: v6f(0x79) = CONST ,0x6a,v6f,0,CONST,0,0,False,0x79,0,0x6a
+    0x72: v72(0x0) = CONST ,0x6a,v72,0,CONST,0,0,False,0x0,0,0x6a
+"    0x74: CODECOPY v72(0x0), v6f(0x79), v6b(0x1788)",0x6a,0,"0,v72,v6f,v6b",CODECOPY,0,0,False,0,0,0x6a
+    0x75: v75(0x0) = CONST ,0x6a,v75,0,CONST,0,0,False,0x0,0,0x6a
+"    0x77: RETURN v75(0x0), v6b(0x1788)",0x6a,0,"0,v75,v6b",RETURN,0,0,False,0,0,0x6a
+},0x6a,0,0,0,0,0,False,0,0,0x6a

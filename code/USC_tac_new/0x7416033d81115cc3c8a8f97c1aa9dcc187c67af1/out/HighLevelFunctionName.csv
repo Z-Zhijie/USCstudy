@@ -1,0 +1,13 @@
+0x0	__function_selector__
+0x82	getRewards(address,uint256)
+0xe6	setGovernance(address)
+0x12a	bens(address)
+0x1b0	setContracts(address,address)
+0x214	init()
+0x21e	getBeneficiaryRewards()
+0x228	setBeneficiary(address,bool,uint256,uint256,uint256)
+0x698	0x698
+0xae3	0xae3
+0xed9	0xed9
+0xf80	()
+0xf80	fallback()

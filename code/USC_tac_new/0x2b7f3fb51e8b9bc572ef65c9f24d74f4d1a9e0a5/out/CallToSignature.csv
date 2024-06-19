@@ -1,0 +1,6 @@
+0x507	safeTransferFrom(address,address,uint256,uint256,bytes)
+0xc65	getCopyright(uint256)
+0xcdc	getFeeRateDenominator()
+0xe32	balanceOf(address,uint256)
+0xece	isApprovedForAll(address,address)
+0x119cS0x1114S0x1080S0xdaa	transferFrom(address,address,uint256)

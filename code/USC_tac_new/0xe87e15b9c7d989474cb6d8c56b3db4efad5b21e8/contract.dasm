@@ -1,0 +1,79 @@
+    0x0: PUSH1     0x80
+    0x2: PUSH1     0x40
+    0x4: MSTORE    
+    0x5: PUSH32    0xc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7
+   0x26: SLOAD     
+   0x27: PUSH1     0x0
+   0x29: CALLDATASIZE
+   0x2a: DUP2      
+   0x2b: DUP3      
+   0x2c: CALLDATACOPY
+   0x2d: DUP1      
+   0x2e: DUP2      
+   0x2f: CALLDATASIZE
+   0x30: DUP4      
+   0x31: DUP6      
+   0x32: GAS       
+   0x33: DELEGATECALL
+   0x34: SWAP2     
+   0x35: POP       
+   0x36: RETURNDATASIZE
+   0x37: DUP2      
+   0x38: DUP3      
+   0x39: RETURNDATACOPY
+   0x3a: DUP2      
+   0x3b: DUP1      
+   0x3c: ISZERO    
+   0x3d: PUSH1     0x43
+   0x3f: JUMPI     
+   0x40: RETURNDATASIZE
+   0x41: DUP3      
+   0x42: RETURN    
+   0x43: JUMPDEST  
+   0x44: RETURNDATASIZE
+   0x45: DUP3      
+   0x46: REVERT    
+   0x47: INVALID   
+   0x48: LOG2      
+   0x49: PUSH5     0x6970667358
+   0x4f: MISSING   
+   0x50: SLT       
+   0x51: SHA3      
+   0x52: MSTORE8   
+   0x53: EXTCODECOPY
+   0x54: MISSING   
+   0x55: SWAP6     
+   0x56: DUP2      
+   0x57: CALLDATACOPY
+   0x58: MISSING   
+   0x59: MISSING   
+   0x5a: EXP       
+   0x5b: CALLDATALOAD
+   0x5c: CREATE2   
+   0x5d: LOG4      
+   0x5e: SWAP4     
+   0x5f: CALLDATALOAD
+   0x60: JUMP      
+   0x61: MISSING   
+   0x62: MISSING   
+   0x63: SMOD      
+   0x64: JUMPDEST  
+   0x65: DUP12     
+   0x66: EXTCODESIZE
+   0x67: MISSING   
+   0x68: MISSING   
+   0x69: MSTORE    
+   0x6a: MISSING   
+   0x6b: MISSING   
+   0x6c: SWAP3     
+   0x6d: DUP2      
+   0x6e: MISSING   
+   0x6f: SELFBALANCE
+   0x70: MISSING   
+   0x71: MISSING   
+   0x72: PUSH5     0x736f6c6343
+   0x78: STOP      
+   0x79: ADDMOD    
+   0x7a: SMOD      
+   0x7b: STOP      
+   0x7c: CALLER    

@@ -1,0 +1,15 @@
+0x0	__function_selector__
+0x114	delegateToImplementation(bytes)
+0x23c	_setAdmin(address)
+0x271	delegateToViewImplementation(bytes)
+0x324	implementation()
+0x355	renounceOwnership()
+0x36a	owner()
+0x37f	_setImplementation(address)
+0x3b2	transferOwnership(address)
+0x3e5	admin()
+0x7b8	0x7b8
+0x99a	0x99a
+0xa5c	0xa5c
+0xc05	()
+0xc05	fallback()

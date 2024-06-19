@@ -1,0 +1,6 @@
+0xceb	balanceOf(address)
+0x1ce7	permit(address,address,uint256,uint256,uint8,bytes32,bytes32)
+0x7570x1180	allowance(address,address)
+0x7570x6e4S0x2f8	allowance(address,address)
+0x2565S0x21f0	transferFrom(address,address,uint256)
+0x2565S0x2162	transfer(address,uint256)

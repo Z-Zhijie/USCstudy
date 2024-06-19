@@ -1,0 +1,4 @@
+0xc8e	getScaledUserBalanceAndSupply(address)
+0xe0a	stake(address,uint256)
+0x7bbS0x231	scaledTotalSupply()
+0x948S0x244	getScaledUserBalanceAndSupply(address)

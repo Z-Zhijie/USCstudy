@@ -1,0 +1,5 @@
+0x142b	isSelfManager(address)
+0x1d5d	proxiableUUID()
+0x13160x4c7	fundLog(address,string,address)
+0x13160x4f3	fundLog(address,string,address)
+0x1cadS0xadcS0x236	liquidateHoldings(address)

@@ -1,0 +1,52 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0xc, 0x10]
+    =================================
+    0x0: v0(0x80) = CONST 
+    0x2: v2(0x40) = CONST 
+    0x4: MSTORE v2(0x40), v0(0x80)
+    0x5: v5 = CALLVALUE 
+    0x7: v7 = ISZERO v5
+    0x8: v8(0x10) = CONST 
+    0xb: JUMPI v8(0x10), v7
+
+    Begin block 0xc
+    prev=[0x0], succ=[]
+    =================================
+    0xc: vc(0x0) = CONST 
+    0xf: REVERT vc(0x0), vc(0x0)
+
+    Begin block 0x10
+    prev=[0x0], succ=[]
+    =================================
+    0x12: v12(0x1) = CONST 
+    0x14: v14(0x0) = CONST 
+    0x18: SSTORE v14(0x0), v12(0x1)
+    0x19: v19(0x40) = CONST 
+    0x1c: v1c = MLOAD v19(0x40)
+    0x1d: v1d(0x4b65657052616e646f6d426561636f6e53657276696365496d706c5631000000) = CONST 
+    0x3f: MSTORE v1c, v1d(0x4b65657052616e646f6d426561636f6e53657276696365496d706c5631000000)
+    0x40: v40(0xa) = CONST 
+    0x42: v42(0x1d) = CONST 
+    0x45: v45 = ADD v1c, v42(0x1d)
+    0x46: MSTORE v45, v40(0xa)
+    0x48: v48 = MLOAD v19(0x40)
+    0x4c: v4c(0x0) = SUB v1c, v48
+    0x4d: v4d(0x3d) = CONST 
+    0x4f: v4f(0x3d) = ADD v4d(0x3d), v4c(0x0)
+    0x51: v51 = SHA3 v48, v4f(0x3d)
+    0x53: v53 = SLOAD v51
+    0x54: v54(0xff) = CONST 
+    0x56: v56(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00) = NOT v54(0xff)
+    0x57: v57 = AND v56(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00), v53
+    0x5a: v5a = OR v12(0x1), v57
+    0x5c: SSTORE v51, v5a
+    0x5d: v5d(0x20ba) = CONST 
+    0x61: v61(0x6b) = CONST 
+    0x64: v64(0x0) = CONST 
+    0x66: CODECOPY v64(0x0), v61(0x6b), v5d(0x20ba)
+    0x67: v67(0x0) = CONST 
+    0x69: RETURN v67(0x0), v5d(0x20ba)
+
+}
+

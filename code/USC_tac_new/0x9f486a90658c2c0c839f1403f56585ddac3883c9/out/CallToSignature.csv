@@ -1,0 +1,4 @@
+0x2fd	balanceOf(address)
+0x384	approve(address,uint256)
+0x42c	lockAssets(address,uint256,bytes32,uint8,uint32,bool)
+0x988	isGovernanceAddress()

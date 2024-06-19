@@ -1,0 +1,6 @@
+0xc66	burnFrom(address,uint256)
+0x1627	mint(address,uint256)
+0x1bfe	initialize(address,string,string,uint8)
+0x2579	transfer(address,uint256)
+0xe1bS0x459	balanceOf(address)
+0x2383S0xcc9	transferFrom(address,address,uint256)

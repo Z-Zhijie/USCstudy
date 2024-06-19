@@ -1,0 +1,6 @@
+0x0	__function_selector__
+0x56	()
+0x56	fallback()
+0x129	targetContractId()
+0x14e	setController(address)
+0x16f	controller()

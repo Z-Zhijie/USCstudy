@@ -1,0 +1,2 @@
+0xb65	receiveApproval(address,uint256,bytes)
+0xc08	transfer(address,uint256)

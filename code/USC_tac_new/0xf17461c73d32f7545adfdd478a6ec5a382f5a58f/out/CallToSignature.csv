@@ -1,0 +1,4 @@
+0x15bc	safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)
+0xf2c0x1dc	safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)
+0xdc00x1dc	mintBatch(address,uint256[],uint256[],bytes)
+0xb8e0x1dc	balanceOfBatch(address[],uint256[])

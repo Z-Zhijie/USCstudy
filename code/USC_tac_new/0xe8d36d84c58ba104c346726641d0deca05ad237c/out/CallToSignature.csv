@@ -1,0 +1,5 @@
+0x5e9	swapExactTokensForTokens(uint256,uint256,address[],address,uint256)
+0x716	burn(uint256)
+0x8de	allowance(address,address)
+0xa660x883	approve(address,uint256)
+0xa660x992S0x823S0x50b	transferFrom(address,address,uint256)

@@ -1,0 +1,2 @@
+0xb3c	executeOnFlashMint(uint256,bytes32)
+0x14b1	receiveApproval(address,uint256,address,bytes)

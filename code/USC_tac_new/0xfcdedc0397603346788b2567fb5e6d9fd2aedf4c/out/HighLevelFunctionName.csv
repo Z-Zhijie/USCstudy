@@ -1,0 +1,11 @@
+0x0	__function_selector__
+0x8d	()
+0x8d	fallback()
+0x17b	KERNEL_APP_ID()
+0x1a0	APP_ADDR_NAMESPACE()
+0x1b3	KERNEL_APP()
+0x1c6	apps(bytes32)
+0x205	CORE_NAMESPACE()
+0x218	ACL_APP()
+0x22b	ACL_APP_ID()
+0x23e	APP_BASES_NAMESPACE()

@@ -1,0 +1,5 @@
+0x0	__function_selector__
+0x4c	()
+0x4c	fallback()
+0x99	getContAdr()
+0xf0	setTargetAddress(address)

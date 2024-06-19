@@ -1,0 +1,6 @@
+0x134e	getFeeConfig()
+0x200b	getFeeConfig()
+0x2a37	proxyCallAndReturnAddress(address,bytes)
+0x2e5c	isValidSignature(bytes32,bytes)
+0x2b140x2abb	isOperator(address)
+0x2b140x3097S0x1d5a	isAdmin(address)

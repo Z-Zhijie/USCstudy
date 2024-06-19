@@ -1,0 +1,1322 @@
+3IR,blockname,leftvariable,rightvariable,option,functionname,functiontype,callersource,constant,memloc,succ
+    Begin block 0x0,0x0,0,0,0,0,0,False,0,0,
+"    prev=[], succ=[0xd, 0x98b]",0x0,0,0,0,0,0,False,0,0,"0xd, 0x98b"
+    =================================,0x0,0,0,0,0,0,False,0,0,"0xd, 0x98b"
+    0x0: v0(0x60) = CONST ,0x0,v0,0,CONST,0,0,False,0x60,0,"0xd, 0x98b"
+    0x2: v2(0x40) = CONST ,0x0,v2,0,CONST,0,0,False,0x40,0,"0xd, 0x98b"
+"    0x4: MSTORE v2(0x40), v0(0x60)",0x0,0,"0,v2,v0",MSTORE,0,0,False,0,0,"0xd, 0x98b"
+    0x5: v5(0x4) = CONST ,0x0,v5,0,CONST,0,0,False,0x4,0,"0xd, 0x98b"
+    0x7: v7 = CALLDATASIZE ,0x0,v7,0,CALLDATASIZE,0,0,False,0,0,"0xd, 0x98b"
+"    0x8: v8 = LT v7, v5(0x4)",0x0,v8,"0,v7,v5",LT,0,0,False,0,0,"0xd, 0x98b"
+    0x965: v965(0x98b) = CONST ,0x0,v965,0,CONST,0,0,False,0x98b,0,"0xd, 0x98b"
+"    0x966: JUMPI v965(0x98b), v8",0x0,0,"0,v965,v8",JUMPI,0,0,False,0,0,"0xd, 0x98b"
+    Begin block 0xd,0xd,0,0,0,0,0,False,0,0,"0xd, 0x98b"
+"    prev=[0x0], succ=[0x40, 0x98e]",0xd,0,0,0,0,0,False,0,0,"0x40, 0x98e"
+    =================================,0xd,0,0,0,0,0,False,0,0,"0x40, 0x98e"
+    0xd: vd(0xffffffff) = CONST ,0xd,vd,0,CONST,0,0,False,0xffffffff,0,"0x40, 0x98e"
+    0x12: v12(0x100000000000000000000000000000000000000000000000000000000) = CONST ,0xd,v12,0,CONST,0,0,False,0x100000000000000000000000000000000000000000000000000000000,0,"0x40, 0x98e"
+    0x30: v30(0x0) = CONST ,0xd,v30,0,CONST,0,0,False,0x0,0,"0x40, 0x98e"
+    0x32: v32 = CALLDATALOAD v30(0x0),0xd,v32,"0,v30",CALLDATALOAD,0,0,False,0,0,"0x40, 0x98e"
+"    0x33: v33 = DIV v32, v12(0x100000000000000000000000000000000000000000000000000000000)",0xd,v33,"0,v32,v12",DIV,0,0,False,0,0,"0x40, 0x98e"
+"    0x34: v34 = AND v33, vd(0xffffffff)",0xd,v34,"0,v33,vd",AND,0,0,False,0,0,"0x40, 0x98e"
+    0x35: v35(0x19774d43) = CONST ,0xd,v35,0,CONST,0,0,False,0x19774d43,0,"0x40, 0x98e"
+"    0x3b: v3b = EQ v34, v35(0x19774d43)",0xd,v3b,"0,v34,v35",EQ,0,0,False,0,0,"0x40, 0x98e"
+    0x967: v967(0x98e) = CONST ,0xd,v967,0,CONST,0,0,False,0x98e,0,"0x40, 0x98e"
+"    0x968: JUMPI v967(0x98e), v3b",0xd,0,"0,v967,v3b",JUMPI,0,0,False,0,0,"0x40, 0x98e"
+    Begin block 0x40,0x40,0,0,0,0,0,False,0,0,"0x40, 0x98e"
+"    prev=[0xd], succ=[0x991, 0x4b]",0x40,0,0,0,0,0,False,0,0,"0x991, 0x4b"
+    =================================,0x40,0,0,0,0,0,False,0,0,"0x991, 0x4b"
+    0x41: v41(0x1bff4786) = CONST ,0x40,v41,0,CONST,0,0,False,0x1bff4786,0,"0x991, 0x4b"
+"    0x46: v46 = EQ v41(0x1bff4786), v34",0x40,v46,"0,v41,v34",EQ,0,0,False,0,0,"0x991, 0x4b"
+    0x969: v969(0x991) = CONST ,0x40,v969,0,CONST,0,0,False,0x991,0,"0x991, 0x4b"
+"    0x96a: JUMPI v969(0x991), v46",0x40,0,"0,v969,v46",JUMPI,0,0,False,0,0,"0x991, 0x4b"
+    Begin block 0x991,0x991,0,0,0,0,0,False,0,0,"0x991, 0x4b"
+"    prev=[0x40], succ=[]",0x991,0,0,0,0,0,False,0,0,"0x991, 0x4b"
+    =================================,0x991,0,0,0,0,0,False,0,0,"0x991, 0x4b"
+    0x992: v992(0x19b) = CONST ,0x991,v992,0,CONST,0,0,False,0x19b,0,"0x991, 0x4b"
+    0x993: CALLPRIVATE v992(0x19b),0x991,0,"0,v992",CALLPRIVATE,0,0,False,0,0,"0x991, 0x4b"
+    Begin block 0x4b,0x4b,0,0,0,0,0,False,0,0,"0x991, 0x4b"
+"    prev=[0x40], succ=[0x994, 0x56]",0x4b,0,0,0,0,0,False,0,0,"0x994, 0x56"
+    =================================,0x4b,0,0,0,0,0,False,0,0,"0x994, 0x56"
+    0x4c: v4c(0x3cf52ffb) = CONST ,0x4b,v4c,0,CONST,0,0,False,0x3cf52ffb,0,"0x994, 0x56"
+"    0x51: v51 = EQ v4c(0x3cf52ffb), v34",0x4b,v51,"0,v4c,v34",EQ,0,0,False,0,0,"0x994, 0x56"
+    0x96b: v96b(0x994) = CONST ,0x4b,v96b,0,CONST,0,0,False,0x994,0,"0x994, 0x56"
+"    0x96c: JUMPI v96b(0x994), v51",0x4b,0,"0,v96b,v51",JUMPI,0,0,False,0,0,"0x994, 0x56"
+    Begin block 0x994,0x994,0,0,0,0,0,False,0,0,"0x994, 0x56"
+"    prev=[0x4b], succ=[]",0x994,0,0,0,0,0,False,0,0,"0x994, 0x56"
+    =================================,0x994,0,0,0,0,0,False,0,0,"0x994, 0x56"
+    0x995: v995(0x1c6) = CONST ,0x994,v995,0,CONST,0,0,False,0x1c6,0,"0x994, 0x56"
+    0x996: CALLPRIVATE v995(0x1c6),0x994,0,"0,v995",CALLPRIVATE,0,0,False,0,0,"0x994, 0x56"
+    Begin block 0x56,0x56,0,0,0,0,0,False,0,0,"0x994, 0x56"
+"    prev=[0x4b], succ=[0x997, 0x61]",0x56,0,0,0,0,0,False,0,0,"0x997, 0x61"
+    =================================,0x56,0,0,0,0,0,False,0,0,"0x997, 0x61"
+    0x57: v57(0x508493bc) = CONST ,0x56,v57,0,CONST,0,0,False,0x508493bc,0,"0x997, 0x61"
+"    0x5c: v5c = EQ v57(0x508493bc), v34",0x56,v5c,"0,v57,v34",EQ,0,0,False,0,0,"0x997, 0x61"
+    0x96d: v96d(0x997) = CONST ,0x56,v96d,0,CONST,0,0,False,0x997,0,"0x997, 0x61"
+"    0x96e: JUMPI v96d(0x997), v5c",0x56,0,"0,v96d,v5c",JUMPI,0,0,False,0,0,"0x997, 0x61"
+    Begin block 0x997,0x997,0,0,0,0,0,False,0,0,"0x997, 0x61"
+"    prev=[0x56], succ=[]",0x997,0,0,0,0,0,False,0,0,"0x997, 0x61"
+    =================================,0x997,0,0,0,0,0,False,0,0,"0x997, 0x61"
+    0x998: v998(0x1d9) = CONST ,0x997,v998,0,CONST,0,0,False,0x1d9,0,"0x997, 0x61"
+    0x999: CALLPRIVATE v998(0x1d9),0x997,0,"0,v998",CALLPRIVATE,0,0,False,0,0,"0x997, 0x61"
+    Begin block 0x61,0x61,0,0,0,0,0,False,0,0,"0x997, 0x61"
+"    prev=[0x56], succ=[0x99a, 0x6c]",0x61,0,0,0,0,0,False,0,0,"0x99a, 0x6c"
+    =================================,0x61,0,0,0,0,0,False,0,0,"0x99a, 0x6c"
+    0x62: v62(0x55ce76e6) = CONST ,0x61,v62,0,CONST,0,0,False,0x55ce76e6,0,"0x99a, 0x6c"
+"    0x67: v67 = EQ v62(0x55ce76e6), v34",0x61,v67,"0,v62,v34",EQ,0,0,False,0,0,"0x99a, 0x6c"
+    0x96f: v96f(0x99a) = CONST ,0x61,v96f,0,CONST,0,0,False,0x99a,0,"0x99a, 0x6c"
+"    0x970: JUMPI v96f(0x99a), v67",0x61,0,"0,v96f,v67",JUMPI,0,0,False,0,0,"0x99a, 0x6c"
+    Begin block 0x99a,0x99a,0,0,0,0,0,False,0,0,"0x99a, 0x6c"
+"    prev=[0x61], succ=[]",0x99a,0,0,0,0,0,False,0,0,"0x99a, 0x6c"
+    =================================,0x99a,0,0,0,0,0,False,0,0,"0x99a, 0x6c"
+    0x99b: v99b(0x1fe) = CONST ,0x99a,v99b,0,CONST,0,0,False,0x1fe,0,"0x99a, 0x6c"
+    0x99c: CALLPRIVATE v99b(0x1fe),0x99a,0,"0,v99b",CALLPRIVATE,0,0,False,0,0,"0x99a, 0x6c"
+    Begin block 0x6c,0x6c,0,0,0,0,0,False,0,0,"0x99a, 0x6c"
+"    prev=[0x61], succ=[0x99d, 0x77]",0x6c,0,0,0,0,0,False,0,0,"0x99d, 0x77"
+    =================================,0x6c,0,0,0,0,0,False,0,0,"0x99d, 0x77"
+    0x6d: v6d(0x5bd948b1) = CONST ,0x6c,v6d,0,CONST,0,0,False,0x5bd948b1,0,"0x99d, 0x77"
+"    0x72: v72 = EQ v6d(0x5bd948b1), v34",0x6c,v72,"0,v6d,v34",EQ,0,0,False,0,0,"0x99d, 0x77"
+    0x971: v971(0x99d) = CONST ,0x6c,v971,0,CONST,0,0,False,0x99d,0,"0x99d, 0x77"
+"    0x972: JUMPI v971(0x99d), v72",0x6c,0,"0,v971,v72",JUMPI,0,0,False,0,0,"0x99d, 0x77"
+    Begin block 0x99d,0x99d,0,0,0,0,0,False,0,0,"0x99d, 0x77"
+"    prev=[0x6c], succ=[]",0x99d,0,0,0,0,0,False,0,0,"0x99d, 0x77"
+    =================================,0x99d,0,0,0,0,0,False,0,0,"0x99d, 0x77"
+    0x99e: v99e(0x211) = CONST ,0x99d,v99e,0,CONST,0,0,False,0x211,0,"0x99d, 0x77"
+    0x99f: CALLPRIVATE v99e(0x211),0x99d,0,"0,v99e",CALLPRIVATE,0,0,False,0,0,"0x99d, 0x77"
+    Begin block 0x77,0x77,0,0,0,0,0,False,0,0,"0x99d, 0x77"
+"    prev=[0x6c], succ=[0x9a0, 0x82]",0x77,0,0,0,0,0,False,0,0,"0x9a0, 0x82"
+    =================================,0x77,0,0,0,0,0,False,0,0,"0x9a0, 0x82"
+    0x78: v78(0x5d4d061e) = CONST ,0x77,v78,0,CONST,0,0,False,0x5d4d061e,0,"0x9a0, 0x82"
+"    0x7d: v7d = EQ v78(0x5d4d061e), v34",0x77,v7d,"0,v78,v34",EQ,0,0,False,0,0,"0x9a0, 0x82"
+    0x973: v973(0x9a0) = CONST ,0x77,v973,0,CONST,0,0,False,0x9a0,0,"0x9a0, 0x82"
+"    0x974: JUMPI v973(0x9a0), v7d",0x77,0,"0,v973,v7d",JUMPI,0,0,False,0,0,"0x9a0, 0x82"
+    Begin block 0x9a0,0x9a0,0,0,0,0,0,False,0,0,"0x9a0, 0x82"
+"    prev=[0x77], succ=[]",0x9a0,0,0,0,0,0,False,0,0,"0x9a0, 0x82"
+    =================================,0x9a0,0,0,0,0,0,False,0,0,"0x9a0, 0x82"
+    0x9a1: v9a1(0x238) = CONST ,0x9a0,v9a1,0,CONST,0,0,False,0x238,0,"0x9a0, 0x82"
+    0x9a2: CALLPRIVATE v9a1(0x238),0x9a0,0,"0,v9a1",CALLPRIVATE,0,0,False,0,0,"0x9a0, 0x82"
+    Begin block 0x82,0x82,0,0,0,0,0,False,0,0,"0x9a0, 0x82"
+"    prev=[0x77], succ=[0x9a3, 0x8d]",0x82,0,0,0,0,0,False,0,0,"0x9a3, 0x8d"
+    =================================,0x82,0,0,0,0,0,False,0,0,"0x9a3, 0x8d"
+    0x83: v83(0x65e17c9d) = CONST ,0x82,v83,0,CONST,0,0,False,0x65e17c9d,0,"0x9a3, 0x8d"
+"    0x88: v88 = EQ v83(0x65e17c9d), v34",0x82,v88,"0,v83,v34",EQ,0,0,False,0,0,"0x9a3, 0x8d"
+    0x975: v975(0x9a3) = CONST ,0x82,v975,0,CONST,0,0,False,0x9a3,0,"0x9a3, 0x8d"
+"    0x976: JUMPI v975(0x9a3), v88",0x82,0,"0,v975,v88",JUMPI,0,0,False,0,0,"0x9a3, 0x8d"
+    Begin block 0x9a3,0x9a3,0,0,0,0,0,False,0,0,"0x9a3, 0x8d"
+"    prev=[0x82], succ=[]",0x9a3,0,0,0,0,0,False,0,0,"0x9a3, 0x8d"
+    =================================,0x9a3,0,0,0,0,0,False,0,0,"0x9a3, 0x8d"
+    0x9a4: v9a4(0x267) = CONST ,0x9a3,v9a4,0,CONST,0,0,False,0x267,0,"0x9a3, 0x8d"
+    0x9a5: CALLPRIVATE v9a4(0x267),0x9a3,0,"0,v9a4",CALLPRIVATE,0,0,False,0,0,"0x9a3, 0x8d"
+    Begin block 0x8d,0x8d,0,0,0,0,0,False,0,0,"0x9a3, 0x8d"
+"    prev=[0x82], succ=[0x9a6, 0x98]",0x8d,0,0,0,0,0,False,0,0,"0x9a6, 0x98"
+    =================================,0x8d,0,0,0,0,0,False,0,0,"0x9a6, 0x98"
+    0x8e: v8e(0x8e1e2add) = CONST ,0x8d,v8e,0,CONST,0,0,False,0x8e1e2add,0,"0x9a6, 0x98"
+"    0x93: v93 = EQ v8e(0x8e1e2add), v34",0x8d,v93,"0,v8e,v34",EQ,0,0,False,0,0,"0x9a6, 0x98"
+    0x977: v977(0x9a6) = CONST ,0x8d,v977,0,CONST,0,0,False,0x9a6,0,"0x9a6, 0x98"
+"    0x978: JUMPI v977(0x9a6), v93",0x8d,0,"0,v977,v93",JUMPI,0,0,False,0,0,"0x9a6, 0x98"
+    Begin block 0x9a6,0x9a6,0,0,0,0,0,False,0,0,"0x9a6, 0x98"
+"    prev=[0x8d], succ=[]",0x9a6,0,0,0,0,0,False,0,0,"0x9a6, 0x98"
+    =================================,0x9a6,0,0,0,0,0,False,0,0,"0x9a6, 0x98"
+    0x9a7: v9a7(0x27a) = CONST ,0x9a6,v9a7,0,CONST,0,0,False,0x27a,0,"0x9a6, 0x98"
+    0x9a8: CALLPRIVATE v9a7(0x27a),0x9a6,0,"0,v9a7",CALLPRIVATE,0,0,False,0,0,"0x9a6, 0x98"
+    Begin block 0x98,0x98,0,0,0,0,0,False,0,0,"0x9a6, 0x98"
+"    prev=[0x8d], succ=[0x9a9, 0xa3]",0x98,0,0,0,0,0,False,0,0,"0x9a9, 0xa3"
+    =================================,0x98,0,0,0,0,0,False,0,0,"0x9a9, 0xa3"
+    0x99: v99(0xaaf10f42) = CONST ,0x98,v99,0,CONST,0,0,False,0xaaf10f42,0,"0x9a9, 0xa3"
+"    0x9e: v9e = EQ v99(0xaaf10f42), v34",0x98,v9e,"0,v99,v34",EQ,0,0,False,0,0,"0x9a9, 0xa3"
+    0x979: v979(0x9a9) = CONST ,0x98,v979,0,CONST,0,0,False,0x9a9,0,"0x9a9, 0xa3"
+"    0x97a: JUMPI v979(0x9a9), v9e",0x98,0,"0,v979,v9e",JUMPI,0,0,False,0,0,"0x9a9, 0xa3"
+    Begin block 0x9a9,0x9a9,0,0,0,0,0,False,0,0,"0x9a9, 0xa3"
+"    prev=[0x98], succ=[]",0x9a9,0,0,0,0,0,False,0,0,"0x9a9, 0xa3"
+    =================================,0x9a9,0,0,0,0,0,False,0,0,"0x9a9, 0xa3"
+    0x9aa: v9aa(0x28d) = CONST ,0x9a9,v9aa,0,CONST,0,0,False,0x28d,0,"0x9a9, 0xa3"
+    0x9ab: CALLPRIVATE v9aa(0x28d),0x9a9,0,"0,v9aa",CALLPRIVATE,0,0,False,0,0,"0x9a9, 0xa3"
+    Begin block 0xa3,0xa3,0,0,0,0,0,False,0,0,"0x9a9, 0xa3"
+"    prev=[0x98], succ=[0x9ac, 0xae]",0xa3,0,0,0,0,0,False,0,0,"0x9ac, 0xae"
+    =================================,0xa3,0,0,0,0,0,False,0,0,"0x9ac, 0xae"
+    0xa4: va4(0xbb057c5e) = CONST ,0xa3,va4,0,CONST,0,0,False,0xbb057c5e,0,"0x9ac, 0xae"
+"    0xa9: va9 = EQ va4(0xbb057c5e), v34",0xa3,va9,"0,va4,v34",EQ,0,0,False,0,0,"0x9ac, 0xae"
+    0x97b: v97b(0x9ac) = CONST ,0xa3,v97b,0,CONST,0,0,False,0x9ac,0,"0x9ac, 0xae"
+"    0x97c: JUMPI v97b(0x9ac), va9",0xa3,0,"0,v97b,va9",JUMPI,0,0,False,0,0,"0x9ac, 0xae"
+    Begin block 0x9ac,0x9ac,0,0,0,0,0,False,0,0,"0x9ac, 0xae"
+"    prev=[0xa3], succ=[]",0x9ac,0,0,0,0,0,False,0,0,"0x9ac, 0xae"
+    =================================,0x9ac,0,0,0,0,0,False,0,0,"0x9ac, 0xae"
+    0x9ad: v9ad(0x2a0) = CONST ,0x9ac,v9ad,0,CONST,0,0,False,0x2a0,0,"0x9ac, 0xae"
+    0x9ae: CALLPRIVATE v9ad(0x2a0),0x9ac,0,"0,v9ad",CALLPRIVATE,0,0,False,0,0,"0x9ac, 0xae"
+    Begin block 0xae,0xae,0,0,0,0,0,False,0,0,"0x9ac, 0xae"
+"    prev=[0xa3], succ=[0x9af, 0xb9]",0xae,0,0,0,0,0,False,0,0,"0x9af, 0xb9"
+    =================================,0xae,0,0,0,0,0,False,0,0,"0x9af, 0xb9"
+    0xaf: vaf(0xbb5f4629) = CONST ,0xae,vaf,0,CONST,0,0,False,0xbb5f4629,0,"0x9af, 0xb9"
+"    0xb4: vb4 = EQ vaf(0xbb5f4629), v34",0xae,vb4,"0,vaf,v34",EQ,0,0,False,0,0,"0x9af, 0xb9"
+    0x97d: v97d(0x9af) = CONST ,0xae,v97d,0,CONST,0,0,False,0x9af,0,"0x9af, 0xb9"
+"    0x97e: JUMPI v97d(0x9af), vb4",0xae,0,"0,v97d,vb4",JUMPI,0,0,False,0,0,"0x9af, 0xb9"
+    Begin block 0x9af,0x9af,0,0,0,0,0,False,0,0,"0x9af, 0xb9"
+"    prev=[0xae], succ=[]",0x9af,0,0,0,0,0,False,0,0,"0x9af, 0xb9"
+    =================================,0x9af,0,0,0,0,0,False,0,0,"0x9af, 0xb9"
+    0x9b0: v9b0(0x2b3) = CONST ,0x9af,v9b0,0,CONST,0,0,False,0x2b3,0,"0x9af, 0xb9"
+    0x9b1: CALLPRIVATE v9b0(0x2b3),0x9af,0,"0,v9b0",CALLPRIVATE,0,0,False,0,0,"0x9af, 0xb9"
+    Begin block 0xb9,0xb9,0,0,0,0,0,False,0,0,"0x9af, 0xb9"
+"    prev=[0xae], succ=[0x9b2, 0xc4]",0xb9,0,0,0,0,0,False,0,0,"0x9b2, 0xc4"
+    =================================,0xb9,0,0,0,0,0,False,0,0,"0x9b2, 0xc4"
+    0xba: vba(0xc281309e) = CONST ,0xb9,vba,0,CONST,0,0,False,0xc281309e,0,"0x9b2, 0xc4"
+"    0xbf: vbf = EQ vba(0xc281309e), v34",0xb9,vbf,"0,vba,v34",EQ,0,0,False,0,0,"0x9b2, 0xc4"
+    0x97f: v97f(0x9b2) = CONST ,0xb9,v97f,0,CONST,0,0,False,0x9b2,0,"0x9b2, 0xc4"
+"    0x980: JUMPI v97f(0x9b2), vbf",0xb9,0,"0,v97f,vbf",JUMPI,0,0,False,0,0,"0x9b2, 0xc4"
+    Begin block 0x9b2,0x9b2,0,0,0,0,0,False,0,0,"0x9b2, 0xc4"
+"    prev=[0xb9], succ=[]",0x9b2,0,0,0,0,0,False,0,0,"0x9b2, 0xc4"
+    =================================,0x9b2,0,0,0,0,0,False,0,0,"0x9b2, 0xc4"
+    0x9b3: v9b3(0x2d5) = CONST ,0x9b2,v9b3,0,CONST,0,0,False,0x2d5,0,"0x9b2, 0xc4"
+    0x9b4: CALLPRIVATE v9b3(0x2d5),0x9b2,0,"0,v9b3",CALLPRIVATE,0,0,False,0,0,"0x9b2, 0xc4"
+    Begin block 0xc4,0xc4,0,0,0,0,0,False,0,0,"0x9b2, 0xc4"
+"    prev=[0xb9], succ=[0x9b5, 0xcf]",0xc4,0,0,0,0,0,False,0,0,"0x9b5, 0xcf"
+    =================================,0xc4,0,0,0,0,0,False,0,0,"0x9b5, 0xcf"
+    0xc5: vc5(0xc915fc93) = CONST ,0xc4,vc5,0,CONST,0,0,False,0xc915fc93,0,"0x9b5, 0xcf"
+"    0xca: vca = EQ vc5(0xc915fc93), v34",0xc4,vca,"0,vc5,v34",EQ,0,0,False,0,0,"0x9b5, 0xcf"
+    0x981: v981(0x9b5) = CONST ,0xc4,v981,0,CONST,0,0,False,0x9b5,0,"0x9b5, 0xcf"
+"    0x982: JUMPI v981(0x9b5), vca",0xc4,0,"0,v981,vca",JUMPI,0,0,False,0,0,"0x9b5, 0xcf"
+    Begin block 0x9b5,0x9b5,0,0,0,0,0,False,0,0,"0x9b5, 0xcf"
+"    prev=[0xc4], succ=[]",0x9b5,0,0,0,0,0,False,0,0,"0x9b5, 0xcf"
+    =================================,0x9b5,0,0,0,0,0,False,0,0,"0x9b5, 0xcf"
+    0x9b6: v9b6(0x2e8) = CONST ,0x9b5,v9b6,0,CONST,0,0,False,0x2e8,0,"0x9b5, 0xcf"
+    0x9b7: CALLPRIVATE v9b6(0x2e8),0x9b5,0,"0,v9b6",CALLPRIVATE,0,0,False,0,0,"0x9b5, 0xcf"
+    Begin block 0xcf,0xcf,0,0,0,0,0,False,0,0,"0x9b5, 0xcf"
+"    prev=[0xc4], succ=[0x9b8, 0xda]",0xcf,0,0,0,0,0,False,0,0,"0x9b8, 0xda"
+    =================================,0xcf,0,0,0,0,0,False,0,0,"0x9b8, 0xda"
+    0xd0: vd0(0xd55ec697) = CONST ,0xcf,vd0,0,CONST,0,0,False,0xd55ec697,0,"0x9b8, 0xda"
+"    0xd5: vd5 = EQ vd0(0xd55ec697), v34",0xcf,vd5,"0,vd0,v34",EQ,0,0,False,0,0,"0x9b8, 0xda"
+    0x983: v983(0x9b8) = CONST ,0xcf,v983,0,CONST,0,0,False,0x9b8,0,"0x9b8, 0xda"
+"    0x984: JUMPI v983(0x9b8), vd5",0xcf,0,"0,v983,vd5",JUMPI,0,0,False,0,0,"0x9b8, 0xda"
+    Begin block 0x9b8,0x9b8,0,0,0,0,0,False,0,0,"0x9b8, 0xda"
+"    prev=[0xcf], succ=[]",0x9b8,0,0,0,0,0,False,0,0,"0x9b8, 0xda"
+    =================================,0x9b8,0,0,0,0,0,False,0,0,"0x9b8, 0xda"
+    0x9b9: v9b9(0x309) = CONST ,0x9b8,v9b9,0,CONST,0,0,False,0x309,0,"0x9b8, 0xda"
+    0x9ba: CALLPRIVATE v9b9(0x309),0x9b8,0,"0,v9b9",CALLPRIVATE,0,0,False,0,0,"0x9b8, 0xda"
+    Begin block 0xda,0xda,0,0,0,0,0,False,0,0,"0x9b8, 0xda"
+"    prev=[0xcf], succ=[0x9bb, 0xe5]",0xda,0,0,0,0,0,False,0,0,"0x9bb, 0xe5"
+    =================================,0xda,0,0,0,0,0,False,0,0,"0x9bb, 0xe5"
+    0xdb: vdb(0xd67a10e3) = CONST ,0xda,vdb,0,CONST,0,0,False,0xd67a10e3,0,"0x9bb, 0xe5"
+"    0xe0: ve0 = EQ vdb(0xd67a10e3), v34",0xda,ve0,"0,vdb,v34",EQ,0,0,False,0,0,"0x9bb, 0xe5"
+    0x985: v985(0x9bb) = CONST ,0xda,v985,0,CONST,0,0,False,0x9bb,0,"0x9bb, 0xe5"
+"    0x986: JUMPI v985(0x9bb), ve0",0xda,0,"0,v985,ve0",JUMPI,0,0,False,0,0,"0x9bb, 0xe5"
+    Begin block 0x9bb,0x9bb,0,0,0,0,0,False,0,0,"0x9bb, 0xe5"
+"    prev=[0xda], succ=[]",0x9bb,0,0,0,0,0,False,0,0,"0x9bb, 0xe5"
+    =================================,0x9bb,0,0,0,0,0,False,0,0,"0x9bb, 0xe5"
+    0x9bc: v9bc(0x31c) = CONST ,0x9bb,v9bc,0,CONST,0,0,False,0x31c,0,"0x9bb, 0xe5"
+    0x9bd: CALLPRIVATE v9bc(0x31c),0x9bb,0,"0,v9bc",CALLPRIVATE,0,0,False,0,0,"0x9bb, 0xe5"
+    Begin block 0xe5,0xe5,0,0,0,0,0,False,0,0,"0x9bb, 0xe5"
+"    prev=[0xda], succ=[0x9be, 0xf0]",0xe5,0,0,0,0,0,False,0,0,"0x9be, 0xf0"
+    =================================,0xe5,0,0,0,0,0,False,0,0,"0x9be, 0xf0"
+    0xe6: ve6(0xf851a440) = CONST ,0xe5,ve6,0,CONST,0,0,False,0xf851a440,0,"0x9be, 0xf0"
+"    0xeb: veb = EQ ve6(0xf851a440), v34",0xe5,veb,"0,ve6,v34",EQ,0,0,False,0,0,"0x9be, 0xf0"
+    0x987: v987(0x9be) = CONST ,0xe5,v987,0,CONST,0,0,False,0x9be,0,"0x9be, 0xf0"
+"    0x988: JUMPI v987(0x9be), veb",0xe5,0,"0,v987,veb",JUMPI,0,0,False,0,0,"0x9be, 0xf0"
+    Begin block 0x9be,0x9be,0,0,0,0,0,False,0,0,"0x9be, 0xf0"
+"    prev=[0xe5], succ=[]",0x9be,0,0,0,0,0,False,0,0,"0x9be, 0xf0"
+    =================================,0x9be,0,0,0,0,0,False,0,0,"0x9be, 0xf0"
+    0x9bf: v9bf(0x32f) = CONST ,0x9be,v9bf,0,CONST,0,0,False,0x32f,0,"0x9be, 0xf0"
+    0x9c0: CALLPRIVATE v9bf(0x32f),0x9be,0,"0,v9bf",CALLPRIVATE,0,0,False,0,0,"0x9be, 0xf0"
+    Begin block 0xf0,0xf0,0,0,0,0,0,False,0,0,"0x9be, 0xf0"
+"    prev=[0xe5], succ=[0x98b, 0x9c1]",0xf0,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+    =================================,0xf0,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+    0xf1: vf1(0xfe26f16f) = CONST ,0xf0,vf1,0,CONST,0,0,False,0xfe26f16f,0,"0x98b, 0x9c1"
+"    0xf6: vf6 = EQ vf1(0xfe26f16f), v34",0xf0,vf6,"0,vf1,v34",EQ,0,0,False,0,0,"0x98b, 0x9c1"
+    0x989: v989(0x9c1) = CONST ,0xf0,v989,0,CONST,0,0,False,0x9c1,0,"0x98b, 0x9c1"
+"    0x98a: JUMPI v989(0x9c1), vf6",0xf0,0,"0,v989,vf6",JUMPI,0,0,False,0,0,"0x98b, 0x9c1"
+    Begin block 0x98b,0x98b,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+"    prev=[0x0, 0xf0], succ=[]",0x98b,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+    =================================,0x98b,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+    0x98c: v98c(0xfb) = CONST ,0x98b,v98c,0,CONST,0,0,False,0xfb,0,"0x98b, 0x9c1"
+    0x98d: CALLPRIVATE v98c(0xfb),0x98b,0,"0,v98c",CALLPRIVATE,0,0,False,0,0,"0x98b, 0x9c1"
+    Begin block 0x9c1,0x9c1,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+"    prev=[0xf0], succ=[]",0x9c1,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+    =================================,0x9c1,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+    0x9c2: v9c2(0x342) = CONST ,0x9c1,v9c2,0,CONST,0,0,False,0x342,0,"0x98b, 0x9c1"
+    0x9c3: CALLPRIVATE v9c2(0x342),0x9c1,0,"0,v9c2",CALLPRIVATE,0,0,False,0,0,"0x98b, 0x9c1"
+    Begin block 0x98e,0x98e,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+"    prev=[0xd], succ=[]",0x98e,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+    =================================,0x98e,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+    0x98f: v98f(0x167) = CONST ,0x98e,v98f,0,CONST,0,0,False,0x167,0,"0x98b, 0x9c1"
+    0x990: CALLPRIVATE v98f(0x167),0x98e,0,"0,v98f",CALLPRIVATE,0,0,False,0,0,"0x98b, 0x9c1"
+},0x98e,0,0,0,0,0,False,0,0,"0x98b, 0x9c1"
+"function orderFills(address,bytes32)() public {",0x167,0,0,,orderFills,public,False,0,0,"0x98b, 0x9c1"
+    Begin block 0x167,0x167,0,0,0,orderFills,public,False,0,0,"0x98b, 0x9c1"
+"    prev=[], succ=[0x16e, 0x172]",0x167,0,0,0,orderFills,public,False,0,0,"0x16e, 0x172"
+    =================================,0x167,0,0,0,orderFills,public,False,0,0,"0x16e, 0x172"
+    0x168: v168 = CALLVALUE ,0x167,v168,0,CALLVALUE,orderFills,public,False,0,0,"0x16e, 0x172"
+    0x169: v169 = ISZERO v168,0x167,v169,"0,v168",ISZERO,orderFills,public,False,0,0,"0x16e, 0x172"
+    0x16a: v16a(0x172) = CONST ,0x167,v16a,0,CONST,orderFills,public,False,0x172,0,"0x16e, 0x172"
+"    0x16d: JUMPI v16a(0x172), v169",0x167,0,"0,v16a,v169",JUMPI,orderFills,public,False,0,0,"0x16e, 0x172"
+    Begin block 0x16e,0x16e,0,0,0,orderFills,public,False,0,0,"0x16e, 0x172"
+"    prev=[0x167], succ=[]",0x16e,0,0,0,orderFills,public,False,0,0,"0x16e, 0x172"
+    =================================,0x16e,0,0,0,orderFills,public,False,0,0,"0x16e, 0x172"
+    0x16e: v16e(0x0) = CONST ,0x16e,v16e,0,CONST,orderFills,public,False,0x0,0,"0x16e, 0x172"
+"    0x171: REVERT v16e(0x0), v16e(0x0)",0x16e,0,"0,v16e,v16e",REVERT,orderFills,public,False,0,0,"0x16e, 0x172"
+    Begin block 0x172,0x172,0,0,0,orderFills,public,False,0,0,"0x16e, 0x172"
+"    prev=[0x167], succ=[0x364]",0x172,0,0,0,orderFills,public,False,0,0,0x364
+    =================================,0x172,0,0,0,orderFills,public,False,0,0,0x364
+    0x173: v173(0x623) = CONST ,0x172,v173,0,CONST,orderFills,public,False,0x623,0,0x364
+    0x176: v176(0x1) = CONST ,0x172,v176,0,CONST,orderFills,public,False,0x1,0,0x364
+    0x178: v178(0xa0) = CONST ,0x172,v178,0,CONST,orderFills,public,False,0xa0,0,0x364
+    0x17a: v17a(0x2) = CONST ,0x172,v17a,0,CONST,orderFills,public,False,0x2,0,0x364
+"    0x17c: v17c(0x10000000000000000000000000000000000000000) = EXP v17a(0x2), v178(0xa0)",0x172,v17c,"0,v17a,v178",EXP,orderFills,public,False,0x10000000000000000000000000000000000000000,0,0x364
+"    0x17d: v17d(0xffffffffffffffffffffffffffffffffffffffff) = SUB v17c(0x10000000000000000000000000000000000000000), v176(0x1)",0x172,v17d,"0,v17c,v176",SUB,orderFills,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x364
+    0x17e: v17e(0x4) = CONST ,0x172,v17e,0,CONST,orderFills,public,False,0x4,0,0x364
+    0x180: v180 = CALLDATALOAD v17e(0x4),0x172,v180,"0,v17e",CALLDATALOAD,orderFills,public,False,0,0,0x364
+"    0x181: v181 = AND v180, v17d(0xffffffffffffffffffffffffffffffffffffffff)",0x172,v181,"0,v180,v17d",AND,orderFills,public,False,0,0,0x364
+    0x182: v182(0x24) = CONST ,0x172,v182,0,CONST,orderFills,public,False,0x24,0,0x364
+    0x184: v184 = CALLDATALOAD v182(0x24),0x172,v184,"0,v182",CALLDATALOAD,orderFills,public,False,0,0,0x364
+    0x185: v185(0x364) = CONST ,0x172,v185,0,CONST,orderFills,public,False,0x364,0,0x364
+    0x188: JUMP v185(0x364),0x172,0,"0,v185",JUMP,orderFills,public,False,0,0,0x364
+    Begin block 0x364,0x364,0,0,0,orderFills,public,False,0,0,0x364
+"    prev=[0x172], succ=[0x623]",0x364,0,0,0,orderFills,public,False,0,0,0x623
+    =================================,0x364,0,0,0,orderFills,public,False,0,0,0x623
+    0x365: v365(0xe) = CONST ,0x364,v365,0,CONST,orderFills,public,False,0xe,0,0x623
+    0x367: v367(0x20) = CONST ,0x364,v367,0,CONST,orderFills,public,False,0x20,0,0x623
+"    0x36b: MSTORE v367(0x20), v365(0xe)",0x364,0,"0,v367,v365",MSTORE,orderFills,public,False,0,0,0x623
+    0x36c: v36c(0x0) = CONST ,0x364,v36c,0,CONST,orderFills,public,False,0x0,0,0x623
+"    0x370: MSTORE v36c(0x0), v181",0x364,0,"0,v36c,v181",MSTORE,orderFills,public,False,0,0,0x623
+    0x371: v371(0x40) = CONST ,0x364,v371,0,CONST,orderFills,public,False,0x40,0,0x623
+"    0x375: v375 = SHA3 v36c(0x0), v371(0x40)",0x364,v375,"0,v36c,v371",SHA3,orderFills,public,False,0,0,0x623
+"    0x378: MSTORE v367(0x20), v375",0x364,0,"0,v367,v375",MSTORE,orderFills,public,False,0,0,0x623
+"    0x37b: MSTORE v36c(0x0), v184",0x364,0,"0,v36c,v184",MSTORE,orderFills,public,False,0,0,0x623
+"    0x37d: v37d = SHA3 v36c(0x0), v371(0x40)",0x364,v37d,"0,v36c,v371",SHA3,orderFills,public,False,0,0,0x623
+    0x37e: v37e = SLOAD v37d,0x364,v37e,"0,v37d",SLOAD,orderFills,public,False,0,0,0x623
+    0x380: JUMP v173(0x623),0x364,0,"0,v173",JUMP,orderFills,public,False,0,0,0x623
+    Begin block 0x623,0x623,0,0,0,orderFills,public,False,0,0,0x623
+"    prev=[0x364], succ=[]",0x623,0,0,0,orderFills,public,False,0,0,0x623
+    =================================,0x623,0,0,0,orderFills,public,False,0,0,0x623
+    0x624: v624(0x40) = CONST ,0x623,v624,0,CONST,orderFills,public,False,0x40,0,0x623
+    0x626: v626 = MLOAD v624(0x40),0x623,v626,"0,v624",MLOAD,orderFills,public,False,0,orderFills&m0x40,0x623
+"    0x629: MSTORE v626, v37e",0x623,orderFills&m0x40,"0,v626,v37e",MSTORE,orderFills,public,False,0,orderFills&m0x40,0x623
+    0x62a: v62a(0x20) = CONST ,0x623,v62a,0,CONST,orderFills,public,False,0x20,0,0x623
+"    0x62c: v62c = ADD v62a(0x20), v626",0x623,v62c,"0,v62a,v626",ADD,orderFills,public,False,0,orderFills&m0x40+0x20,0x623
+    0x62d: v62d(0x40) = CONST ,0x623,v62d,0,CONST,orderFills,public,False,0x40,0,0x623
+    0x62f: v62f = MLOAD v62d(0x40),0x623,v62f,"0,v62d",MLOAD,orderFills,public,False,0,orderFills&m0x40,0x623
+"    0x632: v632(0x20) = SUB v62c, v62f",0x623,v632,"0,v62c,v62f",SUB,orderFills,public,False,0x20,orderFills&m0x40+0x20-0x20,0x623
+"    0x634: RETURN v62f, v632(0x20)",0x623,0,"0,v62f,v632",RETURN,orderFills,public,False,0,0,0x623
+},0x623,0,0,0,orderFills,public,False,0,0,0x623
+function etherDeltaInfo()() public {,0x19b,0,0,public,etherDeltaInfo,public,False,0,0,0x623
+    Begin block 0x19b,0x19b,0,0,0,etherDeltaInfo,public,False,0,0,0x623
+"    prev=[], succ=[0x1a2, 0x1a6]",0x19b,0,0,0,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+    =================================,0x19b,0,0,0,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+    0x19c: v19c = CALLVALUE ,0x19b,v19c,0,CALLVALUE,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+    0x19d: v19d = ISZERO v19c,0x19b,v19d,"0,v19c",ISZERO,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+    0x19e: v19e(0x1a6) = CONST ,0x19b,v19e,0,CONST,etherDeltaInfo,public,False,0x1a6,0,"0x1a2, 0x1a6"
+"    0x1a1: JUMPI v19e(0x1a6), v19d",0x19b,0,"0,v19e,v19d",JUMPI,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+    Begin block 0x1a2,0x1a2,0,0,0,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+"    prev=[0x19b], succ=[]",0x1a2,0,0,0,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+    =================================,0x1a2,0,0,0,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+    0x1a2: v1a2(0x0) = CONST ,0x1a2,v1a2,0,CONST,etherDeltaInfo,public,False,0x0,0,"0x1a2, 0x1a6"
+"    0x1a5: REVERT v1a2(0x0), v1a2(0x0)",0x1a2,0,"0,v1a2,v1a2",REVERT,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+    Begin block 0x1a6,0x1a6,0,0,0,etherDeltaInfo,public,False,0,0,"0x1a2, 0x1a6"
+"    prev=[0x19b], succ=[0x381]",0x1a6,0,0,0,etherDeltaInfo,public,False,0,0,0x381
+    =================================,0x1a6,0,0,0,etherDeltaInfo,public,False,0,0,0x381
+    0x1a7: v1a7(0x1ae) = CONST ,0x1a6,v1a7,0,CONST,etherDeltaInfo,public,False,0x1ae,0,0x381
+    0x1aa: v1aa(0x381) = CONST ,0x1a6,v1aa,0,CONST,etherDeltaInfo,public,False,0x381,0,0x381
+    0x1ad: JUMP v1aa(0x381),0x1a6,0,"0,v1aa",JUMP,etherDeltaInfo,public,False,0,0,0x381
+    Begin block 0x381,0x381,0,0,0,etherDeltaInfo,public,False,0,0,0x381
+"    prev=[0x1a6], succ=[0x1ae]",0x381,0,0,0,etherDeltaInfo,public,False,0,0,0x1ae
+    =================================,0x381,0,0,0,etherDeltaInfo,public,False,0,0,0x1ae
+    0x382: v382(0x3) = CONST ,0x381,v382,0,CONST,etherDeltaInfo,public,False,0x3,0,0x1ae
+    0x384: v384 = SLOAD v382(0x3),0x381,v384,"0,v382",SLOAD,etherDeltaInfo,public,False,0,0,0x1ae
+    0x385: v385(0x4) = CONST ,0x381,v385,0,CONST,etherDeltaInfo,public,False,0x4,0,0x1ae
+    0x387: v387 = SLOAD v385(0x4),0x381,v387,"0,v385",SLOAD,etherDeltaInfo,public,False,0,0,0x1ae
+    0x389: JUMP v1a7(0x1ae),0x381,0,"0,v1a7",JUMP,etherDeltaInfo,public,False,0,0,0x1ae
+    Begin block 0x1ae,0x1ae,0,0,0,etherDeltaInfo,public,False,0,0,0x1ae
+"    prev=[0x381], succ=[]",0x1ae,0,0,0,etherDeltaInfo,public,False,0,0,0x1ae
+    =================================,0x1ae,0,0,0,etherDeltaInfo,public,False,0,0,0x1ae
+    0x1af: v1af(0x40) = CONST ,0x1ae,v1af,0,CONST,etherDeltaInfo,public,False,0x40,0,0x1ae
+    0x1b1: v1b1 = MLOAD v1af(0x40),0x1ae,v1b1,"0,v1af",MLOAD,etherDeltaInfo,public,False,0,etherDeltaInfo&m0x40,0x1ae
+"    0x1b4: MSTORE v1b1, v384",0x1ae,etherDeltaInfo&m0x40,"0,v1b1,v384",MSTORE,etherDeltaInfo,public,False,0,etherDeltaInfo&m0x40,0x1ae
+    0x1b5: v1b5(0x20) = CONST ,0x1ae,v1b5,0,CONST,etherDeltaInfo,public,False,0x20,0,0x1ae
+"    0x1b8: v1b8 = ADD v1b1, v1b5(0x20)",0x1ae,v1b8,"0,v1b1,v1b5",ADD,etherDeltaInfo,public,False,0,etherDeltaInfo&m0x40+0x20,0x1ae
+"    0x1b9: MSTORE v1b8, v387",0x1ae,etherDeltaInfo&m0x40+0x20,"0,v1b8,v387",MSTORE,etherDeltaInfo,public,False,0,etherDeltaInfo&m0x40+0x20,0x1ae
+    0x1ba: v1ba(0x40) = CONST ,0x1ae,v1ba,0,CONST,etherDeltaInfo,public,False,0x40,0,0x1ae
+"    0x1be: v1be = ADD v1ba(0x40), v1b1",0x1ae,v1be,"0,v1ba,v1b1",ADD,etherDeltaInfo,public,False,0,etherDeltaInfo&m0x40+0x40,0x1ae
+    0x1c0: v1c0 = MLOAD v1ba(0x40),0x1ae,v1c0,"0,v1ba",MLOAD,etherDeltaInfo,public,False,0,etherDeltaInfo&m0x40,0x1ae
+"    0x1c3: v1c3(0x40) = SUB v1be, v1c0",0x1ae,v1c3,"0,v1be,v1c0",SUB,etherDeltaInfo,public,False,0x40,etherDeltaInfo&m0x40+0x40-0x40,0x1ae
+"    0x1c5: RETURN v1c0, v1c3(0x40)",0x1ae,0,"0,v1c0,v1c3",RETURN,etherDeltaInfo,public,False,0,0,0x1ae
+},0x1ae,0,0,0,etherDeltaInfo,public,False,0,0,0x1ae
+function proposedTimestamp()() public {,0x1c6,0,0,public,proposedTimestamp,public,False,0,0,0x1ae
+    Begin block 0x1c6,0x1c6,0,0,0,proposedTimestamp,public,False,0,0,0x1ae
+"    prev=[], succ=[0x1cd, 0x1d1]",0x1c6,0,0,0,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+    =================================,0x1c6,0,0,0,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+    0x1c7: v1c7 = CALLVALUE ,0x1c6,v1c7,0,CALLVALUE,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+    0x1c8: v1c8 = ISZERO v1c7,0x1c6,v1c8,"0,v1c7",ISZERO,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+    0x1c9: v1c9(0x1d1) = CONST ,0x1c6,v1c9,0,CONST,proposedTimestamp,public,False,0x1d1,0,"0x1cd, 0x1d1"
+"    0x1cc: JUMPI v1c9(0x1d1), v1c8",0x1c6,0,"0,v1c9,v1c8",JUMPI,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+    Begin block 0x1cd,0x1cd,0,0,0,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+"    prev=[0x1c6], succ=[]",0x1cd,0,0,0,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+    =================================,0x1cd,0,0,0,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+    0x1cd: v1cd(0x0) = CONST ,0x1cd,v1cd,0,CONST,proposedTimestamp,public,False,0x0,0,"0x1cd, 0x1d1"
+"    0x1d0: REVERT v1cd(0x0), v1cd(0x0)",0x1cd,0,"0,v1cd,v1cd",REVERT,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+    Begin block 0x1d1,0x1d1,0,0,0,proposedTimestamp,public,False,0,0,"0x1cd, 0x1d1"
+"    prev=[0x1c6], succ=[0x38a]",0x1d1,0,0,0,proposedTimestamp,public,False,0,0,0x38a
+    =================================,0x1d1,0,0,0,proposedTimestamp,public,False,0,0,0x38a
+    0x1d2: v1d2(0x654) = CONST ,0x1d1,v1d2,0,CONST,proposedTimestamp,public,False,0x654,0,0x38a
+    0x1d5: v1d5(0x38a) = CONST ,0x1d1,v1d5,0,CONST,proposedTimestamp,public,False,0x38a,0,0x38a
+    0x1d8: JUMP v1d5(0x38a),0x1d1,0,"0,v1d5",JUMP,proposedTimestamp,public,False,0,0,0x38a
+    Begin block 0x38a,0x38a,0,0,0,proposedTimestamp,public,False,0,0,0x38a
+"    prev=[0x1d1], succ=[0x654]",0x38a,0,0,0,proposedTimestamp,public,False,0,0,0x654
+    =================================,0x38a,0,0,0,proposedTimestamp,public,False,0,0,0x654
+    0x38b: v38b(0x11) = CONST ,0x38a,v38b,0,CONST,proposedTimestamp,public,False,0x11,0,0x654
+    0x38d: v38d = SLOAD v38b(0x11),0x38a,v38d,"0,v38b",SLOAD,proposedTimestamp,public,False,0,0,0x654
+    0x38f: JUMP v1d2(0x654),0x38a,0,"0,v1d2",JUMP,proposedTimestamp,public,False,0,0,0x654
+    Begin block 0x654,0x654,0,0,0,proposedTimestamp,public,False,0,0,0x654
+"    prev=[0x38a], succ=[]",0x654,0,0,0,proposedTimestamp,public,False,0,0,0x654
+    =================================,0x654,0,0,0,proposedTimestamp,public,False,0,0,0x654
+    0x655: v655(0x40) = CONST ,0x654,v655,0,CONST,proposedTimestamp,public,False,0x40,0,0x654
+    0x657: v657 = MLOAD v655(0x40),0x654,v657,"0,v655",MLOAD,proposedTimestamp,public,False,0,proposedTimestamp&m0x40,0x654
+"    0x65a: MSTORE v657, v38d",0x654,proposedTimestamp&m0x40,"0,v657,v38d",MSTORE,proposedTimestamp,public,False,0,proposedTimestamp&m0x40,0x654
+    0x65b: v65b(0x20) = CONST ,0x654,v65b,0,CONST,proposedTimestamp,public,False,0x20,0,0x654
+"    0x65d: v65d = ADD v65b(0x20), v657",0x654,v65d,"0,v65b,v657",ADD,proposedTimestamp,public,False,0,proposedTimestamp&m0x40+0x20,0x654
+    0x65e: v65e(0x40) = CONST ,0x654,v65e,0,CONST,proposedTimestamp,public,False,0x40,0,0x654
+    0x660: v660 = MLOAD v65e(0x40),0x654,v660,"0,v65e",MLOAD,proposedTimestamp,public,False,0,proposedTimestamp&m0x40,0x654
+"    0x663: v663(0x20) = SUB v65d, v660",0x654,v663,"0,v65d,v660",SUB,proposedTimestamp,public,False,0x20,proposedTimestamp&m0x40+0x20-0x20,0x654
+"    0x665: RETURN v660, v663(0x20)",0x654,0,"0,v660,v663",RETURN,proposedTimestamp,public,False,0,0,0x654
+},0x654,0,0,0,proposedTimestamp,public,False,0,0,0x654
+"function tokens(address,address)() public {",0x1d9,0,0,,tokens,public,False,0,0,0x654
+    Begin block 0x1d9,0x1d9,0,0,0,tokens,public,False,0,0,0x654
+"    prev=[], succ=[0x1e0, 0x1e4]",0x1d9,0,0,0,tokens,public,False,0,0,"0x1e0, 0x1e4"
+    =================================,0x1d9,0,0,0,tokens,public,False,0,0,"0x1e0, 0x1e4"
+    0x1da: v1da = CALLVALUE ,0x1d9,v1da,0,CALLVALUE,tokens,public,False,0,0,"0x1e0, 0x1e4"
+    0x1db: v1db = ISZERO v1da,0x1d9,v1db,"0,v1da",ISZERO,tokens,public,False,0,0,"0x1e0, 0x1e4"
+    0x1dc: v1dc(0x1e4) = CONST ,0x1d9,v1dc,0,CONST,tokens,public,False,0x1e4,0,"0x1e0, 0x1e4"
+"    0x1df: JUMPI v1dc(0x1e4), v1db",0x1d9,0,"0,v1dc,v1db",JUMPI,tokens,public,False,0,0,"0x1e0, 0x1e4"
+    Begin block 0x1e0,0x1e0,0,0,0,tokens,public,False,0,0,"0x1e0, 0x1e4"
+"    prev=[0x1d9], succ=[]",0x1e0,0,0,0,tokens,public,False,0,0,"0x1e0, 0x1e4"
+    =================================,0x1e0,0,0,0,tokens,public,False,0,0,"0x1e0, 0x1e4"
+    0x1e0: v1e0(0x0) = CONST ,0x1e0,v1e0,0,CONST,tokens,public,False,0x0,0,"0x1e0, 0x1e4"
+"    0x1e3: REVERT v1e0(0x0), v1e0(0x0)",0x1e0,0,"0,v1e0,v1e0",REVERT,tokens,public,False,0,0,"0x1e0, 0x1e4"
+    Begin block 0x1e4,0x1e4,0,0,0,tokens,public,False,0,0,"0x1e0, 0x1e4"
+"    prev=[0x1d9], succ=[0x390]",0x1e4,0,0,0,tokens,public,False,0,0,0x390
+    =================================,0x1e4,0,0,0,tokens,public,False,0,0,0x390
+    0x1e5: v1e5(0x685) = CONST ,0x1e4,v1e5,0,CONST,tokens,public,False,0x685,0,0x390
+    0x1e8: v1e8(0x1) = CONST ,0x1e4,v1e8,0,CONST,tokens,public,False,0x1,0,0x390
+    0x1ea: v1ea(0xa0) = CONST ,0x1e4,v1ea,0,CONST,tokens,public,False,0xa0,0,0x390
+    0x1ec: v1ec(0x2) = CONST ,0x1e4,v1ec,0,CONST,tokens,public,False,0x2,0,0x390
+"    0x1ee: v1ee(0x10000000000000000000000000000000000000000) = EXP v1ec(0x2), v1ea(0xa0)",0x1e4,v1ee,"0,v1ec,v1ea",EXP,tokens,public,False,0x10000000000000000000000000000000000000000,0,0x390
+"    0x1ef: v1ef(0xffffffffffffffffffffffffffffffffffffffff) = SUB v1ee(0x10000000000000000000000000000000000000000), v1e8(0x1)",0x1e4,v1ef,"0,v1ee,v1e8",SUB,tokens,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x390
+    0x1f0: v1f0(0x4) = CONST ,0x1e4,v1f0,0,CONST,tokens,public,False,0x4,0,0x390
+    0x1f2: v1f2 = CALLDATALOAD v1f0(0x4),0x1e4,v1f2,"0,v1f0",CALLDATALOAD,tokens,public,False,0,0,0x390
+"    0x1f4: v1f4 = AND v1ef(0xffffffffffffffffffffffffffffffffffffffff), v1f2",0x1e4,v1f4,"0,v1ef,v1f2",AND,tokens,public,False,0,0,0x390
+    0x1f6: v1f6(0x24) = CONST ,0x1e4,v1f6,0,CONST,tokens,public,False,0x24,0,0x390
+    0x1f8: v1f8 = CALLDATALOAD v1f6(0x24),0x1e4,v1f8,"0,v1f6",CALLDATALOAD,tokens,public,False,0,0,0x390
+"    0x1f9: v1f9 = AND v1f8, v1ef(0xffffffffffffffffffffffffffffffffffffffff)",0x1e4,v1f9,"0,v1f8,v1ef",AND,tokens,public,False,0,0,0x390
+    0x1fa: v1fa(0x390) = CONST ,0x1e4,v1fa,0,CONST,tokens,public,False,0x390,0,0x390
+    0x1fd: JUMP v1fa(0x390),0x1e4,0,"0,v1fa",JUMP,tokens,public,False,0,0,0x390
+    Begin block 0x390,0x390,0,0,0,tokens,public,False,0,0,0x390
+"    prev=[0x1e4], succ=[0x685]",0x390,0,0,0,tokens,public,False,0,0,0x685
+    =================================,0x390,0,0,0,tokens,public,False,0,0,0x685
+    0x391: v391(0xc) = CONST ,0x390,v391,0,CONST,tokens,public,False,0xc,0,0x685
+    0x393: v393(0x20) = CONST ,0x390,v393,0,CONST,tokens,public,False,0x20,0,0x685
+"    0x397: MSTORE v393(0x20), v391(0xc)",0x390,0,"0,v393,v391",MSTORE,tokens,public,False,0,0,0x685
+    0x398: v398(0x0) = CONST ,0x390,v398,0,CONST,tokens,public,False,0x0,0,0x685
+"    0x39c: MSTORE v398(0x0), v1f4",0x390,0,"0,v398,v1f4",MSTORE,tokens,public,False,0,0,0x685
+    0x39d: v39d(0x40) = CONST ,0x390,v39d,0,CONST,tokens,public,False,0x40,0,0x685
+"    0x3a1: v3a1 = SHA3 v398(0x0), v39d(0x40)",0x390,v3a1,"0,v398,v39d",SHA3,tokens,public,False,0,0,0x685
+"    0x3a4: MSTORE v393(0x20), v3a1",0x390,0,"0,v393,v3a1",MSTORE,tokens,public,False,0,0,0x685
+"    0x3a7: MSTORE v398(0x0), v1f9",0x390,0,"0,v398,v1f9",MSTORE,tokens,public,False,0,0,0x685
+"    0x3a9: v3a9 = SHA3 v398(0x0), v39d(0x40)",0x390,v3a9,"0,v398,v39d",SHA3,tokens,public,False,0,0,0x685
+    0x3aa: v3aa = SLOAD v3a9,0x390,v3aa,"0,v3a9",SLOAD,tokens,public,False,0,0,0x685
+    0x3ac: JUMP v1e5(0x685),0x390,0,"0,v1e5",JUMP,tokens,public,False,0,0,0x685
+    Begin block 0x685,0x685,0,0,0,tokens,public,False,0,0,0x685
+"    prev=[0x390], succ=[]",0x685,0,0,0,tokens,public,False,0,0,0x685
+    =================================,0x685,0,0,0,tokens,public,False,0,0,0x685
+    0x686: v686(0x40) = CONST ,0x685,v686,0,CONST,tokens,public,False,0x40,0,0x685
+    0x688: v688 = MLOAD v686(0x40),0x685,v688,"0,v686",MLOAD,tokens,public,False,0,tokens&m0x40,0x685
+"    0x68b: MSTORE v688, v3aa",0x685,tokens&m0x40,"0,v688,v3aa",MSTORE,tokens,public,False,0,tokens&m0x40,0x685
+    0x68c: v68c(0x20) = CONST ,0x685,v68c,0,CONST,tokens,public,False,0x20,0,0x685
+"    0x68e: v68e = ADD v68c(0x20), v688",0x685,v68e,"0,v68c,v688",ADD,tokens,public,False,0,tokens&m0x40+0x20,0x685
+    0x68f: v68f(0x40) = CONST ,0x685,v68f,0,CONST,tokens,public,False,0x40,0,0x685
+    0x691: v691 = MLOAD v68f(0x40),0x685,v691,"0,v68f",MLOAD,tokens,public,False,0,tokens&m0x40,0x685
+"    0x694: v694(0x20) = SUB v68e, v691",0x685,v694,"0,v68e,v691",SUB,tokens,public,False,0x20,tokens&m0x40+0x20-0x20,0x685
+"    0x696: RETURN v691, v694(0x20)",0x685,0,"0,v691,v694",RETURN,tokens,public,False,0,0,0x685
+},0x685,0,0,0,tokens,public,False,0,0,0x685
+function feeAmountThreshold()() public {,0x1fe,0,0,public,feeAmountThreshold,public,False,0,0,0x685
+    Begin block 0x1fe,0x1fe,0,0,0,feeAmountThreshold,public,False,0,0,0x685
+"    prev=[], succ=[0x205, 0x209]",0x1fe,0,0,0,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+    =================================,0x1fe,0,0,0,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+    0x1ff: v1ff = CALLVALUE ,0x1fe,v1ff,0,CALLVALUE,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+    0x200: v200 = ISZERO v1ff,0x1fe,v200,"0,v1ff",ISZERO,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+    0x201: v201(0x209) = CONST ,0x1fe,v201,0,CONST,feeAmountThreshold,public,False,0x209,0,"0x205, 0x209"
+"    0x204: JUMPI v201(0x209), v200",0x1fe,0,"0,v201,v200",JUMPI,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+    Begin block 0x205,0x205,0,0,0,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+"    prev=[0x1fe], succ=[]",0x205,0,0,0,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+    =================================,0x205,0,0,0,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+    0x205: v205(0x0) = CONST ,0x205,v205,0,CONST,feeAmountThreshold,public,False,0x0,0,"0x205, 0x209"
+"    0x208: REVERT v205(0x0), v205(0x0)",0x205,0,"0,v205,v205",REVERT,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+    Begin block 0x209,0x209,0,0,0,feeAmountThreshold,public,False,0,0,"0x205, 0x209"
+"    prev=[0x1fe], succ=[0x3ad]",0x209,0,0,0,feeAmountThreshold,public,False,0,0,0x3ad
+    =================================,0x209,0,0,0,feeAmountThreshold,public,False,0,0,0x3ad
+    0x20a: v20a(0x6b6) = CONST ,0x209,v20a,0,CONST,feeAmountThreshold,public,False,0x6b6,0,0x3ad
+    0x20d: v20d(0x3ad) = CONST ,0x209,v20d,0,CONST,feeAmountThreshold,public,False,0x3ad,0,0x3ad
+    0x210: JUMP v20d(0x3ad),0x209,0,"0,v20d",JUMP,feeAmountThreshold,public,False,0,0,0x3ad
+    Begin block 0x3ad,0x3ad,0,0,0,feeAmountThreshold,public,False,0,0,0x3ad
+"    prev=[0x209], succ=[0x6b6]",0x3ad,0,0,0,feeAmountThreshold,public,False,0,0,0x6b6
+    =================================,0x3ad,0,0,0,feeAmountThreshold,public,False,0,0,0x6b6
+    0x3ae: v3ae(0x6) = CONST ,0x3ad,v3ae,0,CONST,feeAmountThreshold,public,False,0x6,0,0x6b6
+    0x3b0: v3b0 = SLOAD v3ae(0x6),0x3ad,v3b0,"0,v3ae",SLOAD,feeAmountThreshold,public,False,0,0,0x6b6
+    0x3b2: JUMP v20a(0x6b6),0x3ad,0,"0,v20a",JUMP,feeAmountThreshold,public,False,0,0,0x6b6
+    Begin block 0x6b6,0x6b6,0,0,0,feeAmountThreshold,public,False,0,0,0x6b6
+"    prev=[0x3ad], succ=[]",0x6b6,0,0,0,feeAmountThreshold,public,False,0,0,0x6b6
+    =================================,0x6b6,0,0,0,feeAmountThreshold,public,False,0,0,0x6b6
+    0x6b7: v6b7(0x40) = CONST ,0x6b6,v6b7,0,CONST,feeAmountThreshold,public,False,0x40,0,0x6b6
+    0x6b9: v6b9 = MLOAD v6b7(0x40),0x6b6,v6b9,"0,v6b7",MLOAD,feeAmountThreshold,public,False,0,feeAmountThreshold&m0x40,0x6b6
+"    0x6bc: MSTORE v6b9, v3b0",0x6b6,feeAmountThreshold&m0x40,"0,v6b9,v3b0",MSTORE,feeAmountThreshold,public,False,0,feeAmountThreshold&m0x40,0x6b6
+    0x6bd: v6bd(0x20) = CONST ,0x6b6,v6bd,0,CONST,feeAmountThreshold,public,False,0x20,0,0x6b6
+"    0x6bf: v6bf = ADD v6bd(0x20), v6b9",0x6b6,v6bf,"0,v6bd,v6b9",ADD,feeAmountThreshold,public,False,0,feeAmountThreshold&m0x40+0x20,0x6b6
+    0x6c0: v6c0(0x40) = CONST ,0x6b6,v6c0,0,CONST,feeAmountThreshold,public,False,0x40,0,0x6b6
+    0x6c2: v6c2 = MLOAD v6c0(0x40),0x6b6,v6c2,"0,v6c0",MLOAD,feeAmountThreshold,public,False,0,feeAmountThreshold&m0x40,0x6b6
+"    0x6c5: v6c5(0x20) = SUB v6bf, v6c2",0x6b6,v6c5,"0,v6bf,v6c2",SUB,feeAmountThreshold,public,False,0x20,feeAmountThreshold&m0x40+0x20-0x20,0x6b6
+"    0x6c7: RETURN v6c2, v6c5(0x20)",0x6b6,0,"0,v6c2,v6c5",RETURN,feeAmountThreshold,public,False,0,0,0x6b6
+},0x6b6,0,0,0,feeAmountThreshold,public,False,0,0,0x6b6
+function useEIP712()() public {,0x211,0,0,public,useEIP712,public,False,0,0,0x6b6
+    Begin block 0x211,0x211,0,0,0,useEIP712,public,False,0,0,0x6b6
+"    prev=[], succ=[0x218, 0x21c]",0x211,0,0,0,useEIP712,public,False,0,0,"0x218, 0x21c"
+    =================================,0x211,0,0,0,useEIP712,public,False,0,0,"0x218, 0x21c"
+    0x212: v212 = CALLVALUE ,0x211,v212,0,CALLVALUE,useEIP712,public,False,0,0,"0x218, 0x21c"
+    0x213: v213 = ISZERO v212,0x211,v213,"0,v212",ISZERO,useEIP712,public,False,0,0,"0x218, 0x21c"
+    0x214: v214(0x21c) = CONST ,0x211,v214,0,CONST,useEIP712,public,False,0x21c,0,"0x218, 0x21c"
+"    0x217: JUMPI v214(0x21c), v213",0x211,0,"0,v214,v213",JUMPI,useEIP712,public,False,0,0,"0x218, 0x21c"
+    Begin block 0x218,0x218,0,0,0,useEIP712,public,False,0,0,"0x218, 0x21c"
+"    prev=[0x211], succ=[]",0x218,0,0,0,useEIP712,public,False,0,0,"0x218, 0x21c"
+    =================================,0x218,0,0,0,useEIP712,public,False,0,0,"0x218, 0x21c"
+    0x218: v218(0x0) = CONST ,0x218,v218,0,CONST,useEIP712,public,False,0x0,0,"0x218, 0x21c"
+"    0x21b: REVERT v218(0x0), v218(0x0)",0x218,0,"0,v218,v218",REVERT,useEIP712,public,False,0,0,"0x218, 0x21c"
+    Begin block 0x21c,0x21c,0,0,0,useEIP712,public,False,0,0,"0x218, 0x21c"
+"    prev=[0x211], succ=[0x3b3]",0x21c,0,0,0,useEIP712,public,False,0,0,0x3b3
+    =================================,0x21c,0,0,0,useEIP712,public,False,0,0,0x3b3
+    0x21d: v21d(0x6e7) = CONST ,0x21c,v21d,0,CONST,useEIP712,public,False,0x6e7,0,0x3b3
+    0x220: v220(0x3b3) = CONST ,0x21c,v220,0,CONST,useEIP712,public,False,0x3b3,0,0x3b3
+    0x223: JUMP v220(0x3b3),0x21c,0,"0,v220",JUMP,useEIP712,public,False,0,0,0x3b3
+    Begin block 0x3b3,0x3b3,0,0,0,useEIP712,public,False,0,0,0x3b3
+"    prev=[0x21c], succ=[0x6e7]",0x3b3,0,0,0,useEIP712,public,False,0,0,0x6e7
+    =================================,0x3b3,0,0,0,useEIP712,public,False,0,0,0x6e7
+    0x3b4: v3b4(0x7) = CONST ,0x3b3,v3b4,0,CONST,useEIP712,public,False,0x7,0,0x6e7
+    0x3b6: v3b6 = SLOAD v3b4(0x7),0x3b3,v3b6,"0,v3b4",SLOAD,useEIP712,public,False,0,0,0x6e7
+    0x3b7: v3b7(0x10000000000000000000000000000000000000000) = CONST ,0x3b3,v3b7,0,CONST,useEIP712,public,False,0x10000000000000000000000000000000000000000,0,0x6e7
+"    0x3ce: v3ce = DIV v3b6, v3b7(0x10000000000000000000000000000000000000000)",0x3b3,v3ce,"0,v3b6,v3b7",DIV,useEIP712,public,False,0,0,0x6e7
+    0x3cf: v3cf(0xff) = CONST ,0x3b3,v3cf,0,CONST,useEIP712,public,False,0xff,0,0x6e7
+"    0x3d1: v3d1 = AND v3cf(0xff), v3ce",0x3b3,v3d1,"0,v3cf,v3ce",AND,useEIP712,public,False,0,0,0x6e7
+    0x3d3: JUMP v21d(0x6e7),0x3b3,0,"0,v21d",JUMP,useEIP712,public,False,0,0,0x6e7
+    Begin block 0x6e7,0x6e7,0,0,0,useEIP712,public,False,0,0,0x6e7
+"    prev=[0x3b3], succ=[]",0x6e7,0,0,0,useEIP712,public,False,0,0,0x6e7
+    =================================,0x6e7,0,0,0,useEIP712,public,False,0,0,0x6e7
+    0x6e8: v6e8(0x40) = CONST ,0x6e7,v6e8,0,CONST,useEIP712,public,False,0x40,0,0x6e7
+    0x6ea: v6ea = MLOAD v6e8(0x40),0x6e7,v6ea,"0,v6e8",MLOAD,useEIP712,public,False,0,useEIP712&m0x40,0x6e7
+    0x6ec: v6ec = ISZERO v3d1,0x6e7,v6ec,"0,v3d1",ISZERO,useEIP712,public,False,0,0,0x6e7
+    0x6ed: v6ed = ISZERO v6ec,0x6e7,v6ed,"0,v6ec",ISZERO,useEIP712,public,False,0,0,0x6e7
+"    0x6ef: MSTORE v6ea, v6ed",0x6e7,useEIP712&m0x40,"0,v6ea,v6ed",MSTORE,useEIP712,public,False,0,useEIP712&m0x40,0x6e7
+    0x6f0: v6f0(0x20) = CONST ,0x6e7,v6f0,0,CONST,useEIP712,public,False,0x20,0,0x6e7
+"    0x6f2: v6f2 = ADD v6f0(0x20), v6ea",0x6e7,v6f2,"0,v6f0,v6ea",ADD,useEIP712,public,False,0,useEIP712&m0x40+0x20,0x6e7
+    0x6f3: v6f3(0x40) = CONST ,0x6e7,v6f3,0,CONST,useEIP712,public,False,0x40,0,0x6e7
+    0x6f5: v6f5 = MLOAD v6f3(0x40),0x6e7,v6f5,"0,v6f3",MLOAD,useEIP712,public,False,0,useEIP712&m0x40,0x6e7
+"    0x6f8: v6f8(0x20) = SUB v6f2, v6f5",0x6e7,v6f8,"0,v6f2,v6f5",SUB,useEIP712,public,False,0x20,useEIP712&m0x40+0x20-0x20,0x6e7
+"    0x6fa: RETURN v6f5, v6f8(0x20)",0x6e7,0,"0,v6f5,v6f8",RETURN,useEIP712,public,False,0,0,0x6e7
+},0x6e7,0,0,0,useEIP712,public,False,0,0,0x6e7
+function keyValueStorage()() public {,0x238,0,0,public,keyValueStorage,public,False,0,0,0x6e7
+    Begin block 0x238,0x238,0,0,0,keyValueStorage,public,False,0,0,0x6e7
+"    prev=[], succ=[0x23f, 0x243]",0x238,0,0,0,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+    =================================,0x238,0,0,0,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+    0x239: v239 = CALLVALUE ,0x238,v239,0,CALLVALUE,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+    0x23a: v23a = ISZERO v239,0x238,v23a,"0,v239",ISZERO,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+    0x23b: v23b(0x243) = CONST ,0x238,v23b,0,CONST,keyValueStorage,public,False,0x243,0,"0x23f, 0x243"
+"    0x23e: JUMPI v23b(0x243), v23a",0x238,0,"0,v23b,v23a",JUMPI,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+    Begin block 0x23f,0x23f,0,0,0,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+"    prev=[0x238], succ=[]",0x23f,0,0,0,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+    =================================,0x23f,0,0,0,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+    0x23f: v23f(0x0) = CONST ,0x23f,v23f,0,CONST,keyValueStorage,public,False,0x0,0,"0x23f, 0x243"
+"    0x242: REVERT v23f(0x0), v23f(0x0)",0x23f,0,"0,v23f,v23f",REVERT,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+    Begin block 0x243,0x243,0,0,0,keyValueStorage,public,False,0,0,"0x23f, 0x243"
+"    prev=[0x238], succ=[0x3d4]",0x243,0,0,0,keyValueStorage,public,False,0,0,0x3d4
+    =================================,0x243,0,0,0,keyValueStorage,public,False,0,0,0x3d4
+    0x244: v244(0x71a) = CONST ,0x243,v244,0,CONST,keyValueStorage,public,False,0x71a,0,0x3d4
+    0x247: v247(0x3d4) = CONST ,0x243,v247,0,CONST,keyValueStorage,public,False,0x3d4,0,0x3d4
+    0x24a: JUMP v247(0x3d4),0x243,0,"0,v247",JUMP,keyValueStorage,public,False,0,0,0x3d4
+    Begin block 0x3d4,0x3d4,0,0,0,keyValueStorage,public,False,0,0,0x3d4
+"    prev=[0x243], succ=[0x71a]",0x3d4,0,0,0,keyValueStorage,public,False,0,0,0x71a
+    =================================,0x3d4,0,0,0,keyValueStorage,public,False,0,0,0x71a
+    0x3d5: v3d5(0x0) = CONST ,0x3d4,v3d5,0,CONST,keyValueStorage,public,False,0x0,0,0x71a
+    0x3d7: v3d7 = SLOAD v3d5(0x0),0x3d4,v3d7,"0,v3d5",SLOAD,keyValueStorage,public,False,0,0,0x71a
+    0x3d8: v3d8(0x1) = CONST ,0x3d4,v3d8,0,CONST,keyValueStorage,public,False,0x1,0,0x71a
+    0x3da: v3da(0xa0) = CONST ,0x3d4,v3da,0,CONST,keyValueStorage,public,False,0xa0,0,0x71a
+    0x3dc: v3dc(0x2) = CONST ,0x3d4,v3dc,0,CONST,keyValueStorage,public,False,0x2,0,0x71a
+"    0x3de: v3de(0x10000000000000000000000000000000000000000) = EXP v3dc(0x2), v3da(0xa0)",0x3d4,v3de,"0,v3dc,v3da",EXP,keyValueStorage,public,False,0x10000000000000000000000000000000000000000,0,0x71a
+"    0x3df: v3df(0xffffffffffffffffffffffffffffffffffffffff) = SUB v3de(0x10000000000000000000000000000000000000000), v3d8(0x1)",0x3d4,v3df,"0,v3de,v3d8",SUB,keyValueStorage,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x71a
+"    0x3e0: v3e0 = AND v3df(0xffffffffffffffffffffffffffffffffffffffff), v3d7",0x3d4,v3e0,"0,v3df,v3d7",AND,keyValueStorage,public,False,0,0,0x71a
+    0x3e2: JUMP v244(0x71a),0x3d4,0,"0,v244",JUMP,keyValueStorage,public,False,0,0,0x71a
+    Begin block 0x71a,0x71a,0,0,0,keyValueStorage,public,False,0,0,0x71a
+"    prev=[0x3d4], succ=[]",0x71a,0,0,0,keyValueStorage,public,False,0,0,0x71a
+    =================================,0x71a,0,0,0,keyValueStorage,public,False,0,0,0x71a
+    0x71b: v71b(0x40) = CONST ,0x71a,v71b,0,CONST,keyValueStorage,public,False,0x40,0,0x71a
+    0x71d: v71d = MLOAD v71b(0x40),0x71a,v71d,"0,v71b",MLOAD,keyValueStorage,public,False,0,keyValueStorage&m0x40,0x71a
+    0x71e: v71e(0x1) = CONST ,0x71a,v71e,0,CONST,keyValueStorage,public,False,0x1,0,0x71a
+    0x720: v720(0xa0) = CONST ,0x71a,v720,0,CONST,keyValueStorage,public,False,0xa0,0,0x71a
+    0x722: v722(0x2) = CONST ,0x71a,v722,0,CONST,keyValueStorage,public,False,0x2,0,0x71a
+"    0x724: v724(0x10000000000000000000000000000000000000000) = EXP v722(0x2), v720(0xa0)",0x71a,v724,"0,v722,v720",EXP,keyValueStorage,public,False,0x10000000000000000000000000000000000000000,0,0x71a
+"    0x725: v725(0xffffffffffffffffffffffffffffffffffffffff) = SUB v724(0x10000000000000000000000000000000000000000), v71e(0x1)",0x71a,v725,"0,v724,v71e",SUB,keyValueStorage,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x71a
+"    0x728: v728 = AND v3e0, v725(0xffffffffffffffffffffffffffffffffffffffff)",0x71a,v728,"0,v3e0,v725",AND,keyValueStorage,public,False,0,0,0x71a
+"    0x72a: MSTORE v71d, v728",0x71a,keyValueStorage&m0x40,"0,v71d,v728",MSTORE,keyValueStorage,public,False,0,keyValueStorage&m0x40,0x71a
+    0x72b: v72b(0x20) = CONST ,0x71a,v72b,0,CONST,keyValueStorage,public,False,0x20,0,0x71a
+"    0x72d: v72d = ADD v72b(0x20), v71d",0x71a,v72d,"0,v72b,v71d",ADD,keyValueStorage,public,False,0,keyValueStorage&m0x40+0x20,0x71a
+    0x72e: v72e(0x40) = CONST ,0x71a,v72e,0,CONST,keyValueStorage,public,False,0x40,0,0x71a
+    0x730: v730 = MLOAD v72e(0x40),0x71a,v730,"0,v72e",MLOAD,keyValueStorage,public,False,0,keyValueStorage&m0x40,0x71a
+"    0x733: v733(0x20) = SUB v72d, v730",0x71a,v733,"0,v72d,v730",SUB,keyValueStorage,public,False,0x20,keyValueStorage&m0x40+0x20-0x20,0x71a
+"    0x735: RETURN v730, v733(0x20)",0x71a,0,"0,v730,v733",RETURN,keyValueStorage,public,False,0,0,0x71a
+},0x71a,0,0,0,keyValueStorage,public,False,0,0,0x71a
+function feeAccount()() public {,0x267,0,0,public,feeAccount,public,False,0,0,0x71a
+    Begin block 0x267,0x267,0,0,0,feeAccount,public,False,0,0,0x71a
+"    prev=[], succ=[0x26e, 0x272]",0x267,0,0,0,feeAccount,public,False,0,0,"0x26e, 0x272"
+    =================================,0x267,0,0,0,feeAccount,public,False,0,0,"0x26e, 0x272"
+    0x268: v268 = CALLVALUE ,0x267,v268,0,CALLVALUE,feeAccount,public,False,0,0,"0x26e, 0x272"
+    0x269: v269 = ISZERO v268,0x267,v269,"0,v268",ISZERO,feeAccount,public,False,0,0,"0x26e, 0x272"
+    0x26a: v26a(0x272) = CONST ,0x267,v26a,0,CONST,feeAccount,public,False,0x272,0,"0x26e, 0x272"
+"    0x26d: JUMPI v26a(0x272), v269",0x267,0,"0,v26a,v269",JUMPI,feeAccount,public,False,0,0,"0x26e, 0x272"
+    Begin block 0x26e,0x26e,0,0,0,feeAccount,public,False,0,0,"0x26e, 0x272"
+"    prev=[0x267], succ=[]",0x26e,0,0,0,feeAccount,public,False,0,0,"0x26e, 0x272"
+    =================================,0x26e,0,0,0,feeAccount,public,False,0,0,"0x26e, 0x272"
+    0x26e: v26e(0x0) = CONST ,0x26e,v26e,0,CONST,feeAccount,public,False,0x0,0,"0x26e, 0x272"
+"    0x271: REVERT v26e(0x0), v26e(0x0)",0x26e,0,"0,v26e,v26e",REVERT,feeAccount,public,False,0,0,"0x26e, 0x272"
+    Begin block 0x272,0x272,0,0,0,feeAccount,public,False,0,0,"0x26e, 0x272"
+"    prev=[0x267], succ=[0x3e3]",0x272,0,0,0,feeAccount,public,False,0,0,0x3e3
+    =================================,0x272,0,0,0,feeAccount,public,False,0,0,0x3e3
+    0x273: v273(0x755) = CONST ,0x272,v273,0,CONST,feeAccount,public,False,0x755,0,0x3e3
+    0x276: v276(0x3e3) = CONST ,0x272,v276,0,CONST,feeAccount,public,False,0x3e3,0,0x3e3
+    0x279: JUMP v276(0x3e3),0x272,0,"0,v276",JUMP,feeAccount,public,False,0,0,0x3e3
+    Begin block 0x3e3,0x3e3,0,0,0,feeAccount,public,False,0,0,0x3e3
+"    prev=[0x272], succ=[0x755]",0x3e3,0,0,0,feeAccount,public,False,0,0,0x755
+    =================================,0x3e3,0,0,0,feeAccount,public,False,0,0,0x755
+    0x3e4: v3e4(0x2) = CONST ,0x3e3,v3e4,0,CONST,feeAccount,public,False,0x2,0,0x755
+    0x3e6: v3e6 = SLOAD v3e4(0x2),0x3e3,v3e6,"0,v3e4",SLOAD,feeAccount,public,False,0,0,0x755
+    0x3e7: v3e7(0x1) = CONST ,0x3e3,v3e7,0,CONST,feeAccount,public,False,0x1,0,0x755
+    0x3e9: v3e9(0xa0) = CONST ,0x3e3,v3e9,0,CONST,feeAccount,public,False,0xa0,0,0x755
+    0x3eb: v3eb(0x2) = CONST ,0x3e3,v3eb,0,CONST,feeAccount,public,False,0x2,0,0x755
+"    0x3ed: v3ed(0x10000000000000000000000000000000000000000) = EXP v3eb(0x2), v3e9(0xa0)",0x3e3,v3ed,"0,v3eb,v3e9",EXP,feeAccount,public,False,0x10000000000000000000000000000000000000000,0,0x755
+"    0x3ee: v3ee(0xffffffffffffffffffffffffffffffffffffffff) = SUB v3ed(0x10000000000000000000000000000000000000000), v3e7(0x1)",0x3e3,v3ee,"0,v3ed,v3e7",SUB,feeAccount,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x755
+"    0x3ef: v3ef = AND v3ee(0xffffffffffffffffffffffffffffffffffffffff), v3e6",0x3e3,v3ef,"0,v3ee,v3e6",AND,feeAccount,public,False,0,0,0x755
+    0x3f1: JUMP v273(0x755),0x3e3,0,"0,v273",JUMP,feeAccount,public,False,0,0,0x755
+    Begin block 0x755,0x755,0,0,0,feeAccount,public,False,0,0,0x755
+"    prev=[0x3e3], succ=[]",0x755,0,0,0,feeAccount,public,False,0,0,0x755
+    =================================,0x755,0,0,0,feeAccount,public,False,0,0,0x755
+    0x756: v756(0x40) = CONST ,0x755,v756,0,CONST,feeAccount,public,False,0x40,0,0x755
+    0x758: v758 = MLOAD v756(0x40),0x755,v758,"0,v756",MLOAD,feeAccount,public,False,0,feeAccount&m0x40,0x755
+    0x759: v759(0x1) = CONST ,0x755,v759,0,CONST,feeAccount,public,False,0x1,0,0x755
+    0x75b: v75b(0xa0) = CONST ,0x755,v75b,0,CONST,feeAccount,public,False,0xa0,0,0x755
+    0x75d: v75d(0x2) = CONST ,0x755,v75d,0,CONST,feeAccount,public,False,0x2,0,0x755
+"    0x75f: v75f(0x10000000000000000000000000000000000000000) = EXP v75d(0x2), v75b(0xa0)",0x755,v75f,"0,v75d,v75b",EXP,feeAccount,public,False,0x10000000000000000000000000000000000000000,0,0x755
+"    0x760: v760(0xffffffffffffffffffffffffffffffffffffffff) = SUB v75f(0x10000000000000000000000000000000000000000), v759(0x1)",0x755,v760,"0,v75f,v759",SUB,feeAccount,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x755
+"    0x763: v763 = AND v3ef, v760(0xffffffffffffffffffffffffffffffffffffffff)",0x755,v763,"0,v3ef,v760",AND,feeAccount,public,False,0,0,0x755
+"    0x765: MSTORE v758, v763",0x755,feeAccount&m0x40,"0,v758,v763",MSTORE,feeAccount,public,False,0,feeAccount&m0x40,0x755
+    0x766: v766(0x20) = CONST ,0x755,v766,0,CONST,feeAccount,public,False,0x20,0,0x755
+"    0x768: v768 = ADD v766(0x20), v758",0x755,v768,"0,v766,v758",ADD,feeAccount,public,False,0,feeAccount&m0x40+0x20,0x755
+    0x769: v769(0x40) = CONST ,0x755,v769,0,CONST,feeAccount,public,False,0x40,0,0x755
+    0x76b: v76b = MLOAD v769(0x40),0x755,v76b,"0,v769",MLOAD,feeAccount,public,False,0,feeAccount&m0x40,0x755
+"    0x76e: v76e(0x20) = SUB v768, v76b",0x755,v76e,"0,v768,v76b",SUB,feeAccount,public,False,0x20,feeAccount&m0x40+0x20-0x20,0x755
+"    0x770: RETURN v76b, v76e(0x20)",0x755,0,"0,v76b,v76e",RETURN,feeAccount,public,False,0,0,0x755
+},0x755,0,0,0,feeAccount,public,False,0,0,0x755
+function tradeABIHash()() public {,0x27a,0,0,public,tradeABIHash,public,False,0,0,0x755
+    Begin block 0x27a,0x27a,0,0,0,tradeABIHash,public,False,0,0,0x755
+"    prev=[], succ=[0x281, 0x285]",0x27a,0,0,0,tradeABIHash,public,False,0,0,"0x281, 0x285"
+    =================================,0x27a,0,0,0,tradeABIHash,public,False,0,0,"0x281, 0x285"
+    0x27b: v27b = CALLVALUE ,0x27a,v27b,0,CALLVALUE,tradeABIHash,public,False,0,0,"0x281, 0x285"
+    0x27c: v27c = ISZERO v27b,0x27a,v27c,"0,v27b",ISZERO,tradeABIHash,public,False,0,0,"0x281, 0x285"
+    0x27d: v27d(0x285) = CONST ,0x27a,v27d,0,CONST,tradeABIHash,public,False,0x285,0,"0x281, 0x285"
+"    0x280: JUMPI v27d(0x285), v27c",0x27a,0,"0,v27d,v27c",JUMPI,tradeABIHash,public,False,0,0,"0x281, 0x285"
+    Begin block 0x281,0x281,0,0,0,tradeABIHash,public,False,0,0,"0x281, 0x285"
+"    prev=[0x27a], succ=[]",0x281,0,0,0,tradeABIHash,public,False,0,0,"0x281, 0x285"
+    =================================,0x281,0,0,0,tradeABIHash,public,False,0,0,"0x281, 0x285"
+    0x281: v281(0x0) = CONST ,0x281,v281,0,CONST,tradeABIHash,public,False,0x0,0,"0x281, 0x285"
+"    0x284: REVERT v281(0x0), v281(0x0)",0x281,0,"0,v281,v281",REVERT,tradeABIHash,public,False,0,0,"0x281, 0x285"
+    Begin block 0x285,0x285,0,0,0,tradeABIHash,public,False,0,0,"0x281, 0x285"
+"    prev=[0x27a], succ=[0x3f2]",0x285,0,0,0,tradeABIHash,public,False,0,0,0x3f2
+    =================================,0x285,0,0,0,tradeABIHash,public,False,0,0,0x3f2
+    0x286: v286(0x790) = CONST ,0x285,v286,0,CONST,tradeABIHash,public,False,0x790,0,0x3f2
+    0x289: v289(0x3f2) = CONST ,0x285,v289,0,CONST,tradeABIHash,public,False,0x3f2,0,0x3f2
+    0x28c: JUMP v289(0x3f2),0x285,0,"0,v289",JUMP,tradeABIHash,public,False,0,0,0x3f2
+    Begin block 0x3f2,0x3f2,0,0,0,tradeABIHash,public,False,0,0,0x3f2
+"    prev=[0x285], succ=[0x790]",0x3f2,0,0,0,tradeABIHash,public,False,0,0,0x790
+    =================================,0x3f2,0,0,0,tradeABIHash,public,False,0,0,0x790
+    0x3f3: v3f3(0x8) = CONST ,0x3f2,v3f3,0,CONST,tradeABIHash,public,False,0x8,0,0x790
+    0x3f5: v3f5 = SLOAD v3f3(0x8),0x3f2,v3f5,"0,v3f3",SLOAD,tradeABIHash,public,False,0,0,0x790
+    0x3f7: JUMP v286(0x790),0x3f2,0,"0,v286",JUMP,tradeABIHash,public,False,0,0,0x790
+    Begin block 0x790,0x790,0,0,0,tradeABIHash,public,False,0,0,0x790
+"    prev=[0x3f2], succ=[]",0x790,0,0,0,tradeABIHash,public,False,0,0,0x790
+    =================================,0x790,0,0,0,tradeABIHash,public,False,0,0,0x790
+    0x791: v791(0x40) = CONST ,0x790,v791,0,CONST,tradeABIHash,public,False,0x40,0,0x790
+    0x793: v793 = MLOAD v791(0x40),0x790,v793,"0,v791",MLOAD,tradeABIHash,public,False,0,tradeABIHash&m0x40,0x790
+"    0x796: MSTORE v793, v3f5",0x790,tradeABIHash&m0x40,"0,v793,v3f5",MSTORE,tradeABIHash,public,False,0,tradeABIHash&m0x40,0x790
+    0x797: v797(0x20) = CONST ,0x790,v797,0,CONST,tradeABIHash,public,False,0x20,0,0x790
+"    0x799: v799 = ADD v797(0x20), v793",0x790,v799,"0,v797,v793",ADD,tradeABIHash,public,False,0,tradeABIHash&m0x40+0x20,0x790
+    0x79a: v79a(0x40) = CONST ,0x790,v79a,0,CONST,tradeABIHash,public,False,0x40,0,0x790
+    0x79c: v79c = MLOAD v79a(0x40),0x790,v79c,"0,v79a",MLOAD,tradeABIHash,public,False,0,tradeABIHash&m0x40,0x790
+"    0x79f: v79f(0x20) = SUB v799, v79c",0x790,v79f,"0,v799,v79c",SUB,tradeABIHash,public,False,0x20,tradeABIHash&m0x40+0x20-0x20,0x790
+"    0x7a1: RETURN v79c, v79f(0x20)",0x790,0,"0,v79c,v79f",RETURN,tradeABIHash,public,False,0,0,0x790
+},0x790,0,0,0,tradeABIHash,public,False,0,0,0x790
+function getImplementation()() public {,0x28d,0,0,public,getImplementation,public,False,0,0,0x790
+    Begin block 0x28d,0x28d,0,0,0,getImplementation,public,False,0,0,0x790
+"    prev=[], succ=[0x294, 0x298]",0x28d,0,0,0,getImplementation,public,False,0,0,"0x294, 0x298"
+    =================================,0x28d,0,0,0,getImplementation,public,False,0,0,"0x294, 0x298"
+    0x28e: v28e = CALLVALUE ,0x28d,v28e,0,CALLVALUE,getImplementation,public,False,0,0,"0x294, 0x298"
+    0x28f: v28f = ISZERO v28e,0x28d,v28f,"0,v28e",ISZERO,getImplementation,public,False,0,0,"0x294, 0x298"
+    0x290: v290(0x298) = CONST ,0x28d,v290,0,CONST,getImplementation,public,False,0x298,0,"0x294, 0x298"
+"    0x293: JUMPI v290(0x298), v28f",0x28d,0,"0,v290,v28f",JUMPI,getImplementation,public,False,0,0,"0x294, 0x298"
+    Begin block 0x294,0x294,0,0,0,getImplementation,public,False,0,0,"0x294, 0x298"
+"    prev=[0x28d], succ=[]",0x294,0,0,0,getImplementation,public,False,0,0,"0x294, 0x298"
+    =================================,0x294,0,0,0,getImplementation,public,False,0,0,"0x294, 0x298"
+    0x294: v294(0x0) = CONST ,0x294,v294,0,CONST,getImplementation,public,False,0x0,0,"0x294, 0x298"
+"    0x297: REVERT v294(0x0), v294(0x0)",0x294,0,"0,v294,v294",REVERT,getImplementation,public,False,0,0,"0x294, 0x298"
+    Begin block 0x298,0x298,0,0,0,getImplementation,public,False,0,0,"0x294, 0x298"
+"    prev=[0x28d], succ=[0x355B0x298]",0x298,0,0,0,getImplementation,public,False,0,0,0x355B0x298
+    =================================,0x298,0,0,0,getImplementation,public,False,0,0,0x355B0x298
+    0x299: v299(0x7c1) = CONST ,0x298,v299,0,CONST,getImplementation,public,False,0x7c1,0,0x355B0x298
+    0x29c: v29c(0x355) = CONST ,0x298,v29c,0,CONST,getImplementation,public,False,0x355,0,0x355B0x298
+    0x29f: JUMP v29c(0x355),0x298,0,"0,v29c",JUMP,getImplementation,public,False,0,0,0x355B0x298
+    Begin block 0x355B0x298,0x355B0x298,0,0,0,getImplementation,public,False,0,0,0x355B0x298
+"    prev=[0x298], succ=[0x7c1]",0x355B0x298,0,0,0,getImplementation,public,False,0,0,0x7c1
+    =================================,0x355B0x298,0,0,0,getImplementation,public,False,0,0,0x7c1
+    0x356S0x298: v356V298(0xf) = CONST ,0x355B0x298,v356V298,0,CONST,getImplementation,public,False,0xf,0,0x7c1
+    0x358S0x298: v358V298 = SLOAD v356V298(0xf),0x355B0x298,v358V298,"0,v356V298",SLOAD,getImplementation,public,False,0,0,0x7c1
+    0x359S0x298: v359V298(0x1) = CONST ,0x355B0x298,v359V298,0,CONST,getImplementation,public,False,0x1,0,0x7c1
+    0x35bS0x298: v35bV298(0xa0) = CONST ,0x355B0x298,v35bV298,0,CONST,getImplementation,public,False,0xa0,0,0x7c1
+    0x35dS0x298: v35dV298(0x2) = CONST ,0x355B0x298,v35dV298,0,CONST,getImplementation,public,False,0x2,0,0x7c1
+"    0x35fS0x298: v35fV298(0x10000000000000000000000000000000000000000) = EXP v35dV298(0x2), v35bV298(0xa0)",0x355B0x298,v35fV298,"0,v35dV298,v35bV298",EXP,getImplementation,public,False,0x10000000000000000000000000000000000000000,0,0x7c1
+"    0x360S0x298: v360V298(0xffffffffffffffffffffffffffffffffffffffff) = SUB v35fV298(0x10000000000000000000000000000000000000000), v359V298(0x1)",0x355B0x298,v360V298,"0,v35fV298,v359V298",SUB,getImplementation,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x7c1
+"    0x361S0x298: v361V298 = AND v360V298(0xffffffffffffffffffffffffffffffffffffffff), v358V298",0x355B0x298,v361V298,"0,v360V298,v358V298",AND,getImplementation,public,False,0,0,0x7c1
+    0x363S0x298: JUMP v299(0x7c1),0x355B0x298,0,"0,v299",JUMP,getImplementation,public,False,0,0,0x7c1
+    Begin block 0x7c1,0x7c1,0,0,0,getImplementation,public,False,0,0,0x7c1
+"    prev=[0x355B0x298], succ=[]",0x7c1,0,0,0,getImplementation,public,False,0,0,0x7c1
+    =================================,0x7c1,0,0,0,getImplementation,public,False,0,0,0x7c1
+    0x7c2: v7c2(0x40) = CONST ,0x7c1,v7c2,0,CONST,getImplementation,public,False,0x40,0,0x7c1
+    0x7c4: v7c4 = MLOAD v7c2(0x40),0x7c1,v7c4,"0,v7c2",MLOAD,getImplementation,public,False,0,getImplementation&m0x40,0x7c1
+    0x7c5: v7c5(0x1) = CONST ,0x7c1,v7c5,0,CONST,getImplementation,public,False,0x1,0,0x7c1
+    0x7c7: v7c7(0xa0) = CONST ,0x7c1,v7c7,0,CONST,getImplementation,public,False,0xa0,0,0x7c1
+    0x7c9: v7c9(0x2) = CONST ,0x7c1,v7c9,0,CONST,getImplementation,public,False,0x2,0,0x7c1
+"    0x7cb: v7cb(0x10000000000000000000000000000000000000000) = EXP v7c9(0x2), v7c7(0xa0)",0x7c1,v7cb,"0,v7c9,v7c7",EXP,getImplementation,public,False,0x10000000000000000000000000000000000000000,0,0x7c1
+"    0x7cc: v7cc(0xffffffffffffffffffffffffffffffffffffffff) = SUB v7cb(0x10000000000000000000000000000000000000000), v7c5(0x1)",0x7c1,v7cc,"0,v7cb,v7c5",SUB,getImplementation,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x7c1
+"    0x7cf: v7cf = AND v361V298, v7cc(0xffffffffffffffffffffffffffffffffffffffff)",0x7c1,v7cf,"0,v361V298,v7cc",AND,getImplementation,public,False,0,0,0x7c1
+"    0x7d1: MSTORE v7c4, v7cf",0x7c1,getImplementation&m0x40,"0,v7c4,v7cf",MSTORE,getImplementation,public,False,0,getImplementation&m0x40,0x7c1
+    0x7d2: v7d2(0x20) = CONST ,0x7c1,v7d2,0,CONST,getImplementation,public,False,0x20,0,0x7c1
+"    0x7d4: v7d4 = ADD v7d2(0x20), v7c4",0x7c1,v7d4,"0,v7d2,v7c4",ADD,getImplementation,public,False,0,getImplementation&m0x40+0x20,0x7c1
+    0x7d5: v7d5(0x40) = CONST ,0x7c1,v7d5,0,CONST,getImplementation,public,False,0x40,0,0x7c1
+    0x7d7: v7d7 = MLOAD v7d5(0x40),0x7c1,v7d7,"0,v7d5",MLOAD,getImplementation,public,False,0,getImplementation&m0x40,0x7c1
+"    0x7da: v7da(0x20) = SUB v7d4, v7d7",0x7c1,v7da,"0,v7d4,v7d7",SUB,getImplementation,public,False,0x20,getImplementation&m0x40+0x20-0x20,0x7c1
+"    0x7dc: RETURN v7d7, v7da(0x20)",0x7c1,0,"0,v7d7,v7da",RETURN,getImplementation,public,False,0,0,0x7c1
+},0x7c1,0,0,0,getImplementation,public,False,0,0,0x7c1
+function proposedImplementation()() public {,0x2a0,0,0,public,proposedImplementation,public,False,0,0,0x7c1
+    Begin block 0x2a0,0x2a0,0,0,0,proposedImplementation,public,False,0,0,0x7c1
+"    prev=[], succ=[0x2a7, 0x2ab]",0x2a0,0,0,0,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+    =================================,0x2a0,0,0,0,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+    0x2a1: v2a1 = CALLVALUE ,0x2a0,v2a1,0,CALLVALUE,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+    0x2a2: v2a2 = ISZERO v2a1,0x2a0,v2a2,"0,v2a1",ISZERO,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+    0x2a3: v2a3(0x2ab) = CONST ,0x2a0,v2a3,0,CONST,proposedImplementation,public,False,0x2ab,0,"0x2a7, 0x2ab"
+"    0x2a6: JUMPI v2a3(0x2ab), v2a2",0x2a0,0,"0,v2a3,v2a2",JUMPI,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+    Begin block 0x2a7,0x2a7,0,0,0,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+"    prev=[0x2a0], succ=[]",0x2a7,0,0,0,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+    =================================,0x2a7,0,0,0,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+    0x2a7: v2a7(0x0) = CONST ,0x2a7,v2a7,0,CONST,proposedImplementation,public,False,0x0,0,"0x2a7, 0x2ab"
+"    0x2aa: REVERT v2a7(0x0), v2a7(0x0)",0x2a7,0,"0,v2a7,v2a7",REVERT,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+    Begin block 0x2ab,0x2ab,0,0,0,proposedImplementation,public,False,0,0,"0x2a7, 0x2ab"
+"    prev=[0x2a0], succ=[0x3f8]",0x2ab,0,0,0,proposedImplementation,public,False,0,0,0x3f8
+    =================================,0x2ab,0,0,0,proposedImplementation,public,False,0,0,0x3f8
+    0x2ac: v2ac(0x7fc) = CONST ,0x2ab,v2ac,0,CONST,proposedImplementation,public,False,0x7fc,0,0x3f8
+    0x2af: v2af(0x3f8) = CONST ,0x2ab,v2af,0,CONST,proposedImplementation,public,False,0x3f8,0,0x3f8
+    0x2b2: JUMP v2af(0x3f8),0x2ab,0,"0,v2af",JUMP,proposedImplementation,public,False,0,0,0x3f8
+    Begin block 0x3f8,0x3f8,0,0,0,proposedImplementation,public,False,0,0,0x3f8
+"    prev=[0x2ab], succ=[0x7fc]",0x3f8,0,0,0,proposedImplementation,public,False,0,0,0x7fc
+    =================================,0x3f8,0,0,0,proposedImplementation,public,False,0,0,0x7fc
+    0x3f9: v3f9(0x10) = CONST ,0x3f8,v3f9,0,CONST,proposedImplementation,public,False,0x10,0,0x7fc
+    0x3fb: v3fb = SLOAD v3f9(0x10),0x3f8,v3fb,"0,v3f9",SLOAD,proposedImplementation,public,False,0,0,0x7fc
+    0x3fc: v3fc(0x1) = CONST ,0x3f8,v3fc,0,CONST,proposedImplementation,public,False,0x1,0,0x7fc
+    0x3fe: v3fe(0xa0) = CONST ,0x3f8,v3fe,0,CONST,proposedImplementation,public,False,0xa0,0,0x7fc
+    0x400: v400(0x2) = CONST ,0x3f8,v400,0,CONST,proposedImplementation,public,False,0x2,0,0x7fc
+"    0x402: v402(0x10000000000000000000000000000000000000000) = EXP v400(0x2), v3fe(0xa0)",0x3f8,v402,"0,v400,v3fe",EXP,proposedImplementation,public,False,0x10000000000000000000000000000000000000000,0,0x7fc
+"    0x403: v403(0xffffffffffffffffffffffffffffffffffffffff) = SUB v402(0x10000000000000000000000000000000000000000), v3fc(0x1)",0x3f8,v403,"0,v402,v3fc",SUB,proposedImplementation,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x7fc
+"    0x404: v404 = AND v403(0xffffffffffffffffffffffffffffffffffffffff), v3fb",0x3f8,v404,"0,v403,v3fb",AND,proposedImplementation,public,False,0,0,0x7fc
+    0x406: JUMP v2ac(0x7fc),0x3f8,0,"0,v2ac",JUMP,proposedImplementation,public,False,0,0,0x7fc
+    Begin block 0x7fc,0x7fc,0,0,0,proposedImplementation,public,False,0,0,0x7fc
+"    prev=[0x3f8], succ=[]",0x7fc,0,0,0,proposedImplementation,public,False,0,0,0x7fc
+    =================================,0x7fc,0,0,0,proposedImplementation,public,False,0,0,0x7fc
+    0x7fd: v7fd(0x40) = CONST ,0x7fc,v7fd,0,CONST,proposedImplementation,public,False,0x40,0,0x7fc
+    0x7ff: v7ff = MLOAD v7fd(0x40),0x7fc,v7ff,"0,v7fd",MLOAD,proposedImplementation,public,False,0,proposedImplementation&m0x40,0x7fc
+    0x800: v800(0x1) = CONST ,0x7fc,v800,0,CONST,proposedImplementation,public,False,0x1,0,0x7fc
+    0x802: v802(0xa0) = CONST ,0x7fc,v802,0,CONST,proposedImplementation,public,False,0xa0,0,0x7fc
+    0x804: v804(0x2) = CONST ,0x7fc,v804,0,CONST,proposedImplementation,public,False,0x2,0,0x7fc
+"    0x806: v806(0x10000000000000000000000000000000000000000) = EXP v804(0x2), v802(0xa0)",0x7fc,v806,"0,v804,v802",EXP,proposedImplementation,public,False,0x10000000000000000000000000000000000000000,0,0x7fc
+"    0x807: v807(0xffffffffffffffffffffffffffffffffffffffff) = SUB v806(0x10000000000000000000000000000000000000000), v800(0x1)",0x7fc,v807,"0,v806,v800",SUB,proposedImplementation,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x7fc
+"    0x80a: v80a = AND v404, v807(0xffffffffffffffffffffffffffffffffffffffff)",0x7fc,v80a,"0,v404,v807",AND,proposedImplementation,public,False,0,0,0x7fc
+"    0x80c: MSTORE v7ff, v80a",0x7fc,proposedImplementation&m0x40,"0,v7ff,v80a",MSTORE,proposedImplementation,public,False,0,proposedImplementation&m0x40,0x7fc
+    0x80d: v80d(0x20) = CONST ,0x7fc,v80d,0,CONST,proposedImplementation,public,False,0x20,0,0x7fc
+"    0x80f: v80f = ADD v80d(0x20), v7ff",0x7fc,v80f,"0,v80d,v7ff",ADD,proposedImplementation,public,False,0,proposedImplementation&m0x40+0x20,0x7fc
+    0x810: v810(0x40) = CONST ,0x7fc,v810,0,CONST,proposedImplementation,public,False,0x40,0,0x7fc
+    0x812: v812 = MLOAD v810(0x40),0x7fc,v812,"0,v810",MLOAD,proposedImplementation,public,False,0,proposedImplementation&m0x40,0x7fc
+"    0x815: v815(0x20) = SUB v80f, v812",0x7fc,v815,"0,v80f,v812",SUB,proposedImplementation,public,False,0x20,proposedImplementation&m0x40+0x20-0x20,0x7fc
+"    0x817: RETURN v812, v815(0x20)",0x7fc,0,"0,v812,v815",RETURN,proposedImplementation,public,False,0,0,0x7fc
+},0x7fc,0,0,0,proposedImplementation,public,False,0,0,0x7fc
+"function orders(address,bytes32)() public {",0x2b3,0,0,,orders,public,False,0,0,0x7fc
+    Begin block 0x2b3,0x2b3,0,0,0,orders,public,False,0,0,0x7fc
+"    prev=[], succ=[0x2ba, 0x2be]",0x2b3,0,0,0,orders,public,False,0,0,"0x2ba, 0x2be"
+    =================================,0x2b3,0,0,0,orders,public,False,0,0,"0x2ba, 0x2be"
+    0x2b4: v2b4 = CALLVALUE ,0x2b3,v2b4,0,CALLVALUE,orders,public,False,0,0,"0x2ba, 0x2be"
+    0x2b5: v2b5 = ISZERO v2b4,0x2b3,v2b5,"0,v2b4",ISZERO,orders,public,False,0,0,"0x2ba, 0x2be"
+    0x2b6: v2b6(0x2be) = CONST ,0x2b3,v2b6,0,CONST,orders,public,False,0x2be,0,"0x2ba, 0x2be"
+"    0x2b9: JUMPI v2b6(0x2be), v2b5",0x2b3,0,"0,v2b6,v2b5",JUMPI,orders,public,False,0,0,"0x2ba, 0x2be"
+    Begin block 0x2ba,0x2ba,0,0,0,orders,public,False,0,0,"0x2ba, 0x2be"
+"    prev=[0x2b3], succ=[]",0x2ba,0,0,0,orders,public,False,0,0,"0x2ba, 0x2be"
+    =================================,0x2ba,0,0,0,orders,public,False,0,0,"0x2ba, 0x2be"
+    0x2ba: v2ba(0x0) = CONST ,0x2ba,v2ba,0,CONST,orders,public,False,0x0,0,"0x2ba, 0x2be"
+"    0x2bd: REVERT v2ba(0x0), v2ba(0x0)",0x2ba,0,"0,v2ba,v2ba",REVERT,orders,public,False,0,0,"0x2ba, 0x2be"
+    Begin block 0x2be,0x2be,0,0,0,orders,public,False,0,0,"0x2ba, 0x2be"
+"    prev=[0x2b3], succ=[0x407]",0x2be,0,0,0,orders,public,False,0,0,0x407
+    =================================,0x2be,0,0,0,orders,public,False,0,0,0x407
+    0x2bf: v2bf(0x837) = CONST ,0x2be,v2bf,0,CONST,orders,public,False,0x837,0,0x407
+    0x2c2: v2c2(0x1) = CONST ,0x2be,v2c2,0,CONST,orders,public,False,0x1,0,0x407
+    0x2c4: v2c4(0xa0) = CONST ,0x2be,v2c4,0,CONST,orders,public,False,0xa0,0,0x407
+    0x2c6: v2c6(0x2) = CONST ,0x2be,v2c6,0,CONST,orders,public,False,0x2,0,0x407
+"    0x2c8: v2c8(0x10000000000000000000000000000000000000000) = EXP v2c6(0x2), v2c4(0xa0)",0x2be,v2c8,"0,v2c6,v2c4",EXP,orders,public,False,0x10000000000000000000000000000000000000000,0,0x407
+"    0x2c9: v2c9(0xffffffffffffffffffffffffffffffffffffffff) = SUB v2c8(0x10000000000000000000000000000000000000000), v2c2(0x1)",0x2be,v2c9,"0,v2c8,v2c2",SUB,orders,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x407
+    0x2ca: v2ca(0x4) = CONST ,0x2be,v2ca,0,CONST,orders,public,False,0x4,0,0x407
+    0x2cc: v2cc = CALLDATALOAD v2ca(0x4),0x2be,v2cc,"0,v2ca",CALLDATALOAD,orders,public,False,0,0,0x407
+"    0x2cd: v2cd = AND v2cc, v2c9(0xffffffffffffffffffffffffffffffffffffffff)",0x2be,v2cd,"0,v2cc,v2c9",AND,orders,public,False,0,0,0x407
+    0x2ce: v2ce(0x24) = CONST ,0x2be,v2ce,0,CONST,orders,public,False,0x24,0,0x407
+    0x2d0: v2d0 = CALLDATALOAD v2ce(0x24),0x2be,v2d0,"0,v2ce",CALLDATALOAD,orders,public,False,0,0,0x407
+    0x2d1: v2d1(0x407) = CONST ,0x2be,v2d1,0,CONST,orders,public,False,0x407,0,0x407
+    0x2d4: JUMP v2d1(0x407),0x2be,0,"0,v2d1",JUMP,orders,public,False,0,0,0x407
+    Begin block 0x407,0x407,0,0,0,orders,public,False,0,0,0x407
+"    prev=[0x2be], succ=[0x837]",0x407,0,0,0,orders,public,False,0,0,0x837
+    =================================,0x407,0,0,0,orders,public,False,0,0,0x837
+    0x408: v408(0xd) = CONST ,0x407,v408,0,CONST,orders,public,False,0xd,0,0x837
+    0x40a: v40a(0x20) = CONST ,0x407,v40a,0,CONST,orders,public,False,0x20,0,0x837
+"    0x40e: MSTORE v40a(0x20), v408(0xd)",0x407,0,"0,v40a,v408",MSTORE,orders,public,False,0,0,0x837
+    0x40f: v40f(0x0) = CONST ,0x407,v40f,0,CONST,orders,public,False,0x0,0,0x837
+"    0x413: MSTORE v40f(0x0), v2cd",0x407,0,"0,v40f,v2cd",MSTORE,orders,public,False,0,0,0x837
+    0x414: v414(0x40) = CONST ,0x407,v414,0,CONST,orders,public,False,0x40,0,0x837
+"    0x418: v418 = SHA3 v40f(0x0), v414(0x40)",0x407,v418,"0,v40f,v414",SHA3,orders,public,False,0,0,0x837
+"    0x41b: MSTORE v40a(0x20), v418",0x407,0,"0,v40a,v418",MSTORE,orders,public,False,0,0,0x837
+"    0x41e: MSTORE v40f(0x0), v2d0",0x407,0,"0,v40f,v2d0",MSTORE,orders,public,False,0,0,0x837
+"    0x420: v420 = SHA3 v40f(0x0), v414(0x40)",0x407,v420,"0,v40f,v414",SHA3,orders,public,False,0,0,0x837
+    0x421: v421 = SLOAD v420,0x407,v421,"0,v420",SLOAD,orders,public,False,0,0,0x837
+    0x422: v422(0xff) = CONST ,0x407,v422,0,CONST,orders,public,False,0xff,0,0x837
+"    0x424: v424 = AND v422(0xff), v421",0x407,v424,"0,v422,v421",AND,orders,public,False,0,0,0x837
+    0x426: JUMP v2bf(0x837),0x407,0,"0,v2bf",JUMP,orders,public,False,0,0,0x837
+    Begin block 0x837,0x837,0,0,0,orders,public,False,0,0,0x837
+"    prev=[0x407], succ=[]",0x837,0,0,0,orders,public,False,0,0,0x837
+    =================================,0x837,0,0,0,orders,public,False,0,0,0x837
+    0x838: v838(0x40) = CONST ,0x837,v838,0,CONST,orders,public,False,0x40,0,0x837
+    0x83a: v83a = MLOAD v838(0x40),0x837,v83a,"0,v838",MLOAD,orders,public,False,0,orders&m0x40,0x837
+    0x83c: v83c = ISZERO v424,0x837,v83c,"0,v424",ISZERO,orders,public,False,0,0,0x837
+    0x83d: v83d = ISZERO v83c,0x837,v83d,"0,v83c",ISZERO,orders,public,False,0,0,0x837
+"    0x83f: MSTORE v83a, v83d",0x837,orders&m0x40,"0,v83a,v83d",MSTORE,orders,public,False,0,orders&m0x40,0x837
+    0x840: v840(0x20) = CONST ,0x837,v840,0,CONST,orders,public,False,0x20,0,0x837
+"    0x842: v842 = ADD v840(0x20), v83a",0x837,v842,"0,v840,v83a",ADD,orders,public,False,0,orders&m0x40+0x20,0x837
+    0x843: v843(0x40) = CONST ,0x837,v843,0,CONST,orders,public,False,0x40,0,0x837
+    0x845: v845 = MLOAD v843(0x40),0x837,v845,"0,v843",MLOAD,orders,public,False,0,orders&m0x40,0x837
+"    0x848: v848(0x20) = SUB v842, v845",0x837,v848,"0,v842,v845",SUB,orders,public,False,0x20,orders&m0x40+0x20-0x20,0x837
+"    0x84a: RETURN v845, v848(0x20)",0x837,0,"0,v845,v848",RETURN,orders,public,False,0,0,0x837
+},0x837,0,0,0,orders,public,False,0,0,0x837
+function feeTake()() public {,0x2d5,0,0,public,feeTake,public,False,0,0,0x837
+    Begin block 0x2d5,0x2d5,0,0,0,feeTake,public,False,0,0,0x837
+"    prev=[], succ=[0x2dc, 0x2e0]",0x2d5,0,0,0,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+    =================================,0x2d5,0,0,0,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+    0x2d6: v2d6 = CALLVALUE ,0x2d5,v2d6,0,CALLVALUE,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+    0x2d7: v2d7 = ISZERO v2d6,0x2d5,v2d7,"0,v2d6",ISZERO,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+    0x2d8: v2d8(0x2e0) = CONST ,0x2d5,v2d8,0,CONST,feeTake,public,False,0x2e0,0,"0x2dc, 0x2e0"
+"    0x2db: JUMPI v2d8(0x2e0), v2d7",0x2d5,0,"0,v2d8,v2d7",JUMPI,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+    Begin block 0x2dc,0x2dc,0,0,0,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+"    prev=[0x2d5], succ=[]",0x2dc,0,0,0,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+    =================================,0x2dc,0,0,0,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+    0x2dc: v2dc(0x0) = CONST ,0x2dc,v2dc,0,CONST,feeTake,public,False,0x0,0,"0x2dc, 0x2e0"
+"    0x2df: REVERT v2dc(0x0), v2dc(0x0)",0x2dc,0,"0,v2dc,v2dc",REVERT,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+    Begin block 0x2e0,0x2e0,0,0,0,feeTake,public,False,0,0,"0x2dc, 0x2e0"
+"    prev=[0x2d5], succ=[0x427]",0x2e0,0,0,0,feeTake,public,False,0,0,0x427
+    =================================,0x2e0,0,0,0,feeTake,public,False,0,0,0x427
+    0x2e1: v2e1(0x86a) = CONST ,0x2e0,v2e1,0,CONST,feeTake,public,False,0x86a,0,0x427
+    0x2e4: v2e4(0x427) = CONST ,0x2e0,v2e4,0,CONST,feeTake,public,False,0x427,0,0x427
+    0x2e7: JUMP v2e4(0x427),0x2e0,0,"0,v2e4",JUMP,feeTake,public,False,0,0,0x427
+    Begin block 0x427,0x427,0,0,0,feeTake,public,False,0,0,0x427
+"    prev=[0x2e0], succ=[0x86a]",0x427,0,0,0,feeTake,public,False,0,0,0x86a
+    =================================,0x427,0,0,0,feeTake,public,False,0,0,0x86a
+    0x428: v428(0x5) = CONST ,0x427,v428,0,CONST,feeTake,public,False,0x5,0,0x86a
+    0x42a: v42a = SLOAD v428(0x5),0x427,v42a,"0,v428",SLOAD,feeTake,public,False,0,0,0x86a
+    0x42c: JUMP v2e1(0x86a),0x427,0,"0,v2e1",JUMP,feeTake,public,False,0,0,0x86a
+    Begin block 0x86a,0x86a,0,0,0,feeTake,public,False,0,0,0x86a
+"    prev=[0x427], succ=[]",0x86a,0,0,0,feeTake,public,False,0,0,0x86a
+    =================================,0x86a,0,0,0,feeTake,public,False,0,0,0x86a
+    0x86b: v86b(0x40) = CONST ,0x86a,v86b,0,CONST,feeTake,public,False,0x40,0,0x86a
+    0x86d: v86d = MLOAD v86b(0x40),0x86a,v86d,"0,v86b",MLOAD,feeTake,public,False,0,feeTake&m0x40,0x86a
+"    0x870: MSTORE v86d, v42a",0x86a,feeTake&m0x40,"0,v86d,v42a",MSTORE,feeTake,public,False,0,feeTake&m0x40,0x86a
+    0x871: v871(0x20) = CONST ,0x86a,v871,0,CONST,feeTake,public,False,0x20,0,0x86a
+"    0x873: v873 = ADD v871(0x20), v86d",0x86a,v873,"0,v871,v86d",ADD,feeTake,public,False,0,feeTake&m0x40+0x20,0x86a
+    0x874: v874(0x40) = CONST ,0x86a,v874,0,CONST,feeTake,public,False,0x40,0,0x86a
+    0x876: v876 = MLOAD v874(0x40),0x86a,v876,"0,v874",MLOAD,feeTake,public,False,0,feeTake&m0x40,0x86a
+"    0x879: v879(0x20) = SUB v873, v876",0x86a,v879,"0,v873,v876",SUB,feeTake,public,False,0x20,feeTake&m0x40+0x20-0x20,0x86a
+"    0x87b: RETURN v876, v879(0x20)",0x86a,0,"0,v876,v879",RETURN,feeTake,public,False,0,0,0x86a
+},0x86a,0,0,0,feeTake,public,False,0,0,0x86a
+function proposeUpgrade(address)() public {,0x2e8,0,0,public,proposeUpgrade,public,False,0,0,0x86a
+    Begin block 0x2e8,0x2e8,0,0,0,proposeUpgrade,public,False,0,0,0x86a
+"    prev=[], succ=[0x2ef, 0x2f3]",0x2e8,0,0,0,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+    =================================,0x2e8,0,0,0,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+    0x2e9: v2e9 = CALLVALUE ,0x2e8,v2e9,0,CALLVALUE,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+    0x2ea: v2ea = ISZERO v2e9,0x2e8,v2ea,"0,v2e9",ISZERO,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+    0x2eb: v2eb(0x2f3) = CONST ,0x2e8,v2eb,0,CONST,proposeUpgrade,public,False,0x2f3,0,"0x2ef, 0x2f3"
+"    0x2ee: JUMPI v2eb(0x2f3), v2ea",0x2e8,0,"0,v2eb,v2ea",JUMPI,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+    Begin block 0x2ef,0x2ef,0,0,0,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+"    prev=[0x2e8], succ=[]",0x2ef,0,0,0,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+    =================================,0x2ef,0,0,0,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+    0x2ef: v2ef(0x0) = CONST ,0x2ef,v2ef,0,CONST,proposeUpgrade,public,False,0x0,0,"0x2ef, 0x2f3"
+"    0x2f2: REVERT v2ef(0x0), v2ef(0x0)",0x2ef,0,"0,v2ef,v2ef",REVERT,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+    Begin block 0x2f3,0x2f3,0,0,0,proposeUpgrade,public,False,0,0,"0x2ef, 0x2f3"
+"    prev=[0x2e8], succ=[0x42d]",0x2f3,0,0,0,proposeUpgrade,public,False,0,0,0x42d
+    =================================,0x2f3,0,0,0,proposeUpgrade,public,False,0,0,0x42d
+    0x2f4: v2f4(0x89b) = CONST ,0x2f3,v2f4,0,CONST,proposeUpgrade,public,False,0x89b,0,0x42d
+    0x2f7: v2f7(0x1) = CONST ,0x2f3,v2f7,0,CONST,proposeUpgrade,public,False,0x1,0,0x42d
+    0x2f9: v2f9(0xa0) = CONST ,0x2f3,v2f9,0,CONST,proposeUpgrade,public,False,0xa0,0,0x42d
+    0x2fb: v2fb(0x2) = CONST ,0x2f3,v2fb,0,CONST,proposeUpgrade,public,False,0x2,0,0x42d
+"    0x2fd: v2fd(0x10000000000000000000000000000000000000000) = EXP v2fb(0x2), v2f9(0xa0)",0x2f3,v2fd,"0,v2fb,v2f9",EXP,proposeUpgrade,public,False,0x10000000000000000000000000000000000000000,0,0x42d
+"    0x2fe: v2fe(0xffffffffffffffffffffffffffffffffffffffff) = SUB v2fd(0x10000000000000000000000000000000000000000), v2f7(0x1)",0x2f3,v2fe,"0,v2fd,v2f7",SUB,proposeUpgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x42d
+    0x2ff: v2ff(0x4) = CONST ,0x2f3,v2ff,0,CONST,proposeUpgrade,public,False,0x4,0,0x42d
+    0x301: v301 = CALLDATALOAD v2ff(0x4),0x2f3,v301,"0,v2ff",CALLDATALOAD,proposeUpgrade,public,False,0,0,0x42d
+"    0x302: v302 = AND v301, v2fe(0xffffffffffffffffffffffffffffffffffffffff)",0x2f3,v302,"0,v301,v2fe",AND,proposeUpgrade,public,False,0,0,0x42d
+    0x303: v303(0x42d) = CONST ,0x2f3,v303,0,CONST,proposeUpgrade,public,False,0x42d,0,0x42d
+    0x306: JUMP v303(0x42d),0x2f3,0,"0,v303",JUMP,proposeUpgrade,public,False,0,0,0x42d
+    Begin block 0x42d,0x42d,0,0,0,proposeUpgrade,public,False,0,0,0x42d
+"    prev=[0x2f3], succ=[0x444, 0x448]",0x42d,0,0,0,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+    =================================,0x42d,0,0,0,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+    0x42e: v42e(0x1) = CONST ,0x42d,v42e,0,CONST,proposeUpgrade,public,False,0x1,0,"0x444, 0x448"
+    0x430: v430 = SLOAD v42e(0x1),0x42d,v430,"0,v42e",SLOAD,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+    0x431: v431 = CALLER ,0x42d,v431,0,CALLER,proposeUpgrade,public,True,0,0,"0x444, 0x448"
+    0x432: v432(0x1) = CONST ,0x42d,v432,0,CONST,proposeUpgrade,public,False,0x1,0,"0x444, 0x448"
+    0x434: v434(0xa0) = CONST ,0x42d,v434,0,CONST,proposeUpgrade,public,False,0xa0,0,"0x444, 0x448"
+    0x436: v436(0x2) = CONST ,0x42d,v436,0,CONST,proposeUpgrade,public,False,0x2,0,"0x444, 0x448"
+"    0x438: v438(0x10000000000000000000000000000000000000000) = EXP v436(0x2), v434(0xa0)",0x42d,v438,"0,v436,v434",EXP,proposeUpgrade,public,False,0x10000000000000000000000000000000000000000,0,"0x444, 0x448"
+"    0x439: v439(0xffffffffffffffffffffffffffffffffffffffff) = SUB v438(0x10000000000000000000000000000000000000000), v432(0x1)",0x42d,v439,"0,v438,v432",SUB,proposeUpgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,"0x444, 0x448"
+"    0x43c: v43c = AND v439(0xffffffffffffffffffffffffffffffffffffffff), v431",0x42d,v43c,"0,v439,v431",AND,proposeUpgrade,public,True,0,0,"0x444, 0x448"
+"    0x43e: v43e = AND v430, v439(0xffffffffffffffffffffffffffffffffffffffff)",0x42d,v43e,"0,v430,v439",AND,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+"    0x43f: v43f = EQ v43e, v43c",0x42d,v43f,"0,v43e,v43c",EQ,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+    0x440: v440(0x448) = CONST ,0x42d,v440,0,CONST,proposeUpgrade,public,False,0x448,0,"0x444, 0x448"
+"    0x443: JUMPI v440(0x448), v43f",0x42d,0,"0,v440,v43f",JUMPI,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+    Begin block 0x444,0x444,0,0,0,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+"    prev=[0x42d], succ=[]",0x444,0,0,0,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+    =================================,0x444,0,0,0,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+    0x444: v444(0x0) = CONST ,0x444,v444,0,CONST,proposeUpgrade,public,False,0x0,0,"0x444, 0x448"
+"    0x447: REVERT v444(0x0), v444(0x0)",0x444,0,"0,v444,v444",REVERT,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+    Begin block 0x448,0x448,0,0,0,proposeUpgrade,public,False,0,0,"0x444, 0x448"
+"    prev=[0x42d], succ=[0x45f, 0x463]",0x448,0,0,0,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+    =================================,0x448,0,0,0,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+    0x449: v449(0xf) = CONST ,0x448,v449,0,CONST,proposeUpgrade,public,False,0xf,0,"0x45f, 0x463"
+    0x44b: v44b = SLOAD v449(0xf),0x448,v44b,"0,v449",SLOAD,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+    0x44c: v44c(0x1) = CONST ,0x448,v44c,0,CONST,proposeUpgrade,public,False,0x1,0,"0x45f, 0x463"
+    0x44e: v44e(0xa0) = CONST ,0x448,v44e,0,CONST,proposeUpgrade,public,False,0xa0,0,"0x45f, 0x463"
+    0x450: v450(0x2) = CONST ,0x448,v450,0,CONST,proposeUpgrade,public,False,0x2,0,"0x45f, 0x463"
+"    0x452: v452(0x10000000000000000000000000000000000000000) = EXP v450(0x2), v44e(0xa0)",0x448,v452,"0,v450,v44e",EXP,proposeUpgrade,public,False,0x10000000000000000000000000000000000000000,0,"0x45f, 0x463"
+"    0x453: v453(0xffffffffffffffffffffffffffffffffffffffff) = SUB v452(0x10000000000000000000000000000000000000000), v44c(0x1)",0x448,v453,"0,v452,v44c",SUB,proposeUpgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,"0x45f, 0x463"
+"    0x456: v456 = AND v453(0xffffffffffffffffffffffffffffffffffffffff), v302",0x448,v456,"0,v453,v302",AND,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+"    0x458: v458 = AND v44b, v453(0xffffffffffffffffffffffffffffffffffffffff)",0x448,v458,"0,v44b,v453",AND,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+"    0x459: v459 = EQ v458, v456",0x448,v459,"0,v458,v456",EQ,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+    0x45a: v45a = ISZERO v459,0x448,v45a,"0,v459",ISZERO,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+    0x45b: v45b(0x463) = CONST ,0x448,v45b,0,CONST,proposeUpgrade,public,False,0x463,0,"0x45f, 0x463"
+"    0x45e: JUMPI v45b(0x463), v45a",0x448,0,"0,v45b,v45a",JUMPI,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+    Begin block 0x45f,0x45f,0,0,0,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+"    prev=[0x448], succ=[]",0x45f,0,0,0,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+    =================================,0x45f,0,0,0,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+    0x45f: v45f(0x0) = CONST ,0x45f,v45f,0,CONST,proposeUpgrade,public,False,0x0,0,"0x45f, 0x463"
+"    0x462: REVERT v45f(0x0), v45f(0x0)",0x45f,0,"0,v45f,v45f",REVERT,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+    Begin block 0x463,0x463,0,0,0,proposeUpgrade,public,False,0,0,"0x45f, 0x463"
+"    prev=[0x448], succ=[0x474, 0x478]",0x463,0,0,0,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+    =================================,0x463,0,0,0,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+    0x464: v464(0x1) = CONST ,0x463,v464,0,CONST,proposeUpgrade,public,False,0x1,0,"0x474, 0x478"
+    0x466: v466(0xa0) = CONST ,0x463,v466,0,CONST,proposeUpgrade,public,False,0xa0,0,"0x474, 0x478"
+    0x468: v468(0x2) = CONST ,0x463,v468,0,CONST,proposeUpgrade,public,False,0x2,0,"0x474, 0x478"
+"    0x46a: v46a(0x10000000000000000000000000000000000000000) = EXP v468(0x2), v466(0xa0)",0x463,v46a,"0,v468,v466",EXP,proposeUpgrade,public,False,0x10000000000000000000000000000000000000000,0,"0x474, 0x478"
+"    0x46b: v46b(0xffffffffffffffffffffffffffffffffffffffff) = SUB v46a(0x10000000000000000000000000000000000000000), v464(0x1)",0x463,v46b,"0,v46a,v464",SUB,proposeUpgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,"0x474, 0x478"
+"    0x46d: v46d = AND v302, v46b(0xffffffffffffffffffffffffffffffffffffffff)",0x463,v46d,"0,v302,v46b",AND,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+    0x46e: v46e = ISZERO v46d,0x463,v46e,"0,v46d",ISZERO,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+    0x46f: v46f = ISZERO v46e,0x463,v46f,"0,v46e",ISZERO,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+    0x470: v470(0x478) = CONST ,0x463,v470,0,CONST,proposeUpgrade,public,False,0x478,0,"0x474, 0x478"
+"    0x473: JUMPI v470(0x478), v46f",0x463,0,"0,v470,v46f",JUMPI,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+    Begin block 0x474,0x474,0,0,0,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+"    prev=[0x463], succ=[]",0x474,0,0,0,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+    =================================,0x474,0,0,0,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+    0x474: v474(0x0) = CONST ,0x474,v474,0,CONST,proposeUpgrade,public,False,0x0,0,"0x474, 0x478"
+"    0x477: REVERT v474(0x0), v474(0x0)",0x474,0,"0,v474,v474",REVERT,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+    Begin block 0x478,0x478,0,0,0,proposeUpgrade,public,False,0,0,"0x474, 0x478"
+"    prev=[0x463], succ=[0x89b]",0x478,0,0,0,proposeUpgrade,public,False,0,0,0x89b
+    =================================,0x478,0,0,0,proposeUpgrade,public,False,0,0,0x89b
+    0x479: v479(0x10) = CONST ,0x478,v479,0,CONST,proposeUpgrade,public,False,0x10,0,0x89b
+    0x47c: v47c = SLOAD v479(0x10),0x478,v47c,"0,v479",SLOAD,proposeUpgrade,public,False,0,0,0x89b
+    0x47d: v47d(0xffffffffffffffffffffffffffffffffffffffff) = CONST ,0x478,v47d,0,CONST,proposeUpgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x89b
+    0x492: v492(0xffffffffffffffffffffffff0000000000000000000000000000000000000000) = NOT v47d(0xffffffffffffffffffffffffffffffffffffffff),0x478,v492,"0,v47d",NOT,proposeUpgrade,public,False,0xffffffffffffffffffffffff0000000000000000000000000000000000000000,0,0x89b
+"    0x493: v493 = AND v492(0xffffffffffffffffffffffff0000000000000000000000000000000000000000), v47c",0x478,v493,"0,v492,v47c",AND,proposeUpgrade,public,False,0,0,0x89b
+    0x494: v494(0x1) = CONST ,0x478,v494,0,CONST,proposeUpgrade,public,False,0x1,0,0x89b
+    0x496: v496(0xa0) = CONST ,0x478,v496,0,CONST,proposeUpgrade,public,False,0xa0,0,0x89b
+    0x498: v498(0x2) = CONST ,0x478,v498,0,CONST,proposeUpgrade,public,False,0x2,0,0x89b
+"    0x49a: v49a(0x10000000000000000000000000000000000000000) = EXP v498(0x2), v496(0xa0)",0x478,v49a,"0,v498,v496",EXP,proposeUpgrade,public,False,0x10000000000000000000000000000000000000000,0,0x89b
+"    0x49b: v49b(0xffffffffffffffffffffffffffffffffffffffff) = SUB v49a(0x10000000000000000000000000000000000000000), v494(0x1)",0x478,v49b,"0,v49a,v494",SUB,proposeUpgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x89b
+"    0x49e: v49e = AND v49b(0xffffffffffffffffffffffffffffffffffffffff), v302",0x478,v49e,"0,v49b,v302",AND,proposeUpgrade,public,False,0,0,0x89b
+"    0x4a2: v4a2 = OR v49e, v493",0x478,v4a2,"0,v49e,v493",OR,proposeUpgrade,public,False,0,0,0x89b
+"    0x4a6: SSTORE v479(0x10), v4a2",0x478,0,"0,v479,v4a2",SSTORE,proposeUpgrade,public,False,0,0,0x89b
+    0x4a7: v4a7 = TIMESTAMP ,0x478,v4a7,0,TIMESTAMP,proposeUpgrade,public,False,0,0,0x89b
+    0x4a8: v4a8(0x127500) = CONST ,0x478,v4a8,0,CONST,proposeUpgrade,public,False,0x127500,0,0x89b
+"    0x4ad: v4ad = ADD v4a7, v4a8(0x127500)",0x478,v4ad,"0,v4a7,v4a8",ADD,proposeUpgrade,public,False,0,0,0x89b
+    0x4ae: v4ae(0x11) = CONST ,0x478,v4ae,0,CONST,proposeUpgrade,public,False,0x11,0,0x89b
+"    0x4b0: SSTORE v4ae(0x11), v4ad",0x478,0,"0,v4ae,v4ad",SSTORE,proposeUpgrade,public,False,0,0,0x89b
+    0x4b1: v4b1(0xec67bbd1e1c0c74039cb44e4ee8278b388155a131c81387e07f800c16f776e83) = CONST ,0x478,v4b1,0,CONST,proposeUpgrade,public,False,0xec67bbd1e1c0c74039cb44e4ee8278b388155a131c81387e07f800c16f776e83,0,0x89b
+"    0x4d5: v4d5 = AND v49b(0xffffffffffffffffffffffffffffffffffffffff), v4a2",0x478,v4d5,"0,v49b,v4a2",AND,proposeUpgrade,public,False,0,0,0x89b
+    0x4d7: v4d7(0x40) = CONST ,0x478,v4d7,0,CONST,proposeUpgrade,public,False,0x40,0,0x89b
+    0x4d9: v4d9 = MLOAD v4d7(0x40),0x478,v4d9,"0,v4d7",MLOAD,proposeUpgrade,public,False,0,proposeUpgrade&m0x40,0x89b
+    0x4da: v4da(0x1) = CONST ,0x478,v4da,0,CONST,proposeUpgrade,public,False,0x1,0,0x89b
+    0x4dc: v4dc(0xa0) = CONST ,0x478,v4dc,0,CONST,proposeUpgrade,public,False,0xa0,0,0x89b
+    0x4de: v4de(0x2) = CONST ,0x478,v4de,0,CONST,proposeUpgrade,public,False,0x2,0,0x89b
+"    0x4e0: v4e0(0x10000000000000000000000000000000000000000) = EXP v4de(0x2), v4dc(0xa0)",0x478,v4e0,"0,v4de,v4dc",EXP,proposeUpgrade,public,False,0x10000000000000000000000000000000000000000,0,0x89b
+"    0x4e1: v4e1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v4e0(0x10000000000000000000000000000000000000000), v4da(0x1)",0x478,v4e1,"0,v4e0,v4da",SUB,proposeUpgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x89b
+"    0x4e4: v4e4 = AND v4d5, v4e1(0xffffffffffffffffffffffffffffffffffffffff)",0x478,v4e4,"0,v4d5,v4e1",AND,proposeUpgrade,public,False,0,0,0x89b
+"    0x4e6: MSTORE v4d9, v4e4",0x478,proposeUpgrade&m0x40,"0,v4d9,v4e4",MSTORE,proposeUpgrade,public,False,0,proposeUpgrade&m0x40,0x89b
+    0x4e7: v4e7(0x20) = CONST ,0x478,v4e7,0,CONST,proposeUpgrade,public,False,0x20,0,0x89b
+"    0x4ea: v4ea = ADD v4d9, v4e7(0x20)",0x478,v4ea,"0,v4d9,v4e7",ADD,proposeUpgrade,public,False,0,proposeUpgrade&m0x40+0x20,0x89b
+"    0x4eb: MSTORE v4ea, v4a7",0x478,proposeUpgrade&m0x40+0x20,"0,v4ea,v4a7",MSTORE,proposeUpgrade,public,False,0,proposeUpgrade&m0x40+0x20,0x89b
+    0x4ec: v4ec(0x40) = CONST ,0x478,v4ec,0,CONST,proposeUpgrade,public,False,0x40,0,0x89b
+"    0x4f0: v4f0 = ADD v4ec(0x40), v4d9",0x478,v4f0,"0,v4ec,v4d9",ADD,proposeUpgrade,public,False,0,proposeUpgrade&m0x40+0x40,0x89b
+    0x4f2: v4f2 = MLOAD v4ec(0x40),0x478,v4f2,"0,v4ec",MLOAD,proposeUpgrade,public,False,0,proposeUpgrade&m0x40,0x89b
+"    0x4f5: v4f5(0x40) = SUB v4f0, v4f2",0x478,v4f5,"0,v4f0,v4f2",SUB,proposeUpgrade,public,False,0x40,proposeUpgrade&m0x40+0x40-0x40,0x89b
+"    0x4f7: LOG1 v4f2, v4f5(0x40), v4b1(0xec67bbd1e1c0c74039cb44e4ee8278b388155a131c81387e07f800c16f776e83)",0x478,0,"0,v4f2,v4f5,v4b1",LOG1,proposeUpgrade,public,False,0,0,0x89b
+    0x4f9: JUMP v2f4(0x89b),0x478,0,"0,v2f4",JUMP,proposeUpgrade,public,False,0,0,0x89b
+    Begin block 0x89b,0x89b,0,0,0,proposeUpgrade,public,False,0,0,0x89b
+"    prev=[0x478], succ=[]",0x89b,0,0,0,proposeUpgrade,public,False,0,0,0x89b
+    =================================,0x89b,0,0,0,proposeUpgrade,public,False,0,0,0x89b
+    0x89c: STOP ,0x89b,0,0,STOP,proposeUpgrade,public,False,0,0,0x89b
+},0x89b,0,0,0,proposeUpgrade,public,False,0,0,0x89b
+function upgrade()() public {,0x309,0,0,public,upgrade,public,False,0,0,0x89b
+    Begin block 0x309,0x309,0,0,0,upgrade,public,False,0,0,0x89b
+"    prev=[], succ=[0x310, 0x314]",0x309,0,0,0,upgrade,public,False,0,0,"0x310, 0x314"
+    =================================,0x309,0,0,0,upgrade,public,False,0,0,"0x310, 0x314"
+    0x30a: v30a = CALLVALUE ,0x309,v30a,0,CALLVALUE,upgrade,public,False,0,0,"0x310, 0x314"
+    0x30b: v30b = ISZERO v30a,0x309,v30b,"0,v30a",ISZERO,upgrade,public,False,0,0,"0x310, 0x314"
+    0x30c: v30c(0x314) = CONST ,0x309,v30c,0,CONST,upgrade,public,False,0x314,0,"0x310, 0x314"
+"    0x30f: JUMPI v30c(0x314), v30b",0x309,0,"0,v30c,v30b",JUMPI,upgrade,public,False,0,0,"0x310, 0x314"
+    Begin block 0x310,0x310,0,0,0,upgrade,public,False,0,0,"0x310, 0x314"
+"    prev=[0x309], succ=[]",0x310,0,0,0,upgrade,public,False,0,0,"0x310, 0x314"
+    =================================,0x310,0,0,0,upgrade,public,False,0,0,"0x310, 0x314"
+    0x310: v310(0x0) = CONST ,0x310,v310,0,CONST,upgrade,public,False,0x0,0,"0x310, 0x314"
+"    0x313: REVERT v310(0x0), v310(0x0)",0x310,0,"0,v310,v310",REVERT,upgrade,public,False,0,0,"0x310, 0x314"
+    Begin block 0x314,0x314,0,0,0,upgrade,public,False,0,0,"0x310, 0x314"
+"    prev=[0x309], succ=[0x4fa]",0x314,0,0,0,upgrade,public,False,0,0,0x4fa
+    =================================,0x314,0,0,0,upgrade,public,False,0,0,0x4fa
+    0x315: v315(0x8bc) = CONST ,0x314,v315,0,CONST,upgrade,public,False,0x8bc,0,0x4fa
+    0x318: v318(0x4fa) = CONST ,0x314,v318,0,CONST,upgrade,public,False,0x4fa,0,0x4fa
+    0x31b: JUMP v318(0x4fa),0x314,0,"0,v318",JUMP,upgrade,public,False,0,0,0x4fa
+    Begin block 0x4fa,0x4fa,0,0,0,upgrade,public,False,0,0,0x4fa
+"    prev=[0x314], succ=[0x511, 0x515]",0x4fa,0,0,0,upgrade,public,False,0,0,"0x511, 0x515"
+    =================================,0x4fa,0,0,0,upgrade,public,False,0,0,"0x511, 0x515"
+    0x4fb: v4fb(0x1) = CONST ,0x4fa,v4fb,0,CONST,upgrade,public,False,0x1,0,"0x511, 0x515"
+    0x4fd: v4fd = SLOAD v4fb(0x1),0x4fa,v4fd,"0,v4fb",SLOAD,upgrade,public,False,0,0,"0x511, 0x515"
+    0x4fe: v4fe = CALLER ,0x4fa,v4fe,0,CALLER,upgrade,public,True,0,0,"0x511, 0x515"
+    0x4ff: v4ff(0x1) = CONST ,0x4fa,v4ff,0,CONST,upgrade,public,False,0x1,0,"0x511, 0x515"
+    0x501: v501(0xa0) = CONST ,0x4fa,v501,0,CONST,upgrade,public,False,0xa0,0,"0x511, 0x515"
+    0x503: v503(0x2) = CONST ,0x4fa,v503,0,CONST,upgrade,public,False,0x2,0,"0x511, 0x515"
+"    0x505: v505(0x10000000000000000000000000000000000000000) = EXP v503(0x2), v501(0xa0)",0x4fa,v505,"0,v503,v501",EXP,upgrade,public,False,0x10000000000000000000000000000000000000000,0,"0x511, 0x515"
+"    0x506: v506(0xffffffffffffffffffffffffffffffffffffffff) = SUB v505(0x10000000000000000000000000000000000000000), v4ff(0x1)",0x4fa,v506,"0,v505,v4ff",SUB,upgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,"0x511, 0x515"
+"    0x509: v509 = AND v506(0xffffffffffffffffffffffffffffffffffffffff), v4fe",0x4fa,v509,"0,v506,v4fe",AND,upgrade,public,True,0,0,"0x511, 0x515"
+"    0x50b: v50b = AND v4fd, v506(0xffffffffffffffffffffffffffffffffffffffff)",0x4fa,v50b,"0,v4fd,v506",AND,upgrade,public,False,0,0,"0x511, 0x515"
+"    0x50c: v50c = EQ v50b, v509",0x4fa,v50c,"0,v50b,v509",EQ,upgrade,public,False,0,0,"0x511, 0x515"
+    0x50d: v50d(0x515) = CONST ,0x4fa,v50d,0,CONST,upgrade,public,False,0x515,0,"0x511, 0x515"
+"    0x510: JUMPI v50d(0x515), v50c",0x4fa,0,"0,v50d,v50c",JUMPI,upgrade,public,False,0,0,"0x511, 0x515"
+    Begin block 0x511,0x511,0,0,0,upgrade,public,False,0,0,"0x511, 0x515"
+"    prev=[0x4fa], succ=[]",0x511,0,0,0,upgrade,public,False,0,0,"0x511, 0x515"
+    =================================,0x511,0,0,0,upgrade,public,False,0,0,"0x511, 0x515"
+    0x511: v511(0x0) = CONST ,0x511,v511,0,CONST,upgrade,public,False,0x0,0,"0x511, 0x515"
+"    0x514: REVERT v511(0x0), v511(0x0)",0x511,0,"0,v511,v511",REVERT,upgrade,public,False,0,0,"0x511, 0x515"
+    Begin block 0x515,0x515,0,0,0,upgrade,public,False,0,0,"0x511, 0x515"
+"    prev=[0x4fa], succ=[0x528, 0x52c]",0x515,0,0,0,upgrade,public,False,0,0,"0x528, 0x52c"
+    =================================,0x515,0,0,0,upgrade,public,False,0,0,"0x528, 0x52c"
+    0x516: v516(0x10) = CONST ,0x515,v516,0,CONST,upgrade,public,False,0x10,0,"0x528, 0x52c"
+    0x518: v518 = SLOAD v516(0x10),0x515,v518,"0,v516",SLOAD,upgrade,public,False,0,0,"0x528, 0x52c"
+    0x519: v519(0x1) = CONST ,0x515,v519,0,CONST,upgrade,public,False,0x1,0,"0x528, 0x52c"
+    0x51b: v51b(0xa0) = CONST ,0x515,v51b,0,CONST,upgrade,public,False,0xa0,0,"0x528, 0x52c"
+    0x51d: v51d(0x2) = CONST ,0x515,v51d,0,CONST,upgrade,public,False,0x2,0,"0x528, 0x52c"
+"    0x51f: v51f(0x10000000000000000000000000000000000000000) = EXP v51d(0x2), v51b(0xa0)",0x515,v51f,"0,v51d,v51b",EXP,upgrade,public,False,0x10000000000000000000000000000000000000000,0,"0x528, 0x52c"
+"    0x520: v520(0xffffffffffffffffffffffffffffffffffffffff) = SUB v51f(0x10000000000000000000000000000000000000000), v519(0x1)",0x515,v520,"0,v51f,v519",SUB,upgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,"0x528, 0x52c"
+"    0x521: v521 = AND v520(0xffffffffffffffffffffffffffffffffffffffff), v518",0x515,v521,"0,v520,v518",AND,upgrade,public,False,0,0,"0x528, 0x52c"
+    0x522: v522 = ISZERO v521,0x515,v522,"0,v521",ISZERO,upgrade,public,False,0,0,"0x528, 0x52c"
+    0x523: v523 = ISZERO v522,0x515,v523,"0,v522",ISZERO,upgrade,public,False,0,0,"0x528, 0x52c"
+    0x524: v524(0x52c) = CONST ,0x515,v524,0,CONST,upgrade,public,False,0x52c,0,"0x528, 0x52c"
+"    0x527: JUMPI v524(0x52c), v523",0x515,0,"0,v524,v523",JUMPI,upgrade,public,False,0,0,"0x528, 0x52c"
+    Begin block 0x528,0x528,0,0,0,upgrade,public,False,0,0,"0x528, 0x52c"
+"    prev=[0x515], succ=[]",0x528,0,0,0,upgrade,public,False,0,0,"0x528, 0x52c"
+    =================================,0x528,0,0,0,upgrade,public,False,0,0,"0x528, 0x52c"
+    0x528: v528(0x0) = CONST ,0x528,v528,0,CONST,upgrade,public,False,0x0,0,"0x528, 0x52c"
+"    0x52b: REVERT v528(0x0), v528(0x0)",0x528,0,"0,v528,v528",REVERT,upgrade,public,False,0,0,"0x528, 0x52c"
+    Begin block 0x52c,0x52c,0,0,0,upgrade,public,False,0,0,"0x528, 0x52c"
+"    prev=[0x515], succ=[0x537, 0x53b]",0x52c,0,0,0,upgrade,public,False,0,0,"0x537, 0x53b"
+    =================================,0x52c,0,0,0,upgrade,public,False,0,0,"0x537, 0x53b"
+    0x52d: v52d(0x11) = CONST ,0x52c,v52d,0,CONST,upgrade,public,False,0x11,0,"0x537, 0x53b"
+    0x52f: v52f = SLOAD v52d(0x11),0x52c,v52f,"0,v52d",SLOAD,upgrade,public,False,0,0,"0x537, 0x53b"
+    0x530: v530 = TIMESTAMP ,0x52c,v530,0,TIMESTAMP,upgrade,public,False,0,0,"0x537, 0x53b"
+"    0x532: v532 = LT v52f, v530",0x52c,v532,"0,v52f,v530",LT,upgrade,public,False,0,0,"0x537, 0x53b"
+    0x533: v533(0x53b) = CONST ,0x52c,v533,0,CONST,upgrade,public,False,0x53b,0,"0x537, 0x53b"
+"    0x536: JUMPI v533(0x53b), v532",0x52c,0,"0,v533,v532",JUMPI,upgrade,public,False,0,0,"0x537, 0x53b"
+    Begin block 0x537,0x537,0,0,0,upgrade,public,False,0,0,"0x537, 0x53b"
+"    prev=[0x52c], succ=[]",0x537,0,0,0,upgrade,public,False,0,0,"0x537, 0x53b"
+    =================================,0x537,0,0,0,upgrade,public,False,0,0,"0x537, 0x53b"
+    0x537: v537(0x0) = CONST ,0x537,v537,0,CONST,upgrade,public,False,0x0,0,"0x537, 0x53b"
+"    0x53a: REVERT v537(0x0), v537(0x0)",0x537,0,"0,v537,v537",REVERT,upgrade,public,False,0,0,"0x537, 0x53b"
+    Begin block 0x53b,0x53b,0,0,0,upgrade,public,False,0,0,"0x537, 0x53b"
+"    prev=[0x52c], succ=[0x8bc]",0x53b,0,0,0,upgrade,public,False,0,0,0x8bc
+    =================================,0x53b,0,0,0,upgrade,public,False,0,0,0x8bc
+    0x53c: v53c(0x10) = CONST ,0x53b,v53c,0,CONST,upgrade,public,False,0x10,0,0x8bc
+    0x53e: v53e = SLOAD v53c(0x10),0x53b,v53e,"0,v53c",SLOAD,upgrade,public,False,0,0,0x8bc
+    0x53f: v53f(0xf) = CONST ,0x53b,v53f,0,CONST,upgrade,public,False,0xf,0,0x8bc
+    0x542: v542 = SLOAD v53f(0xf),0x53b,v542,"0,v53f",SLOAD,upgrade,public,False,0,0,0x8bc
+    0x543: v543(0xffffffffffffffffffffffffffffffffffffffff) = CONST ,0x53b,v543,0,CONST,upgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x8bc
+    0x558: v558(0xffffffffffffffffffffffff0000000000000000000000000000000000000000) = NOT v543(0xffffffffffffffffffffffffffffffffffffffff),0x53b,v558,"0,v543",NOT,upgrade,public,False,0xffffffffffffffffffffffff0000000000000000000000000000000000000000,0,0x8bc
+"    0x559: v559 = AND v558(0xffffffffffffffffffffffff0000000000000000000000000000000000000000), v542",0x53b,v559,"0,v558,v542",AND,upgrade,public,False,0,0,0x8bc
+    0x55a: v55a(0x1) = CONST ,0x53b,v55a,0,CONST,upgrade,public,False,0x1,0,0x8bc
+    0x55c: v55c(0xa0) = CONST ,0x53b,v55c,0,CONST,upgrade,public,False,0xa0,0,0x8bc
+    0x55e: v55e(0x2) = CONST ,0x53b,v55e,0,CONST,upgrade,public,False,0x2,0,0x8bc
+"    0x560: v560(0x10000000000000000000000000000000000000000) = EXP v55e(0x2), v55c(0xa0)",0x53b,v560,"0,v55e,v55c",EXP,upgrade,public,False,0x10000000000000000000000000000000000000000,0,0x8bc
+"    0x561: v561(0xffffffffffffffffffffffffffffffffffffffff) = SUB v560(0x10000000000000000000000000000000000000000), v55a(0x1)",0x53b,v561,"0,v560,v55a",SUB,upgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x8bc
+"    0x564: v564 = AND v561(0xffffffffffffffffffffffffffffffffffffffff), v53e",0x53b,v564,"0,v561,v53e",AND,upgrade,public,False,0,0,0x8bc
+"    0x565: v565 = OR v564, v559",0x53b,v565,"0,v564,v559",OR,upgrade,public,False,0,0,0x8bc
+"    0x569: SSTORE v53f(0xf), v565",0x53b,0,"0,v53f,v565",SSTORE,upgrade,public,False,0,0,0x8bc
+    0x56a: v56a(0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b) = CONST ,0x53b,v56a,0,CONST,upgrade,public,False,0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b,0,0x8bc
+"    0x58c: v58c = AND v561(0xffffffffffffffffffffffffffffffffffffffff), v565",0x53b,v58c,"0,v561,v565",AND,upgrade,public,False,0,0,0x8bc
+    0x58d: v58d(0x40) = CONST ,0x53b,v58d,0,CONST,upgrade,public,False,0x40,0,0x8bc
+    0x58f: v58f = MLOAD v58d(0x40),0x53b,v58f,"0,v58d",MLOAD,upgrade,public,False,0,upgrade&m0x40,0x8bc
+    0x590: v590(0x1) = CONST ,0x53b,v590,0,CONST,upgrade,public,False,0x1,0,0x8bc
+    0x592: v592(0xa0) = CONST ,0x53b,v592,0,CONST,upgrade,public,False,0xa0,0,0x8bc
+    0x594: v594(0x2) = CONST ,0x53b,v594,0,CONST,upgrade,public,False,0x2,0,0x8bc
+"    0x596: v596(0x10000000000000000000000000000000000000000) = EXP v594(0x2), v592(0xa0)",0x53b,v596,"0,v594,v592",EXP,upgrade,public,False,0x10000000000000000000000000000000000000000,0,0x8bc
+"    0x597: v597(0xffffffffffffffffffffffffffffffffffffffff) = SUB v596(0x10000000000000000000000000000000000000000), v590(0x1)",0x53b,v597,"0,v596,v590",SUB,upgrade,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x8bc
+"    0x59a: v59a = AND v58c, v597(0xffffffffffffffffffffffffffffffffffffffff)",0x53b,v59a,"0,v58c,v597",AND,upgrade,public,False,0,0,0x8bc
+"    0x59c: MSTORE v58f, v59a",0x53b,upgrade&m0x40,"0,v58f,v59a",MSTORE,upgrade,public,False,0,upgrade&m0x40,0x8bc
+    0x59d: v59d(0x20) = CONST ,0x53b,v59d,0,CONST,upgrade,public,False,0x20,0,0x8bc
+"    0x59f: v59f = ADD v59d(0x20), v58f",0x53b,v59f,"0,v59d,v58f",ADD,upgrade,public,False,0,upgrade&m0x40+0x20,0x8bc
+    0x5a0: v5a0(0x40) = CONST ,0x53b,v5a0,0,CONST,upgrade,public,False,0x40,0,0x8bc
+    0x5a2: v5a2 = MLOAD v5a0(0x40),0x53b,v5a2,"0,v5a0",MLOAD,upgrade,public,False,0,upgrade&m0x40,0x8bc
+"    0x5a5: v5a5(0x20) = SUB v59f, v5a2",0x53b,v5a5,"0,v59f,v5a2",SUB,upgrade,public,False,0x20,upgrade&m0x40+0x20-0x20,0x8bc
+"    0x5a7: LOG1 v5a2, v5a5(0x20), v56a(0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b)",0x53b,0,"0,v5a2,v5a5,v56a",LOG1,upgrade,public,False,0,0,0x8bc
+    0x5a8: JUMP v315(0x8bc),0x53b,0,"0,v315",JUMP,upgrade,public,False,0,0,0x8bc
+    Begin block 0x8bc,0x8bc,0,0,0,upgrade,public,False,0,0,0x8bc
+"    prev=[0x53b], succ=[]",0x8bc,0,0,0,upgrade,public,False,0,0,0x8bc
+    =================================,0x8bc,0,0,0,upgrade,public,False,0,0,0x8bc
+    0x8bd: STOP ,0x8bc,0,0,STOP,upgrade,public,False,0,0,0x8bc
+},0x8bc,0,0,0,upgrade,public,False,0,0,0x8bc
+function etherDelta()() public {,0x31c,0,0,public,etherDelta,public,False,0,0,0x8bc
+    Begin block 0x31c,0x31c,0,0,0,etherDelta,public,False,0,0,0x8bc
+"    prev=[], succ=[0x323, 0x327]",0x31c,0,0,0,etherDelta,public,False,0,0,"0x323, 0x327"
+    =================================,0x31c,0,0,0,etherDelta,public,False,0,0,"0x323, 0x327"
+    0x31d: v31d = CALLVALUE ,0x31c,v31d,0,CALLVALUE,etherDelta,public,False,0,0,"0x323, 0x327"
+    0x31e: v31e = ISZERO v31d,0x31c,v31e,"0,v31d",ISZERO,etherDelta,public,False,0,0,"0x323, 0x327"
+    0x31f: v31f(0x327) = CONST ,0x31c,v31f,0,CONST,etherDelta,public,False,0x327,0,"0x323, 0x327"
+"    0x322: JUMPI v31f(0x327), v31e",0x31c,0,"0,v31f,v31e",JUMPI,etherDelta,public,False,0,0,"0x323, 0x327"
+    Begin block 0x323,0x323,0,0,0,etherDelta,public,False,0,0,"0x323, 0x327"
+"    prev=[0x31c], succ=[]",0x323,0,0,0,etherDelta,public,False,0,0,"0x323, 0x327"
+    =================================,0x323,0,0,0,etherDelta,public,False,0,0,"0x323, 0x327"
+    0x323: v323(0x0) = CONST ,0x323,v323,0,CONST,etherDelta,public,False,0x0,0,"0x323, 0x327"
+"    0x326: REVERT v323(0x0), v323(0x0)",0x323,0,"0,v323,v323",REVERT,etherDelta,public,False,0,0,"0x323, 0x327"
+    Begin block 0x327,0x327,0,0,0,etherDelta,public,False,0,0,"0x323, 0x327"
+"    prev=[0x31c], succ=[0x5a9]",0x327,0,0,0,etherDelta,public,False,0,0,0x5a9
+    =================================,0x327,0,0,0,etherDelta,public,False,0,0,0x5a9
+    0x328: v328(0x8dd) = CONST ,0x327,v328,0,CONST,etherDelta,public,False,0x8dd,0,0x5a9
+    0x32b: v32b(0x5a9) = CONST ,0x327,v32b,0,CONST,etherDelta,public,False,0x5a9,0,0x5a9
+    0x32e: JUMP v32b(0x5a9),0x327,0,"0,v32b",JUMP,etherDelta,public,False,0,0,0x5a9
+    Begin block 0x5a9,0x5a9,0,0,0,etherDelta,public,False,0,0,0x5a9
+"    prev=[0x327], succ=[0x8dd]",0x5a9,0,0,0,etherDelta,public,False,0,0,0x8dd
+    =================================,0x5a9,0,0,0,etherDelta,public,False,0,0,0x8dd
+    0x5aa: v5aa(0x7) = CONST ,0x5a9,v5aa,0,CONST,etherDelta,public,False,0x7,0,0x8dd
+    0x5ac: v5ac = SLOAD v5aa(0x7),0x5a9,v5ac,"0,v5aa",SLOAD,etherDelta,public,False,0,0,0x8dd
+    0x5ad: v5ad(0x1) = CONST ,0x5a9,v5ad,0,CONST,etherDelta,public,False,0x1,0,0x8dd
+    0x5af: v5af(0xa0) = CONST ,0x5a9,v5af,0,CONST,etherDelta,public,False,0xa0,0,0x8dd
+    0x5b1: v5b1(0x2) = CONST ,0x5a9,v5b1,0,CONST,etherDelta,public,False,0x2,0,0x8dd
+"    0x5b3: v5b3(0x10000000000000000000000000000000000000000) = EXP v5b1(0x2), v5af(0xa0)",0x5a9,v5b3,"0,v5b1,v5af",EXP,etherDelta,public,False,0x10000000000000000000000000000000000000000,0,0x8dd
+"    0x5b4: v5b4(0xffffffffffffffffffffffffffffffffffffffff) = SUB v5b3(0x10000000000000000000000000000000000000000), v5ad(0x1)",0x5a9,v5b4,"0,v5b3,v5ad",SUB,etherDelta,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x8dd
+"    0x5b5: v5b5 = AND v5b4(0xffffffffffffffffffffffffffffffffffffffff), v5ac",0x5a9,v5b5,"0,v5b4,v5ac",AND,etherDelta,public,False,0,0,0x8dd
+    0x5b7: JUMP v328(0x8dd),0x5a9,0,"0,v328",JUMP,etherDelta,public,False,0,0,0x8dd
+    Begin block 0x8dd,0x8dd,0,0,0,etherDelta,public,False,0,0,0x8dd
+"    prev=[0x5a9], succ=[]",0x8dd,0,0,0,etherDelta,public,False,0,0,0x8dd
+    =================================,0x8dd,0,0,0,etherDelta,public,False,0,0,0x8dd
+    0x8de: v8de(0x40) = CONST ,0x8dd,v8de,0,CONST,etherDelta,public,False,0x40,0,0x8dd
+    0x8e0: v8e0 = MLOAD v8de(0x40),0x8dd,v8e0,"0,v8de",MLOAD,etherDelta,public,False,0,etherDelta&m0x40,0x8dd
+    0x8e1: v8e1(0x1) = CONST ,0x8dd,v8e1,0,CONST,etherDelta,public,False,0x1,0,0x8dd
+    0x8e3: v8e3(0xa0) = CONST ,0x8dd,v8e3,0,CONST,etherDelta,public,False,0xa0,0,0x8dd
+    0x8e5: v8e5(0x2) = CONST ,0x8dd,v8e5,0,CONST,etherDelta,public,False,0x2,0,0x8dd
+"    0x8e7: v8e7(0x10000000000000000000000000000000000000000) = EXP v8e5(0x2), v8e3(0xa0)",0x8dd,v8e7,"0,v8e5,v8e3",EXP,etherDelta,public,False,0x10000000000000000000000000000000000000000,0,0x8dd
+"    0x8e8: v8e8(0xffffffffffffffffffffffffffffffffffffffff) = SUB v8e7(0x10000000000000000000000000000000000000000), v8e1(0x1)",0x8dd,v8e8,"0,v8e7,v8e1",SUB,etherDelta,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x8dd
+"    0x8eb: v8eb = AND v5b5, v8e8(0xffffffffffffffffffffffffffffffffffffffff)",0x8dd,v8eb,"0,v5b5,v8e8",AND,etherDelta,public,False,0,0,0x8dd
+"    0x8ed: MSTORE v8e0, v8eb",0x8dd,etherDelta&m0x40,"0,v8e0,v8eb",MSTORE,etherDelta,public,False,0,etherDelta&m0x40,0x8dd
+    0x8ee: v8ee(0x20) = CONST ,0x8dd,v8ee,0,CONST,etherDelta,public,False,0x20,0,0x8dd
+"    0x8f0: v8f0 = ADD v8ee(0x20), v8e0",0x8dd,v8f0,"0,v8ee,v8e0",ADD,etherDelta,public,False,0,etherDelta&m0x40+0x20,0x8dd
+    0x8f1: v8f1(0x40) = CONST ,0x8dd,v8f1,0,CONST,etherDelta,public,False,0x40,0,0x8dd
+    0x8f3: v8f3 = MLOAD v8f1(0x40),0x8dd,v8f3,"0,v8f1",MLOAD,etherDelta,public,False,0,etherDelta&m0x40,0x8dd
+"    0x8f6: v8f6(0x20) = SUB v8f0, v8f3",0x8dd,v8f6,"0,v8f0,v8f3",SUB,etherDelta,public,False,0x20,etherDelta&m0x40+0x20-0x20,0x8dd
+"    0x8f8: RETURN v8f3, v8f6(0x20)",0x8dd,0,"0,v8f3,v8f6",RETURN,etherDelta,public,False,0,0,0x8dd
+},0x8dd,0,0,0,etherDelta,public,False,0,0,0x8dd
+function admin()() public {,0x32f,0,0,public,admin,public,False,0,0,0x8dd
+    Begin block 0x32f,0x32f,0,0,0,admin,public,False,0,0,0x8dd
+"    prev=[], succ=[0x336, 0x33a]",0x32f,0,0,0,admin,public,False,0,0,"0x336, 0x33a"
+    =================================,0x32f,0,0,0,admin,public,False,0,0,"0x336, 0x33a"
+    0x330: v330 = CALLVALUE ,0x32f,v330,0,CALLVALUE,admin,public,False,0,0,"0x336, 0x33a"
+    0x331: v331 = ISZERO v330,0x32f,v331,"0,v330",ISZERO,admin,public,False,0,0,"0x336, 0x33a"
+    0x332: v332(0x33a) = CONST ,0x32f,v332,0,CONST,admin,public,False,0x33a,0,"0x336, 0x33a"
+"    0x335: JUMPI v332(0x33a), v331",0x32f,0,"0,v332,v331",JUMPI,admin,public,False,0,0,"0x336, 0x33a"
+    Begin block 0x336,0x336,0,0,0,admin,public,False,0,0,"0x336, 0x33a"
+"    prev=[0x32f], succ=[]",0x336,0,0,0,admin,public,False,0,0,"0x336, 0x33a"
+    =================================,0x336,0,0,0,admin,public,False,0,0,"0x336, 0x33a"
+    0x336: v336(0x0) = CONST ,0x336,v336,0,CONST,admin,public,False,0x0,0,"0x336, 0x33a"
+"    0x339: REVERT v336(0x0), v336(0x0)",0x336,0,"0,v336,v336",REVERT,admin,public,False,0,0,"0x336, 0x33a"
+    Begin block 0x33a,0x33a,0,0,0,admin,public,False,0,0,"0x336, 0x33a"
+"    prev=[0x32f], succ=[0x5b8]",0x33a,0,0,0,admin,public,False,0,0,0x5b8
+    =================================,0x33a,0,0,0,admin,public,False,0,0,0x5b8
+    0x33b: v33b(0x918) = CONST ,0x33a,v33b,0,CONST,admin,public,False,0x918,0,0x5b8
+    0x33e: v33e(0x5b8) = CONST ,0x33a,v33e,0,CONST,admin,public,False,0x5b8,0,0x5b8
+    0x341: JUMP v33e(0x5b8),0x33a,0,"0,v33e",JUMP,admin,public,False,0,0,0x5b8
+    Begin block 0x5b8,0x5b8,0,0,0,admin,public,False,0,0,0x5b8
+"    prev=[0x33a], succ=[0x918]",0x5b8,0,0,0,admin,public,False,0,0,0x918
+    =================================,0x5b8,0,0,0,admin,public,False,0,0,0x918
+    0x5b9: v5b9(0x1) = CONST ,0x5b8,v5b9,0,CONST,admin,public,False,0x1,0,0x918
+    0x5bb: v5bb = SLOAD v5b9(0x1),0x5b8,v5bb,"0,v5b9",SLOAD,admin,public,False,0,0,0x918
+    0x5bc: v5bc(0x1) = CONST ,0x5b8,v5bc,0,CONST,admin,public,False,0x1,0,0x918
+    0x5be: v5be(0xa0) = CONST ,0x5b8,v5be,0,CONST,admin,public,False,0xa0,0,0x918
+    0x5c0: v5c0(0x2) = CONST ,0x5b8,v5c0,0,CONST,admin,public,False,0x2,0,0x918
+"    0x5c2: v5c2(0x10000000000000000000000000000000000000000) = EXP v5c0(0x2), v5be(0xa0)",0x5b8,v5c2,"0,v5c0,v5be",EXP,admin,public,False,0x10000000000000000000000000000000000000000,0,0x918
+"    0x5c3: v5c3(0xffffffffffffffffffffffffffffffffffffffff) = SUB v5c2(0x10000000000000000000000000000000000000000), v5bc(0x1)",0x5b8,v5c3,"0,v5c2,v5bc",SUB,admin,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x918
+"    0x5c4: v5c4 = AND v5c3(0xffffffffffffffffffffffffffffffffffffffff), v5bb",0x5b8,v5c4,"0,v5c3,v5bb",AND,admin,public,False,0,0,0x918
+    0x5c6: JUMP v33b(0x918),0x5b8,0,"0,v33b",JUMP,admin,public,False,0,0,0x918
+    Begin block 0x918,0x918,0,0,0,admin,public,False,0,0,0x918
+"    prev=[0x5b8], succ=[]",0x918,0,0,0,admin,public,False,0,0,0x918
+    =================================,0x918,0,0,0,admin,public,False,0,0,0x918
+    0x919: v919(0x40) = CONST ,0x918,v919,0,CONST,admin,public,False,0x40,0,0x918
+    0x91b: v91b = MLOAD v919(0x40),0x918,v91b,"0,v919",MLOAD,admin,public,False,0,admin&m0x40,0x918
+    0x91c: v91c(0x1) = CONST ,0x918,v91c,0,CONST,admin,public,False,0x1,0,0x918
+    0x91e: v91e(0xa0) = CONST ,0x918,v91e,0,CONST,admin,public,False,0xa0,0,0x918
+    0x920: v920(0x2) = CONST ,0x918,v920,0,CONST,admin,public,False,0x2,0,0x918
+"    0x922: v922(0x10000000000000000000000000000000000000000) = EXP v920(0x2), v91e(0xa0)",0x918,v922,"0,v920,v91e",EXP,admin,public,False,0x10000000000000000000000000000000000000000,0,0x918
+"    0x923: v923(0xffffffffffffffffffffffffffffffffffffffff) = SUB v922(0x10000000000000000000000000000000000000000), v91c(0x1)",0x918,v923,"0,v922,v91c",SUB,admin,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x918
+"    0x926: v926 = AND v5c4, v923(0xffffffffffffffffffffffffffffffffffffffff)",0x918,v926,"0,v5c4,v923",AND,admin,public,False,0,0,0x918
+"    0x928: MSTORE v91b, v926",0x918,admin&m0x40,"0,v91b,v926",MSTORE,admin,public,False,0,admin&m0x40,0x918
+    0x929: v929(0x20) = CONST ,0x918,v929,0,CONST,admin,public,False,0x20,0,0x918
+"    0x92b: v92b = ADD v929(0x20), v91b",0x918,v92b,"0,v929,v91b",ADD,admin,public,False,0,admin&m0x40+0x20,0x918
+    0x92c: v92c(0x40) = CONST ,0x918,v92c,0,CONST,admin,public,False,0x40,0,0x918
+    0x92e: v92e = MLOAD v92c(0x40),0x918,v92e,"0,v92c",MLOAD,admin,public,False,0,admin&m0x40,0x918
+"    0x931: v931(0x20) = SUB v92b, v92e",0x918,v931,"0,v92b,v92e",SUB,admin,public,False,0x20,admin&m0x40+0x20-0x20,0x918
+"    0x933: RETURN v92e, v931(0x20)",0x918,0,"0,v92e,v931",RETURN,admin,public,False,0,0,0x918
+},0x918,0,0,0,admin,public,False,0,0,0x918
+function withdrawABIHash()() public {,0x342,0,0,public,withdrawABIHash,public,False,0,0,0x918
+    Begin block 0x342,0x342,0,0,0,withdrawABIHash,public,False,0,0,0x918
+"    prev=[], succ=[0x349, 0x34d]",0x342,0,0,0,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+    =================================,0x342,0,0,0,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+    0x343: v343 = CALLVALUE ,0x342,v343,0,CALLVALUE,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+    0x344: v344 = ISZERO v343,0x342,v344,"0,v343",ISZERO,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+    0x345: v345(0x34d) = CONST ,0x342,v345,0,CONST,withdrawABIHash,public,False,0x34d,0,"0x349, 0x34d"
+"    0x348: JUMPI v345(0x34d), v344",0x342,0,"0,v345,v344",JUMPI,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+    Begin block 0x349,0x349,0,0,0,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+"    prev=[0x342], succ=[]",0x349,0,0,0,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+    =================================,0x349,0,0,0,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+    0x349: v349(0x0) = CONST ,0x349,v349,0,CONST,withdrawABIHash,public,False,0x0,0,"0x349, 0x34d"
+"    0x34c: REVERT v349(0x0), v349(0x0)",0x349,0,"0,v349,v349",REVERT,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+    Begin block 0x34d,0x34d,0,0,0,withdrawABIHash,public,False,0,0,"0x349, 0x34d"
+"    prev=[0x342], succ=[0x5c7]",0x34d,0,0,0,withdrawABIHash,public,False,0,0,0x5c7
+    =================================,0x34d,0,0,0,withdrawABIHash,public,False,0,0,0x5c7
+    0x34e: v34e(0x953) = CONST ,0x34d,v34e,0,CONST,withdrawABIHash,public,False,0x953,0,0x5c7
+    0x351: v351(0x5c7) = CONST ,0x34d,v351,0,CONST,withdrawABIHash,public,False,0x5c7,0,0x5c7
+    0x354: JUMP v351(0x5c7),0x34d,0,"0,v351",JUMP,withdrawABIHash,public,False,0,0,0x5c7
+    Begin block 0x5c7,0x5c7,0,0,0,withdrawABIHash,public,False,0,0,0x5c7
+"    prev=[0x34d], succ=[0x953]",0x5c7,0,0,0,withdrawABIHash,public,False,0,0,0x953
+    =================================,0x5c7,0,0,0,withdrawABIHash,public,False,0,0,0x953
+    0x5c8: v5c8(0x9) = CONST ,0x5c7,v5c8,0,CONST,withdrawABIHash,public,False,0x9,0,0x953
+    0x5ca: v5ca = SLOAD v5c8(0x9),0x5c7,v5ca,"0,v5c8",SLOAD,withdrawABIHash,public,False,0,0,0x953
+    0x5cc: JUMP v34e(0x953),0x5c7,0,"0,v34e",JUMP,withdrawABIHash,public,False,0,0,0x953
+    Begin block 0x953,0x953,0,0,0,withdrawABIHash,public,False,0,0,0x953
+"    prev=[0x5c7], succ=[]",0x953,0,0,0,withdrawABIHash,public,False,0,0,0x953
+    =================================,0x953,0,0,0,withdrawABIHash,public,False,0,0,0x953
+    0x954: v954(0x40) = CONST ,0x953,v954,0,CONST,withdrawABIHash,public,False,0x40,0,0x953
+    0x956: v956 = MLOAD v954(0x40),0x953,v956,"0,v954",MLOAD,withdrawABIHash,public,False,0,withdrawABIHash&m0x40,0x953
+"    0x959: MSTORE v956, v5ca",0x953,withdrawABIHash&m0x40,"0,v956,v5ca",MSTORE,withdrawABIHash,public,False,0,withdrawABIHash&m0x40,0x953
+    0x95a: v95a(0x20) = CONST ,0x953,v95a,0,CONST,withdrawABIHash,public,False,0x20,0,0x953
+"    0x95c: v95c = ADD v95a(0x20), v956",0x953,v95c,"0,v95a,v956",ADD,withdrawABIHash,public,False,0,withdrawABIHash&m0x40+0x20,0x953
+    0x95d: v95d(0x40) = CONST ,0x953,v95d,0,CONST,withdrawABIHash,public,False,0x40,0,0x953
+    0x95f: v95f = MLOAD v95d(0x40),0x953,v95f,"0,v95d",MLOAD,withdrawABIHash,public,False,0,withdrawABIHash&m0x40,0x953
+"    0x962: v962(0x20) = SUB v95c, v95f",0x953,v962,"0,v95c,v95f",SUB,withdrawABIHash,public,False,0x20,withdrawABIHash&m0x40+0x20-0x20,0x953
+"    0x964: RETURN v95f, v962(0x20)",0x953,0,"0,v95f,v962",RETURN,withdrawABIHash,public,False,0,0,0x953
+},0x953,0,0,0,withdrawABIHash,public,False,0,0,0x953
+function fallback()() public {,0xfb,0,0,public,fallback,public,False,0,0,0x953
+    Begin block 0xfb,0xfb,0,0,0,fallback,public,False,0,0,0x953
+"    prev=[], succ=[0x5cd]",0xfb,0,0,0,fallback,public,False,0,0,0x5cd
+    =================================,0xfb,0,0,0,fallback,public,False,0,0,0x5cd
+    0xfc: vfc(0x103) = CONST ,0xfb,vfc,0,CONST,fallback,public,False,0x103,0,0x5cd
+    0xff: vff(0x5cd) = CONST ,0xfb,vff,0,CONST,fallback,public,False,0x5cd,0,0x5cd
+    0x102: JUMP vff(0x5cd),0xfb,0,"0,vff",JUMP,fallback,public,False,0,0,0x5cd
+    Begin block 0x5cd,0x5cd,0,0,0,fallback,public,False,0,0,0x5cd
+"    prev=[0xfb], succ=[0x103]",0x5cd,0,0,0,fallback,public,False,0,0,0x103
+    =================================,0x5cd,0,0,0,fallback,public,False,0,0,0x103
+    0x5ce: v5ce(0x20) = CONST ,0x5cd,v5ce,0,CONST,fallback,public,False,0x20,0,0x103
+    0x5d0: v5d0(0x40) = CONST ,0x5cd,v5d0,0,CONST,fallback,public,False,0x40,0,0x103
+    0x5d2: v5d2 = MLOAD v5d0(0x40),0x5cd,v5d2,"0,v5d0",MLOAD,fallback,public,False,0,fallback&m0x40,0x103
+"    0x5d5: v5d5 = ADD v5d2, v5ce(0x20)",0x5cd,v5d5,"0,v5d2,v5ce",ADD,fallback,public,False,0,fallback&m0x40+0x20,0x103
+    0x5d6: v5d6(0x40) = CONST ,0x5cd,v5d6,0,CONST,fallback,public,False,0x40,0,0x103
+"    0x5d8: MSTORE v5d6(0x40), v5d5",0x5cd,0,"0,v5d6,v5d5",MSTORE,fallback,public,False,0,0,0x103
+    0x5d9: v5d9(0x0) = CONST ,0x5cd,v5d9,0,CONST,fallback,public,False,0x0,0,0x103
+"    0x5dc: MSTORE v5d2, v5d9(0x0)",0x5cd,fallback&m0x40,"0,v5d2,v5d9",MSTORE,fallback,public,False,0,fallback&m0x40,0x103
+    0x5de: JUMP vfc(0x103),0x5cd,0,"0,vfc",JUMP,fallback,public,False,0,0,0x103
+    Begin block 0x103,0x103,0,0,0,fallback,public,False,0,0,0x103
+"    prev=[0x5cd], succ=[0x355B0x103]",0x103,0,0,0,fallback,public,False,0,0,0x355B0x103
+    =================================,0x103,0,0,0,fallback,public,False,0,0,0x355B0x103
+    0x104: v104(0x0) = CONST ,0x103,v104,0,CONST,fallback,public,False,0x0,0,0x355B0x103
+    0x107: v107 = CALLDATASIZE ,0x103,v107,0,CALLDATASIZE,fallback,public,False,0,0,0x355B0x103
+    0x10a: v10a(0x1f) = CONST ,0x103,v10a,0,CONST,fallback,public,False,0x1f,0,0x355B0x103
+"    0x10c: v10c = ADD v10a(0x1f), v107",0x103,v10c,"0,v10a,v107",ADD,fallback,public,False,0,0,0x355B0x103
+    0x10d: v10d(0x20) = CONST ,0x103,v10d,0,CONST,fallback,public,False,0x20,0,0x355B0x103
+"    0x111: v111 = DIV v10c, v10d(0x20)",0x103,v111,"0,v10c,v10d",DIV,fallback,public,False,0,0,0x355B0x103
+"    0x112: v112 = MUL v111, v10d(0x20)",0x103,v112,"0,v111,v10d",MUL,fallback,public,False,0,0,0x355B0x103
+    0x113: v113(0x20) = CONST ,0x103,v113,0,CONST,fallback,public,False,0x20,0,0x355B0x103
+"    0x115: v115 = ADD v113(0x20), v112",0x103,v115,"0,v113,v112",ADD,fallback,public,False,0,0,0x355B0x103
+    0x116: v116(0x40) = CONST ,0x103,v116,0,CONST,fallback,public,False,0x40,0,0x355B0x103
+    0x118: v118 = MLOAD v116(0x40),0x103,v118,"0,v116",MLOAD,fallback,public,False,0,fallback&m0x40,0x355B0x103
+"    0x11b: v11b = ADD v118, v115",0x103,v11b,"0,v118,v115",ADD,fallback,public,False,0,0,0x355B0x103
+    0x11c: v11c(0x40) = CONST ,0x103,v11c,0,CONST,fallback,public,False,0x40,0,0x355B0x103
+"    0x11e: MSTORE v11c(0x40), v11b",0x103,0,"0,v11c,v11b",MSTORE,fallback,public,False,0,0,0x355B0x103
+"    0x121: MSTORE v118, v107",0x103,fallback&m0x40,"0,v118,v107",MSTORE,fallback,public,False,0,fallback&m0x40,0x355B0x103
+    0x125: v125(0x20) = CONST ,0x103,v125,0,CONST,fallback,public,False,0x20,0,0x355B0x103
+"    0x128: v128 = ADD v118, v125(0x20)",0x103,v128,"0,v118,v125",ADD,fallback,public,False,0,fallback&m0x40+0x20,0x355B0x103
+"    0x12e: CALLDATACOPY v128, v104(0x0), v107",0x103,0,"0,v128,v104,v107",CALLDATACOPY,fallback,public,False,0,0,0x355B0x103
+"    0x130: v130 = ADD v128, v107",0x103,v130,"0,v128,v107",ADD,fallback,public,False,0,0,0x355B0x103
+    0x13a: v13a(0x141) = CONST ,0x103,v13a,0,CONST,fallback,public,False,0x141,0,0x355B0x103
+    0x13d: v13d(0x355) = CONST ,0x103,v13d,0,CONST,fallback,public,False,0x355,0,0x355B0x103
+    0x140: JUMP v13d(0x355),0x103,0,"0,v13d",JUMP,fallback,public,False,0,0,0x355B0x103
+    Begin block 0x355B0x103,0x355B0x103,0,0,0,fallback,public,False,0,0,0x355B0x103
+"    prev=[0x103], succ=[0x141]",0x355B0x103,0,0,0,fallback,public,False,0,0,0x141
+    =================================,0x355B0x103,0,0,0,fallback,public,False,0,0,0x141
+    0x356S0x103: v356V103(0xf) = CONST ,0x355B0x103,v356V103,0,CONST,fallback,public,False,0xf,0,0x141
+    0x358S0x103: v358V103 = SLOAD v356V103(0xf),0x355B0x103,v358V103,"0,v356V103",SLOAD,fallback,public,False,0,0,0x141
+    0x359S0x103: v359V103(0x1) = CONST ,0x355B0x103,v359V103,0,CONST,fallback,public,False,0x1,0,0x141
+    0x35bS0x103: v35bV103(0xa0) = CONST ,0x355B0x103,v35bV103,0,CONST,fallback,public,False,0xa0,0,0x141
+    0x35dS0x103: v35dV103(0x2) = CONST ,0x355B0x103,v35dV103,0,CONST,fallback,public,False,0x2,0,0x141
+"    0x35fS0x103: v35fV103(0x10000000000000000000000000000000000000000) = EXP v35dV103(0x2), v35bV103(0xa0)",0x355B0x103,v35fV103,"0,v35dV103,v35bV103",EXP,fallback,public,False,0x10000000000000000000000000000000000000000,0,0x141
+"    0x360S0x103: v360V103(0xffffffffffffffffffffffffffffffffffffffff) = SUB v35fV103(0x10000000000000000000000000000000000000000), v359V103(0x1)",0x355B0x103,v360V103,"0,v35fV103,v359V103",SUB,fallback,public,False,0xffffffffffffffffffffffffffffffffffffffff,0,0x141
+"    0x361S0x103: v361V103 = AND v360V103(0xffffffffffffffffffffffffffffffffffffffff), v358V103",0x355B0x103,v361V103,"0,v360V103,v358V103",AND,fallback,public,False,0,0,0x141
+    0x363S0x103: JUMP v13a(0x141),0x355B0x103,0,"0,v13a",JUMP,fallback,public,False,0,0,0x141
+    Begin block 0x141,0x141,0,0,0,fallback,public,False,0,0,0x141
+"    prev=[0x355B0x103], succ=[0x163, 0x160]",0x141,0,0,0,fallback,public,False,0,0,"0x163, 0x160"
+    =================================,0x141,0,0,0,fallback,public,False,0,0,"0x163, 0x160"
+    0x144: v144(0x0) = CONST ,0x141,v144,0,CONST,fallback,public,False,0x0,0,"0x163, 0x160"
+    0x148: v148 = MLOAD v118,0x141,v148,"0,v118",MLOAD,fallback,public,False,0,0,"0x163, 0x160"
+    0x149: v149(0x20) = CONST ,0x141,v149,0,CONST,fallback,public,False,0x20,0,"0x163, 0x160"
+"    0x14c: v14c = ADD v118, v149(0x20)",0x141,v14c,"0,v118,v149",ADD,fallback,public,False,0,fallback&m0x40+0x20,"0x163, 0x160"
+    0x14e: v14e = GAS ,0x141,v14e,0,GAS,fallback,public,False,0,0,"0x163, 0x160"
+"    0x14f: v14f = DELEGATECALL v14e, v361V103, v14c, v148, v144(0x0), v144(0x0)",0x141,v14f,"0,v14e,v361V103,v14c,v148,v144,v144",DELEGATECALL,fallback,public,False,0,0,"0x163, 0x160"
+    0x150: v150 = RETURNDATASIZE ,0x141,v150,0,RETURNDATASIZE,fallback,public,False,0,0,"0x163, 0x160"
+    0x151: v151(0x40) = CONST ,0x141,v151,0,CONST,fallback,public,False,0x40,0,"0x163, 0x160"
+    0x153: v153 = MLOAD v151(0x40),0x141,v153,"0,v151",MLOAD,fallback,public,False,0,fallback&m0x40,"0x163, 0x160"
+    0x155: v155(0x0) = CONST ,0x141,v155,0,CONST,fallback,public,False,0x0,0,"0x163, 0x160"
+"    0x158: RETURNDATACOPY v153, v155(0x0), v150",0x141,0,"0,v153,v155,v150",RETURNDATACOPY,fallback,public,False,0,0,"0x163, 0x160"
+    0x15b: v15b = ISZERO v14f,0x141,v15b,"0,v14f",ISZERO,fallback,public,False,0,0,"0x163, 0x160"
+    0x15c: v15c(0x163) = CONST ,0x141,v15c,0,CONST,fallback,public,False,0x163,0,"0x163, 0x160"
+"    0x15f: JUMPI v15c(0x163), v15b",0x141,0,"0,v15c,v15b",JUMPI,fallback,public,False,0,0,"0x163, 0x160"
+    Begin block 0x163,0x163,0,0,0,fallback,public,False,0,0,"0x163, 0x160"
+"    prev=[0x141], succ=[]",0x163,0,0,0,fallback,public,False,0,0,"0x163, 0x160"
+    =================================,0x163,0,0,0,fallback,public,False,0,0,"0x163, 0x160"
+"    0x166: REVERT v153, v150",0x163,0,"0,v153,v150",REVERT,fallback,public,False,0,0,"0x163, 0x160"
+    Begin block 0x160,0x160,0,0,0,fallback,public,False,0,0,"0x163, 0x160"
+"    prev=[0x141], succ=[]",0x160,0,0,0,fallback,public,False,0,0,"0x163, 0x160"
+    =================================,0x160,0,0,0,fallback,public,False,0,0,"0x163, 0x160"
+"    0x162: RETURN v153, v150",0x160,0,"0,v153,v150",RETURN,fallback,public,False,0,0,"0x163, 0x160"
+},0x160,0,0,0,fallback,public,False,0,0,"0x163, 0x160"

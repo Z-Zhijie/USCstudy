@@ -1,0 +1,3 @@
+0xe46	transfer(address,uint256)
+0x1cc9	transferFrom(address,address,uint256)
+0x1f52	transfer(address,uint256)

@@ -1,0 +1,4 @@
+0x10ff	transferFrom(address,address,uint256)
+0xbef0x1eb	transfer(address,uint256)
+0xb4f0x1eb	mint(address,uint256)
+0xa600x1eb	balanceOf(address)

@@ -1,0 +1,11 @@
+0x0	__function_selector__
+0x8e	()
+0x8e	fallback()
+0x1e9	empty3()
+0x240	transferDelegation(address)
+0x283	owner()
+0x2da	empty1()
+0x331	empty2()
+0x388	initialize(address,uint256)
+0x3d5	delegation()
+0x42c	transferOwnership(address)

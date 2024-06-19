@@ -1,0 +1,6 @@
+0x369e	getInterfaceImplementer(address,bytes32)
+0x3840	tokensToSend(address,address,address,uint256,bytes,bytes)
+0x3ba3	getInterfaceImplementer(address,bytes32)
+0x3d44	tokensReceived(address,address,address,uint256,bytes,bytes)
+0x474cS0x32b4S0x1837	setInterfaceImplementer(address,bytes32,address)
+0x47e0S0x32b4S0x1837	setInterfaceImplementer(address,bytes32,address)

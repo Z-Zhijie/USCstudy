@@ -1,0 +1,5273 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0xd, 0x1986]
+    =================================
+    0x0: v0(0x80) = CONST 
+    0x2: v2(0x40) = CONST 
+    0x4: MSTORE v2(0x40), v0(0x80)
+    0x5: v5(0x4) = CONST 
+    0x7: v7 = CALLDATASIZE 
+    0x8: v8 = LT v7, v5(0x4)
+    0x1920: v1920(0x1986) = CONST 
+    0x1921: JUMPI v1920(0x1986), v8
+
+    Begin block 0xd
+    prev=[0x0], succ=[0x175, 0x1e]
+    =================================
+    0xd: vd(0x0) = CONST 
+    0xf: vf = CALLDATALOAD vd(0x0)
+    0x10: v10(0xe0) = CONST 
+    0x12: v12 = SHR v10(0xe0), vf
+    0x14: v14(0x73acee98) = CONST 
+    0x19: v19 = GT v14(0x73acee98), v12
+    0x1a: v1a(0x175) = CONST 
+    0x1d: JUMPI v1a(0x175), v19
+
+    Begin block 0x175
+    prev=[0xd], succ=[0x234, 0x181]
+    =================================
+    0x177: v177(0x3af9e669) = CONST 
+    0x17c: v17c = GT v177(0x3af9e669), v12
+    0x17d: v17d(0x234) = CONST 
+    0x180: JUMPI v17d(0x234), v17c
+
+    Begin block 0x234
+    prev=[0x175], succ=[0x286, 0x240]
+    =================================
+    0x236: v236(0x18160ddd) = CONST 
+    0x23b: v23b = GT v236(0x18160ddd), v12
+    0x23c: v23c(0x286) = CONST 
+    0x23f: JUMPI v23c(0x286), v23b
+
+    Begin block 0x286
+    prev=[0x234], succ=[0x1989, 0x292]
+    =================================
+    0x288: v288(0x6fdde03) = CONST 
+    0x28d: v28d = EQ v288(0x6fdde03), v12
+    0x197a: v197a(0x1989) = CONST 
+    0x197b: JUMPI v197a(0x1989), v28d
+
+    Begin block 0x1989
+    prev=[0x286], succ=[]
+    =================================
+    0x198a: v198a(0x311) = CONST 
+    0x198b: CALLPRIVATE v198a(0x311)
+
+    Begin block 0x292
+    prev=[0x286], succ=[0x198c, 0x29d]
+    =================================
+    0x293: v293(0x933c1ed) = CONST 
+    0x298: v298 = EQ v293(0x933c1ed), v12
+    0x197c: v197c(0x198c) = CONST 
+    0x197d: JUMPI v197c(0x198c), v298
+
+    Begin block 0x198c
+    prev=[0x292], succ=[]
+    =================================
+    0x198d: v198d(0x39b) = CONST 
+    0x198e: CALLPRIVATE v198d(0x39b)
+
+    Begin block 0x29d
+    prev=[0x292], succ=[0x198f, 0x2a8]
+    =================================
+    0x29e: v29e(0x95ea7b3) = CONST 
+    0x2a3: v2a3 = EQ v29e(0x95ea7b3), v12
+    0x197e: v197e(0x198f) = CONST 
+    0x197f: JUMPI v197e(0x198f), v2a3
+
+    Begin block 0x198f
+    prev=[0xf3, 0x29d], succ=[]
+    =================================
+    0x1990: v1990(0x44c) = CONST 
+    0x1991: CALLPRIVATE v1990(0x44c)
+
+    Begin block 0x2a8
+    prev=[0x29d], succ=[0x1992, 0x2b3]
+    =================================
+    0x2a9: v2a9(0xe752702) = CONST 
+    0x2ae: v2ae = EQ v2a9(0xe752702), v12
+    0x1980: v1980(0x1992) = CONST 
+    0x1981: JUMPI v1980(0x1992), v2ae
+
+    Begin block 0x1992
+    prev=[0x55, 0xac, 0xb7, 0x13a, 0x166, 0x197, 0x204, 0x2a8], succ=[]
+    =================================
+    0x1993: v1993(0x499) = CONST 
+    0x1994: CALLPRIVATE v1993(0x499)
+
+    Begin block 0x2b3
+    prev=[0x2a8], succ=[0x1995, 0x2be]
+    =================================
+    0x2b4: v2b4(0x173b9904) = CONST 
+    0x2b9: v2b9 = EQ v2b4(0x173b9904), v12
+    0x1982: v1982(0x1995) = CONST 
+    0x1983: JUMPI v1982(0x1995), v2b9
+
+    Begin block 0x1995
+    prev=[0x2b3], succ=[]
+    =================================
+    0x1996: v1996(0x4d5) = CONST 
+    0x1997: CALLPRIVATE v1996(0x4d5)
+
+    Begin block 0x2be
+    prev=[0x2b3], succ=[0x1986, 0x1998]
+    =================================
+    0x2bf: v2bf(0x17bfdfbc) = CONST 
+    0x2c4: v2c4 = EQ v2bf(0x17bfdfbc), v12
+    0x1984: v1984(0x1998) = CONST 
+    0x1985: JUMPI v1984(0x1998), v2c4
+
+    Begin block 0x1986
+    prev=[0x0, 0x2be], succ=[]
+    =================================
+    0x1987: v1987(0x2c9) = CONST 
+    0x1988: CALLPRIVATE v1987(0x2c9)
+
+    Begin block 0x1998
+    prev=[0x6f, 0x1ed, 0x11f, 0x21a, 0x2be], succ=[]
+    =================================
+    0x1999: v1999(0x4ea) = CONST 
+    0x199a: CALLPRIVATE v1999(0x4ea)
+
+    Begin block 0x240
+    prev=[0x234], succ=[0x199b, 0x24b]
+    =================================
+    0x241: v241(0x18160ddd) = CONST 
+    0x246: v246 = EQ v241(0x18160ddd), v12
+    0x196e: v196e(0x199b) = CONST 
+    0x196f: JUMPI v196e(0x199b), v246
+
+    Begin block 0x199b
+    prev=[0x240], succ=[]
+    =================================
+    0x199c: v199c(0x51d) = CONST 
+    0x199d: CALLPRIVATE v199c(0x51d)
+
+    Begin block 0x24b
+    prev=[0x240], succ=[0x199e, 0x256]
+    =================================
+    0x24c: v24c(0x182df0f5) = CONST 
+    0x251: v251 = EQ v24c(0x182df0f5), v12
+    0x1970: v1970(0x199e) = CONST 
+    0x1971: JUMPI v1970(0x199e), v251
+
+    Begin block 0x199e
+    prev=[0x4a, 0x109, 0x1f9, 0x24b], succ=[]
+    =================================
+    0x199f: v199f(0x532) = CONST 
+    0x19a0: CALLPRIVATE v199f(0x532)
+
+    Begin block 0x256
+    prev=[0x24b], succ=[0x19a1, 0x261]
+    =================================
+    0x257: v257(0x23b872dd) = CONST 
+    0x25c: v25c = EQ v257(0x23b872dd), v12
+    0x1972: v1972(0x19a1) = CONST 
+    0x1973: JUMPI v1972(0x19a1), v25c
+
+    Begin block 0x19a1
+    prev=[0x256], succ=[]
+    =================================
+    0x19a2: v19a2(0x547) = CONST 
+    0x19a3: CALLPRIVATE v19a2(0x547)
+
+    Begin block 0x261
+    prev=[0x256], succ=[0x19a4, 0x26c]
+    =================================
+    0x262: v262(0x2608f818) = CONST 
+    0x267: v267 = EQ v262(0x2608f818), v12
+    0x1974: v1974(0x19a4) = CONST 
+    0x1975: JUMPI v1974(0x19a4), v267
+
+    Begin block 0x19a4
+    prev=[0x261], succ=[]
+    =================================
+    0x19a5: v19a5(0x58a) = CONST 
+    0x19a6: CALLPRIVATE v19a5(0x58a)
+
+    Begin block 0x26c
+    prev=[0x261], succ=[0x19a7, 0x277]
+    =================================
+    0x26d: v26d(0x26782247) = CONST 
+    0x272: v272 = EQ v26d(0x26782247), v12
+    0x1976: v1976(0x19a7) = CONST 
+    0x1977: JUMPI v1976(0x19a7), v272
+
+    Begin block 0x19a7
+    prev=[0x26c], succ=[]
+    =================================
+    0x19a8: v19a8(0x5ad) = CONST 
+    0x19a9: CALLPRIVATE v19a8(0x5ad)
+
+    Begin block 0x277
+    prev=[0x26c], succ=[0x282, 0x19aa]
+    =================================
+    0x278: v278(0x313ce567) = CONST 
+    0x27d: v27d = EQ v278(0x313ce567), v12
+    0x1978: v1978(0x19aa) = CONST 
+    0x1979: JUMPI v1978(0x19aa), v27d
+
+    Begin block 0x282
+    prev=[0x277], succ=[]
+    =================================
+    0x282: v282(0x2c9) = CONST 
+    0x285: JUMP v282(0x2c9)
+
+    Begin block 0x19aa
+    prev=[0x277], succ=[]
+    =================================
+    0x19ab: v19ab(0x5de) = CONST 
+    0x19ac: CALLPRIVATE v19ab(0x5de)
+
+    Begin block 0x181
+    prev=[0x175], succ=[0x1ed, 0x18c]
+    =================================
+    0x182: v182(0x555bcc40) = CONST 
+    0x187: v187 = GT v182(0x555bcc40), v12
+    0x188: v188(0x1ed) = CONST 
+    0x18b: JUMPI v188(0x1ed), v187
+
+    Begin block 0x1ed
+    prev=[0x181], succ=[0x1998, 0x1f9]
+    =================================
+    0x1ef: v1ef(0x3af9e669) = CONST 
+    0x1f4: v1f4 = EQ v1ef(0x3af9e669), v12
+    0x1962: v1962(0x1998) = CONST 
+    0x1963: JUMPI v1962(0x1998), v1f4
+
+    Begin block 0x1f9
+    prev=[0x1ed], succ=[0x199e, 0x204]
+    =================================
+    0x1fa: v1fa(0x3b1d21a2) = CONST 
+    0x1ff: v1ff = EQ v1fa(0x3b1d21a2), v12
+    0x1964: v1964(0x199e) = CONST 
+    0x1965: JUMPI v1964(0x199e), v1ff
+
+    Begin block 0x204
+    prev=[0x1f9], succ=[0x1992, 0x20f]
+    =================================
+    0x205: v205(0x3e941010) = CONST 
+    0x20a: v20a = EQ v205(0x3e941010), v12
+    0x1966: v1966(0x1992) = CONST 
+    0x1967: JUMPI v1966(0x1992), v20a
+
+    Begin block 0x20f
+    prev=[0x204], succ=[0x19ad, 0x21a]
+    =================================
+    0x210: v210(0x4487152f) = CONST 
+    0x215: v215 = EQ v210(0x4487152f), v12
+    0x1968: v1968(0x19ad) = CONST 
+    0x1969: JUMPI v1968(0x19ad), v215
+
+    Begin block 0x19ad
+    prev=[0x20f], succ=[]
+    =================================
+    0x19ae: v19ae(0x609) = CONST 
+    0x19af: CALLPRIVATE v19ae(0x609)
+
+    Begin block 0x21a
+    prev=[0x20f], succ=[0x1998, 0x225]
+    =================================
+    0x21b: v21b(0x4576b5db) = CONST 
+    0x220: v220 = EQ v21b(0x4576b5db), v12
+    0x196a: v196a(0x1998) = CONST 
+    0x196b: JUMPI v196a(0x1998), v220
+
+    Begin block 0x225
+    prev=[0x21a], succ=[0x230, 0x19b0]
+    =================================
+    0x226: v226(0x47bd3718) = CONST 
+    0x22b: v22b = EQ v226(0x47bd3718), v12
+    0x196c: v196c(0x19b0) = CONST 
+    0x196d: JUMPI v196c(0x19b0), v22b
+
+    Begin block 0x230
+    prev=[0x225], succ=[]
+    =================================
+    0x230: v230(0x2c9) = CONST 
+    0x233: JUMP v230(0x2c9)
+
+    Begin block 0x19b0
+    prev=[0x225], succ=[]
+    =================================
+    0x19b1: v19b1(0x6ba) = CONST 
+    0x19b2: CALLPRIVATE v19b1(0x6ba)
+
+    Begin block 0x18c
+    prev=[0x181], succ=[0x1c7, 0x197]
+    =================================
+    0x18d: v18d(0x601a0bf1) = CONST 
+    0x192: v192 = GT v18d(0x601a0bf1), v12
+    0x193: v193(0x1c7) = CONST 
+    0x196: JUMPI v193(0x1c7), v192
+
+    Begin block 0x1c7
+    prev=[0x18c], succ=[0x19b3, 0x1d3]
+    =================================
+    0x1c9: v1c9(0x555bcc40) = CONST 
+    0x1ce: v1ce = EQ v1c9(0x555bcc40), v12
+    0x195c: v195c(0x19b3) = CONST 
+    0x195d: JUMPI v195c(0x19b3), v1ce
+
+    Begin block 0x19b3
+    prev=[0x1c7], succ=[]
+    =================================
+    0x19b4: v19b4(0x6cf) = CONST 
+    0x19b5: CALLPRIVATE v19b4(0x6cf)
+
+    Begin block 0x1d3
+    prev=[0x1c7], succ=[0x19b6, 0x1de]
+    =================================
+    0x1d4: v1d4(0x5c60da1b) = CONST 
+    0x1d9: v1d9 = EQ v1d4(0x5c60da1b), v12
+    0x195e: v195e(0x19b6) = CONST 
+    0x195f: JUMPI v195e(0x19b6), v1d9
+
+    Begin block 0x19b6
+    prev=[0x1d3], succ=[]
+    =================================
+    0x19b7: v19b7(0x799) = CONST 
+    0x19b8: CALLPRIVATE v19b7(0x799)
+
+    Begin block 0x1de
+    prev=[0x1d3], succ=[0x1e9, 0x19b9]
+    =================================
+    0x1df: v1df(0x5fe3b567) = CONST 
+    0x1e4: v1e4 = EQ v1df(0x5fe3b567), v12
+    0x1960: v1960(0x19b9) = CONST 
+    0x1961: JUMPI v1960(0x19b9), v1e4
+
+    Begin block 0x1e9
+    prev=[0x1de], succ=[]
+    =================================
+    0x1e9: v1e9(0x2c9) = CONST 
+    0x1ec: JUMP v1e9(0x2c9)
+
+    Begin block 0x19b9
+    prev=[0x1de], succ=[]
+    =================================
+    0x19ba: v19ba(0x7ae) = CONST 
+    0x19bb: CALLPRIVATE v19ba(0x7ae)
+
+    Begin block 0x197
+    prev=[0x18c], succ=[0x1992, 0x1a2]
+    =================================
+    0x198: v198(0x601a0bf1) = CONST 
+    0x19d: v19d = EQ v198(0x601a0bf1), v12
+    0x1954: v1954(0x1992) = CONST 
+    0x1955: JUMPI v1954(0x1992), v19d
+
+    Begin block 0x1a2
+    prev=[0x197], succ=[0x19bc, 0x1ad]
+    =================================
+    0x1a3: v1a3(0x6c540baf) = CONST 
+    0x1a8: v1a8 = EQ v1a3(0x6c540baf), v12
+    0x1956: v1956(0x19bc) = CONST 
+    0x1957: JUMPI v1956(0x19bc), v1a8
+
+    Begin block 0x19bc
+    prev=[0x1a2], succ=[]
+    =================================
+    0x19bd: v19bd(0x7c3) = CONST 
+    0x19be: CALLPRIVATE v19bd(0x7c3)
+
+    Begin block 0x1ad
+    prev=[0x1a2], succ=[0x19bf, 0x1b8]
+    =================================
+    0x1ae: v1ae(0x6f307dc3) = CONST 
+    0x1b3: v1b3 = EQ v1ae(0x6f307dc3), v12
+    0x1958: v1958(0x19bf) = CONST 
+    0x1959: JUMPI v1958(0x19bf), v1b3
+
+    Begin block 0x19bf
+    prev=[0x1ad], succ=[]
+    =================================
+    0x19c0: v19c0(0x7d8) = CONST 
+    0x19c1: CALLPRIVATE v19c0(0x7d8)
+
+    Begin block 0x1b8
+    prev=[0x1ad], succ=[0x1c3, 0x19c2]
+    =================================
+    0x1b9: v1b9(0x70a08231) = CONST 
+    0x1be: v1be = EQ v1b9(0x70a08231), v12
+    0x195a: v195a(0x19c2) = CONST 
+    0x195b: JUMPI v195a(0x19c2), v1be
+
+    Begin block 0x1c3
+    prev=[0x1b8], succ=[]
+    =================================
+    0x1c3: v1c3(0x2c9) = CONST 
+    0x1c6: JUMP v1c3(0x2c9)
+
+    Begin block 0x19c2
+    prev=[0x15b, 0x1b8], succ=[]
+    =================================
+    0x19c3: v19c3(0x7ed) = CONST 
+    0x19c4: CALLPRIVATE v19c3(0x7ed)
+
+    Begin block 0x1e
+    prev=[0xd], succ=[0xdc, 0x29]
+    =================================
+    0x1f: v1f(0xbd6d894d) = CONST 
+    0x24: v24 = GT v1f(0xbd6d894d), v12
+    0x25: v25(0xdc) = CONST 
+    0x28: JUMPI v25(0xdc), v24
+
+    Begin block 0xdc
+    prev=[0x1e], succ=[0x12e, 0xe8]
+    =================================
+    0xde: vde(0xa6afed95) = CONST 
+    0xe3: ve3 = GT vde(0xa6afed95), v12
+    0xe4: ve4(0x12e) = CONST 
+    0xe7: JUMPI ve4(0x12e), ve3
+
+    Begin block 0x12e
+    prev=[0xdc], succ=[0x19c5, 0x13a]
+    =================================
+    0x130: v130(0x73acee98) = CONST 
+    0x135: v135 = EQ v130(0x73acee98), v12
+    0x1948: v1948(0x19c5) = CONST 
+    0x1949: JUMPI v1948(0x19c5), v135
+
+    Begin block 0x19c5
+    prev=[0x95, 0x12e, 0xcd, 0xe8], succ=[]
+    =================================
+    0x19c6: v19c6(0x820) = CONST 
+    0x19c7: CALLPRIVATE v19c6(0x820)
+
+    Begin block 0x13a
+    prev=[0x12e], succ=[0x1992, 0x145]
+    =================================
+    0x13b: v13b(0x852a12e3) = CONST 
+    0x140: v140 = EQ v13b(0x852a12e3), v12
+    0x194a: v194a(0x1992) = CONST 
+    0x194b: JUMPI v194a(0x1992), v140
+
+    Begin block 0x145
+    prev=[0x13a], succ=[0x19c8, 0x150]
+    =================================
+    0x146: v146(0x8f840ddd) = CONST 
+    0x14b: v14b = EQ v146(0x8f840ddd), v12
+    0x194c: v194c(0x19c8) = CONST 
+    0x194d: JUMPI v194c(0x19c8), v14b
+
+    Begin block 0x19c8
+    prev=[0x145], succ=[]
+    =================================
+    0x19c9: v19c9(0x835) = CONST 
+    0x19ca: CALLPRIVATE v19c9(0x835)
+
+    Begin block 0x150
+    prev=[0x145], succ=[0x19cb, 0x15b]
+    =================================
+    0x151: v151(0x95d89b41) = CONST 
+    0x156: v156 = EQ v151(0x95d89b41), v12
+    0x194e: v194e(0x19cb) = CONST 
+    0x194f: JUMPI v194e(0x19cb), v156
+
+    Begin block 0x19cb
+    prev=[0x150], succ=[]
+    =================================
+    0x19cc: v19cc(0x84a) = CONST 
+    0x19cd: CALLPRIVATE v19cc(0x84a)
+
+    Begin block 0x15b
+    prev=[0x150], succ=[0x19c2, 0x166]
+    =================================
+    0x15c: v15c(0x95dd9193) = CONST 
+    0x161: v161 = EQ v15c(0x95dd9193), v12
+    0x1950: v1950(0x19c2) = CONST 
+    0x1951: JUMPI v1950(0x19c2), v161
+
+    Begin block 0x166
+    prev=[0x15b], succ=[0x171, 0x1992]
+    =================================
+    0x167: v167(0xa0712d68) = CONST 
+    0x16c: v16c = EQ v167(0xa0712d68), v12
+    0x1952: v1952(0x1992) = CONST 
+    0x1953: JUMPI v1952(0x1992), v16c
+
+    Begin block 0x171
+    prev=[0x166], succ=[]
+    =================================
+    0x171: v171(0x2c9) = CONST 
+    0x174: JUMP v171(0x2c9)
+
+    Begin block 0xe8
+    prev=[0xdc], succ=[0x19c5, 0xf3]
+    =================================
+    0xe9: ve9(0xa6afed95) = CONST 
+    0xee: vee = EQ ve9(0xa6afed95), v12
+    0x193c: v193c(0x19c5) = CONST 
+    0x193d: JUMPI v193c(0x19c5), vee
+
+    Begin block 0xf3
+    prev=[0xe8], succ=[0x198f, 0xfe]
+    =================================
+    0xf4: vf4(0xa9059cbb) = CONST 
+    0xf9: vf9 = EQ vf4(0xa9059cbb), v12
+    0x193e: v193e(0x198f) = CONST 
+    0x193f: JUMPI v193e(0x198f), vf9
+
+    Begin block 0xfe
+    prev=[0xf3], succ=[0x19ce, 0x109]
+    =================================
+    0xff: vff(0xaa5af0fd) = CONST 
+    0x104: v104 = EQ vff(0xaa5af0fd), v12
+    0x1940: v1940(0x19ce) = CONST 
+    0x1941: JUMPI v1940(0x19ce), v104
+
+    Begin block 0x19ce
+    prev=[0xfe], succ=[]
+    =================================
+    0x19cf: v19cf(0x85f) = CONST 
+    0x19d0: CALLPRIVATE v19cf(0x85f)
+
+    Begin block 0x109
+    prev=[0xfe], succ=[0x199e, 0x114]
+    =================================
+    0x10a: v10a(0xae9d70b0) = CONST 
+    0x10f: v10f = EQ v10a(0xae9d70b0), v12
+    0x1942: v1942(0x199e) = CONST 
+    0x1943: JUMPI v1942(0x199e), v10f
+
+    Begin block 0x114
+    prev=[0x109], succ=[0x19d1, 0x11f]
+    =================================
+    0x115: v115(0xb2a02ff1) = CONST 
+    0x11a: v11a = EQ v115(0xb2a02ff1), v12
+    0x1944: v1944(0x19d1) = CONST 
+    0x1945: JUMPI v1944(0x19d1), v11a
+
+    Begin block 0x19d1
+    prev=[0x114], succ=[]
+    =================================
+    0x19d2: v19d2(0x874) = CONST 
+    0x19d3: CALLPRIVATE v19d2(0x874)
+
+    Begin block 0x11f
+    prev=[0x114], succ=[0x12a, 0x1998]
+    =================================
+    0x120: v120(0xb71d1a0c) = CONST 
+    0x125: v125 = EQ v120(0xb71d1a0c), v12
+    0x1946: v1946(0x1998) = CONST 
+    0x1947: JUMPI v1946(0x1998), v125
+
+    Begin block 0x12a
+    prev=[0x11f], succ=[]
+    =================================
+    0x12a: v12a(0x2c9) = CONST 
+    0x12d: JUMP v12a(0x2c9)
+
+    Begin block 0x29
+    prev=[0x1e], succ=[0x95, 0x34]
+    =================================
+    0x2a: v2a(0xf2b3abbd) = CONST 
+    0x2f: v2f = GT v2a(0xf2b3abbd), v12
+    0x30: v30(0x95) = CONST 
+    0x33: JUMPI v30(0x95), v2f
+
+    Begin block 0x95
+    prev=[0x29], succ=[0x19c5, 0xa1]
+    =================================
+    0x97: v97(0xbd6d894d) = CONST 
+    0x9c: v9c = EQ v97(0xbd6d894d), v12
+    0x1930: v1930(0x19c5) = CONST 
+    0x1931: JUMPI v1930(0x19c5), v9c
+
+    Begin block 0xa1
+    prev=[0x95], succ=[0x19d4, 0xac]
+    =================================
+    0xa2: va2(0xc37f68e2) = CONST 
+    0xa7: va7 = EQ va2(0xc37f68e2), v12
+    0x1932: v1932(0x19d4) = CONST 
+    0x1933: JUMPI v1932(0x19d4), va7
+
+    Begin block 0x19d4
+    prev=[0xa1], succ=[]
+    =================================
+    0x19d5: v19d5(0x897) = CONST 
+    0x19d6: CALLPRIVATE v19d5(0x897)
+
+    Begin block 0xac
+    prev=[0xa1], succ=[0x1992, 0xb7]
+    =================================
+    0xad: vad(0xc5ebeaec) = CONST 
+    0xb2: vb2 = EQ vad(0xc5ebeaec), v12
+    0x1934: v1934(0x1992) = CONST 
+    0x1935: JUMPI v1934(0x1992), vb2
+
+    Begin block 0xb7
+    prev=[0xac], succ=[0x1992, 0xc2]
+    =================================
+    0xb8: vb8(0xdb006a75) = CONST 
+    0xbd: vbd = EQ vb8(0xdb006a75), v12
+    0x1936: v1936(0x1992) = CONST 
+    0x1937: JUMPI v1936(0x1992), vbd
+
+    Begin block 0xc2
+    prev=[0xb7], succ=[0x19d7, 0xcd]
+    =================================
+    0xc3: vc3(0xdd62ed3e) = CONST 
+    0xc8: vc8 = EQ vc3(0xdd62ed3e), v12
+    0x1938: v1938(0x19d7) = CONST 
+    0x1939: JUMPI v1938(0x19d7), vc8
+
+    Begin block 0x19d7
+    prev=[0xc2], succ=[]
+    =================================
+    0x19d8: v19d8(0x8f0) = CONST 
+    0x19d9: CALLPRIVATE v19d8(0x8f0)
+
+    Begin block 0xcd
+    prev=[0xc2], succ=[0xd8, 0x19c5]
+    =================================
+    0xce: vce(0xe9c714f2) = CONST 
+    0xd3: vd3 = EQ vce(0xe9c714f2), v12
+    0x193a: v193a(0x19c5) = CONST 
+    0x193b: JUMPI v193a(0x19c5), vd3
+
+    Begin block 0xd8
+    prev=[0xcd], succ=[]
+    =================================
+    0xd8: vd8(0x2c9) = CONST 
+    0xdb: JUMP vd8(0x2c9)
+
+    Begin block 0x34
+    prev=[0x29], succ=[0x3f, 0x6f]
+    =================================
+    0x35: v35(0xf851a440) = CONST 
+    0x3a: v3a = GT v35(0xf851a440), v12
+    0x3b: v3b(0x6f) = CONST 
+    0x3e: JUMPI v3b(0x6f), v3a
+
+    Begin block 0x3f
+    prev=[0x34], succ=[0x19e0, 0x4a]
+    =================================
+    0x40: v40(0xf851a440) = CONST 
+    0x45: v45 = EQ v40(0xf851a440), v12
+    0x1922: v1922(0x19e0) = CONST 
+    0x1923: JUMPI v1922(0x19e0), v45
+
+    Begin block 0x19e0
+    prev=[0x3f], succ=[]
+    =================================
+    0x19e1: v19e1(0x983) = CONST 
+    0x19e2: CALLPRIVATE v19e1(0x983)
+
+    Begin block 0x4a
+    prev=[0x3f], succ=[0x199e, 0x55]
+    =================================
+    0x4b: v4b(0xf8f9da28) = CONST 
+    0x50: v50 = EQ v4b(0xf8f9da28), v12
+    0x1924: v1924(0x199e) = CONST 
+    0x1925: JUMPI v1924(0x199e), v50
+
+    Begin block 0x55
+    prev=[0x4a], succ=[0x60, 0x1992]
+    =================================
+    0x56: v56(0xfca7820b) = CONST 
+    0x5b: v5b = EQ v56(0xfca7820b), v12
+    0x1926: v1926(0x1992) = CONST 
+    0x1927: JUMPI v1926(0x1992), v5b
+
+    Begin block 0x60
+    prev=[0x55], succ=[0x6b, 0x19e3]
+    =================================
+    0x61: v61(0xfe9c44ae) = CONST 
+    0x66: v66 = EQ v61(0xfe9c44ae), v12
+    0x1928: v1928(0x19e3) = CONST 
+    0x1929: JUMPI v1928(0x19e3), v66
+
+    Begin block 0x6b
+    prev=[0x60], succ=[]
+    =================================
+    0x6b: v6b(0x2c9) = CONST 
+    0x6e: JUMP v6b(0x2c9)
+
+    Begin block 0x19e3
+    prev=[0x60], succ=[]
+    =================================
+    0x19e4: v19e4(0x998) = CONST 
+    0x19e5: CALLPRIVATE v19e4(0x998)
+
+    Begin block 0x6f
+    prev=[0x34], succ=[0x1998, 0x7b]
+    =================================
+    0x71: v71(0xf2b3abbd) = CONST 
+    0x76: v76 = EQ v71(0xf2b3abbd), v12
+    0x192a: v192a(0x1998) = CONST 
+    0x192b: JUMPI v192a(0x1998), v76
+
+    Begin block 0x7b
+    prev=[0x6f], succ=[0x19da, 0x86]
+    =================================
+    0x7c: v7c(0xf3fdb15a) = CONST 
+    0x81: v81 = EQ v7c(0xf3fdb15a), v12
+    0x192c: v192c(0x19da) = CONST 
+    0x192d: JUMPI v192c(0x19da), v81
+
+    Begin block 0x19da
+    prev=[0x7b], succ=[]
+    =================================
+    0x19db: v19db(0x92b) = CONST 
+    0x19dc: CALLPRIVATE v19db(0x92b)
+
+    Begin block 0x86
+    prev=[0x7b], succ=[0x91, 0x19dd]
+    =================================
+    0x87: v87(0xf5e3c462) = CONST 
+    0x8c: v8c = EQ v87(0xf5e3c462), v12
+    0x192e: v192e(0x19dd) = CONST 
+    0x192f: JUMPI v192e(0x19dd), v8c
+
+    Begin block 0x91
+    prev=[0x86], succ=[]
+    =================================
+    0x91: v91(0x2c9) = CONST 
+    0x94: JUMP v91(0x2c9)
+
+    Begin block 0x19dd
+    prev=[0x86], succ=[]
+    =================================
+    0x19de: v19de(0x940) = CONST 
+    0x19df: CALLPRIVATE v19de(0x940)
+
+}
+
+function 0x1001(0x1001arg0x0, 0x1001arg0x1, 0x1001arg0x2) private {
+    Begin block 0x1001
+    prev=[], succ=[0x1022]
+    =================================
+    0x1002: v1002(0x60) = CONST 
+    0x1004: v1004(0x0) = CONST 
+    0x1006: v1006(0x60) = CONST 
+    0x1009: v1009(0x1) = CONST 
+    0x100b: v100b(0x1) = CONST 
+    0x100d: v100d(0xa0) = CONST 
+    0x100f: v100f(0x10000000000000000000000000000000000000000) = SHL v100d(0xa0), v100b(0x1)
+    0x1010: v1010(0xffffffffffffffffffffffffffffffffffffffff) = SUB v100f(0x10000000000000000000000000000000000000000), v1009(0x1)
+    0x1011: v1011 = AND v1010(0xffffffffffffffffffffffffffffffffffffffff), v1001arg1
+    0x1013: v1013(0x40) = CONST 
+    0x1015: v1015 = MLOAD v1013(0x40)
+    0x1019: v1019 = MLOAD v1001arg0
+    0x101b: v101b(0x20) = CONST 
+    0x101d: v101d = ADD v101b(0x20), v1001arg0
+
+    Begin block 0x1022
+    prev=[0x1001, 0x102b], succ=[0x1041, 0x102b]
+    =================================
+    0x1022_0x2: v1022_2 = PHI v1019, v1034
+    0x1023: v1023(0x20) = CONST 
+    0x1026: v1026 = LT v1022_2, v1023(0x20)
+    0x1027: v1027(0x1041) = CONST 
+    0x102a: JUMPI v1027(0x1041), v1026
+
+    Begin block 0x1041
+    prev=[0x1022], succ=[0x1080, 0x10a1]
+    =================================
+    0x1041_0x0: v1041_0 = PHI v101d, v103c
+    0x1041_0x1: v1041_1 = PHI v1015, v103a
+    0x1041_0x2: v1041_2 = PHI v1019, v1034
+    0x1042: v1042(0x1) = CONST 
+    0x1045: v1045(0x20) = CONST 
+    0x1047: v1047 = SUB v1045(0x20), v1041_2
+    0x1048: v1048(0x100) = CONST 
+    0x104b: v104b = EXP v1048(0x100), v1047
+    0x104c: v104c = SUB v104b, v1042(0x1)
+    0x104e: v104e = NOT v104c
+    0x1050: v1050 = MLOAD v1041_0
+    0x1051: v1051 = AND v1050, v104e
+    0x1054: v1054 = MLOAD v1041_1
+    0x1055: v1055 = AND v1054, v104c
+    0x1058: v1058 = OR v1051, v1055
+    0x105a: MSTORE v1041_1, v1058
+    0x1063: v1063 = ADD v1019, v1015
+    0x1067: v1067(0x0) = CONST 
+    0x1069: v1069(0x40) = CONST 
+    0x106b: v106b = MLOAD v1069(0x40)
+    0x106e: v106e = SUB v1063, v106b
+    0x1071: v1071 = GAS 
+    0x1072: v1072 = DELEGATECALL v1071, v1011, v106b, v106e, v106b, v1067(0x0)
+    0x1076: v1076 = RETURNDATASIZE 
+    0x1078: v1078(0x0) = CONST 
+    0x107b: v107b = EQ v1076, v1078(0x0)
+    0x107c: v107c(0x10a1) = CONST 
+    0x107f: JUMPI v107c(0x10a1), v107b
+
+    Begin block 0x1080
+    prev=[0x1041], succ=[0x10a6]
+    =================================
+    0x1080: v1080(0x40) = CONST 
+    0x1082: v1082 = MLOAD v1080(0x40)
+    0x1085: v1085(0x1f) = CONST 
+    0x1087: v1087(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v1085(0x1f)
+    0x1088: v1088(0x3f) = CONST 
+    0x108a: v108a = RETURNDATASIZE 
+    0x108b: v108b = ADD v108a, v1088(0x3f)
+    0x108c: v108c = AND v108b, v1087(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x108e: v108e = ADD v1082, v108c
+    0x108f: v108f(0x40) = CONST 
+    0x1091: MSTORE v108f(0x40), v108e
+    0x1092: v1092 = RETURNDATASIZE 
+    0x1094: MSTORE v1082, v1092
+    0x1095: v1095 = RETURNDATASIZE 
+    0x1096: v1096(0x0) = CONST 
+    0x1098: v1098(0x20) = CONST 
+    0x109b: v109b = ADD v1082, v1098(0x20)
+    0x109c: RETURNDATACOPY v109b, v1096(0x0), v1095
+    0x109d: v109d(0x10a6) = CONST 
+    0x10a0: JUMP v109d(0x10a6)
+
+    Begin block 0x10a6
+    prev=[0x1080, 0x10a1], succ=[0x10b5, 0x10bb]
+    =================================
+    0x10ac: v10ac(0x0) = CONST 
+    0x10af: v10af = EQ v1072, v10ac(0x0)
+    0x10b0: v10b0 = ISZERO v10af
+    0x10b1: v10b1(0x10bb) = CONST 
+    0x10b4: JUMPI v10b1(0x10bb), v10b0
+
+    Begin block 0x10b5
+    prev=[0x10a6], succ=[]
+    =================================
+    0x10b5: v10b5 = RETURNDATASIZE 
+    0x10b5_0x0: v10b5_0 = PHI v1082, v10a2(0x60)
+    0x10b6: v10b6(0x20) = CONST 
+    0x10b9: v10b9 = ADD v10b5_0, v10b6(0x20)
+    0x10ba: REVERT v10b9, v10b5
+
+    Begin block 0x10bb
+    prev=[0x10a6], succ=[]
+    =================================
+    0x10bb_0x0: v10bb_0 = PHI v1082, v10a2(0x60)
+    0x10c2: RETURNPRIVATE v1001arg2, v10bb_0
+
+    Begin block 0x10a1
+    prev=[0x1041], succ=[0x10a6]
+    =================================
+    0x10a2: v10a2(0x60) = CONST 
+
+    Begin block 0x102b
+    prev=[0x1022], succ=[0x1022]
+    =================================
+    0x102b_0x0: v102b_0 = PHI v101d, v103c
+    0x102b_0x1: v102b_1 = PHI v1015, v103a
+    0x102b_0x2: v102b_2 = PHI v1019, v1034
+    0x102c: v102c = MLOAD v102b_0
+    0x102e: MSTORE v102b_1, v102c
+    0x102f: v102f(0x1f) = CONST 
+    0x1031: v1031(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v102f(0x1f)
+    0x1034: v1034 = ADD v102b_2, v1031(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x1036: v1036(0x20) = CONST 
+    0x103a: v103a = ADD v1036(0x20), v102b_1
+    0x103c: v103c = ADD v1036(0x20), v102b_0
+    0x103d: v103d(0x1022) = CONST 
+    0x1040: JUMP v103d(0x1022)
+
+}
+
+function fallback()() public {
+    Begin block 0x2c9
+    prev=[], succ=[0x2d0, 0x306]
+    =================================
+    0x2ca: v2ca = CALLVALUE 
+    0x2cb: v2cb = ISZERO v2ca
+    0x2cc: v2cc(0x306) = CONST 
+    0x2cf: JUMPI v2cc(0x306), v2cb
+
+    Begin block 0x2d0
+    prev=[0x2c9], succ=[]
+    =================================
+    0x2d0: v2d0(0x40) = CONST 
+    0x2d2: v2d2 = MLOAD v2d0(0x40)
+    0x2d3: v2d3(0x461bcd) = CONST 
+    0x2d7: v2d7(0xe5) = CONST 
+    0x2d9: v2d9(0x8c379a000000000000000000000000000000000000000000000000000000000) = SHL v2d7(0xe5), v2d3(0x461bcd)
+    0x2db: MSTORE v2d2, v2d9(0x8c379a000000000000000000000000000000000000000000000000000000000)
+    0x2dc: v2dc(0x4) = CONST 
+    0x2de: v2de = ADD v2dc(0x4), v2d2
+    0x2e1: v2e1(0x20) = CONST 
+    0x2e3: v2e3 = ADD v2e1(0x20), v2de
+    0x2e6: v2e6(0x20) = SUB v2e3, v2de
+    0x2e8: MSTORE v2de, v2e6(0x20)
+    0x2e9: v2e9(0x37) = CONST 
+    0x2ec: MSTORE v2e3, v2e9(0x37)
+    0x2ed: v2ed(0x20) = CONST 
+    0x2ef: v2ef = ADD v2ed(0x20), v2e3
+    0x2f1: v2f1(0x11e4) = CONST 
+    0x2f4: v2f4(0x37) = CONST 
+    0x2f7: CODECOPY v2ef, v2f1(0x11e4), v2f4(0x37)
+    0x2f8: v2f8(0x40) = CONST 
+    0x2fa: v2fa = ADD v2f8(0x40), v2ef
+    0x2fe: v2fe(0x40) = CONST 
+    0x300: v300 = MLOAD v2fe(0x40)
+    0x303: v303(0x84) = SUB v2fa, v300
+    0x305: REVERT v300, v303(0x84)
+
+    Begin block 0x306
+    prev=[0x2c9], succ=[0x9ad0x2c9]
+    =================================
+    0x307: v307(0x30e) = CONST 
+    0x30a: v30a(0x9ad) = CONST 
+    0x30d: JUMP v30a(0x9ad)
+
+    Begin block 0x9ad0x2c9
+    prev=[0x306], succ=[0x9f40x2c9, 0xa150x2c9]
+    =================================
+    0x9ae0x2c9: v2c99ae(0x12) = CONST 
+    0x9b00x2c9: v2c99b0 = SLOAD v2c99ae(0x12)
+    0x9b10x2c9: v2c99b1(0x40) = CONST 
+    0x9b30x2c9: v2c99b3 = MLOAD v2c99b1(0x40)
+    0x9b40x2c9: v2c99b4(0x60) = CONST 
+    0x9b70x2c9: v2c99b7(0x0) = CONST 
+    0x9ba0x2c9: v2c99ba(0x1) = CONST 
+    0x9bc0x2c9: v2c99bc(0x1) = CONST 
+    0x9be0x2c9: v2c99be(0xa0) = CONST 
+    0x9c00x2c9: v2c99c0(0x10000000000000000000000000000000000000000) = SHL v2c99be(0xa0), v2c99bc(0x1)
+    0x9c10x2c9: v2c99c1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v2c99c0(0x10000000000000000000000000000000000000000), v2c99ba(0x1)
+    0x9c40x2c9: v2c99c4 = AND v2c99b0, v2c99c1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x9c80x2c9: v2c99c8 = CALLDATASIZE 
+    0x9d00x2c9: CALLDATACOPY v2c99b3, v2c99b7(0x0), v2c99c8
+    0x9d10x2c9: v2c99d1(0x40) = CONST 
+    0x9d30x2c9: v2c99d3 = MLOAD v2c99d1(0x40)
+    0x9d50x2c9: v2c99d5 = ADD v2c99b3, v2c99c8
+    0x9d80x2c9: v2c99d8(0x0) = CONST 
+    0x9e20x2c9: v2c99e2 = SUB v2c99d5, v2c99d3
+    0x9e50x2c9: v2c99e5 = GAS 
+    0x9e60x2c9: v2c99e6 = DELEGATECALL v2c99e5, v2c99c4, v2c99d3, v2c99e2, v2c99d3, v2c99d8(0x0)
+    0x9ea0x2c9: v2c99ea = RETURNDATASIZE 
+    0x9ec0x2c9: v2c99ec(0x0) = CONST 
+    0x9ef0x2c9: v2c99ef = EQ v2c99ea, v2c99ec(0x0)
+    0x9f00x2c9: v2c99f0(0xa15) = CONST 
+    0x9f30x2c9: JUMPI v2c99f0(0xa15), v2c99ef
+
+    Begin block 0x9f40x2c9
+    prev=[0x9ad0x2c9], succ=[0xa1a0x2c9]
+    =================================
+    0x9f40x2c9: v2c99f4(0x40) = CONST 
+    0x9f60x2c9: v2c99f6 = MLOAD v2c99f4(0x40)
+    0x9f90x2c9: v2c99f9(0x1f) = CONST 
+    0x9fb0x2c9: v2c99fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v2c99f9(0x1f)
+    0x9fc0x2c9: v2c99fc(0x3f) = CONST 
+    0x9fe0x2c9: v2c99fe = RETURNDATASIZE 
+    0x9ff0x2c9: v2c99ff = ADD v2c99fe, v2c99fc(0x3f)
+    0xa000x2c9: v2c9a00 = AND v2c99ff, v2c99fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xa020x2c9: v2c9a02 = ADD v2c99f6, v2c9a00
+    0xa030x2c9: v2c9a03(0x40) = CONST 
+    0xa050x2c9: MSTORE v2c9a03(0x40), v2c9a02
+    0xa060x2c9: v2c9a06 = RETURNDATASIZE 
+    0xa080x2c9: MSTORE v2c99f6, v2c9a06
+    0xa090x2c9: v2c9a09 = RETURNDATASIZE 
+    0xa0a0x2c9: v2c9a0a(0x0) = CONST 
+    0xa0c0x2c9: v2c9a0c(0x20) = CONST 
+    0xa0f0x2c9: v2c9a0f = ADD v2c99f6, v2c9a0c(0x20)
+    0xa100x2c9: RETURNDATACOPY v2c9a0f, v2c9a0a(0x0), v2c9a09
+    0xa110x2c9: v2c9a11(0xa1a) = CONST 
+    0xa140x2c9: JUMP v2c9a11(0xa1a)
+
+    Begin block 0xa1a0x2c9
+    prev=[0x9f40x2c9, 0xa150x2c9], succ=[0xa2e0x2c9, 0x12a70x2c9]
+    =================================
+    0xa1f0x2c9: v2c9a1f(0x40) = CONST 
+    0xa210x2c9: v2c9a21 = MLOAD v2c9a1f(0x40)
+    0xa220x2c9: v2c9a22 = RETURNDATASIZE 
+    0xa230x2c9: v2c9a23(0x0) = CONST 
+    0xa260x2c9: RETURNDATACOPY v2c9a21, v2c9a23(0x0), v2c9a22
+    0xa290x2c9: v2c9a29 = ISZERO v2c99e6
+    0xa2a0x2c9: v2c9a2a(0x12a7) = CONST 
+    0xa2d0x2c9: JUMPI v2c9a2a(0x12a7), v2c9a29
+
+    Begin block 0xa2e0x2c9
+    prev=[0xa1a0x2c9], succ=[]
+    =================================
+    0xa2e0x2c9: v2c9a2e = RETURNDATASIZE 
+    0xa300x2c9: RETURN v2c9a21, v2c9a2e
+
+    Begin block 0x12a70x2c9
+    prev=[0xa1a0x2c9], succ=[]
+    =================================
+    0x12a80x2c9: v2c912a8 = RETURNDATASIZE 
+    0x12aa0x2c9: REVERT v2c9a21, v2c912a8
+
+    Begin block 0xa150x2c9
+    prev=[0x9ad0x2c9], succ=[0xa1a0x2c9]
+    =================================
+    0xa160x2c9: v2c9a16(0x60) = CONST 
+
+}
+
+function name()() public {
+    Begin block 0x311
+    prev=[], succ=[0x319, 0x31d]
+    =================================
+    0x312: v312 = CALLVALUE 
+    0x314: v314 = ISZERO v312
+    0x315: v315(0x31d) = CONST 
+    0x318: JUMPI v315(0x31d), v314
+
+    Begin block 0x319
+    prev=[0x311], succ=[]
+    =================================
+    0x319: v319(0x0) = CONST 
+    0x31c: REVERT v319(0x0), v319(0x0)
+
+    Begin block 0x31d
+    prev=[0x311], succ=[0x3260x311]
+    =================================
+    0x31f: v31f(0x326) = CONST 
+    0x322: v322(0xa35) = CONST 
+    0x325: v325_0, v325_1 = CALLPRIVATE v322(0xa35), v31f(0x326)
+
+    Begin block 0x3260x311
+    prev=[0x31d], succ=[0x3480x311]
+    =================================
+    0x3270x311: v311327(0x40) = CONST 
+    0x32a0x311: v31132a = MLOAD v311327(0x40)
+    0x32b0x311: v31132b(0x20) = CONST 
+    0x32f0x311: MSTORE v31132a, v31132b(0x20)
+    0x3310x311: v311331 = MLOAD v325_0
+    0x3340x311: v311334 = ADD v31132a, v31132b(0x20)
+    0x3350x311: MSTORE v311334, v311331
+    0x3370x311: v311337 = MLOAD v325_0
+    0x33e0x311: v31133e = ADD v31132a, v311327(0x40)
+    0x3410x311: v311341 = ADD v325_0, v31132b(0x20)
+    0x3460x311: v311346(0x0) = CONST 
+
+    Begin block 0x3480x311
+    prev=[0x3510x311, 0x3260x311], succ=[0x3600x311, 0x3510x311]
+    =================================
+    0x3480x311_0x0: v348311_0 = PHI v31135b, v311346(0x0)
+    0x34b0x311: v31134b = LT v348311_0, v311337
+    0x34c0x311: v31134c = ISZERO v31134b
+    0x34d0x311: v31134d(0x360) = CONST 
+    0x3500x311: JUMPI v31134d(0x360), v31134c
+
+    Begin block 0x3600x311
+    prev=[0x3480x311], succ=[0x38d0x311, 0x3740x311]
+    =================================
+    0x3690x311: v311369 = ADD v311337, v31133e
+    0x36b0x311: v31136b(0x1f) = CONST 
+    0x36d0x311: v31136d = AND v31136b(0x1f), v311337
+    0x36f0x311: v31136f = ISZERO v31136d
+    0x3700x311: v311370(0x38d) = CONST 
+    0x3730x311: JUMPI v311370(0x38d), v31136f
+
+    Begin block 0x38d0x311
+    prev=[0x3600x311, 0x3740x311], succ=[]
+    =================================
+    0x38d0x311_0x1: v38d311_1 = PHI v31138a, v311369
+    0x3930x311: v311393(0x40) = CONST 
+    0x3950x311: v311395 = MLOAD v311393(0x40)
+    0x3980x311: v311398 = SUB v38d311_1, v311395
+    0x39a0x311: RETURN v311395, v311398
+
+    Begin block 0x3740x311
+    prev=[0x3600x311], succ=[0x38d0x311]
+    =================================
+    0x3760x311: v311376 = SUB v311369, v31136d
+    0x3780x311: v311378 = MLOAD v311376
+    0x3790x311: v311379(0x1) = CONST 
+    0x37c0x311: v31137c(0x20) = CONST 
+    0x37e0x311: v31137e = SUB v31137c(0x20), v31136d
+    0x37f0x311: v31137f(0x100) = CONST 
+    0x3820x311: v311382 = EXP v31137f(0x100), v31137e
+    0x3830x311: v311383 = SUB v311382, v311379(0x1)
+    0x3840x311: v311384 = NOT v311383
+    0x3850x311: v311385 = AND v311384, v311378
+    0x3870x311: MSTORE v311376, v311385
+    0x3880x311: v311388(0x20) = CONST 
+    0x38a0x311: v31138a = ADD v311388(0x20), v311376
+
+    Begin block 0x3510x311
+    prev=[0x3480x311], succ=[0x3480x311]
+    =================================
+    0x3510x311_0x0: v351311_0 = PHI v31135b, v311346(0x0)
+    0x3530x311: v311353 = ADD v351311_0, v311341
+    0x3540x311: v311354 = MLOAD v311353
+    0x3570x311: v311357 = ADD v351311_0, v31133e
+    0x3580x311: MSTORE v311357, v311354
+    0x3590x311: v311359(0x20) = CONST 
+    0x35b0x311: v31135b = ADD v311359(0x20), v351311_0
+    0x35c0x311: v31135c(0x348) = CONST 
+    0x35f0x311: JUMP v31135c(0x348)
+
+}
+
+function delegateToImplementation(bytes)() public {
+    Begin block 0x39b
+    prev=[], succ=[0x3a3, 0x3a7]
+    =================================
+    0x39c: v39c = CALLVALUE 
+    0x39e: v39e = ISZERO v39c
+    0x39f: v39f(0x3a7) = CONST 
+    0x3a2: JUMPI v39f(0x3a7), v39e
+
+    Begin block 0x3a3
+    prev=[0x39b], succ=[]
+    =================================
+    0x3a3: v3a3(0x0) = CONST 
+    0x3a6: REVERT v3a3(0x0), v3a3(0x0)
+
+    Begin block 0x3a7
+    prev=[0x39b], succ=[0x3ba, 0x3be]
+    =================================
+    0x3a9: v3a9(0x326) = CONST 
+    0x3ac: v3ac(0x4) = CONST 
+    0x3af: v3af = CALLDATASIZE 
+    0x3b0: v3b0 = SUB v3af, v3ac(0x4)
+    0x3b1: v3b1(0x20) = CONST 
+    0x3b4: v3b4 = LT v3b0, v3b1(0x20)
+    0x3b5: v3b5 = ISZERO v3b4
+    0x3b6: v3b6(0x3be) = CONST 
+    0x3b9: JUMPI v3b6(0x3be), v3b5
+
+    Begin block 0x3ba
+    prev=[0x3a7], succ=[]
+    =================================
+    0x3ba: v3ba(0x0) = CONST 
+    0x3bd: REVERT v3ba(0x0), v3ba(0x0)
+
+    Begin block 0x3be
+    prev=[0x3a7], succ=[0x3d4, 0x3d8]
+    =================================
+    0x3c0: v3c0 = ADD v3ac(0x4), v3b0
+    0x3c2: v3c2(0x20) = CONST 
+    0x3c5: v3c5(0x24) = ADD v3ac(0x4), v3c2(0x20)
+    0x3c7: v3c7 = CALLDATALOAD v3ac(0x4)
+    0x3c8: v3c8(0x1) = CONST 
+    0x3ca: v3ca(0x20) = CONST 
+    0x3cc: v3cc(0x100000000) = SHL v3ca(0x20), v3c8(0x1)
+    0x3ce: v3ce = GT v3c7, v3cc(0x100000000)
+    0x3cf: v3cf = ISZERO v3ce
+    0x3d0: v3d0(0x3d8) = CONST 
+    0x3d3: JUMPI v3d0(0x3d8), v3cf
+
+    Begin block 0x3d4
+    prev=[0x3be], succ=[]
+    =================================
+    0x3d4: v3d4(0x0) = CONST 
+    0x3d7: REVERT v3d4(0x0), v3d4(0x0)
+
+    Begin block 0x3d8
+    prev=[0x3be], succ=[0x3e6, 0x3ea]
+    =================================
+    0x3da: v3da = ADD v3ac(0x4), v3c7
+    0x3dc: v3dc(0x20) = CONST 
+    0x3df: v3df = ADD v3da, v3dc(0x20)
+    0x3e0: v3e0 = GT v3df, v3c0
+    0x3e1: v3e1 = ISZERO v3e0
+    0x3e2: v3e2(0x3ea) = CONST 
+    0x3e5: JUMPI v3e2(0x3ea), v3e1
+
+    Begin block 0x3e6
+    prev=[0x3d8], succ=[]
+    =================================
+    0x3e6: v3e6(0x0) = CONST 
+    0x3e9: REVERT v3e6(0x0), v3e6(0x0)
+
+    Begin block 0x3ea
+    prev=[0x3d8], succ=[0x407, 0x40b]
+    =================================
+    0x3ec: v3ec = CALLDATALOAD v3da
+    0x3ee: v3ee(0x20) = CONST 
+    0x3f0: v3f0 = ADD v3ee(0x20), v3da
+    0x3f3: v3f3(0x1) = CONST 
+    0x3f6: v3f6 = MUL v3ec, v3f3(0x1)
+    0x3f8: v3f8 = ADD v3f0, v3f6
+    0x3f9: v3f9 = GT v3f8, v3c0
+    0x3fa: v3fa(0x1) = CONST 
+    0x3fc: v3fc(0x20) = CONST 
+    0x3fe: v3fe(0x100000000) = SHL v3fc(0x20), v3fa(0x1)
+    0x400: v400 = GT v3ec, v3fe(0x100000000)
+    0x401: v401 = OR v400, v3f9
+    0x402: v402 = ISZERO v401
+    0x403: v403(0x40b) = CONST 
+    0x406: JUMPI v403(0x40b), v402
+
+    Begin block 0x407
+    prev=[0x3ea], succ=[]
+    =================================
+    0x407: v407(0x0) = CONST 
+    0x40a: REVERT v407(0x0), v407(0x0)
+
+    Begin block 0x40b
+    prev=[0x3ea], succ=[0xac20x39b]
+    =================================
+    0x410: v410(0x1f) = CONST 
+    0x412: v412 = ADD v410(0x1f), v3ec
+    0x413: v413(0x20) = CONST 
+    0x417: v417 = DIV v412, v413(0x20)
+    0x418: v418 = MUL v417, v413(0x20)
+    0x419: v419(0x20) = CONST 
+    0x41b: v41b = ADD v419(0x20), v418
+    0x41c: v41c(0x40) = CONST 
+    0x41e: v41e = MLOAD v41c(0x40)
+    0x421: v421 = ADD v41e, v41b
+    0x422: v422(0x40) = CONST 
+    0x424: MSTORE v422(0x40), v421
+    0x42c: MSTORE v41e, v3ec
+    0x42d: v42d(0x20) = CONST 
+    0x42f: v42f = ADD v42d(0x20), v41e
+    0x435: CALLDATACOPY v42f, v3f0, v3ec
+    0x436: v436(0x0) = CONST 
+    0x439: v439 = ADD v42f, v3ec
+    0x43d: MSTORE v439, v436(0x0)
+    0x442: v442(0xac2) = CONST 
+    0x44b: JUMP v442(0xac2)
+
+    Begin block 0xac20x39b
+    prev=[0x40b], succ=[0xadb0x39b]
+    =================================
+    0xac30x39b: v39bac3(0x12) = CONST 
+    0xac50x39b: v39bac5 = SLOAD v39bac3(0x12)
+    0xac60x39b: v39bac6(0x60) = CONST 
+    0xac90x39b: v39bac9(0xadb) = CONST 
+    0xacd0x39b: v39bacd(0x1) = CONST 
+    0xacf0x39b: v39bacf(0x1) = CONST 
+    0xad10x39b: v39bad1(0xa0) = CONST 
+    0xad30x39b: v39bad3(0x10000000000000000000000000000000000000000) = SHL v39bad1(0xa0), v39bacf(0x1)
+    0xad40x39b: v39bad4(0xffffffffffffffffffffffffffffffffffffffff) = SUB v39bad3(0x10000000000000000000000000000000000000000), v39bacd(0x1)
+    0xad50x39b: v39bad5 = AND v39bad4(0xffffffffffffffffffffffffffffffffffffffff), v39bac5
+    0xad70x39b: v39bad7(0x1001) = CONST 
+    0xada0x39b: v39bada_0 = CALLPRIVATE v39bad7(0x1001), v41e, v39bad5, v39bac9(0xadb)
+
+    Begin block 0xadb0x39b
+    prev=[0xac20x39b], succ=[0x3260x39b]
+    =================================
+    0xae00x39b: JUMP v3a9(0x326)
+
+    Begin block 0x3260x39b
+    prev=[0xadb0x39b], succ=[0x3480x39b]
+    =================================
+    0x3270x39b: v39b327(0x40) = CONST 
+    0x32a0x39b: v39b32a = MLOAD v39b327(0x40)
+    0x32b0x39b: v39b32b(0x20) = CONST 
+    0x32f0x39b: MSTORE v39b32a, v39b32b(0x20)
+    0x3310x39b: v39b331 = MLOAD v39bada_0
+    0x3340x39b: v39b334 = ADD v39b32a, v39b32b(0x20)
+    0x3350x39b: MSTORE v39b334, v39b331
+    0x3370x39b: v39b337 = MLOAD v39bada_0
+    0x33e0x39b: v39b33e = ADD v39b32a, v39b327(0x40)
+    0x3410x39b: v39b341 = ADD v39bada_0, v39b32b(0x20)
+    0x3460x39b: v39b346(0x0) = CONST 
+
+    Begin block 0x3480x39b
+    prev=[0x3510x39b, 0x3260x39b], succ=[0x3600x39b, 0x3510x39b]
+    =================================
+    0x3480x39b_0x0: v34839b_0 = PHI v39b35b, v39b346(0x0)
+    0x34b0x39b: v39b34b = LT v34839b_0, v39b337
+    0x34c0x39b: v39b34c = ISZERO v39b34b
+    0x34d0x39b: v39b34d(0x360) = CONST 
+    0x3500x39b: JUMPI v39b34d(0x360), v39b34c
+
+    Begin block 0x3600x39b
+    prev=[0x3480x39b], succ=[0x38d0x39b, 0x3740x39b]
+    =================================
+    0x3690x39b: v39b369 = ADD v39b337, v39b33e
+    0x36b0x39b: v39b36b(0x1f) = CONST 
+    0x36d0x39b: v39b36d = AND v39b36b(0x1f), v39b337
+    0x36f0x39b: v39b36f = ISZERO v39b36d
+    0x3700x39b: v39b370(0x38d) = CONST 
+    0x3730x39b: JUMPI v39b370(0x38d), v39b36f
+
+    Begin block 0x38d0x39b
+    prev=[0x3600x39b, 0x3740x39b], succ=[]
+    =================================
+    0x38d0x39b_0x1: v38d39b_1 = PHI v39b38a, v39b369
+    0x3930x39b: v39b393(0x40) = CONST 
+    0x3950x39b: v39b395 = MLOAD v39b393(0x40)
+    0x3980x39b: v39b398 = SUB v38d39b_1, v39b395
+    0x39a0x39b: RETURN v39b395, v39b398
+
+    Begin block 0x3740x39b
+    prev=[0x3600x39b], succ=[0x38d0x39b]
+    =================================
+    0x3760x39b: v39b376 = SUB v39b369, v39b36d
+    0x3780x39b: v39b378 = MLOAD v39b376
+    0x3790x39b: v39b379(0x1) = CONST 
+    0x37c0x39b: v39b37c(0x20) = CONST 
+    0x37e0x39b: v39b37e = SUB v39b37c(0x20), v39b36d
+    0x37f0x39b: v39b37f(0x100) = CONST 
+    0x3820x39b: v39b382 = EXP v39b37f(0x100), v39b37e
+    0x3830x39b: v39b383 = SUB v39b382, v39b379(0x1)
+    0x3840x39b: v39b384 = NOT v39b383
+    0x3850x39b: v39b385 = AND v39b384, v39b378
+    0x3870x39b: MSTORE v39b376, v39b385
+    0x3880x39b: v39b388(0x20) = CONST 
+    0x38a0x39b: v39b38a = ADD v39b388(0x20), v39b376
+
+    Begin block 0x3510x39b
+    prev=[0x3480x39b], succ=[0x3480x39b]
+    =================================
+    0x3510x39b_0x0: v35139b_0 = PHI v39b35b, v39b346(0x0)
+    0x3530x39b: v39b353 = ADD v35139b_0, v39b341
+    0x3540x39b: v39b354 = MLOAD v39b353
+    0x3570x39b: v39b357 = ADD v35139b_0, v39b33e
+    0x3580x39b: MSTORE v39b357, v39b354
+    0x3590x39b: v39b359(0x20) = CONST 
+    0x35b0x39b: v39b35b = ADD v39b359(0x20), v35139b_0
+    0x35c0x39b: v39b35c(0x348) = CONST 
+    0x35f0x39b: JUMP v39b35c(0x348)
+
+}
+
+function transfer(address,uint256)() public {
+    Begin block 0x44c
+    prev=[], succ=[0x454, 0x458]
+    =================================
+    0x44d: v44d = CALLVALUE 
+    0x44f: v44f = ISZERO v44d
+    0x450: v450(0x458) = CONST 
+    0x453: JUMPI v450(0x458), v44f
+
+    Begin block 0x454
+    prev=[0x44c], succ=[]
+    =================================
+    0x454: v454(0x0) = CONST 
+    0x457: REVERT v454(0x0), v454(0x0)
+
+    Begin block 0x458
+    prev=[0x44c], succ=[0x46b, 0x46f0x44c]
+    =================================
+    0x45a: v45a(0x12ed) = CONST 
+    0x45d: v45d(0x4) = CONST 
+    0x460: v460 = CALLDATASIZE 
+    0x461: v461 = SUB v460, v45d(0x4)
+    0x462: v462(0x40) = CONST 
+    0x465: v465 = LT v461, v462(0x40)
+    0x466: v466 = ISZERO v465
+    0x467: v467(0x46f) = CONST 
+    0x46a: JUMPI v467(0x46f), v466
+
+    Begin block 0x46b
+    prev=[0x458], succ=[]
+    =================================
+    0x46b: v46b(0x0) = CONST 
+    0x46e: REVERT v46b(0x0), v46b(0x0)
+
+    Begin block 0x46f0x44c
+    prev=[0x458], succ=[0xae10x44c]
+    =================================
+    0x4710x44c: v44c471(0x1) = CONST 
+    0x4730x44c: v44c473(0x1) = CONST 
+    0x4750x44c: v44c475(0xa0) = CONST 
+    0x4770x44c: v44c477(0x10000000000000000000000000000000000000000) = SHL v44c475(0xa0), v44c473(0x1)
+    0x4780x44c: v44c478(0xffffffffffffffffffffffffffffffffffffffff) = SUB v44c477(0x10000000000000000000000000000000000000000), v44c471(0x1)
+    0x47a0x44c: v44c47a = CALLDATALOAD v45d(0x4)
+    0x47b0x44c: v44c47b = AND v44c47a, v44c478(0xffffffffffffffffffffffffffffffffffffffff)
+    0x47d0x44c: v44c47d(0x20) = CONST 
+    0x47f0x44c: v44c47f(0x24) = ADD v44c47d(0x20), v45d(0x4)
+    0x4800x44c: v44c480 = CALLDATALOAD v44c47f(0x24)
+    0x4810x44c: v44c481(0xae1) = CONST 
+    0x4840x44c: JUMP v44c481(0xae1)
+
+    Begin block 0xae10x44c
+    prev=[0x46f0x44c], succ=[0x9ad0x44c]
+    =================================
+    0xae20x44c: v44cae2(0x0) = CONST 
+    0xae40x44c: v44cae4(0x1815) = CONST 
+    0xae70x44c: v44cae7(0x9ad) = CONST 
+    0xaea0x44c: JUMP v44cae7(0x9ad)
+
+    Begin block 0x9ad0x44c
+    prev=[0xae10x44c], succ=[0x9f40x44c, 0xa150x44c]
+    =================================
+    0x9ae0x44c: v44c9ae(0x12) = CONST 
+    0x9b00x44c: v44c9b0 = SLOAD v44c9ae(0x12)
+    0x9b10x44c: v44c9b1(0x40) = CONST 
+    0x9b30x44c: v44c9b3 = MLOAD v44c9b1(0x40)
+    0x9b40x44c: v44c9b4(0x60) = CONST 
+    0x9b70x44c: v44c9b7(0x0) = CONST 
+    0x9ba0x44c: v44c9ba(0x1) = CONST 
+    0x9bc0x44c: v44c9bc(0x1) = CONST 
+    0x9be0x44c: v44c9be(0xa0) = CONST 
+    0x9c00x44c: v44c9c0(0x10000000000000000000000000000000000000000) = SHL v44c9be(0xa0), v44c9bc(0x1)
+    0x9c10x44c: v44c9c1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v44c9c0(0x10000000000000000000000000000000000000000), v44c9ba(0x1)
+    0x9c40x44c: v44c9c4 = AND v44c9b0, v44c9c1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x9c80x44c: v44c9c8 = CALLDATASIZE 
+    0x9d00x44c: CALLDATACOPY v44c9b3, v44c9b7(0x0), v44c9c8
+    0x9d10x44c: v44c9d1(0x40) = CONST 
+    0x9d30x44c: v44c9d3 = MLOAD v44c9d1(0x40)
+    0x9d50x44c: v44c9d5 = ADD v44c9b3, v44c9c8
+    0x9d80x44c: v44c9d8(0x0) = CONST 
+    0x9e20x44c: v44c9e2 = SUB v44c9d5, v44c9d3
+    0x9e50x44c: v44c9e5 = GAS 
+    0x9e60x44c: v44c9e6 = DELEGATECALL v44c9e5, v44c9c4, v44c9d3, v44c9e2, v44c9d3, v44c9d8(0x0)
+    0x9ea0x44c: v44c9ea = RETURNDATASIZE 
+    0x9ec0x44c: v44c9ec(0x0) = CONST 
+    0x9ef0x44c: v44c9ef = EQ v44c9ea, v44c9ec(0x0)
+    0x9f00x44c: v44c9f0(0xa15) = CONST 
+    0x9f30x44c: JUMPI v44c9f0(0xa15), v44c9ef
+
+    Begin block 0x9f40x44c
+    prev=[0x9ad0x44c], succ=[0xa1a0x44c]
+    =================================
+    0x9f40x44c: v44c9f4(0x40) = CONST 
+    0x9f60x44c: v44c9f6 = MLOAD v44c9f4(0x40)
+    0x9f90x44c: v44c9f9(0x1f) = CONST 
+    0x9fb0x44c: v44c9fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v44c9f9(0x1f)
+    0x9fc0x44c: v44c9fc(0x3f) = CONST 
+    0x9fe0x44c: v44c9fe = RETURNDATASIZE 
+    0x9ff0x44c: v44c9ff = ADD v44c9fe, v44c9fc(0x3f)
+    0xa000x44c: v44ca00 = AND v44c9ff, v44c9fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xa020x44c: v44ca02 = ADD v44c9f6, v44ca00
+    0xa030x44c: v44ca03(0x40) = CONST 
+    0xa050x44c: MSTORE v44ca03(0x40), v44ca02
+    0xa060x44c: v44ca06 = RETURNDATASIZE 
+    0xa080x44c: MSTORE v44c9f6, v44ca06
+    0xa090x44c: v44ca09 = RETURNDATASIZE 
+    0xa0a0x44c: v44ca0a(0x0) = CONST 
+    0xa0c0x44c: v44ca0c(0x20) = CONST 
+    0xa0f0x44c: v44ca0f = ADD v44c9f6, v44ca0c(0x20)
+    0xa100x44c: RETURNDATACOPY v44ca0f, v44ca0a(0x0), v44ca09
+    0xa110x44c: v44ca11(0xa1a) = CONST 
+    0xa140x44c: JUMP v44ca11(0xa1a)
+
+    Begin block 0xa1a0x44c
+    prev=[0x9f40x44c, 0xa150x44c], succ=[0xa2e0x44c, 0x12a70x44c]
+    =================================
+    0xa1f0x44c: v44ca1f(0x40) = CONST 
+    0xa210x44c: v44ca21 = MLOAD v44ca1f(0x40)
+    0xa220x44c: v44ca22 = RETURNDATASIZE 
+    0xa230x44c: v44ca23(0x0) = CONST 
+    0xa260x44c: RETURNDATACOPY v44ca21, v44ca23(0x0), v44ca22
+    0xa290x44c: v44ca29 = ISZERO v44c9e6
+    0xa2a0x44c: v44ca2a(0x12a7) = CONST 
+    0xa2d0x44c: JUMPI v44ca2a(0x12a7), v44ca29
+
+    Begin block 0xa2e0x44c
+    prev=[0xa1a0x44c], succ=[]
+    =================================
+    0xa2e0x44c: v44ca2e = RETURNDATASIZE 
+    0xa300x44c: RETURN v44ca21, v44ca2e
+
+    Begin block 0x12a70x44c
+    prev=[0xa1a0x44c], succ=[]
+    =================================
+    0x12a80x44c: v44c12a8 = RETURNDATASIZE 
+    0x12aa0x44c: REVERT v44ca21, v44c12a8
+
+    Begin block 0xa150x44c
+    prev=[0x9ad0x44c], succ=[0xa1a0x44c]
+    =================================
+    0xa160x44c: v44ca16(0x60) = CONST 
+
+}
+
+function _setReserveFactor(uint256)() public {
+    Begin block 0x499
+    prev=[], succ=[0x4a1, 0x4a5]
+    =================================
+    0x49a: v49a = CALLVALUE 
+    0x49c: v49c = ISZERO v49a
+    0x49d: v49d(0x4a5) = CONST 
+    0x4a0: JUMPI v49d(0x4a5), v49c
+
+    Begin block 0x4a1
+    prev=[0x499], succ=[]
+    =================================
+    0x4a1: v4a1(0x0) = CONST 
+    0x4a4: REVERT v4a1(0x0), v4a1(0x0)
+
+    Begin block 0x4a5
+    prev=[0x499], succ=[0x4b8, 0x4bc]
+    =================================
+    0x4a7: v4a7(0x1320) = CONST 
+    0x4aa: v4aa(0x4) = CONST 
+    0x4ad: v4ad = CALLDATASIZE 
+    0x4ae: v4ae = SUB v4ad, v4aa(0x4)
+    0x4af: v4af(0x20) = CONST 
+    0x4b2: v4b2 = LT v4ae, v4af(0x20)
+    0x4b3: v4b3 = ISZERO v4b2
+    0x4b4: v4b4(0x4bc) = CONST 
+    0x4b7: JUMPI v4b4(0x4bc), v4b3
+
+    Begin block 0x4b8
+    prev=[0x4a5], succ=[]
+    =================================
+    0x4b8: v4b8(0x0) = CONST 
+    0x4bb: REVERT v4b8(0x0), v4b8(0x0)
+
+    Begin block 0x4bc
+    prev=[0x4a5], succ=[0xaf20x499]
+    =================================
+    0x4be: v4be = CALLDATALOAD v4aa(0x4)
+    0x4bf: v4bf(0xaf2) = CONST 
+    0x4c2: JUMP v4bf(0xaf2)
+
+    Begin block 0xaf20x499
+    prev=[0x4bc], succ=[0x9ad0x499]
+    =================================
+    0xaf30x499: v499af3(0x0) = CONST 
+    0xaf50x499: v499af5(0x183b) = CONST 
+    0xaf80x499: v499af8(0x9ad) = CONST 
+    0xafb0x499: JUMP v499af8(0x9ad)
+
+    Begin block 0x9ad0x499
+    prev=[0xaf20x499], succ=[0x9f40x499, 0xa150x499]
+    =================================
+    0x9ae0x499: v4999ae(0x12) = CONST 
+    0x9b00x499: v4999b0 = SLOAD v4999ae(0x12)
+    0x9b10x499: v4999b1(0x40) = CONST 
+    0x9b30x499: v4999b3 = MLOAD v4999b1(0x40)
+    0x9b40x499: v4999b4(0x60) = CONST 
+    0x9b70x499: v4999b7(0x0) = CONST 
+    0x9ba0x499: v4999ba(0x1) = CONST 
+    0x9bc0x499: v4999bc(0x1) = CONST 
+    0x9be0x499: v4999be(0xa0) = CONST 
+    0x9c00x499: v4999c0(0x10000000000000000000000000000000000000000) = SHL v4999be(0xa0), v4999bc(0x1)
+    0x9c10x499: v4999c1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v4999c0(0x10000000000000000000000000000000000000000), v4999ba(0x1)
+    0x9c40x499: v4999c4 = AND v4999b0, v4999c1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x9c80x499: v4999c8 = CALLDATASIZE 
+    0x9d00x499: CALLDATACOPY v4999b3, v4999b7(0x0), v4999c8
+    0x9d10x499: v4999d1(0x40) = CONST 
+    0x9d30x499: v4999d3 = MLOAD v4999d1(0x40)
+    0x9d50x499: v4999d5 = ADD v4999b3, v4999c8
+    0x9d80x499: v4999d8(0x0) = CONST 
+    0x9e20x499: v4999e2 = SUB v4999d5, v4999d3
+    0x9e50x499: v4999e5 = GAS 
+    0x9e60x499: v4999e6 = DELEGATECALL v4999e5, v4999c4, v4999d3, v4999e2, v4999d3, v4999d8(0x0)
+    0x9ea0x499: v4999ea = RETURNDATASIZE 
+    0x9ec0x499: v4999ec(0x0) = CONST 
+    0x9ef0x499: v4999ef = EQ v4999ea, v4999ec(0x0)
+    0x9f00x499: v4999f0(0xa15) = CONST 
+    0x9f30x499: JUMPI v4999f0(0xa15), v4999ef
+
+    Begin block 0x9f40x499
+    prev=[0x9ad0x499], succ=[0xa1a0x499]
+    =================================
+    0x9f40x499: v4999f4(0x40) = CONST 
+    0x9f60x499: v4999f6 = MLOAD v4999f4(0x40)
+    0x9f90x499: v4999f9(0x1f) = CONST 
+    0x9fb0x499: v4999fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v4999f9(0x1f)
+    0x9fc0x499: v4999fc(0x3f) = CONST 
+    0x9fe0x499: v4999fe = RETURNDATASIZE 
+    0x9ff0x499: v4999ff = ADD v4999fe, v4999fc(0x3f)
+    0xa000x499: v499a00 = AND v4999ff, v4999fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xa020x499: v499a02 = ADD v4999f6, v499a00
+    0xa030x499: v499a03(0x40) = CONST 
+    0xa050x499: MSTORE v499a03(0x40), v499a02
+    0xa060x499: v499a06 = RETURNDATASIZE 
+    0xa080x499: MSTORE v4999f6, v499a06
+    0xa090x499: v499a09 = RETURNDATASIZE 
+    0xa0a0x499: v499a0a(0x0) = CONST 
+    0xa0c0x499: v499a0c(0x20) = CONST 
+    0xa0f0x499: v499a0f = ADD v4999f6, v499a0c(0x20)
+    0xa100x499: RETURNDATACOPY v499a0f, v499a0a(0x0), v499a09
+    0xa110x499: v499a11(0xa1a) = CONST 
+    0xa140x499: JUMP v499a11(0xa1a)
+
+    Begin block 0xa1a0x499
+    prev=[0x9f40x499, 0xa150x499], succ=[0xa2e0x499, 0x12a70x499]
+    =================================
+    0xa1f0x499: v499a1f(0x40) = CONST 
+    0xa210x499: v499a21 = MLOAD v499a1f(0x40)
+    0xa220x499: v499a22 = RETURNDATASIZE 
+    0xa230x499: v499a23(0x0) = CONST 
+    0xa260x499: RETURNDATACOPY v499a21, v499a23(0x0), v499a22
+    0xa290x499: v499a29 = ISZERO v4999e6
+    0xa2a0x499: v499a2a(0x12a7) = CONST 
+    0xa2d0x499: JUMPI v499a2a(0x12a7), v499a29
+
+    Begin block 0xa2e0x499
+    prev=[0xa1a0x499], succ=[]
+    =================================
+    0xa2e0x499: v499a2e = RETURNDATASIZE 
+    0xa300x499: RETURN v499a21, v499a2e
+
+    Begin block 0x12a70x499
+    prev=[0xa1a0x499], succ=[]
+    =================================
+    0x12a80x499: v49912a8 = RETURNDATASIZE 
+    0x12aa0x499: REVERT v499a21, v49912a8
+
+    Begin block 0xa150x499
+    prev=[0x9ad0x499], succ=[0xa1a0x499]
+    =================================
+    0xa160x499: v499a16(0x60) = CONST 
+
+}
+
+function reserveFactorMantissa()() public {
+    Begin block 0x4d5
+    prev=[], succ=[0x4dd, 0x4e1]
+    =================================
+    0x4d6: v4d6 = CALLVALUE 
+    0x4d8: v4d8 = ISZERO v4d6
+    0x4d9: v4d9(0x4e1) = CONST 
+    0x4dc: JUMPI v4d9(0x4e1), v4d8
+
+    Begin block 0x4dd
+    prev=[0x4d5], succ=[]
+    =================================
+    0x4dd: v4dd(0x0) = CONST 
+    0x4e0: REVERT v4dd(0x0), v4dd(0x0)
+
+    Begin block 0x4e1
+    prev=[0x4d5], succ=[0xb02]
+    =================================
+    0x4e3: v4e3(0x1351) = CONST 
+    0x4e6: v4e6(0xb02) = CONST 
+    0x4e9: JUMP v4e6(0xb02)
+
+    Begin block 0xb02
+    prev=[0x4e1], succ=[0x1351]
+    =================================
+    0xb03: vb03(0x8) = CONST 
+    0xb05: vb05 = SLOAD vb03(0x8)
+    0xb07: JUMP v4e3(0x1351)
+
+    Begin block 0x1351
+    prev=[0xb02], succ=[]
+    =================================
+    0x1352: v1352(0x40) = CONST 
+    0x1355: v1355 = MLOAD v1352(0x40)
+    0x1358: MSTORE v1355, vb05
+    0x1359: v1359 = MLOAD v1352(0x40)
+    0x135d: v135d(0x0) = SUB v1355, v1359
+    0x135e: v135e(0x20) = CONST 
+    0x1360: v1360(0x20) = ADD v135e(0x20), v135d(0x0)
+    0x1362: RETURN v1359, v1360(0x20)
+
+}
+
+function _setInterestRateModel(address)() public {
+    Begin block 0x4ea
+    prev=[], succ=[0x4f2, 0x4f6]
+    =================================
+    0x4eb: v4eb = CALLVALUE 
+    0x4ed: v4ed = ISZERO v4eb
+    0x4ee: v4ee(0x4f6) = CONST 
+    0x4f1: JUMPI v4ee(0x4f6), v4ed
+
+    Begin block 0x4f2
+    prev=[0x4ea], succ=[]
+    =================================
+    0x4f2: v4f2(0x0) = CONST 
+    0x4f5: REVERT v4f2(0x0), v4f2(0x0)
+
+    Begin block 0x4f6
+    prev=[0x4ea], succ=[0x509, 0x50d]
+    =================================
+    0x4f8: v4f8(0x1382) = CONST 
+    0x4fb: v4fb(0x4) = CONST 
+    0x4fe: v4fe = CALLDATASIZE 
+    0x4ff: v4ff = SUB v4fe, v4fb(0x4)
+    0x500: v500(0x20) = CONST 
+    0x503: v503 = LT v4ff, v500(0x20)
+    0x504: v504 = ISZERO v503
+    0x505: v505(0x50d) = CONST 
+    0x508: JUMPI v505(0x50d), v504
+
+    Begin block 0x509
+    prev=[0x4f6], succ=[]
+    =================================
+    0x509: v509(0x0) = CONST 
+    0x50c: REVERT v509(0x0), v509(0x0)
+
+    Begin block 0x50d
+    prev=[0x4f6], succ=[0xaf20x4ea]
+    =================================
+    0x50f: v50f = CALLDATALOAD v4fb(0x4)
+    0x510: v510(0x1) = CONST 
+    0x512: v512(0x1) = CONST 
+    0x514: v514(0xa0) = CONST 
+    0x516: v516(0x10000000000000000000000000000000000000000) = SHL v514(0xa0), v512(0x1)
+    0x517: v517(0xffffffffffffffffffffffffffffffffffffffff) = SUB v516(0x10000000000000000000000000000000000000000), v510(0x1)
+    0x518: v518 = AND v517(0xffffffffffffffffffffffffffffffffffffffff), v50f
+    0x519: v519(0xaf2) = CONST 
+    0x51c: JUMP v519(0xaf2)
+
+    Begin block 0xaf20x4ea
+    prev=[0x50d], succ=[0x9ad0x4ea]
+    =================================
+    0xaf30x4ea: v4eaaf3(0x0) = CONST 
+    0xaf50x4ea: v4eaaf5(0x183b) = CONST 
+    0xaf80x4ea: v4eaaf8(0x9ad) = CONST 
+    0xafb0x4ea: JUMP v4eaaf8(0x9ad)
+
+    Begin block 0x9ad0x4ea
+    prev=[0xaf20x4ea], succ=[0x9f40x4ea, 0xa150x4ea]
+    =================================
+    0x9ae0x4ea: v4ea9ae(0x12) = CONST 
+    0x9b00x4ea: v4ea9b0 = SLOAD v4ea9ae(0x12)
+    0x9b10x4ea: v4ea9b1(0x40) = CONST 
+    0x9b30x4ea: v4ea9b3 = MLOAD v4ea9b1(0x40)
+    0x9b40x4ea: v4ea9b4(0x60) = CONST 
+    0x9b70x4ea: v4ea9b7(0x0) = CONST 
+    0x9ba0x4ea: v4ea9ba(0x1) = CONST 
+    0x9bc0x4ea: v4ea9bc(0x1) = CONST 
+    0x9be0x4ea: v4ea9be(0xa0) = CONST 
+    0x9c00x4ea: v4ea9c0(0x10000000000000000000000000000000000000000) = SHL v4ea9be(0xa0), v4ea9bc(0x1)
+    0x9c10x4ea: v4ea9c1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v4ea9c0(0x10000000000000000000000000000000000000000), v4ea9ba(0x1)
+    0x9c40x4ea: v4ea9c4 = AND v4ea9b0, v4ea9c1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x9c80x4ea: v4ea9c8 = CALLDATASIZE 
+    0x9d00x4ea: CALLDATACOPY v4ea9b3, v4ea9b7(0x0), v4ea9c8
+    0x9d10x4ea: v4ea9d1(0x40) = CONST 
+    0x9d30x4ea: v4ea9d3 = MLOAD v4ea9d1(0x40)
+    0x9d50x4ea: v4ea9d5 = ADD v4ea9b3, v4ea9c8
+    0x9d80x4ea: v4ea9d8(0x0) = CONST 
+    0x9e20x4ea: v4ea9e2 = SUB v4ea9d5, v4ea9d3
+    0x9e50x4ea: v4ea9e5 = GAS 
+    0x9e60x4ea: v4ea9e6 = DELEGATECALL v4ea9e5, v4ea9c4, v4ea9d3, v4ea9e2, v4ea9d3, v4ea9d8(0x0)
+    0x9ea0x4ea: v4ea9ea = RETURNDATASIZE 
+    0x9ec0x4ea: v4ea9ec(0x0) = CONST 
+    0x9ef0x4ea: v4ea9ef = EQ v4ea9ea, v4ea9ec(0x0)
+    0x9f00x4ea: v4ea9f0(0xa15) = CONST 
+    0x9f30x4ea: JUMPI v4ea9f0(0xa15), v4ea9ef
+
+    Begin block 0x9f40x4ea
+    prev=[0x9ad0x4ea], succ=[0xa1a0x4ea]
+    =================================
+    0x9f40x4ea: v4ea9f4(0x40) = CONST 
+    0x9f60x4ea: v4ea9f6 = MLOAD v4ea9f4(0x40)
+    0x9f90x4ea: v4ea9f9(0x1f) = CONST 
+    0x9fb0x4ea: v4ea9fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v4ea9f9(0x1f)
+    0x9fc0x4ea: v4ea9fc(0x3f) = CONST 
+    0x9fe0x4ea: v4ea9fe = RETURNDATASIZE 
+    0x9ff0x4ea: v4ea9ff = ADD v4ea9fe, v4ea9fc(0x3f)
+    0xa000x4ea: v4eaa00 = AND v4ea9ff, v4ea9fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xa020x4ea: v4eaa02 = ADD v4ea9f6, v4eaa00
+    0xa030x4ea: v4eaa03(0x40) = CONST 
+    0xa050x4ea: MSTORE v4eaa03(0x40), v4eaa02
+    0xa060x4ea: v4eaa06 = RETURNDATASIZE 
+    0xa080x4ea: MSTORE v4ea9f6, v4eaa06
+    0xa090x4ea: v4eaa09 = RETURNDATASIZE 
+    0xa0a0x4ea: v4eaa0a(0x0) = CONST 
+    0xa0c0x4ea: v4eaa0c(0x20) = CONST 
+    0xa0f0x4ea: v4eaa0f = ADD v4ea9f6, v4eaa0c(0x20)
+    0xa100x4ea: RETURNDATACOPY v4eaa0f, v4eaa0a(0x0), v4eaa09
+    0xa110x4ea: v4eaa11(0xa1a) = CONST 
+    0xa140x4ea: JUMP v4eaa11(0xa1a)
+
+    Begin block 0xa1a0x4ea
+    prev=[0x9f40x4ea, 0xa150x4ea], succ=[0xa2e0x4ea, 0x12a70x4ea]
+    =================================
+    0xa1f0x4ea: v4eaa1f(0x40) = CONST 
+    0xa210x4ea: v4eaa21 = MLOAD v4eaa1f(0x40)
+    0xa220x4ea: v4eaa22 = RETURNDATASIZE 
+    0xa230x4ea: v4eaa23(0x0) = CONST 
+    0xa260x4ea: RETURNDATACOPY v4eaa21, v4eaa23(0x0), v4eaa22
+    0xa290x4ea: v4eaa29 = ISZERO v4ea9e6
+    0xa2a0x4ea: v4eaa2a(0x12a7) = CONST 
+    0xa2d0x4ea: JUMPI v4eaa2a(0x12a7), v4eaa29
+
+    Begin block 0xa2e0x4ea
+    prev=[0xa1a0x4ea], succ=[]
+    =================================
+    0xa2e0x4ea: v4eaa2e = RETURNDATASIZE 
+    0xa300x4ea: RETURN v4eaa21, v4eaa2e
+
+    Begin block 0x12a70x4ea
+    prev=[0xa1a0x4ea], succ=[]
+    =================================
+    0x12a80x4ea: v4ea12a8 = RETURNDATASIZE 
+    0x12aa0x4ea: REVERT v4eaa21, v4ea12a8
+
+    Begin block 0xa150x4ea
+    prev=[0x9ad0x4ea], succ=[0xa1a0x4ea]
+    =================================
+    0xa160x4ea: v4eaa16(0x60) = CONST 
+
+}
+
+function totalSupply()() public {
+    Begin block 0x51d
+    prev=[], succ=[0x525, 0x529]
+    =================================
+    0x51e: v51e = CALLVALUE 
+    0x520: v520 = ISZERO v51e
+    0x521: v521(0x529) = CONST 
+    0x524: JUMPI v521(0x529), v520
+
+    Begin block 0x525
+    prev=[0x51d], succ=[]
+    =================================
+    0x525: v525(0x0) = CONST 
+    0x528: REVERT v525(0x0), v525(0x0)
+
+    Begin block 0x529
+    prev=[0x51d], succ=[0xb08]
+    =================================
+    0x52b: v52b(0x13b3) = CONST 
+    0x52e: v52e(0xb08) = CONST 
+    0x531: JUMP v52e(0xb08)
+
+    Begin block 0xb08
+    prev=[0x529], succ=[0x13b3]
+    =================================
+    0xb09: vb09(0xd) = CONST 
+    0xb0b: vb0b = SLOAD vb09(0xd)
+    0xb0d: JUMP v52b(0x13b3)
+
+    Begin block 0x13b3
+    prev=[0xb08], succ=[]
+    =================================
+    0x13b4: v13b4(0x40) = CONST 
+    0x13b7: v13b7 = MLOAD v13b4(0x40)
+    0x13ba: MSTORE v13b7, vb0b
+    0x13bb: v13bb = MLOAD v13b4(0x40)
+    0x13bf: v13bf(0x0) = SUB v13b7, v13bb
+    0x13c0: v13c0(0x20) = CONST 
+    0x13c2: v13c2(0x20) = ADD v13c0(0x20), v13bf(0x0)
+    0x13c4: RETURN v13bb, v13c2(0x20)
+
+}
+
+function borrowRatePerBlock()() public {
+    Begin block 0x532
+    prev=[], succ=[0x53a, 0x53e]
+    =================================
+    0x533: v533 = CALLVALUE 
+    0x535: v535 = ISZERO v533
+    0x536: v536(0x53e) = CONST 
+    0x539: JUMPI v536(0x53e), v535
+
+    Begin block 0x53a
+    prev=[0x532], succ=[]
+    =================================
+    0x53a: v53a(0x0) = CONST 
+    0x53d: REVERT v53a(0x0), v53a(0x0)
+
+    Begin block 0x53e
+    prev=[0x532], succ=[0xb0e]
+    =================================
+    0x540: v540(0x13e4) = CONST 
+    0x543: v543(0xb0e) = CONST 
+    0x546: JUMP v543(0xb0e)
+
+    Begin block 0xb0e
+    prev=[0x53e], succ=[0x10c30x532]
+    =================================
+    0xb0f: vb0f(0x0) = CONST 
+    0xb11: vb11(0x1860) = CONST 
+    0xb14: vb14(0x10c3) = CONST 
+    0xb17: JUMP vb14(0x10c3)
+
+    Begin block 0x10c30x532
+    prev=[0xb0e], succ=[0x11450x532]
+    =================================
+    0x10c40x532: v53210c4(0x60) = CONST 
+    0x10c60x532: v53210c6(0x0) = CONST 
+    0x10c80x532: v53210c8 = ADDRESS 
+    0x10c90x532: v53210c9(0x1) = CONST 
+    0x10cb0x532: v53210cb(0x1) = CONST 
+    0x10cd0x532: v53210cd(0xa0) = CONST 
+    0x10cf0x532: v53210cf(0x10000000000000000000000000000000000000000) = SHL v53210cd(0xa0), v53210cb(0x1)
+    0x10d00x532: v53210d0(0xffffffffffffffffffffffffffffffffffffffff) = SUB v53210cf(0x10000000000000000000000000000000000000000), v53210c9(0x1)
+    0x10d10x532: v53210d1 = AND v53210d0(0xffffffffffffffffffffffffffffffffffffffff), v53210c8
+    0x10d20x532: v53210d2(0x0) = CONST 
+    0x10d40x532: v53210d4 = CALLDATASIZE 
+    0x10d50x532: v53210d5(0x40) = CONST 
+    0x10d70x532: v53210d7 = MLOAD v53210d5(0x40)
+    0x10d80x532: v53210d8(0x24) = CONST 
+    0x10da0x532: v53210da = ADD v53210d8(0x24), v53210d7
+    0x10dd0x532: v53210dd(0x20) = CONST 
+    0x10df0x532: v53210df = ADD v53210dd(0x20), v53210da
+    0x10e20x532: v53210e2(0x20) = SUB v53210df, v53210da
+    0x10e40x532: MSTORE v53210da, v53210e2(0x20)
+    0x10ea0x532: MSTORE v53210df, v53210d4
+    0x10eb0x532: v53210eb(0x20) = CONST 
+    0x10ed0x532: v53210ed = ADD v53210eb(0x20), v53210df
+    0x10f30x532: CALLDATACOPY v53210ed, v53210d2(0x0), v53210d4
+    0x10f40x532: v53210f4(0x0) = CONST 
+    0x10f80x532: v53210f8 = ADD v53210d4, v53210ed
+    0x10f90x532: MSTORE v53210f8, v53210f4(0x0)
+    0x10fa0x532: v53210fa(0x40) = CONST 
+    0x10fd0x532: v53210fd = MLOAD v53210fa(0x40)
+    0x10fe0x532: v53210fe(0x1f) = CONST 
+    0x11020x532: v5321102 = ADD v53210d4, v53210fe(0x1f)
+    0x11030x532: v5321103(0x1f) = CONST 
+    0x11050x532: v5321105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v5321103(0x1f)
+    0x11080x532: v5321108 = AND v5321105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0), v5321102
+    0x110b0x532: v532110b = ADD v53210ed, v5321108
+    0x110e0x532: v532110e = SUB v532110b, v53210fd
+    0x11110x532: v5321111 = ADD v5321105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0), v532110e
+    0x11130x532: MSTORE v53210fd, v5321111
+    0x11160x532: MSTORE v53210fa(0x40), v532110b
+    0x11170x532: v5321117(0x20) = CONST 
+    0x111a0x532: v532111a = ADD v53210fd, v5321117(0x20)
+    0x111c0x532: v532111c = MLOAD v532111a
+    0x111d0x532: v532111d(0x1) = CONST 
+    0x111f0x532: v532111f(0x1) = CONST 
+    0x11210x532: v5321121(0xe0) = CONST 
+    0x11230x532: v5321123(0x100000000000000000000000000000000000000000000000000000000) = SHL v5321121(0xe0), v532111f(0x1)
+    0x11240x532: v5321124(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB v5321123(0x100000000000000000000000000000000000000000000000000000000), v532111d(0x1)
+    0x11250x532: v5321125 = AND v5321124(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff), v532111c
+    0x11260x532: v5321126(0x933c1ed) = CONST 
+    0x112b0x532: v532112b(0xe0) = CONST 
+    0x112d0x532: v532112d(0x933c1ed00000000000000000000000000000000000000000000000000000000) = SHL v532112b(0xe0), v5321126(0x933c1ed)
+    0x112e0x532: v532112e = OR v532112d(0x933c1ed00000000000000000000000000000000000000000000000000000000), v5321125
+    0x11300x532: MSTORE v532111a, v532112e
+    0x11320x532: v5321132 = MLOAD v53210fa(0x40)
+    0x11340x532: v5321134 = MLOAD v53210fd
+
+    Begin block 0x11450x532
+    prev=[0x114e0x532, 0x10c30x532], succ=[0x11640x532, 0x114e0x532]
+    =================================
+    0x11450x532_0x2: v1145532_2 = PHI v5321157, v5321134
+    0x11460x532: v5321146(0x20) = CONST 
+    0x11490x532: v5321149 = LT v1145532_2, v5321146(0x20)
+    0x114a0x532: v532114a(0x1164) = CONST 
+    0x114d0x532: JUMPI v532114a(0x1164), v5321149
+
+    Begin block 0x11640x532
+    prev=[0x11450x532], succ=[0x11a30x532, 0x11c40x532]
+    =================================
+    0x11640x532_0x0: v1164532_0 = PHI v532115f, v532111a
+    0x11640x532_0x1: v1164532_1 = PHI v532115d, v5321132
+    0x11640x532_0x2: v1164532_2 = PHI v5321157, v5321134
+    0x11650x532: v5321165(0x1) = CONST 
+    0x11680x532: v5321168(0x20) = CONST 
+    0x116a0x532: v532116a = SUB v5321168(0x20), v1164532_2
+    0x116b0x532: v532116b(0x100) = CONST 
+    0x116e0x532: v532116e = EXP v532116b(0x100), v532116a
+    0x116f0x532: v532116f = SUB v532116e, v5321165(0x1)
+    0x11710x532: v5321171 = NOT v532116f
+    0x11730x532: v5321173 = MLOAD v1164532_0
+    0x11740x532: v5321174 = AND v5321173, v5321171
+    0x11770x532: v5321177 = MLOAD v1164532_1
+    0x11780x532: v5321178 = AND v5321177, v532116f
+    0x117b0x532: v532117b = OR v5321174, v5321178
+    0x117d0x532: MSTORE v1164532_1, v532117b
+    0x11860x532: v5321186 = ADD v5321134, v5321132
+    0x118a0x532: v532118a(0x0) = CONST 
+    0x118c0x532: v532118c(0x40) = CONST 
+    0x118e0x532: v532118e = MLOAD v532118c(0x40)
+    0x11910x532: v5321191 = SUB v5321186, v532118e
+    0x11940x532: v5321194 = GAS 
+    0x11950x532: v5321195 = STATICCALL v5321194, v53210d1, v532118e, v5321191, v532118e, v532118a(0x0)
+    0x11990x532: v5321199 = RETURNDATASIZE 
+    0x119b0x532: v532119b(0x0) = CONST 
+    0x119e0x532: v532119e = EQ v5321199, v532119b(0x0)
+    0x119f0x532: v532119f(0x11c4) = CONST 
+    0x11a20x532: JUMPI v532119f(0x11c4), v532119e
+
+    Begin block 0x11a30x532
+    prev=[0x11640x532], succ=[0x11c90x532]
+    =================================
+    0x11a30x532: v53211a3(0x40) = CONST 
+    0x11a50x532: v53211a5 = MLOAD v53211a3(0x40)
+    0x11a80x532: v53211a8(0x1f) = CONST 
+    0x11aa0x532: v53211aa(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v53211a8(0x1f)
+    0x11ab0x532: v53211ab(0x3f) = CONST 
+    0x11ad0x532: v53211ad = RETURNDATASIZE 
+    0x11ae0x532: v53211ae = ADD v53211ad, v53211ab(0x3f)
+    0x11af0x532: v53211af = AND v53211ae, v53211aa(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x11b10x532: v53211b1 = ADD v53211a5, v53211af
+    0x11b20x532: v53211b2(0x40) = CONST 
+    0x11b40x532: MSTORE v53211b2(0x40), v53211b1
+    0x11b50x532: v53211b5 = RETURNDATASIZE 
+    0x11b70x532: MSTORE v53211a5, v53211b5
+    0x11b80x532: v53211b8 = RETURNDATASIZE 
+    0x11b90x532: v53211b9(0x0) = CONST 
+    0x11bb0x532: v53211bb(0x20) = CONST 
+    0x11be0x532: v53211be = ADD v53211a5, v53211bb(0x20)
+    0x11bf0x532: RETURNDATACOPY v53211be, v53211b9(0x0), v53211b8
+    0x11c00x532: v53211c0(0x11c9) = CONST 
+    0x11c30x532: JUMP v53211c0(0x11c9)
+
+    Begin block 0x11c90x532
+    prev=[0x11a30x532, 0x11c40x532], succ=[0x11dd0x532, 0x12ca0x532]
+    =================================
+    0x11ce0x532: v53211ce(0x40) = CONST 
+    0x11d00x532: v53211d0 = MLOAD v53211ce(0x40)
+    0x11d10x532: v53211d1 = RETURNDATASIZE 
+    0x11d20x532: v53211d2(0x0) = CONST 
+    0x11d50x532: RETURNDATACOPY v53211d0, v53211d2(0x0), v53211d1
+    0x11d80x532: v53211d8 = ISZERO v5321195
+    0x11d90x532: v53211d9(0x12ca) = CONST 
+    0x11dc0x532: JUMPI v53211d9(0x12ca), v53211d8
+
+    Begin block 0x11dd0x532
+    prev=[0x11c90x532], succ=[]
+    =================================
+    0x11dd0x532: v53211dd = RETURNDATASIZE 
+    0x11de0x532: v53211de(0x40) = CONST 
+    0x11e10x532: v53211e1 = ADD v53211d0, v53211de(0x40)
+    0x11e20x532: RETURN v53211e1, v53211dd
+
+    Begin block 0x12ca0x532
+    prev=[0x11c90x532], succ=[]
+    =================================
+    0x12cb0x532: v53212cb = RETURNDATASIZE 
+    0x12cd0x532: REVERT v53211d0, v53212cb
+
+    Begin block 0x11c40x532
+    prev=[0x11640x532], succ=[0x11c90x532]
+    =================================
+    0x11c50x532: v53211c5(0x60) = CONST 
+
+    Begin block 0x114e0x532
+    prev=[0x11450x532], succ=[0x11450x532]
+    =================================
+    0x114e0x532_0x0: v114e532_0 = PHI v532115f, v532111a
+    0x114e0x532_0x1: v114e532_1 = PHI v532115d, v5321132
+    0x114e0x532_0x2: v114e532_2 = PHI v5321157, v5321134
+    0x114f0x532: v532114f = MLOAD v114e532_0
+    0x11510x532: MSTORE v114e532_1, v532114f
+    0x11520x532: v5321152(0x1f) = CONST 
+    0x11540x532: v5321154(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v5321152(0x1f)
+    0x11570x532: v5321157 = ADD v114e532_2, v5321154(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x11590x532: v5321159(0x20) = CONST 
+    0x115d0x532: v532115d = ADD v5321159(0x20), v114e532_1
+    0x115f0x532: v532115f = ADD v5321159(0x20), v114e532_0
+    0x11600x532: v5321160(0x1145) = CONST 
+    0x11630x532: JUMP v5321160(0x1145)
+
+}
+
+function transferFrom(address,address,uint256)() public {
+    Begin block 0x547
+    prev=[], succ=[0x54f, 0x553]
+    =================================
+    0x548: v548 = CALLVALUE 
+    0x54a: v54a = ISZERO v548
+    0x54b: v54b(0x553) = CONST 
+    0x54e: JUMPI v54b(0x553), v54a
+
+    Begin block 0x54f
+    prev=[0x547], succ=[]
+    =================================
+    0x54f: v54f(0x0) = CONST 
+    0x552: REVERT v54f(0x0), v54f(0x0)
+
+    Begin block 0x553
+    prev=[0x547], succ=[0x566, 0x56a0x547]
+    =================================
+    0x555: v555(0x1415) = CONST 
+    0x558: v558(0x4) = CONST 
+    0x55b: v55b = CALLDATASIZE 
+    0x55c: v55c = SUB v55b, v558(0x4)
+    0x55d: v55d(0x60) = CONST 
+    0x560: v560 = LT v55c, v55d(0x60)
+    0x561: v561 = ISZERO v560
+    0x562: v562(0x56a) = CONST 
+    0x565: JUMPI v562(0x56a), v561
+
+    Begin block 0x566
+    prev=[0x553], succ=[]
+    =================================
+    0x566: v566(0x0) = CONST 
+    0x569: REVERT v566(0x0), v566(0x0)
+
+    Begin block 0x56a0x547
+    prev=[0x553], succ=[0xb1c0x547]
+    =================================
+    0x56c0x547: v54756c(0x1) = CONST 
+    0x56e0x547: v54756e(0x1) = CONST 
+    0x5700x547: v547570(0xa0) = CONST 
+    0x5720x547: v547572(0x10000000000000000000000000000000000000000) = SHL v547570(0xa0), v54756e(0x1)
+    0x5730x547: v547573(0xffffffffffffffffffffffffffffffffffffffff) = SUB v547572(0x10000000000000000000000000000000000000000), v54756c(0x1)
+    0x5750x547: v547575 = CALLDATALOAD v558(0x4)
+    0x5770x547: v547577 = AND v547573(0xffffffffffffffffffffffffffffffffffffffff), v547575
+    0x5790x547: v547579(0x20) = CONST 
+    0x57c0x547: v54757c(0x24) = ADD v558(0x4), v547579(0x20)
+    0x57d0x547: v54757d = CALLDATALOAD v54757c(0x24)
+    0x5800x547: v547580 = AND v547573(0xffffffffffffffffffffffffffffffffffffffff), v54757d
+    0x5820x547: v547582(0x40) = CONST 
+    0x5840x547: v547584(0x44) = ADD v547582(0x40), v558(0x4)
+    0x5850x547: v547585 = CALLDATALOAD v547584(0x44)
+    0x5860x547: v547586(0xb1c) = CONST 
+    0x5890x547: JUMP v547586(0xb1c)
+
+    Begin block 0xb1c0x547
+    prev=[0x56a0x547], succ=[0x9ad0x547]
+    =================================
+    0xb1d0x547: v547b1d(0x0) = CONST 
+    0xb1f0x547: v547b1f(0xb26) = CONST 
+    0xb220x547: v547b22(0x9ad) = CONST 
+    0xb250x547: JUMP v547b22(0x9ad)
+
+    Begin block 0x9ad0x547
+    prev=[0xb1c0x547], succ=[0x9f40x547, 0xa150x547]
+    =================================
+    0x9ae0x547: v5479ae(0x12) = CONST 
+    0x9b00x547: v5479b0 = SLOAD v5479ae(0x12)
+    0x9b10x547: v5479b1(0x40) = CONST 
+    0x9b30x547: v5479b3 = MLOAD v5479b1(0x40)
+    0x9b40x547: v5479b4(0x60) = CONST 
+    0x9b70x547: v5479b7(0x0) = CONST 
+    0x9ba0x547: v5479ba(0x1) = CONST 
+    0x9bc0x547: v5479bc(0x1) = CONST 
+    0x9be0x547: v5479be(0xa0) = CONST 
+    0x9c00x547: v5479c0(0x10000000000000000000000000000000000000000) = SHL v5479be(0xa0), v5479bc(0x1)
+    0x9c10x547: v5479c1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v5479c0(0x10000000000000000000000000000000000000000), v5479ba(0x1)
+    0x9c40x547: v5479c4 = AND v5479b0, v5479c1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x9c80x547: v5479c8 = CALLDATASIZE 
+    0x9d00x547: CALLDATACOPY v5479b3, v5479b7(0x0), v5479c8
+    0x9d10x547: v5479d1(0x40) = CONST 
+    0x9d30x547: v5479d3 = MLOAD v5479d1(0x40)
+    0x9d50x547: v5479d5 = ADD v5479b3, v5479c8
+    0x9d80x547: v5479d8(0x0) = CONST 
+    0x9e20x547: v5479e2 = SUB v5479d5, v5479d3
+    0x9e50x547: v5479e5 = GAS 
+    0x9e60x547: v5479e6 = DELEGATECALL v5479e5, v5479c4, v5479d3, v5479e2, v5479d3, v5479d8(0x0)
+    0x9ea0x547: v5479ea = RETURNDATASIZE 
+    0x9ec0x547: v5479ec(0x0) = CONST 
+    0x9ef0x547: v5479ef = EQ v5479ea, v5479ec(0x0)
+    0x9f00x547: v5479f0(0xa15) = CONST 
+    0x9f30x547: JUMPI v5479f0(0xa15), v5479ef
+
+    Begin block 0x9f40x547
+    prev=[0x9ad0x547], succ=[0xa1a0x547]
+    =================================
+    0x9f40x547: v5479f4(0x40) = CONST 
+    0x9f60x547: v5479f6 = MLOAD v5479f4(0x40)
+    0x9f90x547: v5479f9(0x1f) = CONST 
+    0x9fb0x547: v5479fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v5479f9(0x1f)
+    0x9fc0x547: v5479fc(0x3f) = CONST 
+    0x9fe0x547: v5479fe = RETURNDATASIZE 
+    0x9ff0x547: v5479ff = ADD v5479fe, v5479fc(0x3f)
+    0xa000x547: v547a00 = AND v5479ff, v5479fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xa020x547: v547a02 = ADD v5479f6, v547a00
+    0xa030x547: v547a03(0x40) = CONST 
+    0xa050x547: MSTORE v547a03(0x40), v547a02
+    0xa060x547: v547a06 = RETURNDATASIZE 
+    0xa080x547: MSTORE v5479f6, v547a06
+    0xa090x547: v547a09 = RETURNDATASIZE 
+    0xa0a0x547: v547a0a(0x0) = CONST 
+    0xa0c0x547: v547a0c(0x20) = CONST 
+    0xa0f0x547: v547a0f = ADD v5479f6, v547a0c(0x20)
+    0xa100x547: RETURNDATACOPY v547a0f, v547a0a(0x0), v547a09
+    0xa110x547: v547a11(0xa1a) = CONST 
+    0xa140x547: JUMP v547a11(0xa1a)
+
+    Begin block 0xa1a0x547
+    prev=[0x9f40x547, 0xa150x547], succ=[0xa2e0x547, 0x12a70x547]
+    =================================
+    0xa1f0x547: v547a1f(0x40) = CONST 
+    0xa210x547: v547a21 = MLOAD v547a1f(0x40)
+    0xa220x547: v547a22 = RETURNDATASIZE 
+    0xa230x547: v547a23(0x0) = CONST 
+    0xa260x547: RETURNDATACOPY v547a21, v547a23(0x0), v547a22
+    0xa290x547: v547a29 = ISZERO v5479e6
+    0xa2a0x547: v547a2a(0x12a7) = CONST 
+    0xa2d0x547: JUMPI v547a2a(0x12a7), v547a29
+
+    Begin block 0xa2e0x547
+    prev=[0xa1a0x547], succ=[]
+    =================================
+    0xa2e0x547: v547a2e = RETURNDATASIZE 
+    0xa300x547: RETURN v547a21, v547a2e
+
+    Begin block 0x12a70x547
+    prev=[0xa1a0x547], succ=[]
+    =================================
+    0x12a80x547: v54712a8 = RETURNDATASIZE 
+    0x12aa0x547: REVERT v547a21, v54712a8
+
+    Begin block 0xa150x547
+    prev=[0x9ad0x547], succ=[0xa1a0x547]
+    =================================
+    0xa160x547: v547a16(0x60) = CONST 
+
+}
+
+function repayBorrowBehalf(address,uint256)() public {
+    Begin block 0x58a
+    prev=[], succ=[0x592, 0x596]
+    =================================
+    0x58b: v58b = CALLVALUE 
+    0x58d: v58d = ISZERO v58b
+    0x58e: v58e(0x596) = CONST 
+    0x591: JUMPI v58e(0x596), v58d
+
+    Begin block 0x592
+    prev=[0x58a], succ=[]
+    =================================
+    0x592: v592(0x0) = CONST 
+    0x595: REVERT v592(0x0), v592(0x0)
+
+    Begin block 0x596
+    prev=[0x58a], succ=[0x5a9, 0x46f0x58a]
+    =================================
+    0x598: v598(0x1448) = CONST 
+    0x59b: v59b(0x4) = CONST 
+    0x59e: v59e = CALLDATASIZE 
+    0x59f: v59f = SUB v59e, v59b(0x4)
+    0x5a0: v5a0(0x40) = CONST 
+    0x5a3: v5a3 = LT v59f, v5a0(0x40)
+    0x5a4: v5a4 = ISZERO v5a3
+    0x5a5: v5a5(0x46f) = CONST 
+    0x5a8: JUMPI v5a5(0x46f), v5a4
+
+    Begin block 0x5a9
+    prev=[0x596], succ=[]
+    =================================
+    0x5a9: v5a9(0x0) = CONST 
+    0x5ac: REVERT v5a9(0x0), v5a9(0x0)
+
+    Begin block 0x46f0x58a
+    prev=[0x596], succ=[0xae10x58a]
+    =================================
+    0x4710x58a: v58a471(0x1) = CONST 
+    0x4730x58a: v58a473(0x1) = CONST 
+    0x4750x58a: v58a475(0xa0) = CONST 
+    0x4770x58a: v58a477(0x10000000000000000000000000000000000000000) = SHL v58a475(0xa0), v58a473(0x1)
+    0x4780x58a: v58a478(0xffffffffffffffffffffffffffffffffffffffff) = SUB v58a477(0x10000000000000000000000000000000000000000), v58a471(0x1)
+    0x47a0x58a: v58a47a = CALLDATALOAD v59b(0x4)
+    0x47b0x58a: v58a47b = AND v58a47a, v58a478(0xffffffffffffffffffffffffffffffffffffffff)
+    0x47d0x58a: v58a47d(0x20) = CONST 
+    0x47f0x58a: v58a47f(0x24) = ADD v58a47d(0x20), v59b(0x4)
+    0x4800x58a: v58a480 = CALLDATALOAD v58a47f(0x24)
+    0x4810x58a: v58a481(0xae1) = CONST 
+    0x4840x58a: JUMP v58a481(0xae1)
+
+    Begin block 0xae10x58a
+    prev=[0x46f0x58a], succ=[0x9ad0x58a]
+    =================================
+    0xae20x58a: v58aae2(0x0) = CONST 
+    0xae40x58a: v58aae4(0x1815) = CONST 
+    0xae70x58a: v58aae7(0x9ad) = CONST 
+    0xaea0x58a: JUMP v58aae7(0x9ad)
+
+    Begin block 0x9ad0x58a
+    prev=[0xae10x58a], succ=[0x9f40x58a, 0xa150x58a]
+    =================================
+    0x9ae0x58a: v58a9ae(0x12) = CONST 
+    0x9b00x58a: v58a9b0 = SLOAD v58a9ae(0x12)
+    0x9b10x58a: v58a9b1(0x40) = CONST 
+    0x9b30x58a: v58a9b3 = MLOAD v58a9b1(0x40)
+    0x9b40x58a: v58a9b4(0x60) = CONST 
+    0x9b70x58a: v58a9b7(0x0) = CONST 
+    0x9ba0x58a: v58a9ba(0x1) = CONST 
+    0x9bc0x58a: v58a9bc(0x1) = CONST 
+    0x9be0x58a: v58a9be(0xa0) = CONST 
+    0x9c00x58a: v58a9c0(0x10000000000000000000000000000000000000000) = SHL v58a9be(0xa0), v58a9bc(0x1)
+    0x9c10x58a: v58a9c1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v58a9c0(0x10000000000000000000000000000000000000000), v58a9ba(0x1)
+    0x9c40x58a: v58a9c4 = AND v58a9b0, v58a9c1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x9c80x58a: v58a9c8 = CALLDATASIZE 
+    0x9d00x58a: CALLDATACOPY v58a9b3, v58a9b7(0x0), v58a9c8
+    0x9d10x58a: v58a9d1(0x40) = CONST 
+    0x9d30x58a: v58a9d3 = MLOAD v58a9d1(0x40)
+    0x9d50x58a: v58a9d5 = ADD v58a9b3, v58a9c8
+    0x9d80x58a: v58a9d8(0x0) = CONST 
+    0x9e20x58a: v58a9e2 = SUB v58a9d5, v58a9d3
+    0x9e50x58a: v58a9e5 = GAS 
+    0x9e60x58a: v58a9e6 = DELEGATECALL v58a9e5, v58a9c4, v58a9d3, v58a9e2, v58a9d3, v58a9d8(0x0)
+    0x9ea0x58a: v58a9ea = RETURNDATASIZE 
+    0x9ec0x58a: v58a9ec(0x0) = CONST 
+    0x9ef0x58a: v58a9ef = EQ v58a9ea, v58a9ec(0x0)
+    0x9f00x58a: v58a9f0(0xa15) = CONST 
+    0x9f30x58a: JUMPI v58a9f0(0xa15), v58a9ef
+
+    Begin block 0x9f40x58a
+    prev=[0x9ad0x58a], succ=[0xa1a0x58a]
+    =================================
+    0x9f40x58a: v58a9f4(0x40) = CONST 
+    0x9f60x58a: v58a9f6 = MLOAD v58a9f4(0x40)
+    0x9f90x58a: v58a9f9(0x1f) = CONST 
+    0x9fb0x58a: v58a9fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v58a9f9(0x1f)
+    0x9fc0x58a: v58a9fc(0x3f) = CONST 
+    0x9fe0x58a: v58a9fe = RETURNDATASIZE 
+    0x9ff0x58a: v58a9ff = ADD v58a9fe, v58a9fc(0x3f)
+    0xa000x58a: v58aa00 = AND v58a9ff, v58a9fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xa020x58a: v58aa02 = ADD v58a9f6, v58aa00
+    0xa030x58a: v58aa03(0x40) = CONST 
+    0xa050x58a: MSTORE v58aa03(0x40), v58aa02
+    0xa060x58a: v58aa06 = RETURNDATASIZE 
+    0xa080x58a: MSTORE v58a9f6, v58aa06
+    0xa090x58a: v58aa09 = RETURNDATASIZE 
+    0xa0a0x58a: v58aa0a(0x0) = CONST 
+    0xa0c0x58a: v58aa0c(0x20) = CONST 
+    0xa0f0x58a: v58aa0f = ADD v58a9f6, v58aa0c(0x20)
+    0xa100x58a: RETURNDATACOPY v58aa0f, v58aa0a(0x0), v58aa09
+    0xa110x58a: v58aa11(0xa1a) = CONST 
+    0xa140x58a: JUMP v58aa11(0xa1a)
+
+    Begin block 0xa1a0x58a
+    prev=[0x9f40x58a, 0xa150x58a], succ=[0xa2e0x58a, 0x12a70x58a]
+    =================================
+    0xa1f0x58a: v58aa1f(0x40) = CONST 
+    0xa210x58a: v58aa21 = MLOAD v58aa1f(0x40)
+    0xa220x58a: v58aa22 = RETURNDATASIZE 
+    0xa230x58a: v58aa23(0x0) = CONST 
+    0xa260x58a: RETURNDATACOPY v58aa21, v58aa23(0x0), v58aa22
+    0xa290x58a: v58aa29 = ISZERO v58a9e6
+    0xa2a0x58a: v58aa2a(0x12a7) = CONST 
+    0xa2d0x58a: JUMPI v58aa2a(0x12a7), v58aa29
+
+    Begin block 0xa2e0x58a
+    prev=[0xa1a0x58a], succ=[]
+    =================================
+    0xa2e0x58a: v58aa2e = RETURNDATASIZE 
+    0xa300x58a: RETURN v58aa21, v58aa2e
+
+    Begin block 0x12a70x58a
+    prev=[0xa1a0x58a], succ=[]
+    =================================
+    0x12a80x58a: v58a12a8 = RETURNDATASIZE 
+    0x12aa0x58a: REVERT v58aa21, v58a12a8
+
+    Begin block 0xa150x58a
+    prev=[0x9ad0x58a], succ=[0xa1a0x58a]
+    =================================
+    0xa160x58a: v58aa16(0x60) = CONST 
+
+}
+
+function pendingAdmin()() public {
+    Begin block 0x5ad
+    prev=[], succ=[0x5b5, 0x5b9]
+    =================================
+    0x5ae: v5ae = CALLVALUE 
+    0x5b0: v5b0 = ISZERO v5ae
+    0x5b1: v5b1(0x5b9) = CONST 
+    0x5b4: JUMPI v5b1(0x5b9), v5b0
+
+    Begin block 0x5b5
+    prev=[0x5ad], succ=[]
+    =================================
+    0x5b5: v5b5(0x0) = CONST 
+    0x5b8: REVERT v5b5(0x0), v5b5(0x0)
+
+    Begin block 0x5b9
+    prev=[0x5ad], succ=[0xb2e]
+    =================================
+    0x5bb: v5bb(0x1479) = CONST 
+    0x5be: v5be(0xb2e) = CONST 
+    0x5c1: JUMP v5be(0xb2e)
+
+    Begin block 0xb2e
+    prev=[0x5b9], succ=[0x1479]
+    =================================
+    0xb2f: vb2f(0x4) = CONST 
+    0xb31: vb31 = SLOAD vb2f(0x4)
+    0xb32: vb32(0x1) = CONST 
+    0xb34: vb34(0x1) = CONST 
+    0xb36: vb36(0xa0) = CONST 
+    0xb38: vb38(0x10000000000000000000000000000000000000000) = SHL vb36(0xa0), vb34(0x1)
+    0xb39: vb39(0xffffffffffffffffffffffffffffffffffffffff) = SUB vb38(0x10000000000000000000000000000000000000000), vb32(0x1)
+    0xb3a: vb3a = AND vb39(0xffffffffffffffffffffffffffffffffffffffff), vb31
+    0xb3c: JUMP v5bb(0x1479)
+
+    Begin block 0x1479
+    prev=[0xb2e], succ=[]
+    =================================
+    0x147a: v147a(0x40) = CONST 
+    0x147d: v147d = MLOAD v147a(0x40)
+    0x147e: v147e(0x1) = CONST 
+    0x1480: v1480(0x1) = CONST 
+    0x1482: v1482(0xa0) = CONST 
+    0x1484: v1484(0x10000000000000000000000000000000000000000) = SHL v1482(0xa0), v1480(0x1)
+    0x1485: v1485(0xffffffffffffffffffffffffffffffffffffffff) = SUB v1484(0x10000000000000000000000000000000000000000), v147e(0x1)
+    0x1488: v1488 = AND vb3a, v1485(0xffffffffffffffffffffffffffffffffffffffff)
+    0x148a: MSTORE v147d, v1488
+    0x148b: v148b = MLOAD v147a(0x40)
+    0x148f: v148f(0x0) = SUB v147d, v148b
+    0x1490: v1490(0x20) = CONST 
+    0x1492: v1492(0x20) = ADD v1490(0x20), v148f(0x0)
+    0x1494: RETURN v148b, v1492(0x20)
+
+}
+
+function decimals()() public {
+    Begin block 0x5de
+    prev=[], succ=[0x5e6, 0x5ea]
+    =================================
+    0x5df: v5df = CALLVALUE 
+    0x5e1: v5e1 = ISZERO v5df
+    0x5e2: v5e2(0x5ea) = CONST 
+    0x5e5: JUMPI v5e2(0x5ea), v5e1
+
+    Begin block 0x5e6
+    prev=[0x5de], succ=[]
+    =================================
+    0x5e6: v5e6(0x0) = CONST 
+    0x5e9: REVERT v5e6(0x0), v5e6(0x0)
+
+    Begin block 0x5ea
+    prev=[0x5de], succ=[0xb3d]
+    =================================
+    0x5ec: v5ec(0x5f3) = CONST 
+    0x5ef: v5ef(0xb3d) = CONST 
+    0x5f2: JUMP v5ef(0xb3d)
+
+    Begin block 0xb3d
+    prev=[0x5ea], succ=[0x5f3]
+    =================================
+    0xb3e: vb3e(0x3) = CONST 
+    0xb40: vb40 = SLOAD vb3e(0x3)
+    0xb41: vb41(0xff) = CONST 
+    0xb43: vb43 = AND vb41(0xff), vb40
+    0xb45: JUMP v5ec(0x5f3)
+
+    Begin block 0x5f3
+    prev=[0xb3d], succ=[]
+    =================================
+    0x5f4: v5f4(0x40) = CONST 
+    0x5f7: v5f7 = MLOAD v5f4(0x40)
+    0x5f8: v5f8(0xff) = CONST 
+    0x5fc: v5fc = AND vb43, v5f8(0xff)
+    0x5fe: MSTORE v5f7, v5fc
+    0x5ff: v5ff = MLOAD v5f4(0x40)
+    0x603: v603(0x0) = SUB v5f7, v5ff
+    0x604: v604(0x20) = CONST 
+    0x606: v606(0x20) = ADD v604(0x20), v603(0x0)
+    0x608: RETURN v5ff, v606(0x20)
+
+}
+
+function delegateToViewImplementation(bytes)() public {
+    Begin block 0x609
+    prev=[], succ=[0x611, 0x615]
+    =================================
+    0x60a: v60a = CALLVALUE 
+    0x60c: v60c = ISZERO v60a
+    0x60d: v60d(0x615) = CONST 
+    0x610: JUMPI v60d(0x615), v60c
+
+    Begin block 0x611
+    prev=[0x609], succ=[]
+    =================================
+    0x611: v611(0x0) = CONST 
+    0x614: REVERT v611(0x0), v611(0x0)
+
+    Begin block 0x615
+    prev=[0x609], succ=[0x628, 0x62c]
+    =================================
+    0x617: v617(0x326) = CONST 
+    0x61a: v61a(0x4) = CONST 
+    0x61d: v61d = CALLDATASIZE 
+    0x61e: v61e = SUB v61d, v61a(0x4)
+    0x61f: v61f(0x20) = CONST 
+    0x622: v622 = LT v61e, v61f(0x20)
+    0x623: v623 = ISZERO v622
+    0x624: v624(0x62c) = CONST 
+    0x627: JUMPI v624(0x62c), v623
+
+    Begin block 0x628
+    prev=[0x615], succ=[]
+    =================================
+    0x628: v628(0x0) = CONST 
+    0x62b: REVERT v628(0x0), v628(0x0)
+
+    Begin block 0x62c
+    prev=[0x615], succ=[0x642, 0x646]
+    =================================
+    0x62e: v62e = ADD v61a(0x4), v61e
+    0x630: v630(0x20) = CONST 
+    0x633: v633(0x24) = ADD v61a(0x4), v630(0x20)
+    0x635: v635 = CALLDATALOAD v61a(0x4)
+    0x636: v636(0x1) = CONST 
+    0x638: v638(0x20) = CONST 
+    0x63a: v63a(0x100000000) = SHL v638(0x20), v636(0x1)
+    0x63c: v63c = GT v635, v63a(0x100000000)
+    0x63d: v63d = ISZERO v63c
+    0x63e: v63e(0x646) = CONST 
+    0x641: JUMPI v63e(0x646), v63d
+
+    Begin block 0x642
+    prev=[0x62c], succ=[]
+    =================================
+    0x642: v642(0x0) = CONST 
+    0x645: REVERT v642(0x0), v642(0x0)
+
+    Begin block 0x646
+    prev=[0x62c], succ=[0x654, 0x658]
+    =================================
+    0x648: v648 = ADD v61a(0x4), v635
+    0x64a: v64a(0x20) = CONST 
+    0x64d: v64d = ADD v648, v64a(0x20)
+    0x64e: v64e = GT v64d, v62e
+    0x64f: v64f = ISZERO v64e
+    0x650: v650(0x658) = CONST 
+    0x653: JUMPI v650(0x658), v64f
+
+    Begin block 0x654
+    prev=[0x646], succ=[]
+    =================================
+    0x654: v654(0x0) = CONST 
+    0x657: REVERT v654(0x0), v654(0x0)
+
+    Begin block 0x658
+    prev=[0x646], succ=[0x675, 0x679]
+    =================================
+    0x65a: v65a = CALLDATALOAD v648
+    0x65c: v65c(0x20) = CONST 
+    0x65e: v65e = ADD v65c(0x20), v648
+    0x661: v661(0x1) = CONST 
+    0x664: v664 = MUL v65a, v661(0x1)
+    0x666: v666 = ADD v65e, v664
+    0x667: v667 = GT v666, v62e
+    0x668: v668(0x1) = CONST 
+    0x66a: v66a(0x20) = CONST 
+    0x66c: v66c(0x100000000) = SHL v66a(0x20), v668(0x1)
+    0x66e: v66e = GT v65a, v66c(0x100000000)
+    0x66f: v66f = OR v66e, v667
+    0x670: v670 = ISZERO v66f
+    0x671: v671(0x679) = CONST 
+    0x674: JUMPI v671(0x679), v670
+
+    Begin block 0x675
+    prev=[0x658], succ=[]
+    =================================
+    0x675: v675(0x0) = CONST 
+    0x678: REVERT v675(0x0), v675(0x0)
+
+    Begin block 0x679
+    prev=[0x658], succ=[0xb46]
+    =================================
+    0x67e: v67e(0x1f) = CONST 
+    0x680: v680 = ADD v67e(0x1f), v65a
+    0x681: v681(0x20) = CONST 
+    0x685: v685 = DIV v680, v681(0x20)
+    0x686: v686 = MUL v685, v681(0x20)
+    0x687: v687(0x20) = CONST 
+    0x689: v689 = ADD v687(0x20), v686
+    0x68a: v68a(0x40) = CONST 
+    0x68c: v68c = MLOAD v68a(0x40)
+    0x68f: v68f = ADD v68c, v689
+    0x690: v690(0x40) = CONST 
+    0x692: MSTORE v690(0x40), v68f
+    0x69a: MSTORE v68c, v65a
+    0x69b: v69b(0x20) = CONST 
+    0x69d: v69d = ADD v69b(0x20), v68c
+    0x6a3: CALLDATACOPY v69d, v65e, v65a
+    0x6a4: v6a4(0x0) = CONST 
+    0x6a7: v6a7 = ADD v69d, v65a
+    0x6ab: MSTORE v6a7, v6a4(0x0)
+    0x6b0: v6b0(0xb46) = CONST 
+    0x6b9: JUMP v6b0(0xb46)
+
+    Begin block 0xb46
+    prev=[0x679], succ=[0xb7f]
+    =================================
+    0xb47: vb47(0x60) = CONST 
+    0xb49: vb49(0x0) = CONST 
+    0xb4b: vb4b(0x60) = CONST 
+    0xb4d: vb4d = ADDRESS 
+    0xb4e: vb4e(0x1) = CONST 
+    0xb50: vb50(0x1) = CONST 
+    0xb52: vb52(0xa0) = CONST 
+    0xb54: vb54(0x10000000000000000000000000000000000000000) = SHL vb52(0xa0), vb50(0x1)
+    0xb55: vb55(0xffffffffffffffffffffffffffffffffffffffff) = SUB vb54(0x10000000000000000000000000000000000000000), vb4e(0x1)
+    0xb56: vb56 = AND vb55(0xffffffffffffffffffffffffffffffffffffffff), vb4d
+    0xb58: vb58(0x40) = CONST 
+    0xb5a: vb5a = MLOAD vb58(0x40)
+    0xb5b: vb5b(0x24) = CONST 
+    0xb5d: vb5d = ADD vb5b(0x24), vb5a
+    0xb60: vb60(0x20) = CONST 
+    0xb62: vb62 = ADD vb60(0x20), vb5d
+    0xb65: vb65(0x20) = SUB vb62, vb5d
+    0xb67: MSTORE vb5d, vb65(0x20)
+    0xb6b: vb6b = MLOAD v68c
+    0xb6d: MSTORE vb62, vb6b
+    0xb6e: vb6e(0x20) = CONST 
+    0xb70: vb70 = ADD vb6e(0x20), vb62
+    0xb74: vb74 = MLOAD v68c
+    0xb76: vb76(0x20) = CONST 
+    0xb78: vb78 = ADD vb76(0x20), v68c
+    0xb7d: vb7d(0x0) = CONST 
+
+    Begin block 0xb7f
+    prev=[0xb46, 0xb88], succ=[0xb97, 0xb88]
+    =================================
+    0xb7f_0x0: vb7f_0 = PHI vb7d(0x0), vb92
+    0xb82: vb82 = LT vb7f_0, vb74
+    0xb83: vb83 = ISZERO vb82
+    0xb84: vb84(0xb97) = CONST 
+    0xb87: JUMPI vb84(0xb97), vb83
+
+    Begin block 0xb97
+    prev=[0xb7f], succ=[0xbc4, 0xbab]
+    =================================
+    0xba0: vba0 = ADD vb74, vb70
+    0xba2: vba2(0x1f) = CONST 
+    0xba4: vba4 = AND vba2(0x1f), vb74
+    0xba6: vba6 = ISZERO vba4
+    0xba7: vba7(0xbc4) = CONST 
+    0xbaa: JUMPI vba7(0xbc4), vba6
+
+    Begin block 0xbc4
+    prev=[0xb97, 0xbab], succ=[0xc00]
+    =================================
+    0xbc4_0x1: vbc4_1 = PHI vba0, vbc1
+    0xbc6: vbc6(0x40) = CONST 
+    0xbc9: vbc9 = MLOAD vbc6(0x40)
+    0xbca: vbca(0x1f) = CONST 
+    0xbcc: vbcc(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT vbca(0x1f)
+    0xbcf: vbcf = SUB vbc4_1, vbc9
+    0xbd0: vbd0 = ADD vbcf, vbcc(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xbd2: MSTORE vbc9, vbd0
+    0xbd5: MSTORE vbc6(0x40), vbc4_1
+    0xbd6: vbd6(0x20) = CONST 
+    0xbd9: vbd9 = ADD vbc9, vbd6(0x20)
+    0xbdb: vbdb = MLOAD vbd9
+    0xbdc: vbdc(0x1) = CONST 
+    0xbde: vbde(0x1) = CONST 
+    0xbe0: vbe0(0xe0) = CONST 
+    0xbe2: vbe2(0x100000000000000000000000000000000000000000000000000000000) = SHL vbe0(0xe0), vbde(0x1)
+    0xbe3: vbe3(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB vbe2(0x100000000000000000000000000000000000000000000000000000000), vbdc(0x1)
+    0xbe4: vbe4 = AND vbe3(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff), vbdb
+    0xbe5: vbe5(0x933c1ed) = CONST 
+    0xbea: vbea(0xe0) = CONST 
+    0xbec: vbec(0x933c1ed00000000000000000000000000000000000000000000000000000000) = SHL vbea(0xe0), vbe5(0x933c1ed)
+    0xbed: vbed = OR vbec(0x933c1ed00000000000000000000000000000000000000000000000000000000), vbe4
+    0xbef: MSTORE vbd9, vbed
+    0xbf1: vbf1 = MLOAD vbc6(0x40)
+    0xbf3: vbf3 = MLOAD vbc9
+
+    Begin block 0xc00
+    prev=[0xbc4, 0xc09], succ=[0xc1f, 0xc09]
+    =================================
+    0xc00_0x2: vc00_2 = PHI vbf3, vc12
+    0xc01: vc01(0x20) = CONST 
+    0xc04: vc04 = LT vc00_2, vc01(0x20)
+    0xc05: vc05(0xc1f) = CONST 
+    0xc08: JUMPI vc05(0xc1f), vc04
+
+    Begin block 0xc1f
+    prev=[0xc00], succ=[0xc5e, 0xc7f]
+    =================================
+    0xc1f_0x0: vc1f_0 = PHI vbd9, vc1a
+    0xc1f_0x1: vc1f_1 = PHI vbf1, vc18
+    0xc1f_0x2: vc1f_2 = PHI vbf3, vc12
+    0xc20: vc20(0x1) = CONST 
+    0xc23: vc23(0x20) = CONST 
+    0xc25: vc25 = SUB vc23(0x20), vc1f_2
+    0xc26: vc26(0x100) = CONST 
+    0xc29: vc29 = EXP vc26(0x100), vc25
+    0xc2a: vc2a = SUB vc29, vc20(0x1)
+    0xc2c: vc2c = NOT vc2a
+    0xc2e: vc2e = MLOAD vc1f_0
+    0xc2f: vc2f = AND vc2e, vc2c
+    0xc32: vc32 = MLOAD vc1f_1
+    0xc33: vc33 = AND vc32, vc2a
+    0xc36: vc36 = OR vc2f, vc33
+    0xc38: MSTORE vc1f_1, vc36
+    0xc41: vc41 = ADD vbf3, vbf1
+    0xc45: vc45(0x0) = CONST 
+    0xc47: vc47(0x40) = CONST 
+    0xc49: vc49 = MLOAD vc47(0x40)
+    0xc4c: vc4c = SUB vc41, vc49
+    0xc4f: vc4f = GAS 
+    0xc50: vc50 = STATICCALL vc4f, vb56, vc49, vc4c, vc49, vc45(0x0)
+    0xc54: vc54 = RETURNDATASIZE 
+    0xc56: vc56(0x0) = CONST 
+    0xc59: vc59 = EQ vc54, vc56(0x0)
+    0xc5a: vc5a(0xc7f) = CONST 
+    0xc5d: JUMPI vc5a(0xc7f), vc59
+
+    Begin block 0xc5e
+    prev=[0xc1f], succ=[0xc84]
+    =================================
+    0xc5e: vc5e(0x40) = CONST 
+    0xc60: vc60 = MLOAD vc5e(0x40)
+    0xc63: vc63(0x1f) = CONST 
+    0xc65: vc65(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT vc63(0x1f)
+    0xc66: vc66(0x3f) = CONST 
+    0xc68: vc68 = RETURNDATASIZE 
+    0xc69: vc69 = ADD vc68, vc66(0x3f)
+    0xc6a: vc6a = AND vc69, vc65(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xc6c: vc6c = ADD vc60, vc6a
+    0xc6d: vc6d(0x40) = CONST 
+    0xc6f: MSTORE vc6d(0x40), vc6c
+    0xc70: vc70 = RETURNDATASIZE 
+    0xc72: MSTORE vc60, vc70
+    0xc73: vc73 = RETURNDATASIZE 
+    0xc74: vc74(0x0) = CONST 
+    0xc76: vc76(0x20) = CONST 
+    0xc79: vc79 = ADD vc60, vc76(0x20)
+    0xc7a: RETURNDATACOPY vc79, vc74(0x0), vc73
+    0xc7b: vc7b(0xc84) = CONST 
+    0xc7e: JUMP vc7b(0xc84)
+
+    Begin block 0xc84
+    prev=[0xc5e, 0xc7f], succ=[0xc93, 0xc99]
+    =================================
+    0xc8a: vc8a(0x0) = CONST 
+    0xc8d: vc8d = EQ vc50, vc8a(0x0)
+    0xc8e: vc8e = ISZERO vc8d
+    0xc8f: vc8f(0xc99) = CONST 
+    0xc92: JUMPI vc8f(0xc99), vc8e
+
+    Begin block 0xc93
+    prev=[0xc84], succ=[]
+    =================================
+    0xc93: vc93 = RETURNDATASIZE 
+    0xc93_0x0: vc93_0 = PHI vc60, vc80(0x60)
+    0xc94: vc94(0x20) = CONST 
+    0xc97: vc97 = ADD vc93_0, vc94(0x20)
+    0xc98: REVERT vc97, vc93
+
+    Begin block 0xc99
+    prev=[0xc84], succ=[0xcaa, 0xcae]
+    =================================
+    0xc99_0x0: vc99_0 = PHI vc60, vc80(0x60)
+    0xc9c: vc9c(0x20) = CONST 
+    0xc9e: vc9e = ADD vc9c(0x20), vc99_0
+    0xca0: vca0 = MLOAD vc99_0
+    0xca1: vca1(0x20) = CONST 
+    0xca4: vca4 = LT vca0, vca1(0x20)
+    0xca5: vca5 = ISZERO vca4
+    0xca6: vca6(0xcae) = CONST 
+    0xca9: JUMPI vca6(0xcae), vca5
+
+    Begin block 0xcaa
+    prev=[0xc99], succ=[]
+    =================================
+    0xcaa: vcaa(0x0) = CONST 
+    0xcad: REVERT vcaa(0x0), vcaa(0x0)
+
+    Begin block 0xcae
+    prev=[0xc99], succ=[0xcc9, 0xccd]
+    =================================
+    0xcb0: vcb0 = ADD vc9e, vca0
+    0xcb4: vcb4 = MLOAD vc9e
+    0xcb5: vcb5(0x40) = CONST 
+    0xcb7: vcb7 = MLOAD vcb5(0x40)
+    0xcbd: vcbd(0x1) = CONST 
+    0xcbf: vcbf(0x20) = CONST 
+    0xcc1: vcc1(0x100000000) = SHL vcbf(0x20), vcbd(0x1)
+    0xcc3: vcc3 = GT vcb4, vcc1(0x100000000)
+    0xcc4: vcc4 = ISZERO vcc3
+    0xcc5: vcc5(0xccd) = CONST 
+    0xcc8: JUMPI vcc5(0xccd), vcc4
+
+    Begin block 0xcc9
+    prev=[0xcae], succ=[]
+    =================================
+    0xcc9: vcc9(0x0) = CONST 
+    0xccc: REVERT vcc9(0x0), vcc9(0x0)
+
+    Begin block 0xccd
+    prev=[0xcae], succ=[0xcde, 0xce2]
+    =================================
+    0xcd0: vcd0 = ADD vc9e, vcb4
+    0xcd2: vcd2(0x20) = CONST 
+    0xcd5: vcd5 = ADD vcd0, vcd2(0x20)
+    0xcd8: vcd8 = GT vcd5, vcb0
+    0xcd9: vcd9 = ISZERO vcd8
+    0xcda: vcda(0xce2) = CONST 
+    0xcdd: JUMPI vcda(0xce2), vcd9
+
+    Begin block 0xcde
+    prev=[0xccd], succ=[]
+    =================================
+    0xcde: vcde(0x0) = CONST 
+    0xce1: REVERT vcde(0x0), vcde(0x0)
+
+    Begin block 0xce2
+    prev=[0xccd], succ=[0xcf7, 0xcfb]
+    =================================
+    0xce4: vce4 = MLOAD vcd0
+    0xce5: vce5(0x1) = CONST 
+    0xce7: vce7(0x20) = CONST 
+    0xce9: vce9(0x100000000) = SHL vce7(0x20), vce5(0x1)
+    0xceb: vceb = GT vce4, vce9(0x100000000)
+    0xcee: vcee = ADD vce4, vcd5
+    0xcf0: vcf0 = LT vcb0, vcee
+    0xcf1: vcf1 = OR vcf0, vceb
+    0xcf2: vcf2 = ISZERO vcf1
+    0xcf3: vcf3(0xcfb) = CONST 
+    0xcf6: JUMPI vcf3(0xcfb), vcf2
+
+    Begin block 0xcf7
+    prev=[0xce2], succ=[]
+    =================================
+    0xcf7: vcf7(0x0) = CONST 
+    0xcfa: REVERT vcf7(0x0), vcf7(0x0)
+
+    Begin block 0xcfb
+    prev=[0xce2], succ=[0xd10]
+    =================================
+    0xcfd: MSTORE vcb7, vce4
+    0xd00: vd00 = MLOAD vcd0
+    0xd01: vd01(0x20) = CONST 
+    0xd05: vd05 = ADD vd01(0x20), vcb7
+    0xd09: vd09 = ADD vd01(0x20), vcd0
+    0xd0e: vd0e(0x0) = CONST 
+
+    Begin block 0xd10
+    prev=[0xcfb, 0xd19], succ=[0xd28, 0xd19]
+    =================================
+    0xd10_0x0: vd10_0 = PHI vd0e(0x0), vd23
+    0xd13: vd13 = LT vd10_0, vd00
+    0xd14: vd14 = ISZERO vd13
+    0xd15: vd15(0xd28) = CONST 
+    0xd18: JUMPI vd15(0xd28), vd14
+
+    Begin block 0xd28
+    prev=[0xd10], succ=[0xd55, 0xd3c]
+    =================================
+    0xd31: vd31 = ADD vd00, vd05
+    0xd33: vd33(0x1f) = CONST 
+    0xd35: vd35 = AND vd33(0x1f), vd00
+    0xd37: vd37 = ISZERO vd35
+    0xd38: vd38(0xd55) = CONST 
+    0xd3b: JUMPI vd38(0xd55), vd37
+
+    Begin block 0xd55
+    prev=[0xd28, 0xd3c], succ=[0x3260x609]
+    =================================
+    0xd55_0x1: vd55_1 = PHI vd31, vd52
+    0xd57: vd57(0x40) = CONST 
+    0xd59: MSTORE vd57(0x40), vd55_1
+    0xd64: JUMP v617(0x326)
+
+    Begin block 0x3260x609
+    prev=[0xd55], succ=[0x3480x609]
+    =================================
+    0x3270x609: v609327(0x40) = CONST 
+    0x32a0x609: v60932a = MLOAD v609327(0x40)
+    0x32b0x609: v60932b(0x20) = CONST 
+    0x32f0x609: MSTORE v60932a, v60932b(0x20)
+    0x3310x609: v609331 = MLOAD vcb7
+    0x3340x609: v609334 = ADD v60932a, v60932b(0x20)
+    0x3350x609: MSTORE v609334, v609331
+    0x3370x609: v609337 = MLOAD vcb7
+    0x33e0x609: v60933e = ADD v60932a, v609327(0x40)
+    0x3410x609: v609341 = ADD vcb7, v60932b(0x20)
+    0x3460x609: v609346(0x0) = CONST 
+
+    Begin block 0x3480x609
+    prev=[0x3510x609, 0x3260x609], succ=[0x3600x609, 0x3510x609]
+    =================================
+    0x3480x609_0x0: v348609_0 = PHI v60935b, v609346(0x0)
+    0x34b0x609: v60934b = LT v348609_0, v609337
+    0x34c0x609: v60934c = ISZERO v60934b
+    0x34d0x609: v60934d(0x360) = CONST 
+    0x3500x609: JUMPI v60934d(0x360), v60934c
+
+    Begin block 0x3600x609
+    prev=[0x3480x609], succ=[0x38d0x609, 0x3740x609]
+    =================================
+    0x3690x609: v609369 = ADD v609337, v60933e
+    0x36b0x609: v60936b(0x1f) = CONST 
+    0x36d0x609: v60936d = AND v60936b(0x1f), v609337
+    0x36f0x609: v60936f = ISZERO v60936d
+    0x3700x609: v609370(0x38d) = CONST 
+    0x3730x609: JUMPI v609370(0x38d), v60936f
+
+    Begin block 0x38d0x609
+    prev=[0x3600x609, 0x3740x609], succ=[]
+    =================================
+    0x38d0x609_0x1: v38d609_1 = PHI v60938a, v609369
+    0x3930x609: v609393(0x40) = CONST 
+    0x3950x609: v609395 = MLOAD v609393(0x40)
+    0x3980x609: v609398 = SUB v38d609_1, v609395
+    0x39a0x609: RETURN v609395, v609398
+
+    Begin block 0x3740x609
+    prev=[0x3600x609], succ=[0x38d0x609]
+    =================================
+    0x3760x609: v609376 = SUB v609369, v60936d
+    0x3780x609: v609378 = MLOAD v609376
+    0x3790x609: v609379(0x1) = CONST 
+    0x37c0x609: v60937c(0x20) = CONST 
+    0x37e0x609: v60937e = SUB v60937c(0x20), v60936d
+    0x37f0x609: v60937f(0x100) = CONST 
+    0x3820x609: v609382 = EXP v60937f(0x100), v60937e
+    0x3830x609: v609383 = SUB v609382, v609379(0x1)
+    0x3840x609: v609384 = NOT v609383
+    0x3850x609: v609385 = AND v609384, v609378
+    0x3870x609: MSTORE v609376, v609385
+    0x3880x609: v609388(0x20) = CONST 
+    0x38a0x609: v60938a = ADD v609388(0x20), v609376
+
+    Begin block 0x3510x609
+    prev=[0x3480x609], succ=[0x3480x609]
+    =================================
+    0x3510x609_0x0: v351609_0 = PHI v60935b, v609346(0x0)
+    0x3530x609: v609353 = ADD v351609_0, v609341
+    0x3540x609: v609354 = MLOAD v609353
+    0x3570x609: v609357 = ADD v351609_0, v60933e
+    0x3580x609: MSTORE v609357, v609354
+    0x3590x609: v609359(0x20) = CONST 
+    0x35b0x609: v60935b = ADD v609359(0x20), v351609_0
+    0x35c0x609: v60935c(0x348) = CONST 
+    0x35f0x609: JUMP v60935c(0x348)
+
+    Begin block 0xd3c
+    prev=[0xd28], succ=[0xd55]
+    =================================
+    0xd3e: vd3e = SUB vd31, vd35
+    0xd40: vd40 = MLOAD vd3e
+    0xd41: vd41(0x1) = CONST 
+    0xd44: vd44(0x20) = CONST 
+    0xd46: vd46 = SUB vd44(0x20), vd35
+    0xd47: vd47(0x100) = CONST 
+    0xd4a: vd4a = EXP vd47(0x100), vd46
+    0xd4b: vd4b = SUB vd4a, vd41(0x1)
+    0xd4c: vd4c = NOT vd4b
+    0xd4d: vd4d = AND vd4c, vd40
+    0xd4f: MSTORE vd3e, vd4d
+    0xd50: vd50(0x20) = CONST 
+    0xd52: vd52 = ADD vd50(0x20), vd3e
+
+    Begin block 0xd19
+    prev=[0xd10], succ=[0xd10]
+    =================================
+    0xd19_0x0: vd19_0 = PHI vd0e(0x0), vd23
+    0xd1b: vd1b = ADD vd19_0, vd09
+    0xd1c: vd1c = MLOAD vd1b
+    0xd1f: vd1f = ADD vd19_0, vd05
+    0xd20: MSTORE vd1f, vd1c
+    0xd21: vd21(0x20) = CONST 
+    0xd23: vd23 = ADD vd21(0x20), vd19_0
+    0xd24: vd24(0xd10) = CONST 
+    0xd27: JUMP vd24(0xd10)
+
+    Begin block 0xc7f
+    prev=[0xc1f], succ=[0xc84]
+    =================================
+    0xc80: vc80(0x60) = CONST 
+
+    Begin block 0xc09
+    prev=[0xc00], succ=[0xc00]
+    =================================
+    0xc09_0x0: vc09_0 = PHI vbd9, vc1a
+    0xc09_0x1: vc09_1 = PHI vbf1, vc18
+    0xc09_0x2: vc09_2 = PHI vbf3, vc12
+    0xc0a: vc0a = MLOAD vc09_0
+    0xc0c: MSTORE vc09_1, vc0a
+    0xc0d: vc0d(0x1f) = CONST 
+    0xc0f: vc0f(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT vc0d(0x1f)
+    0xc12: vc12 = ADD vc09_2, vc0f(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xc14: vc14(0x20) = CONST 
+    0xc18: vc18 = ADD vc14(0x20), vc09_1
+    0xc1a: vc1a = ADD vc14(0x20), vc09_0
+    0xc1b: vc1b(0xc00) = CONST 
+    0xc1e: JUMP vc1b(0xc00)
+
+    Begin block 0xbab
+    prev=[0xb97], succ=[0xbc4]
+    =================================
+    0xbad: vbad = SUB vba0, vba4
+    0xbaf: vbaf = MLOAD vbad
+    0xbb0: vbb0(0x1) = CONST 
+    0xbb3: vbb3(0x20) = CONST 
+    0xbb5: vbb5 = SUB vbb3(0x20), vba4
+    0xbb6: vbb6(0x100) = CONST 
+    0xbb9: vbb9 = EXP vbb6(0x100), vbb5
+    0xbba: vbba = SUB vbb9, vbb0(0x1)
+    0xbbb: vbbb = NOT vbba
+    0xbbc: vbbc = AND vbbb, vbaf
+    0xbbe: MSTORE vbad, vbbc
+    0xbbf: vbbf(0x20) = CONST 
+    0xbc1: vbc1 = ADD vbbf(0x20), vbad
+
+    Begin block 0xb88
+    prev=[0xb7f], succ=[0xb7f]
+    =================================
+    0xb88_0x0: vb88_0 = PHI vb7d(0x0), vb92
+    0xb8a: vb8a = ADD vb88_0, vb78
+    0xb8b: vb8b = MLOAD vb8a
+    0xb8e: vb8e = ADD vb88_0, vb70
+    0xb8f: MSTORE vb8e, vb8b
+    0xb90: vb90(0x20) = CONST 
+    0xb92: vb92 = ADD vb90(0x20), vb88_0
+    0xb93: vb93(0xb7f) = CONST 
+    0xb96: JUMP vb93(0xb7f)
+
+}
+
+function totalBorrows()() public {
+    Begin block 0x6ba
+    prev=[], succ=[0x6c2, 0x6c6]
+    =================================
+    0x6bb: v6bb = CALLVALUE 
+    0x6bd: v6bd = ISZERO v6bb
+    0x6be: v6be(0x6c6) = CONST 
+    0x6c1: JUMPI v6be(0x6c6), v6bd
+
+    Begin block 0x6c2
+    prev=[0x6ba], succ=[]
+    =================================
+    0x6c2: v6c2(0x0) = CONST 
+    0x6c5: REVERT v6c2(0x0), v6c2(0x0)
+
+    Begin block 0x6c6
+    prev=[0x6ba], succ=[0xd65]
+    =================================
+    0x6c8: v6c8(0x14b4) = CONST 
+    0x6cb: v6cb(0xd65) = CONST 
+    0x6ce: JUMP v6cb(0xd65)
+
+    Begin block 0xd65
+    prev=[0x6c6], succ=[0x14b4]
+    =================================
+    0xd66: vd66(0xb) = CONST 
+    0xd68: vd68 = SLOAD vd66(0xb)
+    0xd6a: JUMP v6c8(0x14b4)
+
+    Begin block 0x14b4
+    prev=[0xd65], succ=[]
+    =================================
+    0x14b5: v14b5(0x40) = CONST 
+    0x14b8: v14b8 = MLOAD v14b5(0x40)
+    0x14bb: MSTORE v14b8, vd68
+    0x14bc: v14bc = MLOAD v14b5(0x40)
+    0x14c0: v14c0(0x0) = SUB v14b8, v14bc
+    0x14c1: v14c1(0x20) = CONST 
+    0x14c3: v14c3(0x20) = ADD v14c1(0x20), v14c0(0x0)
+    0x14c5: RETURN v14bc, v14c3(0x20)
+
+}
+
+function _setImplementation(address,bool,bytes)() public {
+    Begin block 0x6cf
+    prev=[], succ=[0x6d7, 0x6db]
+    =================================
+    0x6d0: v6d0 = CALLVALUE 
+    0x6d2: v6d2 = ISZERO v6d0
+    0x6d3: v6d3(0x6db) = CONST 
+    0x6d6: JUMPI v6d3(0x6db), v6d2
+
+    Begin block 0x6d7
+    prev=[0x6cf], succ=[]
+    =================================
+    0x6d7: v6d7(0x0) = CONST 
+    0x6da: REVERT v6d7(0x0), v6d7(0x0)
+
+    Begin block 0x6db
+    prev=[0x6cf], succ=[0x6ee, 0x6f2]
+    =================================
+    0x6dd: v6dd(0x797) = CONST 
+    0x6e0: v6e0(0x4) = CONST 
+    0x6e3: v6e3 = CALLDATASIZE 
+    0x6e4: v6e4 = SUB v6e3, v6e0(0x4)
+    0x6e5: v6e5(0x60) = CONST 
+    0x6e8: v6e8 = LT v6e4, v6e5(0x60)
+    0x6e9: v6e9 = ISZERO v6e8
+    0x6ea: v6ea(0x6f2) = CONST 
+    0x6ed: JUMPI v6ea(0x6f2), v6e9
+
+    Begin block 0x6ee
+    prev=[0x6db], succ=[]
+    =================================
+    0x6ee: v6ee(0x0) = CONST 
+    0x6f1: REVERT v6ee(0x0), v6ee(0x0)
+
+    Begin block 0x6f2
+    prev=[0x6db], succ=[0x71f, 0x723]
+    =================================
+    0x6f3: v6f3(0x1) = CONST 
+    0x6f5: v6f5(0x1) = CONST 
+    0x6f7: v6f7(0xa0) = CONST 
+    0x6f9: v6f9(0x10000000000000000000000000000000000000000) = SHL v6f7(0xa0), v6f5(0x1)
+    0x6fa: v6fa(0xffffffffffffffffffffffffffffffffffffffff) = SUB v6f9(0x10000000000000000000000000000000000000000), v6f3(0x1)
+    0x6fc: v6fc = CALLDATALOAD v6e0(0x4)
+    0x6fd: v6fd = AND v6fc, v6fa(0xffffffffffffffffffffffffffffffffffffffff)
+    0x6ff: v6ff(0x20) = CONST 
+    0x702: v702(0x24) = ADD v6e0(0x4), v6ff(0x20)
+    0x703: v703 = CALLDATALOAD v702(0x24)
+    0x704: v704 = ISZERO v703
+    0x705: v705 = ISZERO v704
+    0x708: v708 = ADD v6e0(0x4), v6e4
+    0x70a: v70a(0x60) = CONST 
+    0x70d: v70d(0x64) = ADD v6e0(0x4), v70a(0x60)
+    0x70e: v70e(0x40) = CONST 
+    0x711: v711(0x44) = ADD v6e0(0x4), v70e(0x40)
+    0x712: v712 = CALLDATALOAD v711(0x44)
+    0x713: v713(0x1) = CONST 
+    0x715: v715(0x20) = CONST 
+    0x717: v717(0x100000000) = SHL v715(0x20), v713(0x1)
+    0x719: v719 = GT v712, v717(0x100000000)
+    0x71a: v71a = ISZERO v719
+    0x71b: v71b(0x723) = CONST 
+    0x71e: JUMPI v71b(0x723), v71a
+
+    Begin block 0x71f
+    prev=[0x6f2], succ=[]
+    =================================
+    0x71f: v71f(0x0) = CONST 
+    0x722: REVERT v71f(0x0), v71f(0x0)
+
+    Begin block 0x723
+    prev=[0x6f2], succ=[0x731, 0x735]
+    =================================
+    0x725: v725 = ADD v6e0(0x4), v712
+    0x727: v727(0x20) = CONST 
+    0x72a: v72a = ADD v725, v727(0x20)
+    0x72b: v72b = GT v72a, v708
+    0x72c: v72c = ISZERO v72b
+    0x72d: v72d(0x735) = CONST 
+    0x730: JUMPI v72d(0x735), v72c
+
+    Begin block 0x731
+    prev=[0x723], succ=[]
+    =================================
+    0x731: v731(0x0) = CONST 
+    0x734: REVERT v731(0x0), v731(0x0)
+
+    Begin block 0x735
+    prev=[0x723], succ=[0x752, 0x756]
+    =================================
+    0x737: v737 = CALLDATALOAD v725
+    0x739: v739(0x20) = CONST 
+    0x73b: v73b = ADD v739(0x20), v725
+    0x73e: v73e(0x1) = CONST 
+    0x741: v741 = MUL v737, v73e(0x1)
+    0x743: v743 = ADD v73b, v741
+    0x744: v744 = GT v743, v708
+    0x745: v745(0x1) = CONST 
+    0x747: v747(0x20) = CONST 
+    0x749: v749(0x100000000) = SHL v747(0x20), v745(0x1)
+    0x74b: v74b = GT v737, v749(0x100000000)
+    0x74c: v74c = OR v74b, v744
+    0x74d: v74d = ISZERO v74c
+    0x74e: v74e(0x756) = CONST 
+    0x751: JUMPI v74e(0x756), v74d
+
+    Begin block 0x752
+    prev=[0x735], succ=[]
+    =================================
+    0x752: v752(0x0) = CONST 
+    0x755: REVERT v752(0x0), v752(0x0)
+
+    Begin block 0x756
+    prev=[0x735], succ=[0xd6b]
+    =================================
+    0x75b: v75b(0x1f) = CONST 
+    0x75d: v75d = ADD v75b(0x1f), v737
+    0x75e: v75e(0x20) = CONST 
+    0x762: v762 = DIV v75d, v75e(0x20)
+    0x763: v763 = MUL v762, v75e(0x20)
+    0x764: v764(0x20) = CONST 
+    0x766: v766 = ADD v764(0x20), v763
+    0x767: v767(0x40) = CONST 
+    0x769: v769 = MLOAD v767(0x40)
+    0x76c: v76c = ADD v769, v766
+    0x76d: v76d(0x40) = CONST 
+    0x76f: MSTORE v76d(0x40), v76c
+    0x777: MSTORE v769, v737
+    0x778: v778(0x20) = CONST 
+    0x77a: v77a = ADD v778(0x20), v769
+    0x780: CALLDATACOPY v77a, v73b, v737
+    0x781: v781(0x0) = CONST 
+    0x784: v784 = ADD v77a, v737
+    0x788: MSTORE v784, v781(0x0)
+    0x78d: v78d(0xd6b) = CONST 
+    0x796: JUMP v78d(0xd6b)
+
+    Begin block 0xd6b
+    prev=[0x756], succ=[0xd83, 0xdb9]
+    =================================
+    0xd6c: vd6c(0x3) = CONST 
+    0xd6e: vd6e = SLOAD vd6c(0x3)
+    0xd6f: vd6f(0x100) = CONST 
+    0xd73: vd73 = DIV vd6e, vd6f(0x100)
+    0xd74: vd74(0x1) = CONST 
+    0xd76: vd76(0x1) = CONST 
+    0xd78: vd78(0xa0) = CONST 
+    0xd7a: vd7a(0x10000000000000000000000000000000000000000) = SHL vd78(0xa0), vd76(0x1)
+    0xd7b: vd7b(0xffffffffffffffffffffffffffffffffffffffff) = SUB vd7a(0x10000000000000000000000000000000000000000), vd74(0x1)
+    0xd7c: vd7c = AND vd7b(0xffffffffffffffffffffffffffffffffffffffff), vd73
+    0xd7d: vd7d = CALLER 
+    0xd7e: vd7e = EQ vd7d, vd7c
+    0xd7f: vd7f(0xdb9) = CONST 
+    0xd82: JUMPI vd7f(0xdb9), vd7e
+
+    Begin block 0xd83
+    prev=[0xd6b], succ=[]
+    =================================
+    0xd83: vd83(0x40) = CONST 
+    0xd85: vd85 = MLOAD vd83(0x40)
+    0xd86: vd86(0x461bcd) = CONST 
+    0xd8a: vd8a(0xe5) = CONST 
+    0xd8c: vd8c(0x8c379a000000000000000000000000000000000000000000000000000000000) = SHL vd8a(0xe5), vd86(0x461bcd)
+    0xd8e: MSTORE vd85, vd8c(0x8c379a000000000000000000000000000000000000000000000000000000000)
+    0xd8f: vd8f(0x4) = CONST 
+    0xd91: vd91 = ADD vd8f(0x4), vd85
+    0xd94: vd94(0x20) = CONST 
+    0xd96: vd96 = ADD vd94(0x20), vd91
+    0xd99: vd99(0x20) = SUB vd96, vd91
+    0xd9b: MSTORE vd91, vd99(0x20)
+    0xd9c: vd9c(0x39) = CONST 
+    0xd9f: MSTORE vd96, vd9c(0x39)
+    0xda0: vda0(0x20) = CONST 
+    0xda2: vda2 = ADD vda0(0x20), vd96
+    0xda4: vda4(0x121b) = CONST 
+    0xda7: vda7(0x39) = CONST 
+    0xdaa: CODECOPY vda2, vda4(0x121b), vda7(0x39)
+    0xdab: vdab(0x40) = CONST 
+    0xdad: vdad = ADD vdab(0x40), vda2
+    0xdb1: vdb1(0x40) = CONST 
+    0xdb3: vdb3 = MLOAD vdb1(0x40)
+    0xdb6: vdb6(0x84) = SUB vdad, vdb3
+    0xdb8: REVERT vdb3, vdb6(0x84)
+
+    Begin block 0xdb9
+    prev=[0xd6b], succ=[0xdc0, 0xdf3]
+    =================================
+    0xdbb: vdbb = ISZERO v705
+    0xdbc: vdbc(0xdf3) = CONST 
+    0xdbf: JUMPI vdbc(0xdf3), vdbb
+
+    Begin block 0xdc0
+    prev=[0xdb9], succ=[0xac2B0xdc0]
+    =================================
+    0xdc0: vdc0(0x40) = CONST 
+    0xdc3: vdc3 = MLOAD vdc0(0x40)
+    0xdc4: vdc4(0x4) = CONST 
+    0xdc7: MSTORE vdc3, vdc4(0x4)
+    0xdc8: vdc8(0x24) = CONST 
+    0xdcb: vdcb = ADD vdc3, vdc8(0x24)
+    0xdce: MSTORE vdc0(0x40), vdcb
+    0xdcf: vdcf(0x20) = CONST 
+    0xdd2: vdd2 = ADD vdc3, vdcf(0x20)
+    0xdd4: vdd4 = MLOAD vdd2
+    0xdd5: vdd5(0x1) = CONST 
+    0xdd7: vdd7(0x1) = CONST 
+    0xdd9: vdd9(0xe0) = CONST 
+    0xddb: vddb(0x100000000000000000000000000000000000000000000000000000000) = SHL vdd9(0xe0), vdd7(0x1)
+    0xddc: vddc(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB vddb(0x100000000000000000000000000000000000000000000000000000000), vdd5(0x1)
+    0xddd: vddd = AND vddc(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff), vdd4
+    0xdde: vdde(0x153ab505) = CONST 
+    0xde3: vde3(0xe0) = CONST 
+    0xde5: vde5(0x153ab50500000000000000000000000000000000000000000000000000000000) = SHL vde3(0xe0), vdde(0x153ab505)
+    0xde6: vde6 = OR vde5(0x153ab50500000000000000000000000000000000000000000000000000000000), vddd
+    0xde8: MSTORE vdd2, vde6
+    0xde9: vde9(0xdf1) = CONST 
+    0xded: vded(0xac2) = CONST 
+    0xdf0: JUMP vded(0xac2)
+
+    Begin block 0xac2B0xdc0
+    prev=[0xdc0], succ=[0xadb0xac2B0xdc0]
+    =================================
+    0xac3S0xdc0: vac3Vdc0(0x12) = CONST 
+    0xac5S0xdc0: vac5Vdc0 = SLOAD vac3Vdc0(0x12)
+    0xac6S0xdc0: vac6Vdc0(0x60) = CONST 
+    0xac9S0xdc0: vac9Vdc0(0xadb) = CONST 
+    0xacdS0xdc0: vacdVdc0(0x1) = CONST 
+    0xacfS0xdc0: vacfVdc0(0x1) = CONST 
+    0xad1S0xdc0: vad1Vdc0(0xa0) = CONST 
+    0xad3S0xdc0: vad3Vdc0(0x10000000000000000000000000000000000000000) = SHL vad1Vdc0(0xa0), vacfVdc0(0x1)
+    0xad4S0xdc0: vad4Vdc0(0xffffffffffffffffffffffffffffffffffffffff) = SUB vad3Vdc0(0x10000000000000000000000000000000000000000), vacdVdc0(0x1)
+    0xad5S0xdc0: vad5Vdc0 = AND vad4Vdc0(0xffffffffffffffffffffffffffffffffffffffff), vac5Vdc0
+    0xad7S0xdc0: vad7Vdc0(0x1001) = CONST 
+    0xadaS0xdc0: vada_0Vdc0 = CALLPRIVATE vad7Vdc0(0x1001), vdc3, vad5Vdc0, vac9Vdc0(0xadb)
+
+    Begin block 0xadb0xac2B0xdc0
+    prev=[0xac2B0xdc0], succ=[0xdf1]
+    =================================
+    0xae00xac2S0xdc0: JUMP vde9(0xdf1)
+
+    Begin block 0xdf1
+    prev=[0xadb0xac2B0xdc0], succ=[0xdf3]
+    =================================
+
+    Begin block 0xdf3
+    prev=[0xdb9, 0xdf1], succ=[0xe45]
+    =================================
+    0xdf4: vdf4(0x12) = CONST 
+    0xdf7: vdf7 = SLOAD vdf4(0x12)
+    0xdf8: vdf8(0x1) = CONST 
+    0xdfa: vdfa(0x1) = CONST 
+    0xdfc: vdfc(0xa0) = CONST 
+    0xdfe: vdfe(0x10000000000000000000000000000000000000000) = SHL vdfc(0xa0), vdfa(0x1)
+    0xdff: vdff(0xffffffffffffffffffffffffffffffffffffffff) = SUB vdfe(0x10000000000000000000000000000000000000000), vdf8(0x1)
+    0xe02: ve02 = AND vdff(0xffffffffffffffffffffffffffffffffffffffff), v6fd
+    0xe03: ve03(0x1) = CONST 
+    0xe05: ve05(0x1) = CONST 
+    0xe07: ve07(0xa0) = CONST 
+    0xe09: ve09(0x10000000000000000000000000000000000000000) = SHL ve07(0xa0), ve05(0x1)
+    0xe0a: ve0a(0xffffffffffffffffffffffffffffffffffffffff) = SUB ve09(0x10000000000000000000000000000000000000000), ve03(0x1)
+    0xe0b: ve0b(0xffffffffffffffffffffffff0000000000000000000000000000000000000000) = NOT ve0a(0xffffffffffffffffffffffffffffffffffffffff)
+    0xe0d: ve0d = AND vdf7, ve0b(0xffffffffffffffffffffffff0000000000000000000000000000000000000000)
+    0xe0e: ve0e = OR ve0d, ve02
+    0xe11: SSTORE vdf4(0x12), ve0e
+    0xe12: ve12(0x40) = CONST 
+    0xe14: ve14 = MLOAD ve12(0x40)
+    0xe15: ve15(0x20) = CONST 
+    0xe17: ve17(0x24) = CONST 
+    0xe1a: ve1a = ADD ve14, ve17(0x24)
+    0xe1d: MSTORE ve1a, ve15(0x20)
+    0xe1f: ve1f = MLOAD v769
+    0xe20: ve20(0x44) = CONST 
+    0xe23: ve23 = ADD ve14, ve20(0x44)
+    0xe24: MSTORE ve23, ve1f
+    0xe26: ve26 = MLOAD v769
+    0xe2a: ve2a = AND vdf7, vdff(0xffffffffffffffffffffffffffffffffffffffff)
+    0xe2c: ve2c(0xebf) = CONST 
+    0xe36: ve36(0x64) = CONST 
+    0xe3a: ve3a = ADD ve14, ve36(0x64)
+    0xe3e: ve3e = ADD v769, ve15(0x20)
+    0xe43: ve43(0x0) = CONST 
+
+    Begin block 0xe45
+    prev=[0xdf3, 0xe4e], succ=[0xe5d, 0xe4e]
+    =================================
+    0xe45_0x0: ve45_0 = PHI ve43(0x0), ve58
+    0xe48: ve48 = LT ve45_0, ve26
+    0xe49: ve49 = ISZERO ve48
+    0xe4a: ve4a(0xe5d) = CONST 
+    0xe4d: JUMPI ve4a(0xe5d), ve49
+
+    Begin block 0xe5d
+    prev=[0xe45], succ=[0xe8a, 0xe71]
+    =================================
+    0xe66: ve66 = ADD ve26, ve3a
+    0xe68: ve68(0x1f) = CONST 
+    0xe6a: ve6a = AND ve68(0x1f), ve26
+    0xe6c: ve6c = ISZERO ve6a
+    0xe6d: ve6d(0xe8a) = CONST 
+    0xe70: JUMPI ve6d(0xe8a), ve6c
+
+    Begin block 0xe8a
+    prev=[0xe5d, 0xe71], succ=[0xac20x6cf]
+    =================================
+    0xe8a_0x1: ve8a_1 = PHI ve66, ve87
+    0xe8c: ve8c(0x40) = CONST 
+    0xe8f: ve8f = MLOAD ve8c(0x40)
+    0xe90: ve90(0x1f) = CONST 
+    0xe92: ve92(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT ve90(0x1f)
+    0xe95: ve95 = SUB ve8a_1, ve8f
+    0xe96: ve96 = ADD ve95, ve92(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xe98: MSTORE ve8f, ve96
+    0xe9b: MSTORE ve8c(0x40), ve8a_1
+    0xe9c: ve9c(0x20) = CONST 
+    0xe9f: ve9f = ADD ve8f, ve9c(0x20)
+    0xea1: vea1 = MLOAD ve9f
+    0xea2: vea2(0x1) = CONST 
+    0xea4: vea4(0x1) = CONST 
+    0xea6: vea6(0xe0) = CONST 
+    0xea8: vea8(0x100000000000000000000000000000000000000000000000000000000) = SHL vea6(0xe0), vea4(0x1)
+    0xea9: vea9(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB vea8(0x100000000000000000000000000000000000000000000000000000000), vea2(0x1)
+    0xeaa: veaa = AND vea9(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff), vea1
+    0xeab: veab(0xadccee5) = CONST 
+    0xeb0: veb0(0xe3) = CONST 
+    0xeb2: veb2(0x56e6772800000000000000000000000000000000000000000000000000000000) = SHL veb0(0xe3), veab(0xadccee5)
+    0xeb3: veb3 = OR veb2(0x56e6772800000000000000000000000000000000000000000000000000000000), veaa
+    0xeb5: MSTORE ve9f, veb3
+    0xeb8: veb8(0xac2) = CONST 
+    0xebe: JUMP veb8(0xac2)
+
+    Begin block 0xac20x6cf
+    prev=[0xe8a], succ=[0xadb0x6cf]
+    =================================
+    0xac30x6cf: v6cfac3(0x12) = CONST 
+    0xac50x6cf: v6cfac5 = SLOAD v6cfac3(0x12)
+    0xac60x6cf: v6cfac6(0x60) = CONST 
+    0xac90x6cf: v6cfac9(0xadb) = CONST 
+    0xacd0x6cf: v6cfacd(0x1) = CONST 
+    0xacf0x6cf: v6cfacf(0x1) = CONST 
+    0xad10x6cf: v6cfad1(0xa0) = CONST 
+    0xad30x6cf: v6cfad3(0x10000000000000000000000000000000000000000) = SHL v6cfad1(0xa0), v6cfacf(0x1)
+    0xad40x6cf: v6cfad4(0xffffffffffffffffffffffffffffffffffffffff) = SUB v6cfad3(0x10000000000000000000000000000000000000000), v6cfacd(0x1)
+    0xad50x6cf: v6cfad5 = AND v6cfad4(0xffffffffffffffffffffffffffffffffffffffff), v6cfac5
+    0xad70x6cf: v6cfad7(0x1001) = CONST 
+    0xada0x6cf: v6cfada_0 = CALLPRIVATE v6cfad7(0x1001), ve8f, v6cfad5, v6cfac9(0xadb)
+
+    Begin block 0xadb0x6cf
+    prev=[0xac20x6cf], succ=[0xebf]
+    =================================
+    0xae00x6cf: JUMP ve2c(0xebf)
+
+    Begin block 0xebf
+    prev=[0xadb0x6cf], succ=[0x797]
+    =================================
+    0xec1: vec1(0x12) = CONST 
+    0xec3: vec3 = SLOAD vec1(0x12)
+    0xec4: vec4(0x40) = CONST 
+    0xec7: vec7 = MLOAD vec4(0x40)
+    0xec8: vec8(0x1) = CONST 
+    0xeca: veca(0x1) = CONST 
+    0xecc: vecc(0xa0) = CONST 
+    0xece: vece(0x10000000000000000000000000000000000000000) = SHL vecc(0xa0), veca(0x1)
+    0xecf: vecf(0xffffffffffffffffffffffffffffffffffffffff) = SUB vece(0x10000000000000000000000000000000000000000), vec8(0x1)
+    0xed2: ved2 = AND ve2a, vecf(0xffffffffffffffffffffffffffffffffffffffff)
+    0xed4: MSTORE vec7, ved2
+    0xed7: ved7 = AND vec3, vecf(0xffffffffffffffffffffffffffffffffffffffff)
+    0xed8: ved8(0x20) = CONST 
+    0xedb: vedb = ADD vec7, ved8(0x20)
+    0xedc: MSTORE vedb, ved7
+    0xede: vede = MLOAD vec4(0x40)
+    0xedf: vedf(0xd604de94d45953f9138079ec1b82d533cb2160c906d1076d1f7ed54befbca97a) = CONST 
+    0xf03: vf03(0x0) = SUB vec7, vede
+    0xf06: vf06(0x40) = ADD vec4(0x40), vf03(0x0)
+    0xf08: LOG1 vede, vf06(0x40), vedf(0xd604de94d45953f9138079ec1b82d533cb2160c906d1076d1f7ed54befbca97a)
+    0xf0d: JUMP v6dd(0x797)
+
+    Begin block 0x797
+    prev=[0xebf], succ=[]
+    =================================
+    0x798: STOP 
+
+    Begin block 0xe71
+    prev=[0xe5d], succ=[0xe8a]
+    =================================
+    0xe73: ve73 = SUB ve66, ve6a
+    0xe75: ve75 = MLOAD ve73
+    0xe76: ve76(0x1) = CONST 
+    0xe79: ve79(0x20) = CONST 
+    0xe7b: ve7b = SUB ve79(0x20), ve6a
+    0xe7c: ve7c(0x100) = CONST 
+    0xe7f: ve7f = EXP ve7c(0x100), ve7b
+    0xe80: ve80 = SUB ve7f, ve76(0x1)
+    0xe81: ve81 = NOT ve80
+    0xe82: ve82 = AND ve81, ve75
+    0xe84: MSTORE ve73, ve82
+    0xe85: ve85(0x20) = CONST 
+    0xe87: ve87 = ADD ve85(0x20), ve73
+
+    Begin block 0xe4e
+    prev=[0xe45], succ=[0xe45]
+    =================================
+    0xe4e_0x0: ve4e_0 = PHI ve43(0x0), ve58
+    0xe50: ve50 = ADD ve4e_0, ve3e
+    0xe51: ve51 = MLOAD ve50
+    0xe54: ve54 = ADD ve4e_0, ve3a
+    0xe55: MSTORE ve54, ve51
+    0xe56: ve56(0x20) = CONST 
+    0xe58: ve58 = ADD ve56(0x20), ve4e_0
+    0xe59: ve59(0xe45) = CONST 
+    0xe5c: JUMP ve59(0xe45)
+
+}
+
+function implementation()() public {
+    Begin block 0x799
+    prev=[], succ=[0x7a1, 0x7a5]
+    =================================
+    0x79a: v79a = CALLVALUE 
+    0x79c: v79c = ISZERO v79a
+    0x79d: v79d(0x7a5) = CONST 
+    0x7a0: JUMPI v79d(0x7a5), v79c
+
+    Begin block 0x7a1
+    prev=[0x799], succ=[]
+    =================================
+    0x7a1: v7a1(0x0) = CONST 
+    0x7a4: REVERT v7a1(0x0), v7a1(0x0)
+
+    Begin block 0x7a5
+    prev=[0x799], succ=[0xf0e]
+    =================================
+    0x7a7: v7a7(0x14e5) = CONST 
+    0x7aa: v7aa(0xf0e) = CONST 
+    0x7ad: JUMP v7aa(0xf0e)
+
+    Begin block 0xf0e
+    prev=[0x7a5], succ=[0x14e5]
+    =================================
+    0xf0f: vf0f(0x12) = CONST 
+    0xf11: vf11 = SLOAD vf0f(0x12)
+    0xf12: vf12(0x1) = CONST 
+    0xf14: vf14(0x1) = CONST 
+    0xf16: vf16(0xa0) = CONST 
+    0xf18: vf18(0x10000000000000000000000000000000000000000) = SHL vf16(0xa0), vf14(0x1)
+    0xf19: vf19(0xffffffffffffffffffffffffffffffffffffffff) = SUB vf18(0x10000000000000000000000000000000000000000), vf12(0x1)
+    0xf1a: vf1a = AND vf19(0xffffffffffffffffffffffffffffffffffffffff), vf11
+    0xf1c: JUMP v7a7(0x14e5)
+
+    Begin block 0x14e5
+    prev=[0xf0e], succ=[]
+    =================================
+    0x14e6: v14e6(0x40) = CONST 
+    0x14e9: v14e9 = MLOAD v14e6(0x40)
+    0x14ea: v14ea(0x1) = CONST 
+    0x14ec: v14ec(0x1) = CONST 
+    0x14ee: v14ee(0xa0) = CONST 
+    0x14f0: v14f0(0x10000000000000000000000000000000000000000) = SHL v14ee(0xa0), v14ec(0x1)
+    0x14f1: v14f1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v14f0(0x10000000000000000000000000000000000000000), v14ea(0x1)
+    0x14f4: v14f4 = AND vf1a, v14f1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x14f6: MSTORE v14e9, v14f4
+    0x14f7: v14f7 = MLOAD v14e6(0x40)
+    0x14fb: v14fb(0x0) = SUB v14e9, v14f7
+    0x14fc: v14fc(0x20) = CONST 
+    0x14fe: v14fe(0x20) = ADD v14fc(0x20), v14fb(0x0)
+    0x1500: RETURN v14f7, v14fe(0x20)
+
+}
+
+function comptroller()() public {
+    Begin block 0x7ae
+    prev=[], succ=[0x7b6, 0x7ba]
+    =================================
+    0x7af: v7af = CALLVALUE 
+    0x7b1: v7b1 = ISZERO v7af
+    0x7b2: v7b2(0x7ba) = CONST 
+    0x7b5: JUMPI v7b2(0x7ba), v7b1
+
+    Begin block 0x7b6
+    prev=[0x7ae], succ=[]
+    =================================
+    0x7b6: v7b6(0x0) = CONST 
+    0x7b9: REVERT v7b6(0x0), v7b6(0x0)
+
+    Begin block 0x7ba
+    prev=[0x7ae], succ=[0xf1d]
+    =================================
+    0x7bc: v7bc(0x1520) = CONST 
+    0x7bf: v7bf(0xf1d) = CONST 
+    0x7c2: JUMP v7bf(0xf1d)
+
+    Begin block 0xf1d
+    prev=[0x7ba], succ=[0x1520]
+    =================================
+    0xf1e: vf1e(0x5) = CONST 
+    0xf20: vf20 = SLOAD vf1e(0x5)
+    0xf21: vf21(0x1) = CONST 
+    0xf23: vf23(0x1) = CONST 
+    0xf25: vf25(0xa0) = CONST 
+    0xf27: vf27(0x10000000000000000000000000000000000000000) = SHL vf25(0xa0), vf23(0x1)
+    0xf28: vf28(0xffffffffffffffffffffffffffffffffffffffff) = SUB vf27(0x10000000000000000000000000000000000000000), vf21(0x1)
+    0xf29: vf29 = AND vf28(0xffffffffffffffffffffffffffffffffffffffff), vf20
+    0xf2b: JUMP v7bc(0x1520)
+
+    Begin block 0x1520
+    prev=[0xf1d], succ=[]
+    =================================
+    0x1521: v1521(0x40) = CONST 
+    0x1524: v1524 = MLOAD v1521(0x40)
+    0x1525: v1525(0x1) = CONST 
+    0x1527: v1527(0x1) = CONST 
+    0x1529: v1529(0xa0) = CONST 
+    0x152b: v152b(0x10000000000000000000000000000000000000000) = SHL v1529(0xa0), v1527(0x1)
+    0x152c: v152c(0xffffffffffffffffffffffffffffffffffffffff) = SUB v152b(0x10000000000000000000000000000000000000000), v1525(0x1)
+    0x152f: v152f = AND vf29, v152c(0xffffffffffffffffffffffffffffffffffffffff)
+    0x1531: MSTORE v1524, v152f
+    0x1532: v1532 = MLOAD v1521(0x40)
+    0x1536: v1536(0x0) = SUB v1524, v1532
+    0x1537: v1537(0x20) = CONST 
+    0x1539: v1539(0x20) = ADD v1537(0x20), v1536(0x0)
+    0x153b: RETURN v1532, v1539(0x20)
+
+}
+
+function accrualBlockNumber()() public {
+    Begin block 0x7c3
+    prev=[], succ=[0x7cb, 0x7cf]
+    =================================
+    0x7c4: v7c4 = CALLVALUE 
+    0x7c6: v7c6 = ISZERO v7c4
+    0x7c7: v7c7(0x7cf) = CONST 
+    0x7ca: JUMPI v7c7(0x7cf), v7c6
+
+    Begin block 0x7cb
+    prev=[0x7c3], succ=[]
+    =================================
+    0x7cb: v7cb(0x0) = CONST 
+    0x7ce: REVERT v7cb(0x0), v7cb(0x0)
+
+    Begin block 0x7cf
+    prev=[0x7c3], succ=[0xf2c]
+    =================================
+    0x7d1: v7d1(0x155b) = CONST 
+    0x7d4: v7d4(0xf2c) = CONST 
+    0x7d7: JUMP v7d4(0xf2c)
+
+    Begin block 0xf2c
+    prev=[0x7cf], succ=[0x155b]
+    =================================
+    0xf2d: vf2d(0x9) = CONST 
+    0xf2f: vf2f = SLOAD vf2d(0x9)
+    0xf31: JUMP v7d1(0x155b)
+
+    Begin block 0x155b
+    prev=[0xf2c], succ=[]
+    =================================
+    0x155c: v155c(0x40) = CONST 
+    0x155f: v155f = MLOAD v155c(0x40)
+    0x1562: MSTORE v155f, vf2f
+    0x1563: v1563 = MLOAD v155c(0x40)
+    0x1567: v1567(0x0) = SUB v155f, v1563
+    0x1568: v1568(0x20) = CONST 
+    0x156a: v156a(0x20) = ADD v1568(0x20), v1567(0x0)
+    0x156c: RETURN v1563, v156a(0x20)
+
+}
+
+function underlying()() public {
+    Begin block 0x7d8
+    prev=[], succ=[0x7e0, 0x7e4]
+    =================================
+    0x7d9: v7d9 = CALLVALUE 
+    0x7db: v7db = ISZERO v7d9
+    0x7dc: v7dc(0x7e4) = CONST 
+    0x7df: JUMPI v7dc(0x7e4), v7db
+
+    Begin block 0x7e0
+    prev=[0x7d8], succ=[]
+    =================================
+    0x7e0: v7e0(0x0) = CONST 
+    0x7e3: REVERT v7e0(0x0), v7e0(0x0)
+
+    Begin block 0x7e4
+    prev=[0x7d8], succ=[0xf32]
+    =================================
+    0x7e6: v7e6(0x158c) = CONST 
+    0x7e9: v7e9(0xf32) = CONST 
+    0x7ec: JUMP v7e9(0xf32)
+
+    Begin block 0xf32
+    prev=[0x7e4], succ=[0x158c]
+    =================================
+    0xf33: vf33(0x11) = CONST 
+    0xf35: vf35 = SLOAD vf33(0x11)
+    0xf36: vf36(0x1) = CONST 
+    0xf38: vf38(0x1) = CONST 
+    0xf3a: vf3a(0xa0) = CONST 
+    0xf3c: vf3c(0x10000000000000000000000000000000000000000) = SHL vf3a(0xa0), vf38(0x1)
+    0xf3d: vf3d(0xffffffffffffffffffffffffffffffffffffffff) = SUB vf3c(0x10000000000000000000000000000000000000000), vf36(0x1)
+    0xf3e: vf3e = AND vf3d(0xffffffffffffffffffffffffffffffffffffffff), vf35
+    0xf40: JUMP v7e6(0x158c)
+
+    Begin block 0x158c
+    prev=[0xf32], succ=[]
+    =================================
+    0x158d: v158d(0x40) = CONST 
+    0x1590: v1590 = MLOAD v158d(0x40)
+    0x1591: v1591(0x1) = CONST 
+    0x1593: v1593(0x1) = CONST 
+    0x1595: v1595(0xa0) = CONST 
+    0x1597: v1597(0x10000000000000000000000000000000000000000) = SHL v1595(0xa0), v1593(0x1)
+    0x1598: v1598(0xffffffffffffffffffffffffffffffffffffffff) = SUB v1597(0x10000000000000000000000000000000000000000), v1591(0x1)
+    0x159b: v159b = AND vf3e, v1598(0xffffffffffffffffffffffffffffffffffffffff)
+    0x159d: MSTORE v1590, v159b
+    0x159e: v159e = MLOAD v158d(0x40)
+    0x15a2: v15a2(0x0) = SUB v1590, v159e
+    0x15a3: v15a3(0x20) = CONST 
+    0x15a5: v15a5(0x20) = ADD v15a3(0x20), v15a2(0x0)
+    0x15a7: RETURN v159e, v15a5(0x20)
+
+}
+
+function borrowBalanceStored(address)() public {
+    Begin block 0x7ed
+    prev=[], succ=[0x7f5, 0x7f9]
+    =================================
+    0x7ee: v7ee = CALLVALUE 
+    0x7f0: v7f0 = ISZERO v7ee
+    0x7f1: v7f1(0x7f9) = CONST 
+    0x7f4: JUMPI v7f1(0x7f9), v7f0
+
+    Begin block 0x7f5
+    prev=[0x7ed], succ=[]
+    =================================
+    0x7f5: v7f5(0x0) = CONST 
+    0x7f8: REVERT v7f5(0x0), v7f5(0x0)
+
+    Begin block 0x7f9
+    prev=[0x7ed], succ=[0x80c, 0x810]
+    =================================
+    0x7fb: v7fb(0x15c7) = CONST 
+    0x7fe: v7fe(0x4) = CONST 
+    0x801: v801 = CALLDATASIZE 
+    0x802: v802 = SUB v801, v7fe(0x4)
+    0x803: v803(0x20) = CONST 
+    0x806: v806 = LT v802, v803(0x20)
+    0x807: v807 = ISZERO v806
+    0x808: v808(0x810) = CONST 
+    0x80b: JUMPI v808(0x810), v807
+
+    Begin block 0x80c
+    prev=[0x7f9], succ=[]
+    =================================
+    0x80c: v80c(0x0) = CONST 
+    0x80f: REVERT v80c(0x0), v80c(0x0)
+
+    Begin block 0x810
+    prev=[0x7f9], succ=[0xf41]
+    =================================
+    0x812: v812 = CALLDATALOAD v7fe(0x4)
+    0x813: v813(0x1) = CONST 
+    0x815: v815(0x1) = CONST 
+    0x817: v817(0xa0) = CONST 
+    0x819: v819(0x10000000000000000000000000000000000000000) = SHL v817(0xa0), v815(0x1)
+    0x81a: v81a(0xffffffffffffffffffffffffffffffffffffffff) = SUB v819(0x10000000000000000000000000000000000000000), v813(0x1)
+    0x81b: v81b = AND v81a(0xffffffffffffffffffffffffffffffffffffffff), v812
+    0x81c: v81c(0xf41) = CONST 
+    0x81f: JUMP v81c(0xf41)
+
+    Begin block 0xf41
+    prev=[0x810], succ=[0x10c30x7ed]
+    =================================
+    0xf42: vf42(0x0) = CONST 
+    0xf44: vf44(0x1883) = CONST 
+    0xf47: vf47(0x10c3) = CONST 
+    0xf4a: JUMP vf47(0x10c3)
+
+    Begin block 0x10c30x7ed
+    prev=[0xf41], succ=[0x11450x7ed]
+    =================================
+    0x10c40x7ed: v7ed10c4(0x60) = CONST 
+    0x10c60x7ed: v7ed10c6(0x0) = CONST 
+    0x10c80x7ed: v7ed10c8 = ADDRESS 
+    0x10c90x7ed: v7ed10c9(0x1) = CONST 
+    0x10cb0x7ed: v7ed10cb(0x1) = CONST 
+    0x10cd0x7ed: v7ed10cd(0xa0) = CONST 
+    0x10cf0x7ed: v7ed10cf(0x10000000000000000000000000000000000000000) = SHL v7ed10cd(0xa0), v7ed10cb(0x1)
+    0x10d00x7ed: v7ed10d0(0xffffffffffffffffffffffffffffffffffffffff) = SUB v7ed10cf(0x10000000000000000000000000000000000000000), v7ed10c9(0x1)
+    0x10d10x7ed: v7ed10d1 = AND v7ed10d0(0xffffffffffffffffffffffffffffffffffffffff), v7ed10c8
+    0x10d20x7ed: v7ed10d2(0x0) = CONST 
+    0x10d40x7ed: v7ed10d4 = CALLDATASIZE 
+    0x10d50x7ed: v7ed10d5(0x40) = CONST 
+    0x10d70x7ed: v7ed10d7 = MLOAD v7ed10d5(0x40)
+    0x10d80x7ed: v7ed10d8(0x24) = CONST 
+    0x10da0x7ed: v7ed10da = ADD v7ed10d8(0x24), v7ed10d7
+    0x10dd0x7ed: v7ed10dd(0x20) = CONST 
+    0x10df0x7ed: v7ed10df = ADD v7ed10dd(0x20), v7ed10da
+    0x10e20x7ed: v7ed10e2(0x20) = SUB v7ed10df, v7ed10da
+    0x10e40x7ed: MSTORE v7ed10da, v7ed10e2(0x20)
+    0x10ea0x7ed: MSTORE v7ed10df, v7ed10d4
+    0x10eb0x7ed: v7ed10eb(0x20) = CONST 
+    0x10ed0x7ed: v7ed10ed = ADD v7ed10eb(0x20), v7ed10df
+    0x10f30x7ed: CALLDATACOPY v7ed10ed, v7ed10d2(0x0), v7ed10d4
+    0x10f40x7ed: v7ed10f4(0x0) = CONST 
+    0x10f80x7ed: v7ed10f8 = ADD v7ed10d4, v7ed10ed
+    0x10f90x7ed: MSTORE v7ed10f8, v7ed10f4(0x0)
+    0x10fa0x7ed: v7ed10fa(0x40) = CONST 
+    0x10fd0x7ed: v7ed10fd = MLOAD v7ed10fa(0x40)
+    0x10fe0x7ed: v7ed10fe(0x1f) = CONST 
+    0x11020x7ed: v7ed1102 = ADD v7ed10d4, v7ed10fe(0x1f)
+    0x11030x7ed: v7ed1103(0x1f) = CONST 
+    0x11050x7ed: v7ed1105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v7ed1103(0x1f)
+    0x11080x7ed: v7ed1108 = AND v7ed1105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0), v7ed1102
+    0x110b0x7ed: v7ed110b = ADD v7ed10ed, v7ed1108
+    0x110e0x7ed: v7ed110e = SUB v7ed110b, v7ed10fd
+    0x11110x7ed: v7ed1111 = ADD v7ed1105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0), v7ed110e
+    0x11130x7ed: MSTORE v7ed10fd, v7ed1111
+    0x11160x7ed: MSTORE v7ed10fa(0x40), v7ed110b
+    0x11170x7ed: v7ed1117(0x20) = CONST 
+    0x111a0x7ed: v7ed111a = ADD v7ed10fd, v7ed1117(0x20)
+    0x111c0x7ed: v7ed111c = MLOAD v7ed111a
+    0x111d0x7ed: v7ed111d(0x1) = CONST 
+    0x111f0x7ed: v7ed111f(0x1) = CONST 
+    0x11210x7ed: v7ed1121(0xe0) = CONST 
+    0x11230x7ed: v7ed1123(0x100000000000000000000000000000000000000000000000000000000) = SHL v7ed1121(0xe0), v7ed111f(0x1)
+    0x11240x7ed: v7ed1124(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB v7ed1123(0x100000000000000000000000000000000000000000000000000000000), v7ed111d(0x1)
+    0x11250x7ed: v7ed1125 = AND v7ed1124(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff), v7ed111c
+    0x11260x7ed: v7ed1126(0x933c1ed) = CONST 
+    0x112b0x7ed: v7ed112b(0xe0) = CONST 
+    0x112d0x7ed: v7ed112d(0x933c1ed00000000000000000000000000000000000000000000000000000000) = SHL v7ed112b(0xe0), v7ed1126(0x933c1ed)
+    0x112e0x7ed: v7ed112e = OR v7ed112d(0x933c1ed00000000000000000000000000000000000000000000000000000000), v7ed1125
+    0x11300x7ed: MSTORE v7ed111a, v7ed112e
+    0x11320x7ed: v7ed1132 = MLOAD v7ed10fa(0x40)
+    0x11340x7ed: v7ed1134 = MLOAD v7ed10fd
+
+    Begin block 0x11450x7ed
+    prev=[0x114e0x7ed, 0x10c30x7ed], succ=[0x11640x7ed, 0x114e0x7ed]
+    =================================
+    0x11450x7ed_0x2: v11457ed_2 = PHI v7ed1157, v7ed1134
+    0x11460x7ed: v7ed1146(0x20) = CONST 
+    0x11490x7ed: v7ed1149 = LT v11457ed_2, v7ed1146(0x20)
+    0x114a0x7ed: v7ed114a(0x1164) = CONST 
+    0x114d0x7ed: JUMPI v7ed114a(0x1164), v7ed1149
+
+    Begin block 0x11640x7ed
+    prev=[0x11450x7ed], succ=[0x11a30x7ed, 0x11c40x7ed]
+    =================================
+    0x11640x7ed_0x0: v11647ed_0 = PHI v7ed115f, v7ed111a
+    0x11640x7ed_0x1: v11647ed_1 = PHI v7ed115d, v7ed1132
+    0x11640x7ed_0x2: v11647ed_2 = PHI v7ed1157, v7ed1134
+    0x11650x7ed: v7ed1165(0x1) = CONST 
+    0x11680x7ed: v7ed1168(0x20) = CONST 
+    0x116a0x7ed: v7ed116a = SUB v7ed1168(0x20), v11647ed_2
+    0x116b0x7ed: v7ed116b(0x100) = CONST 
+    0x116e0x7ed: v7ed116e = EXP v7ed116b(0x100), v7ed116a
+    0x116f0x7ed: v7ed116f = SUB v7ed116e, v7ed1165(0x1)
+    0x11710x7ed: v7ed1171 = NOT v7ed116f
+    0x11730x7ed: v7ed1173 = MLOAD v11647ed_0
+    0x11740x7ed: v7ed1174 = AND v7ed1173, v7ed1171
+    0x11770x7ed: v7ed1177 = MLOAD v11647ed_1
+    0x11780x7ed: v7ed1178 = AND v7ed1177, v7ed116f
+    0x117b0x7ed: v7ed117b = OR v7ed1174, v7ed1178
+    0x117d0x7ed: MSTORE v11647ed_1, v7ed117b
+    0x11860x7ed: v7ed1186 = ADD v7ed1134, v7ed1132
+    0x118a0x7ed: v7ed118a(0x0) = CONST 
+    0x118c0x7ed: v7ed118c(0x40) = CONST 
+    0x118e0x7ed: v7ed118e = MLOAD v7ed118c(0x40)
+    0x11910x7ed: v7ed1191 = SUB v7ed1186, v7ed118e
+    0x11940x7ed: v7ed1194 = GAS 
+    0x11950x7ed: v7ed1195 = STATICCALL v7ed1194, v7ed10d1, v7ed118e, v7ed1191, v7ed118e, v7ed118a(0x0)
+    0x11990x7ed: v7ed1199 = RETURNDATASIZE 
+    0x119b0x7ed: v7ed119b(0x0) = CONST 
+    0x119e0x7ed: v7ed119e = EQ v7ed1199, v7ed119b(0x0)
+    0x119f0x7ed: v7ed119f(0x11c4) = CONST 
+    0x11a20x7ed: JUMPI v7ed119f(0x11c4), v7ed119e
+
+    Begin block 0x11a30x7ed
+    prev=[0x11640x7ed], succ=[0x11c90x7ed]
+    =================================
+    0x11a30x7ed: v7ed11a3(0x40) = CONST 
+    0x11a50x7ed: v7ed11a5 = MLOAD v7ed11a3(0x40)
+    0x11a80x7ed: v7ed11a8(0x1f) = CONST 
+    0x11aa0x7ed: v7ed11aa(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v7ed11a8(0x1f)
+    0x11ab0x7ed: v7ed11ab(0x3f) = CONST 
+    0x11ad0x7ed: v7ed11ad = RETURNDATASIZE 
+    0x11ae0x7ed: v7ed11ae = ADD v7ed11ad, v7ed11ab(0x3f)
+    0x11af0x7ed: v7ed11af = AND v7ed11ae, v7ed11aa(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x11b10x7ed: v7ed11b1 = ADD v7ed11a5, v7ed11af
+    0x11b20x7ed: v7ed11b2(0x40) = CONST 
+    0x11b40x7ed: MSTORE v7ed11b2(0x40), v7ed11b1
+    0x11b50x7ed: v7ed11b5 = RETURNDATASIZE 
+    0x11b70x7ed: MSTORE v7ed11a5, v7ed11b5
+    0x11b80x7ed: v7ed11b8 = RETURNDATASIZE 
+    0x11b90x7ed: v7ed11b9(0x0) = CONST 
+    0x11bb0x7ed: v7ed11bb(0x20) = CONST 
+    0x11be0x7ed: v7ed11be = ADD v7ed11a5, v7ed11bb(0x20)
+    0x11bf0x7ed: RETURNDATACOPY v7ed11be, v7ed11b9(0x0), v7ed11b8
+    0x11c00x7ed: v7ed11c0(0x11c9) = CONST 
+    0x11c30x7ed: JUMP v7ed11c0(0x11c9)
+
+    Begin block 0x11c90x7ed
+    prev=[0x11a30x7ed, 0x11c40x7ed], succ=[0x11dd0x7ed, 0x12ca0x7ed]
+    =================================
+    0x11ce0x7ed: v7ed11ce(0x40) = CONST 
+    0x11d00x7ed: v7ed11d0 = MLOAD v7ed11ce(0x40)
+    0x11d10x7ed: v7ed11d1 = RETURNDATASIZE 
+    0x11d20x7ed: v7ed11d2(0x0) = CONST 
+    0x11d50x7ed: RETURNDATACOPY v7ed11d0, v7ed11d2(0x0), v7ed11d1
+    0x11d80x7ed: v7ed11d8 = ISZERO v7ed1195
+    0x11d90x7ed: v7ed11d9(0x12ca) = CONST 
+    0x11dc0x7ed: JUMPI v7ed11d9(0x12ca), v7ed11d8
+
+    Begin block 0x11dd0x7ed
+    prev=[0x11c90x7ed], succ=[]
+    =================================
+    0x11dd0x7ed: v7ed11dd = RETURNDATASIZE 
+    0x11de0x7ed: v7ed11de(0x40) = CONST 
+    0x11e10x7ed: v7ed11e1 = ADD v7ed11d0, v7ed11de(0x40)
+    0x11e20x7ed: RETURN v7ed11e1, v7ed11dd
+
+    Begin block 0x12ca0x7ed
+    prev=[0x11c90x7ed], succ=[]
+    =================================
+    0x12cb0x7ed: v7ed12cb = RETURNDATASIZE 
+    0x12cd0x7ed: REVERT v7ed11d0, v7ed12cb
+
+    Begin block 0x11c40x7ed
+    prev=[0x11640x7ed], succ=[0x11c90x7ed]
+    =================================
+    0x11c50x7ed: v7ed11c5(0x60) = CONST 
+
+    Begin block 0x114e0x7ed
+    prev=[0x11450x7ed], succ=[0x11450x7ed]
+    =================================
+    0x114e0x7ed_0x0: v114e7ed_0 = PHI v7ed115f, v7ed111a
+    0x114e0x7ed_0x1: v114e7ed_1 = PHI v7ed115d, v7ed1132
+    0x114e0x7ed_0x2: v114e7ed_2 = PHI v7ed1157, v7ed1134
+    0x114f0x7ed: v7ed114f = MLOAD v114e7ed_0
+    0x11510x7ed: MSTORE v114e7ed_1, v7ed114f
+    0x11520x7ed: v7ed1152(0x1f) = CONST 
+    0x11540x7ed: v7ed1154(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v7ed1152(0x1f)
+    0x11570x7ed: v7ed1157 = ADD v114e7ed_2, v7ed1154(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x11590x7ed: v7ed1159(0x20) = CONST 
+    0x115d0x7ed: v7ed115d = ADD v7ed1159(0x20), v114e7ed_1
+    0x115f0x7ed: v7ed115f = ADD v7ed1159(0x20), v114e7ed_0
+    0x11600x7ed: v7ed1160(0x1145) = CONST 
+    0x11630x7ed: JUMP v7ed1160(0x1145)
+
+}
+
+function _acceptAdmin()() public {
+    Begin block 0x820
+    prev=[], succ=[0x828, 0x82c]
+    =================================
+    0x821: v821 = CALLVALUE 
+    0x823: v823 = ISZERO v821
+    0x824: v824(0x82c) = CONST 
+    0x827: JUMPI v824(0x82c), v823
+
+    Begin block 0x828
+    prev=[0x820], succ=[]
+    =================================
+    0x828: v828(0x0) = CONST 
+    0x82b: REVERT v828(0x0), v828(0x0)
+
+    Begin block 0x82c
+    prev=[0x820], succ=[0xf4b]
+    =================================
+    0x82e: v82e(0x15f8) = CONST 
+    0x831: v831(0xf4b) = CONST 
+    0x834: JUMP v831(0xf4b)
+
+    Begin block 0xf4b
+    prev=[0x82c], succ=[0x9ad0x820]
+    =================================
+    0xf4c: vf4c(0x0) = CONST 
+    0xf4e: vf4e(0x18a8) = CONST 
+    0xf51: vf51(0x9ad) = CONST 
+    0xf54: JUMP vf51(0x9ad)
+
+    Begin block 0x9ad0x820
+    prev=[0xf4b], succ=[0x9f40x820, 0xa150x820]
+    =================================
+    0x9ae0x820: v8209ae(0x12) = CONST 
+    0x9b00x820: v8209b0 = SLOAD v8209ae(0x12)
+    0x9b10x820: v8209b1(0x40) = CONST 
+    0x9b30x820: v8209b3 = MLOAD v8209b1(0x40)
+    0x9b40x820: v8209b4(0x60) = CONST 
+    0x9b70x820: v8209b7(0x0) = CONST 
+    0x9ba0x820: v8209ba(0x1) = CONST 
+    0x9bc0x820: v8209bc(0x1) = CONST 
+    0x9be0x820: v8209be(0xa0) = CONST 
+    0x9c00x820: v8209c0(0x10000000000000000000000000000000000000000) = SHL v8209be(0xa0), v8209bc(0x1)
+    0x9c10x820: v8209c1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v8209c0(0x10000000000000000000000000000000000000000), v8209ba(0x1)
+    0x9c40x820: v8209c4 = AND v8209b0, v8209c1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x9c80x820: v8209c8 = CALLDATASIZE 
+    0x9d00x820: CALLDATACOPY v8209b3, v8209b7(0x0), v8209c8
+    0x9d10x820: v8209d1(0x40) = CONST 
+    0x9d30x820: v8209d3 = MLOAD v8209d1(0x40)
+    0x9d50x820: v8209d5 = ADD v8209b3, v8209c8
+    0x9d80x820: v8209d8(0x0) = CONST 
+    0x9e20x820: v8209e2 = SUB v8209d5, v8209d3
+    0x9e50x820: v8209e5 = GAS 
+    0x9e60x820: v8209e6 = DELEGATECALL v8209e5, v8209c4, v8209d3, v8209e2, v8209d3, v8209d8(0x0)
+    0x9ea0x820: v8209ea = RETURNDATASIZE 
+    0x9ec0x820: v8209ec(0x0) = CONST 
+    0x9ef0x820: v8209ef = EQ v8209ea, v8209ec(0x0)
+    0x9f00x820: v8209f0(0xa15) = CONST 
+    0x9f30x820: JUMPI v8209f0(0xa15), v8209ef
+
+    Begin block 0x9f40x820
+    prev=[0x9ad0x820], succ=[0xa1a0x820]
+    =================================
+    0x9f40x820: v8209f4(0x40) = CONST 
+    0x9f60x820: v8209f6 = MLOAD v8209f4(0x40)
+    0x9f90x820: v8209f9(0x1f) = CONST 
+    0x9fb0x820: v8209fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v8209f9(0x1f)
+    0x9fc0x820: v8209fc(0x3f) = CONST 
+    0x9fe0x820: v8209fe = RETURNDATASIZE 
+    0x9ff0x820: v8209ff = ADD v8209fe, v8209fc(0x3f)
+    0xa000x820: v820a00 = AND v8209ff, v8209fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xa020x820: v820a02 = ADD v8209f6, v820a00
+    0xa030x820: v820a03(0x40) = CONST 
+    0xa050x820: MSTORE v820a03(0x40), v820a02
+    0xa060x820: v820a06 = RETURNDATASIZE 
+    0xa080x820: MSTORE v8209f6, v820a06
+    0xa090x820: v820a09 = RETURNDATASIZE 
+    0xa0a0x820: v820a0a(0x0) = CONST 
+    0xa0c0x820: v820a0c(0x20) = CONST 
+    0xa0f0x820: v820a0f = ADD v8209f6, v820a0c(0x20)
+    0xa100x820: RETURNDATACOPY v820a0f, v820a0a(0x0), v820a09
+    0xa110x820: v820a11(0xa1a) = CONST 
+    0xa140x820: JUMP v820a11(0xa1a)
+
+    Begin block 0xa1a0x820
+    prev=[0x9f40x820, 0xa150x820], succ=[0xa2e0x820, 0x12a70x820]
+    =================================
+    0xa1f0x820: v820a1f(0x40) = CONST 
+    0xa210x820: v820a21 = MLOAD v820a1f(0x40)
+    0xa220x820: v820a22 = RETURNDATASIZE 
+    0xa230x820: v820a23(0x0) = CONST 
+    0xa260x820: RETURNDATACOPY v820a21, v820a23(0x0), v820a22
+    0xa290x820: v820a29 = ISZERO v8209e6
+    0xa2a0x820: v820a2a(0x12a7) = CONST 
+    0xa2d0x820: JUMPI v820a2a(0x12a7), v820a29
+
+    Begin block 0xa2e0x820
+    prev=[0xa1a0x820], succ=[]
+    =================================
+    0xa2e0x820: v820a2e = RETURNDATASIZE 
+    0xa300x820: RETURN v820a21, v820a2e
+
+    Begin block 0x12a70x820
+    prev=[0xa1a0x820], succ=[]
+    =================================
+    0x12a80x820: v82012a8 = RETURNDATASIZE 
+    0x12aa0x820: REVERT v820a21, v82012a8
+
+    Begin block 0xa150x820
+    prev=[0x9ad0x820], succ=[0xa1a0x820]
+    =================================
+    0xa160x820: v820a16(0x60) = CONST 
+
+}
+
+function totalReserves()() public {
+    Begin block 0x835
+    prev=[], succ=[0x83d, 0x841]
+    =================================
+    0x836: v836 = CALLVALUE 
+    0x838: v838 = ISZERO v836
+    0x839: v839(0x841) = CONST 
+    0x83c: JUMPI v839(0x841), v838
+
+    Begin block 0x83d
+    prev=[0x835], succ=[]
+    =================================
+    0x83d: v83d(0x0) = CONST 
+    0x840: REVERT v83d(0x0), v83d(0x0)
+
+    Begin block 0x841
+    prev=[0x835], succ=[0xf55]
+    =================================
+    0x843: v843(0x1629) = CONST 
+    0x846: v846(0xf55) = CONST 
+    0x849: JUMP v846(0xf55)
+
+    Begin block 0xf55
+    prev=[0x841], succ=[0x1629]
+    =================================
+    0xf56: vf56(0xc) = CONST 
+    0xf58: vf58 = SLOAD vf56(0xc)
+    0xf5a: JUMP v843(0x1629)
+
+    Begin block 0x1629
+    prev=[0xf55], succ=[]
+    =================================
+    0x162a: v162a(0x40) = CONST 
+    0x162d: v162d = MLOAD v162a(0x40)
+    0x1630: MSTORE v162d, vf58
+    0x1631: v1631 = MLOAD v162a(0x40)
+    0x1635: v1635(0x0) = SUB v162d, v1631
+    0x1636: v1636(0x20) = CONST 
+    0x1638: v1638(0x20) = ADD v1636(0x20), v1635(0x0)
+    0x163a: RETURN v1631, v1638(0x20)
+
+}
+
+function symbol()() public {
+    Begin block 0x84a
+    prev=[], succ=[0x852, 0x856]
+    =================================
+    0x84b: v84b = CALLVALUE 
+    0x84d: v84d = ISZERO v84b
+    0x84e: v84e(0x856) = CONST 
+    0x851: JUMPI v84e(0x856), v84d
+
+    Begin block 0x852
+    prev=[0x84a], succ=[]
+    =================================
+    0x852: v852(0x0) = CONST 
+    0x855: REVERT v852(0x0), v852(0x0)
+
+    Begin block 0x856
+    prev=[0x84a], succ=[0x3260x84a]
+    =================================
+    0x858: v858(0x326) = CONST 
+    0x85b: v85b(0xf5b) = CONST 
+    0x85e: v85e_0, v85e_1 = CALLPRIVATE v85b(0xf5b), v858(0x326)
+
+    Begin block 0x3260x84a
+    prev=[0x856], succ=[0x3480x84a]
+    =================================
+    0x3270x84a: v84a327(0x40) = CONST 
+    0x32a0x84a: v84a32a = MLOAD v84a327(0x40)
+    0x32b0x84a: v84a32b(0x20) = CONST 
+    0x32f0x84a: MSTORE v84a32a, v84a32b(0x20)
+    0x3310x84a: v84a331 = MLOAD v85e_0
+    0x3340x84a: v84a334 = ADD v84a32a, v84a32b(0x20)
+    0x3350x84a: MSTORE v84a334, v84a331
+    0x3370x84a: v84a337 = MLOAD v85e_0
+    0x33e0x84a: v84a33e = ADD v84a32a, v84a327(0x40)
+    0x3410x84a: v84a341 = ADD v85e_0, v84a32b(0x20)
+    0x3460x84a: v84a346(0x0) = CONST 
+
+    Begin block 0x3480x84a
+    prev=[0x3510x84a, 0x3260x84a], succ=[0x3600x84a, 0x3510x84a]
+    =================================
+    0x3480x84a_0x0: v34884a_0 = PHI v84a35b, v84a346(0x0)
+    0x34b0x84a: v84a34b = LT v34884a_0, v84a337
+    0x34c0x84a: v84a34c = ISZERO v84a34b
+    0x34d0x84a: v84a34d(0x360) = CONST 
+    0x3500x84a: JUMPI v84a34d(0x360), v84a34c
+
+    Begin block 0x3600x84a
+    prev=[0x3480x84a], succ=[0x38d0x84a, 0x3740x84a]
+    =================================
+    0x3690x84a: v84a369 = ADD v84a337, v84a33e
+    0x36b0x84a: v84a36b(0x1f) = CONST 
+    0x36d0x84a: v84a36d = AND v84a36b(0x1f), v84a337
+    0x36f0x84a: v84a36f = ISZERO v84a36d
+    0x3700x84a: v84a370(0x38d) = CONST 
+    0x3730x84a: JUMPI v84a370(0x38d), v84a36f
+
+    Begin block 0x38d0x84a
+    prev=[0x3600x84a, 0x3740x84a], succ=[]
+    =================================
+    0x38d0x84a_0x1: v38d84a_1 = PHI v84a38a, v84a369
+    0x3930x84a: v84a393(0x40) = CONST 
+    0x3950x84a: v84a395 = MLOAD v84a393(0x40)
+    0x3980x84a: v84a398 = SUB v38d84a_1, v84a395
+    0x39a0x84a: RETURN v84a395, v84a398
+
+    Begin block 0x3740x84a
+    prev=[0x3600x84a], succ=[0x38d0x84a]
+    =================================
+    0x3760x84a: v84a376 = SUB v84a369, v84a36d
+    0x3780x84a: v84a378 = MLOAD v84a376
+    0x3790x84a: v84a379(0x1) = CONST 
+    0x37c0x84a: v84a37c(0x20) = CONST 
+    0x37e0x84a: v84a37e = SUB v84a37c(0x20), v84a36d
+    0x37f0x84a: v84a37f(0x100) = CONST 
+    0x3820x84a: v84a382 = EXP v84a37f(0x100), v84a37e
+    0x3830x84a: v84a383 = SUB v84a382, v84a379(0x1)
+    0x3840x84a: v84a384 = NOT v84a383
+    0x3850x84a: v84a385 = AND v84a384, v84a378
+    0x3870x84a: MSTORE v84a376, v84a385
+    0x3880x84a: v84a388(0x20) = CONST 
+    0x38a0x84a: v84a38a = ADD v84a388(0x20), v84a376
+
+    Begin block 0x3510x84a
+    prev=[0x3480x84a], succ=[0x3480x84a]
+    =================================
+    0x3510x84a_0x0: v35184a_0 = PHI v84a35b, v84a346(0x0)
+    0x3530x84a: v84a353 = ADD v35184a_0, v84a341
+    0x3540x84a: v84a354 = MLOAD v84a353
+    0x3570x84a: v84a357 = ADD v35184a_0, v84a33e
+    0x3580x84a: MSTORE v84a357, v84a354
+    0x3590x84a: v84a359(0x20) = CONST 
+    0x35b0x84a: v84a35b = ADD v84a359(0x20), v35184a_0
+    0x35c0x84a: v84a35c(0x348) = CONST 
+    0x35f0x84a: JUMP v84a35c(0x348)
+
+}
+
+function borrowIndex()() public {
+    Begin block 0x85f
+    prev=[], succ=[0x867, 0x86b]
+    =================================
+    0x860: v860 = CALLVALUE 
+    0x862: v862 = ISZERO v860
+    0x863: v863(0x86b) = CONST 
+    0x866: JUMPI v863(0x86b), v862
+
+    Begin block 0x867
+    prev=[0x85f], succ=[]
+    =================================
+    0x867: v867(0x0) = CONST 
+    0x86a: REVERT v867(0x0), v867(0x0)
+
+    Begin block 0x86b
+    prev=[0x85f], succ=[0xfb3]
+    =================================
+    0x86d: v86d(0x165a) = CONST 
+    0x870: v870(0xfb3) = CONST 
+    0x873: JUMP v870(0xfb3)
+
+    Begin block 0xfb3
+    prev=[0x86b], succ=[0x165a]
+    =================================
+    0xfb4: vfb4(0xa) = CONST 
+    0xfb6: vfb6 = SLOAD vfb4(0xa)
+    0xfb8: JUMP v86d(0x165a)
+
+    Begin block 0x165a
+    prev=[0xfb3], succ=[]
+    =================================
+    0x165b: v165b(0x40) = CONST 
+    0x165e: v165e = MLOAD v165b(0x40)
+    0x1661: MSTORE v165e, vfb6
+    0x1662: v1662 = MLOAD v165b(0x40)
+    0x1666: v1666(0x0) = SUB v165e, v1662
+    0x1667: v1667(0x20) = CONST 
+    0x1669: v1669(0x20) = ADD v1667(0x20), v1666(0x0)
+    0x166b: RETURN v1662, v1669(0x20)
+
+}
+
+function seize(address,address,uint256)() public {
+    Begin block 0x874
+    prev=[], succ=[0x87c, 0x880]
+    =================================
+    0x875: v875 = CALLVALUE 
+    0x877: v877 = ISZERO v875
+    0x878: v878(0x880) = CONST 
+    0x87b: JUMPI v878(0x880), v877
+
+    Begin block 0x87c
+    prev=[0x874], succ=[]
+    =================================
+    0x87c: v87c(0x0) = CONST 
+    0x87f: REVERT v87c(0x0), v87c(0x0)
+
+    Begin block 0x880
+    prev=[0x874], succ=[0x893, 0x56a0x874]
+    =================================
+    0x882: v882(0x168b) = CONST 
+    0x885: v885(0x4) = CONST 
+    0x888: v888 = CALLDATASIZE 
+    0x889: v889 = SUB v888, v885(0x4)
+    0x88a: v88a(0x60) = CONST 
+    0x88d: v88d = LT v889, v88a(0x60)
+    0x88e: v88e = ISZERO v88d
+    0x88f: v88f(0x56a) = CONST 
+    0x892: JUMPI v88f(0x56a), v88e
+
+    Begin block 0x893
+    prev=[0x880], succ=[]
+    =================================
+    0x893: v893(0x0) = CONST 
+    0x896: REVERT v893(0x0), v893(0x0)
+
+    Begin block 0x56a0x874
+    prev=[0x880], succ=[0xb1c0x874]
+    =================================
+    0x56c0x874: v87456c(0x1) = CONST 
+    0x56e0x874: v87456e(0x1) = CONST 
+    0x5700x874: v874570(0xa0) = CONST 
+    0x5720x874: v874572(0x10000000000000000000000000000000000000000) = SHL v874570(0xa0), v87456e(0x1)
+    0x5730x874: v874573(0xffffffffffffffffffffffffffffffffffffffff) = SUB v874572(0x10000000000000000000000000000000000000000), v87456c(0x1)
+    0x5750x874: v874575 = CALLDATALOAD v885(0x4)
+    0x5770x874: v874577 = AND v874573(0xffffffffffffffffffffffffffffffffffffffff), v874575
+    0x5790x874: v874579(0x20) = CONST 
+    0x57c0x874: v87457c(0x24) = ADD v885(0x4), v874579(0x20)
+    0x57d0x874: v87457d = CALLDATALOAD v87457c(0x24)
+    0x5800x874: v874580 = AND v874573(0xffffffffffffffffffffffffffffffffffffffff), v87457d
+    0x5820x874: v874582(0x40) = CONST 
+    0x5840x874: v874584(0x44) = ADD v874582(0x40), v885(0x4)
+    0x5850x874: v874585 = CALLDATALOAD v874584(0x44)
+    0x5860x874: v874586(0xb1c) = CONST 
+    0x5890x874: JUMP v874586(0xb1c)
+
+    Begin block 0xb1c0x874
+    prev=[0x56a0x874], succ=[0x9ad0x874]
+    =================================
+    0xb1d0x874: v874b1d(0x0) = CONST 
+    0xb1f0x874: v874b1f(0xb26) = CONST 
+    0xb220x874: v874b22(0x9ad) = CONST 
+    0xb250x874: JUMP v874b22(0x9ad)
+
+    Begin block 0x9ad0x874
+    prev=[0xb1c0x874], succ=[0x9f40x874, 0xa150x874]
+    =================================
+    0x9ae0x874: v8749ae(0x12) = CONST 
+    0x9b00x874: v8749b0 = SLOAD v8749ae(0x12)
+    0x9b10x874: v8749b1(0x40) = CONST 
+    0x9b30x874: v8749b3 = MLOAD v8749b1(0x40)
+    0x9b40x874: v8749b4(0x60) = CONST 
+    0x9b70x874: v8749b7(0x0) = CONST 
+    0x9ba0x874: v8749ba(0x1) = CONST 
+    0x9bc0x874: v8749bc(0x1) = CONST 
+    0x9be0x874: v8749be(0xa0) = CONST 
+    0x9c00x874: v8749c0(0x10000000000000000000000000000000000000000) = SHL v8749be(0xa0), v8749bc(0x1)
+    0x9c10x874: v8749c1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v8749c0(0x10000000000000000000000000000000000000000), v8749ba(0x1)
+    0x9c40x874: v8749c4 = AND v8749b0, v8749c1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x9c80x874: v8749c8 = CALLDATASIZE 
+    0x9d00x874: CALLDATACOPY v8749b3, v8749b7(0x0), v8749c8
+    0x9d10x874: v8749d1(0x40) = CONST 
+    0x9d30x874: v8749d3 = MLOAD v8749d1(0x40)
+    0x9d50x874: v8749d5 = ADD v8749b3, v8749c8
+    0x9d80x874: v8749d8(0x0) = CONST 
+    0x9e20x874: v8749e2 = SUB v8749d5, v8749d3
+    0x9e50x874: v8749e5 = GAS 
+    0x9e60x874: v8749e6 = DELEGATECALL v8749e5, v8749c4, v8749d3, v8749e2, v8749d3, v8749d8(0x0)
+    0x9ea0x874: v8749ea = RETURNDATASIZE 
+    0x9ec0x874: v8749ec(0x0) = CONST 
+    0x9ef0x874: v8749ef = EQ v8749ea, v8749ec(0x0)
+    0x9f00x874: v8749f0(0xa15) = CONST 
+    0x9f30x874: JUMPI v8749f0(0xa15), v8749ef
+
+    Begin block 0x9f40x874
+    prev=[0x9ad0x874], succ=[0xa1a0x874]
+    =================================
+    0x9f40x874: v8749f4(0x40) = CONST 
+    0x9f60x874: v8749f6 = MLOAD v8749f4(0x40)
+    0x9f90x874: v8749f9(0x1f) = CONST 
+    0x9fb0x874: v8749fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v8749f9(0x1f)
+    0x9fc0x874: v8749fc(0x3f) = CONST 
+    0x9fe0x874: v8749fe = RETURNDATASIZE 
+    0x9ff0x874: v8749ff = ADD v8749fe, v8749fc(0x3f)
+    0xa000x874: v874a00 = AND v8749ff, v8749fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xa020x874: v874a02 = ADD v8749f6, v874a00
+    0xa030x874: v874a03(0x40) = CONST 
+    0xa050x874: MSTORE v874a03(0x40), v874a02
+    0xa060x874: v874a06 = RETURNDATASIZE 
+    0xa080x874: MSTORE v8749f6, v874a06
+    0xa090x874: v874a09 = RETURNDATASIZE 
+    0xa0a0x874: v874a0a(0x0) = CONST 
+    0xa0c0x874: v874a0c(0x20) = CONST 
+    0xa0f0x874: v874a0f = ADD v8749f6, v874a0c(0x20)
+    0xa100x874: RETURNDATACOPY v874a0f, v874a0a(0x0), v874a09
+    0xa110x874: v874a11(0xa1a) = CONST 
+    0xa140x874: JUMP v874a11(0xa1a)
+
+    Begin block 0xa1a0x874
+    prev=[0x9f40x874, 0xa150x874], succ=[0xa2e0x874, 0x12a70x874]
+    =================================
+    0xa1f0x874: v874a1f(0x40) = CONST 
+    0xa210x874: v874a21 = MLOAD v874a1f(0x40)
+    0xa220x874: v874a22 = RETURNDATASIZE 
+    0xa230x874: v874a23(0x0) = CONST 
+    0xa260x874: RETURNDATACOPY v874a21, v874a23(0x0), v874a22
+    0xa290x874: v874a29 = ISZERO v8749e6
+    0xa2a0x874: v874a2a(0x12a7) = CONST 
+    0xa2d0x874: JUMPI v874a2a(0x12a7), v874a29
+
+    Begin block 0xa2e0x874
+    prev=[0xa1a0x874], succ=[]
+    =================================
+    0xa2e0x874: v874a2e = RETURNDATASIZE 
+    0xa300x874: RETURN v874a21, v874a2e
+
+    Begin block 0x12a70x874
+    prev=[0xa1a0x874], succ=[]
+    =================================
+    0x12a80x874: v87412a8 = RETURNDATASIZE 
+    0x12aa0x874: REVERT v874a21, v87412a8
+
+    Begin block 0xa150x874
+    prev=[0x9ad0x874], succ=[0xa1a0x874]
+    =================================
+    0xa160x874: v874a16(0x60) = CONST 
+
+}
+
+function getAccountSnapshot(address)() public {
+    Begin block 0x897
+    prev=[], succ=[0x89f, 0x8a3]
+    =================================
+    0x898: v898 = CALLVALUE 
+    0x89a: v89a = ISZERO v898
+    0x89b: v89b(0x8a3) = CONST 
+    0x89e: JUMPI v89b(0x8a3), v89a
+
+    Begin block 0x89f
+    prev=[0x897], succ=[]
+    =================================
+    0x89f: v89f(0x0) = CONST 
+    0x8a2: REVERT v89f(0x0), v89f(0x0)
+
+    Begin block 0x8a3
+    prev=[0x897], succ=[0x8b6, 0x8ba]
+    =================================
+    0x8a5: v8a5(0x8ca) = CONST 
+    0x8a8: v8a8(0x4) = CONST 
+    0x8ab: v8ab = CALLDATASIZE 
+    0x8ac: v8ac = SUB v8ab, v8a8(0x4)
+    0x8ad: v8ad(0x20) = CONST 
+    0x8b0: v8b0 = LT v8ac, v8ad(0x20)
+    0x8b1: v8b1 = ISZERO v8b0
+    0x8b2: v8b2(0x8ba) = CONST 
+    0x8b5: JUMPI v8b2(0x8ba), v8b1
+
+    Begin block 0x8b6
+    prev=[0x8a3], succ=[]
+    =================================
+    0x8b6: v8b6(0x0) = CONST 
+    0x8b9: REVERT v8b6(0x0), v8b6(0x0)
+
+    Begin block 0x8ba
+    prev=[0x8a3], succ=[0xfb9]
+    =================================
+    0x8bc: v8bc = CALLDATALOAD v8a8(0x4)
+    0x8bd: v8bd(0x1) = CONST 
+    0x8bf: v8bf(0x1) = CONST 
+    0x8c1: v8c1(0xa0) = CONST 
+    0x8c3: v8c3(0x10000000000000000000000000000000000000000) = SHL v8c1(0xa0), v8bf(0x1)
+    0x8c4: v8c4(0xffffffffffffffffffffffffffffffffffffffff) = SUB v8c3(0x10000000000000000000000000000000000000000), v8bd(0x1)
+    0x8c5: v8c5 = AND v8c4(0xffffffffffffffffffffffffffffffffffffffff), v8bc
+    0x8c6: v8c6(0xfb9) = CONST 
+    0x8c9: JUMP v8c6(0xfb9)
+
+    Begin block 0xfb9
+    prev=[0x8ba], succ=[0x10c30x897]
+    =================================
+    0xfba: vfba(0x0) = CONST 
+    0xfbd: vfbd(0x0) = CONST 
+    0xfc0: vfc0(0xfc7) = CONST 
+    0xfc3: vfc3(0x10c3) = CONST 
+    0xfc6: JUMP vfc3(0x10c3)
+
+    Begin block 0x10c30x897
+    prev=[0xfb9], succ=[0x11450x897]
+    =================================
+    0x10c40x897: v89710c4(0x60) = CONST 
+    0x10c60x897: v89710c6(0x0) = CONST 
+    0x10c80x897: v89710c8 = ADDRESS 
+    0x10c90x897: v89710c9(0x1) = CONST 
+    0x10cb0x897: v89710cb(0x1) = CONST 
+    0x10cd0x897: v89710cd(0xa0) = CONST 
+    0x10cf0x897: v89710cf(0x10000000000000000000000000000000000000000) = SHL v89710cd(0xa0), v89710cb(0x1)
+    0x10d00x897: v89710d0(0xffffffffffffffffffffffffffffffffffffffff) = SUB v89710cf(0x10000000000000000000000000000000000000000), v89710c9(0x1)
+    0x10d10x897: v89710d1 = AND v89710d0(0xffffffffffffffffffffffffffffffffffffffff), v89710c8
+    0x10d20x897: v89710d2(0x0) = CONST 
+    0x10d40x897: v89710d4 = CALLDATASIZE 
+    0x10d50x897: v89710d5(0x40) = CONST 
+    0x10d70x897: v89710d7 = MLOAD v89710d5(0x40)
+    0x10d80x897: v89710d8(0x24) = CONST 
+    0x10da0x897: v89710da = ADD v89710d8(0x24), v89710d7
+    0x10dd0x897: v89710dd(0x20) = CONST 
+    0x10df0x897: v89710df = ADD v89710dd(0x20), v89710da
+    0x10e20x897: v89710e2(0x20) = SUB v89710df, v89710da
+    0x10e40x897: MSTORE v89710da, v89710e2(0x20)
+    0x10ea0x897: MSTORE v89710df, v89710d4
+    0x10eb0x897: v89710eb(0x20) = CONST 
+    0x10ed0x897: v89710ed = ADD v89710eb(0x20), v89710df
+    0x10f30x897: CALLDATACOPY v89710ed, v89710d2(0x0), v89710d4
+    0x10f40x897: v89710f4(0x0) = CONST 
+    0x10f80x897: v89710f8 = ADD v89710d4, v89710ed
+    0x10f90x897: MSTORE v89710f8, v89710f4(0x0)
+    0x10fa0x897: v89710fa(0x40) = CONST 
+    0x10fd0x897: v89710fd = MLOAD v89710fa(0x40)
+    0x10fe0x897: v89710fe(0x1f) = CONST 
+    0x11020x897: v8971102 = ADD v89710d4, v89710fe(0x1f)
+    0x11030x897: v8971103(0x1f) = CONST 
+    0x11050x897: v8971105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v8971103(0x1f)
+    0x11080x897: v8971108 = AND v8971105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0), v8971102
+    0x110b0x897: v897110b = ADD v89710ed, v8971108
+    0x110e0x897: v897110e = SUB v897110b, v89710fd
+    0x11110x897: v8971111 = ADD v8971105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0), v897110e
+    0x11130x897: MSTORE v89710fd, v8971111
+    0x11160x897: MSTORE v89710fa(0x40), v897110b
+    0x11170x897: v8971117(0x20) = CONST 
+    0x111a0x897: v897111a = ADD v89710fd, v8971117(0x20)
+    0x111c0x897: v897111c = MLOAD v897111a
+    0x111d0x897: v897111d(0x1) = CONST 
+    0x111f0x897: v897111f(0x1) = CONST 
+    0x11210x897: v8971121(0xe0) = CONST 
+    0x11230x897: v8971123(0x100000000000000000000000000000000000000000000000000000000) = SHL v8971121(0xe0), v897111f(0x1)
+    0x11240x897: v8971124(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB v8971123(0x100000000000000000000000000000000000000000000000000000000), v897111d(0x1)
+    0x11250x897: v8971125 = AND v8971124(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff), v897111c
+    0x11260x897: v8971126(0x933c1ed) = CONST 
+    0x112b0x897: v897112b(0xe0) = CONST 
+    0x112d0x897: v897112d(0x933c1ed00000000000000000000000000000000000000000000000000000000) = SHL v897112b(0xe0), v8971126(0x933c1ed)
+    0x112e0x897: v897112e = OR v897112d(0x933c1ed00000000000000000000000000000000000000000000000000000000), v8971125
+    0x11300x897: MSTORE v897111a, v897112e
+    0x11320x897: v8971132 = MLOAD v89710fa(0x40)
+    0x11340x897: v8971134 = MLOAD v89710fd
+
+    Begin block 0x11450x897
+    prev=[0x114e0x897, 0x10c30x897], succ=[0x11640x897, 0x114e0x897]
+    =================================
+    0x11450x897_0x2: v1145897_2 = PHI v8971157, v8971134
+    0x11460x897: v8971146(0x20) = CONST 
+    0x11490x897: v8971149 = LT v1145897_2, v8971146(0x20)
+    0x114a0x897: v897114a(0x1164) = CONST 
+    0x114d0x897: JUMPI v897114a(0x1164), v8971149
+
+    Begin block 0x11640x897
+    prev=[0x11450x897], succ=[0x11a30x897, 0x11c40x897]
+    =================================
+    0x11640x897_0x0: v1164897_0 = PHI v897115f, v897111a
+    0x11640x897_0x1: v1164897_1 = PHI v897115d, v8971132
+    0x11640x897_0x2: v1164897_2 = PHI v8971157, v8971134
+    0x11650x897: v8971165(0x1) = CONST 
+    0x11680x897: v8971168(0x20) = CONST 
+    0x116a0x897: v897116a = SUB v8971168(0x20), v1164897_2
+    0x116b0x897: v897116b(0x100) = CONST 
+    0x116e0x897: v897116e = EXP v897116b(0x100), v897116a
+    0x116f0x897: v897116f = SUB v897116e, v8971165(0x1)
+    0x11710x897: v8971171 = NOT v897116f
+    0x11730x897: v8971173 = MLOAD v1164897_0
+    0x11740x897: v8971174 = AND v8971173, v8971171
+    0x11770x897: v8971177 = MLOAD v1164897_1
+    0x11780x897: v8971178 = AND v8971177, v897116f
+    0x117b0x897: v897117b = OR v8971174, v8971178
+    0x117d0x897: MSTORE v1164897_1, v897117b
+    0x11860x897: v8971186 = ADD v8971134, v8971132
+    0x118a0x897: v897118a(0x0) = CONST 
+    0x118c0x897: v897118c(0x40) = CONST 
+    0x118e0x897: v897118e = MLOAD v897118c(0x40)
+    0x11910x897: v8971191 = SUB v8971186, v897118e
+    0x11940x897: v8971194 = GAS 
+    0x11950x897: v8971195 = STATICCALL v8971194, v89710d1, v897118e, v8971191, v897118e, v897118a(0x0)
+    0x11990x897: v8971199 = RETURNDATASIZE 
+    0x119b0x897: v897119b(0x0) = CONST 
+    0x119e0x897: v897119e = EQ v8971199, v897119b(0x0)
+    0x119f0x897: v897119f(0x11c4) = CONST 
+    0x11a20x897: JUMPI v897119f(0x11c4), v897119e
+
+    Begin block 0x11a30x897
+    prev=[0x11640x897], succ=[0x11c90x897]
+    =================================
+    0x11a30x897: v89711a3(0x40) = CONST 
+    0x11a50x897: v89711a5 = MLOAD v89711a3(0x40)
+    0x11a80x897: v89711a8(0x1f) = CONST 
+    0x11aa0x897: v89711aa(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v89711a8(0x1f)
+    0x11ab0x897: v89711ab(0x3f) = CONST 
+    0x11ad0x897: v89711ad = RETURNDATASIZE 
+    0x11ae0x897: v89711ae = ADD v89711ad, v89711ab(0x3f)
+    0x11af0x897: v89711af = AND v89711ae, v89711aa(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x11b10x897: v89711b1 = ADD v89711a5, v89711af
+    0x11b20x897: v89711b2(0x40) = CONST 
+    0x11b40x897: MSTORE v89711b2(0x40), v89711b1
+    0x11b50x897: v89711b5 = RETURNDATASIZE 
+    0x11b70x897: MSTORE v89711a5, v89711b5
+    0x11b80x897: v89711b8 = RETURNDATASIZE 
+    0x11b90x897: v89711b9(0x0) = CONST 
+    0x11bb0x897: v89711bb(0x20) = CONST 
+    0x11be0x897: v89711be = ADD v89711a5, v89711bb(0x20)
+    0x11bf0x897: RETURNDATACOPY v89711be, v89711b9(0x0), v89711b8
+    0x11c00x897: v89711c0(0x11c9) = CONST 
+    0x11c30x897: JUMP v89711c0(0x11c9)
+
+    Begin block 0x11c90x897
+    prev=[0x11a30x897, 0x11c40x897], succ=[0x11dd0x897, 0x12ca0x897]
+    =================================
+    0x11ce0x897: v89711ce(0x40) = CONST 
+    0x11d00x897: v89711d0 = MLOAD v89711ce(0x40)
+    0x11d10x897: v89711d1 = RETURNDATASIZE 
+    0x11d20x897: v89711d2(0x0) = CONST 
+    0x11d50x897: RETURNDATACOPY v89711d0, v89711d2(0x0), v89711d1
+    0x11d80x897: v89711d8 = ISZERO v8971195
+    0x11d90x897: v89711d9(0x12ca) = CONST 
+    0x11dc0x897: JUMPI v89711d9(0x12ca), v89711d8
+
+    Begin block 0x11dd0x897
+    prev=[0x11c90x897], succ=[]
+    =================================
+    0x11dd0x897: v89711dd = RETURNDATASIZE 
+    0x11de0x897: v89711de(0x40) = CONST 
+    0x11e10x897: v89711e1 = ADD v89711d0, v89711de(0x40)
+    0x11e20x897: RETURN v89711e1, v89711dd
+
+    Begin block 0x12ca0x897
+    prev=[0x11c90x897], succ=[]
+    =================================
+    0x12cb0x897: v89712cb = RETURNDATASIZE 
+    0x12cd0x897: REVERT v89711d0, v89712cb
+
+    Begin block 0x11c40x897
+    prev=[0x11640x897], succ=[0x11c90x897]
+    =================================
+    0x11c50x897: v89711c5(0x60) = CONST 
+
+    Begin block 0x114e0x897
+    prev=[0x11450x897], succ=[0x11450x897]
+    =================================
+    0x114e0x897_0x0: v114e897_0 = PHI v897115f, v897111a
+    0x114e0x897_0x1: v114e897_1 = PHI v897115d, v8971132
+    0x114e0x897_0x2: v114e897_2 = PHI v8971157, v8971134
+    0x114f0x897: v897114f = MLOAD v114e897_0
+    0x11510x897: MSTORE v114e897_1, v897114f
+    0x11520x897: v8971152(0x1f) = CONST 
+    0x11540x897: v8971154(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v8971152(0x1f)
+    0x11570x897: v8971157 = ADD v114e897_2, v8971154(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x11590x897: v8971159(0x20) = CONST 
+    0x115d0x897: v897115d = ADD v8971159(0x20), v114e897_1
+    0x115f0x897: v897115f = ADD v8971159(0x20), v114e897_0
+    0x11600x897: v8971160(0x1145) = CONST 
+    0x11630x897: JUMP v8971160(0x1145)
+
+}
+
+function allowance(address,address)() public {
+    Begin block 0x8f0
+    prev=[], succ=[0x8f8, 0x8fc]
+    =================================
+    0x8f1: v8f1 = CALLVALUE 
+    0x8f3: v8f3 = ISZERO v8f1
+    0x8f4: v8f4(0x8fc) = CONST 
+    0x8f7: JUMPI v8f4(0x8fc), v8f3
+
+    Begin block 0x8f8
+    prev=[0x8f0], succ=[]
+    =================================
+    0x8f8: v8f8(0x0) = CONST 
+    0x8fb: REVERT v8f8(0x0), v8f8(0x0)
+
+    Begin block 0x8fc
+    prev=[0x8f0], succ=[0x90f, 0x913]
+    =================================
+    0x8fe: v8fe(0x16bc) = CONST 
+    0x901: v901(0x4) = CONST 
+    0x904: v904 = CALLDATASIZE 
+    0x905: v905 = SUB v904, v901(0x4)
+    0x906: v906(0x40) = CONST 
+    0x909: v909 = LT v905, v906(0x40)
+    0x90a: v90a = ISZERO v909
+    0x90b: v90b(0x913) = CONST 
+    0x90e: JUMPI v90b(0x913), v90a
+
+    Begin block 0x90f
+    prev=[0x8fc], succ=[]
+    =================================
+    0x90f: v90f(0x0) = CONST 
+    0x912: REVERT v90f(0x0), v90f(0x0)
+
+    Begin block 0x913
+    prev=[0x8fc], succ=[0xfcf]
+    =================================
+    0x915: v915(0x1) = CONST 
+    0x917: v917(0x1) = CONST 
+    0x919: v919(0xa0) = CONST 
+    0x91b: v91b(0x10000000000000000000000000000000000000000) = SHL v919(0xa0), v917(0x1)
+    0x91c: v91c(0xffffffffffffffffffffffffffffffffffffffff) = SUB v91b(0x10000000000000000000000000000000000000000), v915(0x1)
+    0x91e: v91e = CALLDATALOAD v901(0x4)
+    0x920: v920 = AND v91c(0xffffffffffffffffffffffffffffffffffffffff), v91e
+    0x922: v922(0x20) = CONST 
+    0x924: v924(0x24) = ADD v922(0x20), v901(0x4)
+    0x925: v925 = CALLDATALOAD v924(0x24)
+    0x926: v926 = AND v925, v91c(0xffffffffffffffffffffffffffffffffffffffff)
+    0x927: v927(0xfcf) = CONST 
+    0x92a: JUMP v927(0xfcf)
+
+    Begin block 0xfcf
+    prev=[0x913], succ=[0x10c30x8f0]
+    =================================
+    0xfd0: vfd0(0x0) = CONST 
+    0xfd2: vfd2(0x1919) = CONST 
+    0xfd5: vfd5(0x10c3) = CONST 
+    0xfd8: JUMP vfd5(0x10c3)
+
+    Begin block 0x10c30x8f0
+    prev=[0xfcf], succ=[0x11450x8f0]
+    =================================
+    0x10c40x8f0: v8f010c4(0x60) = CONST 
+    0x10c60x8f0: v8f010c6(0x0) = CONST 
+    0x10c80x8f0: v8f010c8 = ADDRESS 
+    0x10c90x8f0: v8f010c9(0x1) = CONST 
+    0x10cb0x8f0: v8f010cb(0x1) = CONST 
+    0x10cd0x8f0: v8f010cd(0xa0) = CONST 
+    0x10cf0x8f0: v8f010cf(0x10000000000000000000000000000000000000000) = SHL v8f010cd(0xa0), v8f010cb(0x1)
+    0x10d00x8f0: v8f010d0(0xffffffffffffffffffffffffffffffffffffffff) = SUB v8f010cf(0x10000000000000000000000000000000000000000), v8f010c9(0x1)
+    0x10d10x8f0: v8f010d1 = AND v8f010d0(0xffffffffffffffffffffffffffffffffffffffff), v8f010c8
+    0x10d20x8f0: v8f010d2(0x0) = CONST 
+    0x10d40x8f0: v8f010d4 = CALLDATASIZE 
+    0x10d50x8f0: v8f010d5(0x40) = CONST 
+    0x10d70x8f0: v8f010d7 = MLOAD v8f010d5(0x40)
+    0x10d80x8f0: v8f010d8(0x24) = CONST 
+    0x10da0x8f0: v8f010da = ADD v8f010d8(0x24), v8f010d7
+    0x10dd0x8f0: v8f010dd(0x20) = CONST 
+    0x10df0x8f0: v8f010df = ADD v8f010dd(0x20), v8f010da
+    0x10e20x8f0: v8f010e2(0x20) = SUB v8f010df, v8f010da
+    0x10e40x8f0: MSTORE v8f010da, v8f010e2(0x20)
+    0x10ea0x8f0: MSTORE v8f010df, v8f010d4
+    0x10eb0x8f0: v8f010eb(0x20) = CONST 
+    0x10ed0x8f0: v8f010ed = ADD v8f010eb(0x20), v8f010df
+    0x10f30x8f0: CALLDATACOPY v8f010ed, v8f010d2(0x0), v8f010d4
+    0x10f40x8f0: v8f010f4(0x0) = CONST 
+    0x10f80x8f0: v8f010f8 = ADD v8f010d4, v8f010ed
+    0x10f90x8f0: MSTORE v8f010f8, v8f010f4(0x0)
+    0x10fa0x8f0: v8f010fa(0x40) = CONST 
+    0x10fd0x8f0: v8f010fd = MLOAD v8f010fa(0x40)
+    0x10fe0x8f0: v8f010fe(0x1f) = CONST 
+    0x11020x8f0: v8f01102 = ADD v8f010d4, v8f010fe(0x1f)
+    0x11030x8f0: v8f01103(0x1f) = CONST 
+    0x11050x8f0: v8f01105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v8f01103(0x1f)
+    0x11080x8f0: v8f01108 = AND v8f01105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0), v8f01102
+    0x110b0x8f0: v8f0110b = ADD v8f010ed, v8f01108
+    0x110e0x8f0: v8f0110e = SUB v8f0110b, v8f010fd
+    0x11110x8f0: v8f01111 = ADD v8f01105(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0), v8f0110e
+    0x11130x8f0: MSTORE v8f010fd, v8f01111
+    0x11160x8f0: MSTORE v8f010fa(0x40), v8f0110b
+    0x11170x8f0: v8f01117(0x20) = CONST 
+    0x111a0x8f0: v8f0111a = ADD v8f010fd, v8f01117(0x20)
+    0x111c0x8f0: v8f0111c = MLOAD v8f0111a
+    0x111d0x8f0: v8f0111d(0x1) = CONST 
+    0x111f0x8f0: v8f0111f(0x1) = CONST 
+    0x11210x8f0: v8f01121(0xe0) = CONST 
+    0x11230x8f0: v8f01123(0x100000000000000000000000000000000000000000000000000000000) = SHL v8f01121(0xe0), v8f0111f(0x1)
+    0x11240x8f0: v8f01124(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB v8f01123(0x100000000000000000000000000000000000000000000000000000000), v8f0111d(0x1)
+    0x11250x8f0: v8f01125 = AND v8f01124(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff), v8f0111c
+    0x11260x8f0: v8f01126(0x933c1ed) = CONST 
+    0x112b0x8f0: v8f0112b(0xe0) = CONST 
+    0x112d0x8f0: v8f0112d(0x933c1ed00000000000000000000000000000000000000000000000000000000) = SHL v8f0112b(0xe0), v8f01126(0x933c1ed)
+    0x112e0x8f0: v8f0112e = OR v8f0112d(0x933c1ed00000000000000000000000000000000000000000000000000000000), v8f01125
+    0x11300x8f0: MSTORE v8f0111a, v8f0112e
+    0x11320x8f0: v8f01132 = MLOAD v8f010fa(0x40)
+    0x11340x8f0: v8f01134 = MLOAD v8f010fd
+
+    Begin block 0x11450x8f0
+    prev=[0x114e0x8f0, 0x10c30x8f0], succ=[0x11640x8f0, 0x114e0x8f0]
+    =================================
+    0x11450x8f0_0x2: v11458f0_2 = PHI v8f01157, v8f01134
+    0x11460x8f0: v8f01146(0x20) = CONST 
+    0x11490x8f0: v8f01149 = LT v11458f0_2, v8f01146(0x20)
+    0x114a0x8f0: v8f0114a(0x1164) = CONST 
+    0x114d0x8f0: JUMPI v8f0114a(0x1164), v8f01149
+
+    Begin block 0x11640x8f0
+    prev=[0x11450x8f0], succ=[0x11a30x8f0, 0x11c40x8f0]
+    =================================
+    0x11640x8f0_0x0: v11648f0_0 = PHI v8f0115f, v8f0111a
+    0x11640x8f0_0x1: v11648f0_1 = PHI v8f0115d, v8f01132
+    0x11640x8f0_0x2: v11648f0_2 = PHI v8f01157, v8f01134
+    0x11650x8f0: v8f01165(0x1) = CONST 
+    0x11680x8f0: v8f01168(0x20) = CONST 
+    0x116a0x8f0: v8f0116a = SUB v8f01168(0x20), v11648f0_2
+    0x116b0x8f0: v8f0116b(0x100) = CONST 
+    0x116e0x8f0: v8f0116e = EXP v8f0116b(0x100), v8f0116a
+    0x116f0x8f0: v8f0116f = SUB v8f0116e, v8f01165(0x1)
+    0x11710x8f0: v8f01171 = NOT v8f0116f
+    0x11730x8f0: v8f01173 = MLOAD v11648f0_0
+    0x11740x8f0: v8f01174 = AND v8f01173, v8f01171
+    0x11770x8f0: v8f01177 = MLOAD v11648f0_1
+    0x11780x8f0: v8f01178 = AND v8f01177, v8f0116f
+    0x117b0x8f0: v8f0117b = OR v8f01174, v8f01178
+    0x117d0x8f0: MSTORE v11648f0_1, v8f0117b
+    0x11860x8f0: v8f01186 = ADD v8f01134, v8f01132
+    0x118a0x8f0: v8f0118a(0x0) = CONST 
+    0x118c0x8f0: v8f0118c(0x40) = CONST 
+    0x118e0x8f0: v8f0118e = MLOAD v8f0118c(0x40)
+    0x11910x8f0: v8f01191 = SUB v8f01186, v8f0118e
+    0x11940x8f0: v8f01194 = GAS 
+    0x11950x8f0: v8f01195 = STATICCALL v8f01194, v8f010d1, v8f0118e, v8f01191, v8f0118e, v8f0118a(0x0)
+    0x11990x8f0: v8f01199 = RETURNDATASIZE 
+    0x119b0x8f0: v8f0119b(0x0) = CONST 
+    0x119e0x8f0: v8f0119e = EQ v8f01199, v8f0119b(0x0)
+    0x119f0x8f0: v8f0119f(0x11c4) = CONST 
+    0x11a20x8f0: JUMPI v8f0119f(0x11c4), v8f0119e
+
+    Begin block 0x11a30x8f0
+    prev=[0x11640x8f0], succ=[0x11c90x8f0]
+    =================================
+    0x11a30x8f0: v8f011a3(0x40) = CONST 
+    0x11a50x8f0: v8f011a5 = MLOAD v8f011a3(0x40)
+    0x11a80x8f0: v8f011a8(0x1f) = CONST 
+    0x11aa0x8f0: v8f011aa(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v8f011a8(0x1f)
+    0x11ab0x8f0: v8f011ab(0x3f) = CONST 
+    0x11ad0x8f0: v8f011ad = RETURNDATASIZE 
+    0x11ae0x8f0: v8f011ae = ADD v8f011ad, v8f011ab(0x3f)
+    0x11af0x8f0: v8f011af = AND v8f011ae, v8f011aa(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x11b10x8f0: v8f011b1 = ADD v8f011a5, v8f011af
+    0x11b20x8f0: v8f011b2(0x40) = CONST 
+    0x11b40x8f0: MSTORE v8f011b2(0x40), v8f011b1
+    0x11b50x8f0: v8f011b5 = RETURNDATASIZE 
+    0x11b70x8f0: MSTORE v8f011a5, v8f011b5
+    0x11b80x8f0: v8f011b8 = RETURNDATASIZE 
+    0x11b90x8f0: v8f011b9(0x0) = CONST 
+    0x11bb0x8f0: v8f011bb(0x20) = CONST 
+    0x11be0x8f0: v8f011be = ADD v8f011a5, v8f011bb(0x20)
+    0x11bf0x8f0: RETURNDATACOPY v8f011be, v8f011b9(0x0), v8f011b8
+    0x11c00x8f0: v8f011c0(0x11c9) = CONST 
+    0x11c30x8f0: JUMP v8f011c0(0x11c9)
+
+    Begin block 0x11c90x8f0
+    prev=[0x11a30x8f0, 0x11c40x8f0], succ=[0x11dd0x8f0, 0x12ca0x8f0]
+    =================================
+    0x11ce0x8f0: v8f011ce(0x40) = CONST 
+    0x11d00x8f0: v8f011d0 = MLOAD v8f011ce(0x40)
+    0x11d10x8f0: v8f011d1 = RETURNDATASIZE 
+    0x11d20x8f0: v8f011d2(0x0) = CONST 
+    0x11d50x8f0: RETURNDATACOPY v8f011d0, v8f011d2(0x0), v8f011d1
+    0x11d80x8f0: v8f011d8 = ISZERO v8f01195
+    0x11d90x8f0: v8f011d9(0x12ca) = CONST 
+    0x11dc0x8f0: JUMPI v8f011d9(0x12ca), v8f011d8
+
+    Begin block 0x11dd0x8f0
+    prev=[0x11c90x8f0], succ=[]
+    =================================
+    0x11dd0x8f0: v8f011dd = RETURNDATASIZE 
+    0x11de0x8f0: v8f011de(0x40) = CONST 
+    0x11e10x8f0: v8f011e1 = ADD v8f011d0, v8f011de(0x40)
+    0x11e20x8f0: RETURN v8f011e1, v8f011dd
+
+    Begin block 0x12ca0x8f0
+    prev=[0x11c90x8f0], succ=[]
+    =================================
+    0x12cb0x8f0: v8f012cb = RETURNDATASIZE 
+    0x12cd0x8f0: REVERT v8f011d0, v8f012cb
+
+    Begin block 0x11c40x8f0
+    prev=[0x11640x8f0], succ=[0x11c90x8f0]
+    =================================
+    0x11c50x8f0: v8f011c5(0x60) = CONST 
+
+    Begin block 0x114e0x8f0
+    prev=[0x11450x8f0], succ=[0x11450x8f0]
+    =================================
+    0x114e0x8f0_0x0: v114e8f0_0 = PHI v8f0115f, v8f0111a
+    0x114e0x8f0_0x1: v114e8f0_1 = PHI v8f0115d, v8f01132
+    0x114e0x8f0_0x2: v114e8f0_2 = PHI v8f01157, v8f01134
+    0x114f0x8f0: v8f0114f = MLOAD v114e8f0_0
+    0x11510x8f0: MSTORE v114e8f0_1, v8f0114f
+    0x11520x8f0: v8f01152(0x1f) = CONST 
+    0x11540x8f0: v8f01154(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v8f01152(0x1f)
+    0x11570x8f0: v8f01157 = ADD v114e8f0_2, v8f01154(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0x11590x8f0: v8f01159(0x20) = CONST 
+    0x115d0x8f0: v8f0115d = ADD v8f01159(0x20), v114e8f0_1
+    0x115f0x8f0: v8f0115f = ADD v8f01159(0x20), v114e8f0_0
+    0x11600x8f0: v8f01160(0x1145) = CONST 
+    0x11630x8f0: JUMP v8f01160(0x1145)
+
+}
+
+function interestRateModel()() public {
+    Begin block 0x92b
+    prev=[], succ=[0x933, 0x937]
+    =================================
+    0x92c: v92c = CALLVALUE 
+    0x92e: v92e = ISZERO v92c
+    0x92f: v92f(0x937) = CONST 
+    0x932: JUMPI v92f(0x937), v92e
+
+    Begin block 0x933
+    prev=[0x92b], succ=[]
+    =================================
+    0x933: v933(0x0) = CONST 
+    0x936: REVERT v933(0x0), v933(0x0)
+
+    Begin block 0x937
+    prev=[0x92b], succ=[0xfd9]
+    =================================
+    0x939: v939(0x16ed) = CONST 
+    0x93c: v93c(0xfd9) = CONST 
+    0x93f: JUMP v93c(0xfd9)
+
+    Begin block 0xfd9
+    prev=[0x937], succ=[0x16ed]
+    =================================
+    0xfda: vfda(0x6) = CONST 
+    0xfdc: vfdc = SLOAD vfda(0x6)
+    0xfdd: vfdd(0x1) = CONST 
+    0xfdf: vfdf(0x1) = CONST 
+    0xfe1: vfe1(0xa0) = CONST 
+    0xfe3: vfe3(0x10000000000000000000000000000000000000000) = SHL vfe1(0xa0), vfdf(0x1)
+    0xfe4: vfe4(0xffffffffffffffffffffffffffffffffffffffff) = SUB vfe3(0x10000000000000000000000000000000000000000), vfdd(0x1)
+    0xfe5: vfe5 = AND vfe4(0xffffffffffffffffffffffffffffffffffffffff), vfdc
+    0xfe7: JUMP v939(0x16ed)
+
+    Begin block 0x16ed
+    prev=[0xfd9], succ=[]
+    =================================
+    0x16ee: v16ee(0x40) = CONST 
+    0x16f1: v16f1 = MLOAD v16ee(0x40)
+    0x16f2: v16f2(0x1) = CONST 
+    0x16f4: v16f4(0x1) = CONST 
+    0x16f6: v16f6(0xa0) = CONST 
+    0x16f8: v16f8(0x10000000000000000000000000000000000000000) = SHL v16f6(0xa0), v16f4(0x1)
+    0x16f9: v16f9(0xffffffffffffffffffffffffffffffffffffffff) = SUB v16f8(0x10000000000000000000000000000000000000000), v16f2(0x1)
+    0x16fc: v16fc = AND vfe5, v16f9(0xffffffffffffffffffffffffffffffffffffffff)
+    0x16fe: MSTORE v16f1, v16fc
+    0x16ff: v16ff = MLOAD v16ee(0x40)
+    0x1703: v1703(0x0) = SUB v16f1, v16ff
+    0x1704: v1704(0x20) = CONST 
+    0x1706: v1706(0x20) = ADD v1704(0x20), v1703(0x0)
+    0x1708: RETURN v16ff, v1706(0x20)
+
+}
+
+function liquidateBorrow(address,uint256,address)() public {
+    Begin block 0x940
+    prev=[], succ=[0x948, 0x94c]
+    =================================
+    0x941: v941 = CALLVALUE 
+    0x943: v943 = ISZERO v941
+    0x944: v944(0x94c) = CONST 
+    0x947: JUMPI v944(0x94c), v943
+
+    Begin block 0x948
+    prev=[0x940], succ=[]
+    =================================
+    0x948: v948(0x0) = CONST 
+    0x94b: REVERT v948(0x0), v948(0x0)
+
+    Begin block 0x94c
+    prev=[0x940], succ=[0x95f, 0x963]
+    =================================
+    0x94e: v94e(0x1728) = CONST 
+    0x951: v951(0x4) = CONST 
+    0x954: v954 = CALLDATASIZE 
+    0x955: v955 = SUB v954, v951(0x4)
+    0x956: v956(0x60) = CONST 
+    0x959: v959 = LT v955, v956(0x60)
+    0x95a: v95a = ISZERO v959
+    0x95b: v95b(0x963) = CONST 
+    0x95e: JUMPI v95b(0x963), v95a
+
+    Begin block 0x95f
+    prev=[0x94c], succ=[]
+    =================================
+    0x95f: v95f(0x0) = CONST 
+    0x962: REVERT v95f(0x0), v95f(0x0)
+
+    Begin block 0x963
+    prev=[0x94c], succ=[0xb1c0x940]
+    =================================
+    0x965: v965(0x1) = CONST 
+    0x967: v967(0x1) = CONST 
+    0x969: v969(0xa0) = CONST 
+    0x96b: v96b(0x10000000000000000000000000000000000000000) = SHL v969(0xa0), v967(0x1)
+    0x96c: v96c(0xffffffffffffffffffffffffffffffffffffffff) = SUB v96b(0x10000000000000000000000000000000000000000), v965(0x1)
+    0x96e: v96e = CALLDATALOAD v951(0x4)
+    0x970: v970 = AND v96c(0xffffffffffffffffffffffffffffffffffffffff), v96e
+    0x972: v972(0x20) = CONST 
+    0x975: v975(0x24) = ADD v951(0x4), v972(0x20)
+    0x976: v976 = CALLDATALOAD v975(0x24)
+    0x978: v978(0x40) = CONST 
+    0x97c: v97c(0x44) = ADD v951(0x4), v978(0x40)
+    0x97d: v97d = CALLDATALOAD v97c(0x44)
+    0x97e: v97e = AND v97d, v96c(0xffffffffffffffffffffffffffffffffffffffff)
+    0x97f: v97f(0xb1c) = CONST 
+    0x982: JUMP v97f(0xb1c)
+
+    Begin block 0xb1c0x940
+    prev=[0x963], succ=[0x9ad0x940]
+    =================================
+    0xb1d0x940: v940b1d(0x0) = CONST 
+    0xb1f0x940: v940b1f(0xb26) = CONST 
+    0xb220x940: v940b22(0x9ad) = CONST 
+    0xb250x940: JUMP v940b22(0x9ad)
+
+    Begin block 0x9ad0x940
+    prev=[0xb1c0x940], succ=[0x9f40x940, 0xa150x940]
+    =================================
+    0x9ae0x940: v9409ae(0x12) = CONST 
+    0x9b00x940: v9409b0 = SLOAD v9409ae(0x12)
+    0x9b10x940: v9409b1(0x40) = CONST 
+    0x9b30x940: v9409b3 = MLOAD v9409b1(0x40)
+    0x9b40x940: v9409b4(0x60) = CONST 
+    0x9b70x940: v9409b7(0x0) = CONST 
+    0x9ba0x940: v9409ba(0x1) = CONST 
+    0x9bc0x940: v9409bc(0x1) = CONST 
+    0x9be0x940: v9409be(0xa0) = CONST 
+    0x9c00x940: v9409c0(0x10000000000000000000000000000000000000000) = SHL v9409be(0xa0), v9409bc(0x1)
+    0x9c10x940: v9409c1(0xffffffffffffffffffffffffffffffffffffffff) = SUB v9409c0(0x10000000000000000000000000000000000000000), v9409ba(0x1)
+    0x9c40x940: v9409c4 = AND v9409b0, v9409c1(0xffffffffffffffffffffffffffffffffffffffff)
+    0x9c80x940: v9409c8 = CALLDATASIZE 
+    0x9d00x940: CALLDATACOPY v9409b3, v9409b7(0x0), v9409c8
+    0x9d10x940: v9409d1(0x40) = CONST 
+    0x9d30x940: v9409d3 = MLOAD v9409d1(0x40)
+    0x9d50x940: v9409d5 = ADD v9409b3, v9409c8
+    0x9d80x940: v9409d8(0x0) = CONST 
+    0x9e20x940: v9409e2 = SUB v9409d5, v9409d3
+    0x9e50x940: v9409e5 = GAS 
+    0x9e60x940: v9409e6 = DELEGATECALL v9409e5, v9409c4, v9409d3, v9409e2, v9409d3, v9409d8(0x0)
+    0x9ea0x940: v9409ea = RETURNDATASIZE 
+    0x9ec0x940: v9409ec(0x0) = CONST 
+    0x9ef0x940: v9409ef = EQ v9409ea, v9409ec(0x0)
+    0x9f00x940: v9409f0(0xa15) = CONST 
+    0x9f30x940: JUMPI v9409f0(0xa15), v9409ef
+
+    Begin block 0x9f40x940
+    prev=[0x9ad0x940], succ=[0xa1a0x940]
+    =================================
+    0x9f40x940: v9409f4(0x40) = CONST 
+    0x9f60x940: v9409f6 = MLOAD v9409f4(0x40)
+    0x9f90x940: v9409f9(0x1f) = CONST 
+    0x9fb0x940: v9409fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0) = NOT v9409f9(0x1f)
+    0x9fc0x940: v9409fc(0x3f) = CONST 
+    0x9fe0x940: v9409fe = RETURNDATASIZE 
+    0x9ff0x940: v9409ff = ADD v9409fe, v9409fc(0x3f)
+    0xa000x940: v940a00 = AND v9409ff, v9409fb(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0)
+    0xa020x940: v940a02 = ADD v9409f6, v940a00
+    0xa030x940: v940a03(0x40) = CONST 
+    0xa050x940: MSTORE v940a03(0x40), v940a02
+    0xa060x940: v940a06 = RETURNDATASIZE 
+    0xa080x940: MSTORE v9409f6, v940a06
+    0xa090x940: v940a09 = RETURNDATASIZE 
+    0xa0a0x940: v940a0a(0x0) = CONST 
+    0xa0c0x940: v940a0c(0x20) = CONST 
+    0xa0f0x940: v940a0f = ADD v9409f6, v940a0c(0x20)
+    0xa100x940: RETURNDATACOPY v940a0f, v940a0a(0x0), v940a09
+    0xa110x940: v940a11(0xa1a) = CONST 
+    0xa140x940: JUMP v940a11(0xa1a)
+
+    Begin block 0xa1a0x940
+    prev=[0x9f40x940, 0xa150x940], succ=[0xa2e0x940, 0x12a70x940]
+    =================================
+    0xa1f0x940: v940a1f(0x40) = CONST 
+    0xa210x940: v940a21 = MLOAD v940a1f(0x40)
+    0xa220x940: v940a22 = RETURNDATASIZE 
+    0xa230x940: v940a23(0x0) = CONST 
+    0xa260x940: RETURNDATACOPY v940a21, v940a23(0x0), v940a22
+    0xa290x940: v940a29 = ISZERO v9409e6
+    0xa2a0x940: v940a2a(0x12a7) = CONST 
+    0xa2d0x940: JUMPI v940a2a(0x12a7), v940a29
+
+    Begin block 0xa2e0x940
+    prev=[0xa1a0x940], succ=[]
+    =================================
+    0xa2e0x940: v940a2e = RETURNDATASIZE 
+    0xa300x940: RETURN v940a21, v940a2e
+
+    Begin block 0x12a70x940
+    prev=[0xa1a0x940], succ=[]
+    =================================
+    0x12a80x940: v94012a8 = RETURNDATASIZE 
+    0x12aa0x940: REVERT v940a21, v94012a8
+
+    Begin block 0xa150x940
+    prev=[0x9ad0x940], succ=[0xa1a0x940]
+    =================================
+    0xa160x940: v940a16(0x60) = CONST 
+
+}
+
+function admin()() public {
+    Begin block 0x983
+    prev=[], succ=[0x98b, 0x98f]
+    =================================
+    0x984: v984 = CALLVALUE 
+    0x986: v986 = ISZERO v984
+    0x987: v987(0x98f) = CONST 
+    0x98a: JUMPI v987(0x98f), v986
+
+    Begin block 0x98b
+    prev=[0x983], succ=[]
+    =================================
+    0x98b: v98b(0x0) = CONST 
+    0x98e: REVERT v98b(0x0), v98b(0x0)
+
+    Begin block 0x98f
+    prev=[0x983], succ=[0xfe8]
+    =================================
+    0x991: v991(0x1759) = CONST 
+    0x994: v994(0xfe8) = CONST 
+    0x997: JUMP v994(0xfe8)
+
+    Begin block 0xfe8
+    prev=[0x98f], succ=[0x1759]
+    =================================
+    0xfe9: vfe9(0x3) = CONST 
+    0xfeb: vfeb = SLOAD vfe9(0x3)
+    0xfec: vfec(0x100) = CONST 
+    0xff0: vff0 = DIV vfeb, vfec(0x100)
+    0xff1: vff1(0x1) = CONST 
+    0xff3: vff3(0x1) = CONST 
+    0xff5: vff5(0xa0) = CONST 
+    0xff7: vff7(0x10000000000000000000000000000000000000000) = SHL vff5(0xa0), vff3(0x1)
+    0xff8: vff8(0xffffffffffffffffffffffffffffffffffffffff) = SUB vff7(0x10000000000000000000000000000000000000000), vff1(0x1)
+    0xff9: vff9 = AND vff8(0xffffffffffffffffffffffffffffffffffffffff), vff0
+    0xffb: JUMP v991(0x1759)
+
+    Begin block 0x1759
+    prev=[0xfe8], succ=[]
+    =================================
+    0x175a: v175a(0x40) = CONST 
+    0x175d: v175d = MLOAD v175a(0x40)
+    0x175e: v175e(0x1) = CONST 
+    0x1760: v1760(0x1) = CONST 
+    0x1762: v1762(0xa0) = CONST 
+    0x1764: v1764(0x10000000000000000000000000000000000000000) = SHL v1762(0xa0), v1760(0x1)
+    0x1765: v1765(0xffffffffffffffffffffffffffffffffffffffff) = SUB v1764(0x10000000000000000000000000000000000000000), v175e(0x1)
+    0x1768: v1768 = AND vff9, v1765(0xffffffffffffffffffffffffffffffffffffffff)
+    0x176a: MSTORE v175d, v1768
+    0x176b: v176b = MLOAD v175a(0x40)
+    0x176f: v176f(0x0) = SUB v175d, v176b
+    0x1770: v1770(0x20) = CONST 
+    0x1772: v1772(0x20) = ADD v1770(0x20), v176f(0x0)
+    0x1774: RETURN v176b, v1772(0x20)
+
+}
+
+function isCToken()() public {
+    Begin block 0x998
+    prev=[], succ=[0x9a0, 0x9a4]
+    =================================
+    0x999: v999 = CALLVALUE 
+    0x99b: v99b = ISZERO v999
+    0x99c: v99c(0x9a4) = CONST 
+    0x99f: JUMPI v99c(0x9a4), v99b
+
+    Begin block 0x9a0
+    prev=[0x998], succ=[]
+    =================================
+    0x9a0: v9a0(0x0) = CONST 
+    0x9a3: REVERT v9a0(0x0), v9a0(0x0)
+
+    Begin block 0x9a4
+    prev=[0x998], succ=[0xffc]
+    =================================
+    0x9a6: v9a6(0x1794) = CONST 
+    0x9a9: v9a9(0xffc) = CONST 
+    0x9ac: JUMP v9a9(0xffc)
+
+    Begin block 0xffc
+    prev=[0x9a4], succ=[0x1794]
+    =================================
+    0xffd: vffd(0x1) = CONST 
+    0x1000: JUMP v9a6(0x1794)
+
+    Begin block 0x1794
+    prev=[0xffc], succ=[]
+    =================================
+    0x1795: v1795(0x40) = CONST 
+    0x1798: v1798 = MLOAD v1795(0x40)
+    0x179a: v179a = ISZERO vffd(0x1)
+    0x179b: v179b = ISZERO v179a
+    0x179d: MSTORE v1798, v179b
+    0x179e: v179e = MLOAD v1795(0x40)
+    0x17a2: v17a2(0x0) = SUB v1798, v179e
+    0x17a3: v17a3(0x20) = CONST 
+    0x17a5: v17a5(0x20) = ADD v17a3(0x20), v17a2(0x0)
+    0x17a7: RETURN v179e, v17a5(0x20)
+
+}
+
+function 0xa35(0xa35arg0x0) private {
+    Begin block 0xa35
+    prev=[], succ=[0x17c7, 0xa74]
+    =================================
+    0xa36: va36(0x1) = CONST 
+    0xa39: va39 = SLOAD va36(0x1)
+    0xa3a: va3a(0x40) = CONST 
+    0xa3d: va3d = MLOAD va3a(0x40)
+    0xa3e: va3e(0x20) = CONST 
+    0xa40: va40(0x2) = CONST 
+    0xa44: va44 = AND va36(0x1), va39
+    0xa45: va45 = ISZERO va44
+    0xa46: va46(0x100) = CONST 
+    0xa49: va49 = MUL va46(0x100), va45
+    0xa4a: va4a(0x0) = CONST 
+    0xa4c: va4c(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = NOT va4a(0x0)
+    0xa4d: va4d = ADD va4c(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), va49
+    0xa50: va50 = AND va39, va4d
+    0xa54: va54 = DIV va50, va40(0x2)
+    0xa55: va55(0x1f) = CONST 
+    0xa58: va58 = ADD va54, va55(0x1f)
+    0xa5b: va5b = DIV va58, va3e(0x20)
+    0xa5d: va5d = MUL va3e(0x20), va5b
+    0xa5f: va5f = ADD va3d, va5d
+    0xa61: va61 = ADD va3e(0x20), va5f
+    0xa64: MSTORE va3a(0x40), va61
+    0xa67: MSTORE va3d, va54
+    0xa6b: va6b = ADD va3d, va3e(0x20)
+    0xa6f: va6f = ISZERO va54
+    0xa70: va70(0x17c7) = CONST 
+    0xa73: JUMPI va70(0x17c7), va6f
+
+    Begin block 0x17c7
+    prev=[0xa35], succ=[]
+    =================================
+    0x17ce: RETURNPRIVATE va35arg0, va3d, va35arg0
+
+    Begin block 0xa74
+    prev=[0xa35], succ=[0xa7c, 0xa8f0xa35]
+    =================================
+    0xa75: va75(0x1f) = CONST 
+    0xa77: va77 = LT va75(0x1f), va54
+    0xa78: va78(0xa8f) = CONST 
+    0xa7b: JUMPI va78(0xa8f), va77
+
+    Begin block 0xa7c
+    prev=[0xa74], succ=[0x17ee]
+    =================================
+    0xa7c: va7c(0x100) = CONST 
+    0xa81: va81 = SLOAD va36(0x1)
+    0xa82: va82 = DIV va81, va7c(0x100)
+    0xa83: va83 = MUL va82, va7c(0x100)
+    0xa85: MSTORE va6b, va83
+    0xa87: va87(0x20) = CONST 
+    0xa89: va89 = ADD va87(0x20), va6b
+    0xa8b: va8b(0x17ee) = CONST 
+    0xa8e: JUMP va8b(0x17ee)
+
+    Begin block 0x17ee
+    prev=[0xa7c], succ=[]
+    =================================
+    0x17f5: RETURNPRIVATE va35arg0, va3d, va35arg0
+
+    Begin block 0xa8f0xa35
+    prev=[0xa74], succ=[0xa9d0xa35]
+    =================================
+    0xa910xa35: va35a91 = ADD va6b, va54
+    0xa940xa35: va35a94(0x0) = CONST 
+    0xa960xa35: MSTORE va35a94(0x0), va36(0x1)
+    0xa970xa35: va35a97(0x20) = CONST 
+    0xa990xa35: va35a99(0x0) = CONST 
+    0xa9b0xa35: va35a9b = SHA3 va35a99(0x0), va35a97(0x20)
+
+    Begin block 0xa9d0xa35
+    prev=[0xa9d0xa35, 0xa8f0xa35], succ=[0xa9d0xa35, 0xab10xa35]
+    =================================
+    0xa9d0xa35_0x0: va9da35_0 = PHI va6b, va35aa9
+    0xa9d0xa35_0x1: va9da35_1 = PHI va35aa5, va35a9b
+    0xa9f0xa35: va35a9f = SLOAD va9da35_1
+    0xaa10xa35: MSTORE va9da35_0, va35a9f
+    0xaa30xa35: va35aa3(0x1) = CONST 
+    0xaa50xa35: va35aa5 = ADD va35aa3(0x1), va9da35_1
+    0xaa70xa35: va35aa7(0x20) = CONST 
+    0xaa90xa35: va35aa9 = ADD va35aa7(0x20), va9da35_0
+    0xaac0xa35: va35aac = GT va35a91, va35aa9
+    0xaad0xa35: va35aad(0xa9d) = CONST 
+    0xab00xa35: JUMPI va35aad(0xa9d), va35aac
+
+    Begin block 0xab10xa35
+    prev=[0xa9d0xa35], succ=[0xaba0xa35]
+    =================================
+    0xab30xa35: va35ab3 = SUB va35aa9, va35a91
+    0xab40xa35: va35ab4(0x1f) = CONST 
+    0xab60xa35: va35ab6 = AND va35ab4(0x1f), va35ab3
+    0xab80xa35: va35ab8 = ADD va35a91, va35ab6
+
+    Begin block 0xaba0xa35
+    prev=[0xab10xa35], succ=[]
+    =================================
+    0xac10xa35: RETURNPRIVATE va35arg0, va3d, va35arg0
+
+}
+
+function 0xf5b(0xf5barg0x0) private {
+    Begin block 0xf5b
+    prev=[], succ=[0x18cb, 0xf98]
+    =================================
+    0xf5c: vf5c(0x2) = CONST 
+    0xf5f: vf5f = SLOAD vf5c(0x2)
+    0xf60: vf60(0x40) = CONST 
+    0xf63: vf63 = MLOAD vf60(0x40)
+    0xf64: vf64(0x20) = CONST 
+    0xf66: vf66(0x1) = CONST 
+    0xf69: vf69 = AND vf5f, vf66(0x1)
+    0xf6a: vf6a = ISZERO vf69
+    0xf6b: vf6b(0x100) = CONST 
+    0xf6e: vf6e = MUL vf6b(0x100), vf6a
+    0xf6f: vf6f(0x0) = CONST 
+    0xf71: vf71(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = NOT vf6f(0x0)
+    0xf72: vf72 = ADD vf71(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), vf6e
+    0xf75: vf75 = AND vf5f, vf72
+    0xf78: vf78 = DIV vf75, vf5c(0x2)
+    0xf79: vf79(0x1f) = CONST 
+    0xf7c: vf7c = ADD vf78, vf79(0x1f)
+    0xf7f: vf7f = DIV vf7c, vf64(0x20)
+    0xf81: vf81 = MUL vf64(0x20), vf7f
+    0xf83: vf83 = ADD vf63, vf81
+    0xf85: vf85 = ADD vf64(0x20), vf83
+    0xf88: MSTORE vf60(0x40), vf85
+    0xf8b: MSTORE vf63, vf78
+    0xf8f: vf8f = ADD vf63, vf64(0x20)
+    0xf93: vf93 = ISZERO vf78
+    0xf94: vf94(0x18cb) = CONST 
+    0xf97: JUMPI vf94(0x18cb), vf93
+
+    Begin block 0x18cb
+    prev=[0xf5b], succ=[]
+    =================================
+    0x18d2: RETURNPRIVATE vf5barg0, vf63, vf5barg0
+
+    Begin block 0xf98
+    prev=[0xf5b], succ=[0xfa0, 0xa8f0xf5b]
+    =================================
+    0xf99: vf99(0x1f) = CONST 
+    0xf9b: vf9b = LT vf99(0x1f), vf78
+    0xf9c: vf9c(0xa8f) = CONST 
+    0xf9f: JUMPI vf9c(0xa8f), vf9b
+
+    Begin block 0xfa0
+    prev=[0xf98], succ=[0x18f2]
+    =================================
+    0xfa0: vfa0(0x100) = CONST 
+    0xfa5: vfa5 = SLOAD vf5c(0x2)
+    0xfa6: vfa6 = DIV vfa5, vfa0(0x100)
+    0xfa7: vfa7 = MUL vfa6, vfa0(0x100)
+    0xfa9: MSTORE vf8f, vfa7
+    0xfab: vfab(0x20) = CONST 
+    0xfad: vfad = ADD vfab(0x20), vf8f
+    0xfaf: vfaf(0x18f2) = CONST 
+    0xfb2: JUMP vfaf(0x18f2)
+
+    Begin block 0x18f2
+    prev=[0xfa0], succ=[]
+    =================================
+    0x18f9: RETURNPRIVATE vf5barg0, vf63, vf5barg0
+
+    Begin block 0xa8f0xf5b
+    prev=[0xf98], succ=[0xa9d0xf5b]
+    =================================
+    0xa910xf5b: vf5ba91 = ADD vf8f, vf78
+    0xa940xf5b: vf5ba94(0x0) = CONST 
+    0xa960xf5b: MSTORE vf5ba94(0x0), vf5c(0x2)
+    0xa970xf5b: vf5ba97(0x20) = CONST 
+    0xa990xf5b: vf5ba99(0x0) = CONST 
+    0xa9b0xf5b: vf5ba9b = SHA3 vf5ba99(0x0), vf5ba97(0x20)
+
+    Begin block 0xa9d0xf5b
+    prev=[0xa9d0xf5b, 0xa8f0xf5b], succ=[0xa9d0xf5b, 0xab10xf5b]
+    =================================
+    0xa9d0xf5b_0x0: va9df5b_0 = PHI vf8f, vf5baa9
+    0xa9d0xf5b_0x1: va9df5b_1 = PHI vf5baa5, vf5ba9b
+    0xa9f0xf5b: vf5ba9f = SLOAD va9df5b_1
+    0xaa10xf5b: MSTORE va9df5b_0, vf5ba9f
+    0xaa30xf5b: vf5baa3(0x1) = CONST 
+    0xaa50xf5b: vf5baa5 = ADD vf5baa3(0x1), va9df5b_1
+    0xaa70xf5b: vf5baa7(0x20) = CONST 
+    0xaa90xf5b: vf5baa9 = ADD vf5baa7(0x20), va9df5b_0
+    0xaac0xf5b: vf5baac = GT vf5ba91, vf5baa9
+    0xaad0xf5b: vf5baad(0xa9d) = CONST 
+    0xab00xf5b: JUMPI vf5baad(0xa9d), vf5baac
+
+    Begin block 0xab10xf5b
+    prev=[0xa9d0xf5b], succ=[0xaba0xf5b]
+    =================================
+    0xab30xf5b: vf5bab3 = SUB vf5baa9, vf5ba91
+    0xab40xf5b: vf5bab4(0x1f) = CONST 
+    0xab60xf5b: vf5bab6 = AND vf5bab4(0x1f), vf5bab3
+    0xab80xf5b: vf5bab8 = ADD vf5ba91, vf5bab6
+
+    Begin block 0xaba0xf5b
+    prev=[0xab10xf5b], succ=[]
+    =================================
+    0xac10xf5b: RETURNPRIVATE vf5barg0, vf63, vf5barg0
+
+}
+

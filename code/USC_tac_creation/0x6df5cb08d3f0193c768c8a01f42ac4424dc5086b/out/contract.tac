@@ -1,0 +1,122 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0xc, 0x10]
+    =================================
+    0x0: v0(0x80) = CONST 
+    0x2: v2(0x40) = CONST 
+    0x4: MSTORE v2(0x40), v0(0x80)
+    0x5: v5 = CALLVALUE 
+    0x7: v7 = ISZERO v5
+    0x8: v8(0x10) = CONST 
+    0xb: JUMPI v8(0x10), v7
+
+    Begin block 0xc
+    prev=[0x0], succ=[]
+    =================================
+    0xc: vc(0x0) = CONST 
+    0xf: REVERT vc(0x0), vc(0x0)
+
+    Begin block 0x10
+    prev=[0x0], succ=[0x2f, 0x33]
+    =================================
+    0x12: v12(0x40) = CONST 
+    0x14: v14 = MLOAD v12(0x40)
+    0x15: v15(0x863) = CONST 
+    0x18: v18 = CODESIZE 
+    0x19: v19 = SUB v18, v15(0x863)
+    0x1b: v1b(0x863) = CONST 
+    0x1f: CODECOPY v14, v1b(0x863), v19
+    0x22: v22 = ADD v19, v14
+    0x23: v23(0x40) = CONST 
+    0x25: MSTORE v23(0x40), v22
+    0x26: v26(0x20) = CONST 
+    0x29: v29 = LT v19, v26(0x20)
+    0x2a: v2a = ISZERO v29
+    0x2b: v2b(0x33) = CONST 
+    0x2e: JUMPI v2b(0x33), v2a
+
+    Begin block 0x2f
+    prev=[0x10], succ=[]
+    =================================
+    0x2f: v2f(0x0) = CONST 
+    0x32: REVERT v2f(0x0), v2f(0x0)
+
+    Begin block 0x33
+    prev=[0x10], succ=[0x61]
+    =================================
+    0x35: v35 = MLOAD v14
+    0x37: v37(0x48) = CONST 
+    0x3a: v3a = CALLER 
+    0x3b: v3b(0x1) = CONST 
+    0x3d: v3d(0x1) = CONST 
+    0x3f: v3f(0xe0) = CONST 
+    0x41: v41(0x100000000000000000000000000000000000000000000000000000000) = SHL v3f(0xe0), v3d(0x1)
+    0x42: v42(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB v41(0x100000000000000000000000000000000000000000000000000000000), v3b(0x1)
+    0x43: v43(0x61) = CONST 
+    0x46: v46(0x61) = AND v43(0x61), v42(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+    0x47: JUMP v46(0x61)
+
+    Begin block 0x61
+    prev=[0x33], succ=[0x48]
+    =================================
+    0x62: v62(0x40) = CONST 
+    0x65: v65 = MLOAD v62(0x40)
+    0x66: v66(0x6d617469632e6e6574776f726b2e70726f78792e6f776e657200000000000000) = CONST 
+    0x88: MSTORE v65, v66(0x6d617469632e6e6574776f726b2e70726f78792e6f776e657200000000000000)
+    0x8a: v8a = MLOAD v62(0x40)
+    0x8e: v8e(0x0) = SUB v65, v8a
+    0x8f: v8f(0x19) = CONST 
+    0x91: v91(0x19) = ADD v8f(0x19), v8e(0x0)
+    0x93: v93 = SHA3 v8a, v91(0x19)
+    0x94: SSTORE v93, v3a
+    0x95: JUMP v37(0x48)
+
+    Begin block 0x48
+    prev=[0x61], succ=[0x96]
+    =================================
+    0x49: v49(0x5a) = CONST 
+    0x4d: v4d(0x1) = CONST 
+    0x4f: v4f(0x1) = CONST 
+    0x51: v51(0xe0) = CONST 
+    0x53: v53(0x100000000000000000000000000000000000000000000000000000000) = SHL v51(0xe0), v4f(0x1)
+    0x54: v54(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB v53(0x100000000000000000000000000000000000000000000000000000000), v4d(0x1)
+    0x55: v55(0x96) = CONST 
+    0x58: v58(0x96) = AND v55(0x96), v54(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+    0x59: JUMP v58(0x96)
+
+    Begin block 0x96
+    prev=[0x48], succ=[0x5a]
+    =================================
+    0x97: v97(0x0) = CONST 
+    0x99: v99(0x40) = CONST 
+    0x9b: v9b = MLOAD v99(0x40)
+    0x9e: v9e(0x841) = CONST 
+    0xa1: va1(0x22) = CONST 
+    0xa4: CODECOPY v9b, v9e(0x841), va1(0x22)
+    0xa5: va5(0x40) = CONST 
+    0xa7: va7 = MLOAD va5(0x40)
+    0xab: vab(0x0) = SUB v9b, va7
+    0xac: vac(0x22) = CONST 
+    0xae: vae(0x22) = ADD vac(0x22), vab(0x0)
+    0xb0: vb0 = SHA3 va7, vae(0x22)
+    0xb4: SSTORE vb0, v35
+    0xb7: JUMP v49(0x5a)
+
+    Begin block 0x5a
+    prev=[0x96], succ=[0xb8]
+    =================================
+    0x5d: v5d(0xb8) = CONST 
+    0x60: JUMP v5d(0xb8)
+
+    Begin block 0xb8
+    prev=[0x5a], succ=[]
+    =================================
+    0xb9: vb9(0x77a) = CONST 
+    0xbd: vbd(0xc7) = CONST 
+    0xc0: vc0(0x0) = CONST 
+    0xc2: CODECOPY vc0(0x0), vbd(0xc7), vb9(0x77a)
+    0xc3: vc3(0x0) = CONST 
+    0xc5: RETURN vc3(0x0), vb9(0x77a)
+
+}
+

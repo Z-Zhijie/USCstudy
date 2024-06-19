@@ -1,0 +1,24 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0x51f4]
+    =================================
+    0x0: v0(0x51f4) = CONST 
+    0x3: JUMP v0(0x51f4)
+
+    Begin block 0x51f4
+    prev=[0x0], succ=[]
+    =================================
+    0x51f5: v51f5(0x4) = CONST 
+    0x51f8: v51f8(0x51f4) = CONST 
+    0x51fb: v51fb(0x51f0) = SUB v51f8(0x51f4), v51f5(0x4)
+    0x51fc: v51fc(0x4) = CONST 
+    0x51ff: v51ff(0x0) = CONST 
+    0x5201: CODECOPY v51ff(0x0), v51fc(0x4), v51fb(0x51f0)
+    0x5202: v5202(0x4) = CONST 
+    0x5205: v5205(0x51f4) = CONST 
+    0x5208: v5208(0x51f0) = SUB v5205(0x51f4), v5202(0x4)
+    0x5209: v5209(0x0) = CONST 
+    0x520b: RETURN v5209(0x0), v5208(0x51f0)
+
+}
+

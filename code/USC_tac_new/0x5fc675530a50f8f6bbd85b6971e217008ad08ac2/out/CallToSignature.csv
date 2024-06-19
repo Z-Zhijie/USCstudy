@@ -1,0 +1,6 @@
+0x33f	genesisBlock()
+0x474	balanceOf(address)
+0x55e	getRewards(address,uint256)
+0x842	genesisBlock()
+0xa38	balanceOf(address)
+0xc36	getRewards(address,uint256)

@@ -1,0 +1,7 @@
+0x1963	verifyProof(bytes,uint256[7])
+0x1d94	verifyProof(bytes,uint256[6])
+0x250f	getLendingPool()
+0x2599	deposit(address,uint256,uint16)
+0x26c9	balanceOf(address)
+0x2759	redeem(uint256)
+0x311aS0x2c29	transfer(address,uint256)

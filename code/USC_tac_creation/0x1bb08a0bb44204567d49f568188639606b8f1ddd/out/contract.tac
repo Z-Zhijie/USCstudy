@@ -1,0 +1,30 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0xc, 0x10]
+    =================================
+    0x0: v0(0x80) = CONST 
+    0x2: v2(0x40) = CONST 
+    0x4: MSTORE v2(0x40), v0(0x80)
+    0x5: v5 = CALLVALUE 
+    0x7: v7 = ISZERO v5
+    0x8: v8(0x10) = CONST 
+    0xb: JUMPI v8(0x10), v7
+
+    Begin block 0xc
+    prev=[0x0], succ=[]
+    =================================
+    0xc: vc(0x0) = CONST 
+    0xf: REVERT vc(0x0), vc(0x0)
+
+    Begin block 0x10
+    prev=[0x0], succ=[]
+    =================================
+    0x12: v12(0x14c5) = CONST 
+    0x16: v16(0x20) = CONST 
+    0x19: v19(0x0) = CONST 
+    0x1b: CODECOPY v19(0x0), v16(0x20), v12(0x14c5)
+    0x1c: v1c(0x0) = CONST 
+    0x1e: RETURN v1c(0x0), v12(0x14c5)
+
+}
+

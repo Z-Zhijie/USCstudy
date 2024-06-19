@@ -1,0 +1,9 @@
+0x0	__function_selector__
+0x57	()
+0x57	fallback()
+0x5c	aggregatorsOfAssets(address)
+0x9e	updateAggregators(address[],address[])
+0x1c7	initialize()
+0x1cf	REVISION()
+0x1e9	isManager(address)
+0x3e0	0x3e0

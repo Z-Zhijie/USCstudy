@@ -1,0 +1,6 @@
+0xc61	minted(address,address)
+0x1372	token()
+0x1406	totalSupply()
+0x1757	quotas(address)
+0x212bS0x1b57	transferFrom(address,address,uint256)
+0x1fb9S0x1b40	transfer(address,uint256)

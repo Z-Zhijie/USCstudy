@@ -1,0 +1,7 @@
+0xd21	getScaledUserBalanceAndSupply(address)
+0xe9d	stake(address,uint256)
+0x77fS0x213	scaledTotalSupply()
+0x90cS0x226	getScaledUserBalanceAndSupply(address)
+0xaa5S0x25e	STAKED_TOKEN()
+0x127cS0x25e	allowance(address,address)
+0x1678S0x12e2S0x25e	approve(address,uint256)

@@ -1,0 +1,16 @@
+0x0	__function_selector__
+0x98	governor()
+0xbc	reward()
+0xc4	__Mine_init_unchained(address)
+0xec	renounceGovernorship()
+0xf4	__Mine_init(address,address)
+0x122	transferGovernorship(address)
+0x148	approvePool(address,uint256)
+0x174	approveToken(address,address,uint256)
+0x1aa	__Governable_init_unchained(address)
+0x3be	0x3be
+0x4af	0x4af
+0x524	0x524
+0x7f0	0x7f0
+0x8fe	()
+0x8fe	fallback()

@@ -1,0 +1,93 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0x37, 0x3b]
+    =================================
+    0x0: v0(0x80) = CONST 
+    0x2: v2(0x40) = CONST 
+    0x4: MSTORE v2(0x40), v0(0x80)
+    0x5: v5(0xa) = CONST 
+    0x7: v7(0x15) = CONST 
+    0x9: SSTORE v7(0x15), v5(0xa)
+    0xa: va(0xe9222ddff794000) = CONST 
+    0x13: v13(0x17) = CONST 
+    0x15: SSTORE v13(0x17), va(0xe9222ddff794000)
+    0x16: v16(0x78) = CONST 
+    0x18: v18(0x1a) = CONST 
+    0x1a: SSTORE v18(0x1a), v16(0x78)
+    0x1b: v1b(0x1) = CONST 
+    0x1d: v1d(0x1b) = CONST 
+    0x1f: SSTORE v1d(0x1b), v1b(0x1)
+    0x20: v20(0x0) = CONST 
+    0x22: v22(0x1c) = CONST 
+    0x24: SSTORE v22(0x1c), v20(0x0)
+    0x25: v25(0x2) = CONST 
+    0x27: v27(0x21) = CONST 
+    0x29: SSTORE v27(0x21), v25(0x2)
+    0x2a: v2a(0x8) = CONST 
+    0x2c: v2c(0x22) = CONST 
+    0x2e: SSTORE v2c(0x22), v2a(0x8)
+    0x2f: v2f = CALLVALUE 
+    0x31: v31 = ISZERO v2f
+    0x32: v32(0x3b) = CONST 
+    0x36: JUMPI v32(0x3b), v31
+
+    Begin block 0x37
+    prev=[0x0], succ=[]
+    =================================
+    0x37: v37(0x0) = CONST 
+    0x3a: REVERT v37(0x0), v37(0x0)
+
+    Begin block 0x3b
+    prev=[0x0], succ=[0x9c]
+    =================================
+    0x3d: v3d(0x0) = CONST 
+    0x3f: v3f(0x48) = CONST 
+    0x43: v43(0x9c) = CONST 
+    0x47: JUMP v43(0x9c)
+
+    Begin block 0x9c
+    prev=[0x3b], succ=[0x48]
+    =================================
+    0x9d: v9d = CALLER 
+    0x9f: JUMP v3f(0x48)
+
+    Begin block 0x48
+    prev=[0x9c], succ=[0xa0]
+    =================================
+    0x49: v49(0x1) = CONST 
+    0x4c: v4c = SLOAD v49(0x1)
+    0x4d: v4d(0x1) = CONST 
+    0x4f: v4f(0x1) = CONST 
+    0x51: v51(0xa0) = CONST 
+    0x53: v53(0x10000000000000000000000000000000000000000) = SHL v51(0xa0), v4f(0x1)
+    0x54: v54(0xffffffffffffffffffffffffffffffffffffffff) = SUB v53(0x10000000000000000000000000000000000000000), v4d(0x1)
+    0x55: v55(0xffffffffffffffffffffffff0000000000000000000000000000000000000000) = NOT v54(0xffffffffffffffffffffffffffffffffffffffff)
+    0x56: v56 = AND v55(0xffffffffffffffffffffffff0000000000000000000000000000000000000000), v4c
+    0x57: v57(0x1) = CONST 
+    0x59: v59(0x1) = CONST 
+    0x5b: v5b(0xa0) = CONST 
+    0x5d: v5d(0x10000000000000000000000000000000000000000) = SHL v5b(0xa0), v59(0x1)
+    0x5e: v5e(0xffffffffffffffffffffffffffffffffffffffff) = SUB v5d(0x10000000000000000000000000000000000000000), v57(0x1)
+    0x60: v60 = AND v9d, v5e(0xffffffffffffffffffffffffffffffffffffffff)
+    0x63: v63 = OR v60, v56
+    0x66: SSTORE v49(0x1), v63
+    0x67: v67(0x40) = CONST 
+    0x69: v69 = MLOAD v67(0x40)
+    0x6e: v6e(0x0) = CONST 
+    0x71: v71(0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0) = CONST 
+    0x95: LOG3 v69, v6e(0x0), v71(0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0), v6e(0x0), v60
+    0x97: v97(0xa0) = CONST 
+    0x9b: JUMP v97(0xa0)
+
+    Begin block 0xa0
+    prev=[0x48], succ=[]
+    =================================
+    0xa1: va1(0x5f14) = CONST 
+    0xa5: va5(0xb0) = CONST 
+    0xa9: va9(0x0) = CONST 
+    0xab: CODECOPY va9(0x0), va5(0xb0), va1(0x5f14)
+    0xac: vac(0x0) = CONST 
+    0xae: RETURN vac(0x0), va1(0x5f14)
+
+}
+

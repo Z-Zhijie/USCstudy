@@ -1,0 +1,7 @@
+0x21f1S0x549	proxiableUUID()
+0x2626S0x1d39	transfer(address,uint256)
+0x27e7S0x2460	WETH()
+0x28abS0x2460	swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)
+0xea7S0x529	factory()
+0xf27S0x529	WETH()
+0xfa7S0x529	createPair(address,address)

@@ -1,0 +1,4 @@
+0x4fac	onERC1155Received(address,address,uint256,uint256,bytes)
+0x2e990x12d3	proxies(address)
+0x2e990x2df0	proxies(address)
+0x4c2fS0x3a41S0x1a9b	onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)

@@ -1,0 +1,7 @@
+0xf13	balanceOf(address)
+0xf9c	transfer(address,uint256)
+0x1269	balanceOf(address)
+0x12f0	transfer(address,uint256)
+0x136c	balanceOf(address)
+0x15aeS0x70f	getValidSignature(bytes32,uint256)
+0x15aeS0xeb8	getValidSignature(bytes32,uint256)

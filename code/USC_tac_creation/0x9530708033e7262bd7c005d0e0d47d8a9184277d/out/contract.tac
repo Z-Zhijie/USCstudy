@@ -1,0 +1,42 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0x8, 0xc]
+    =================================
+    0x0: v0(0xd) = CONST 
+    0x2: v2 = SLOAD v0(0xd)
+    0x3: v3 = ISZERO v2
+    0x4: v4(0xc) = CONST 
+    0x7: JUMPI v4(0xc), v3
+
+    Begin block 0x8
+    prev=[0x0], succ=[]
+    =================================
+    0x8: v8(0x0) = CONST 
+    0xb: REVERT v8(0x0), v8(0x0)
+
+    Begin block 0xc
+    prev=[0x0], succ=[0x980]
+    =================================
+    0xd: vd(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = CONST 
+    0x2e: v2e(0xd) = CONST 
+    0x30: SSTORE v2e(0xd), vd(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+    0x31: v31(0x980) = CONST 
+    0x34: JUMP v31(0x980)
+
+    Begin block 0x980
+    prev=[0xc], succ=[]
+    =================================
+    0x981: v981(0x35) = CONST 
+    0x984: v984(0x980) = CONST 
+    0x987: v987(0x94b) = SUB v984(0x980), v981(0x35)
+    0x988: v988(0x35) = CONST 
+    0x98b: v98b(0x0) = CONST 
+    0x98d: CODECOPY v98b(0x0), v988(0x35), v987(0x94b)
+    0x98e: v98e(0x35) = CONST 
+    0x991: v991(0x980) = CONST 
+    0x994: v994(0x94b) = SUB v991(0x980), v98e(0x35)
+    0x995: v995(0x0) = CONST 
+    0x997: RETURN v995(0x0), v994(0x94b)
+
+}
+

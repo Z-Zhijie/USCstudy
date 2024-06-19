@@ -1,0 +1,3 @@
+0xa03	IsInBlackList(uint256)
+0x114c	IsInBlackList(uint256)
+0x1548	getPriorVotes(address,uint256)

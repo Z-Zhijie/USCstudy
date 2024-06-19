@@ -1,0 +1,7 @@
+0xc04	tokenFallback(address,uint256)
+0x1619	balanceOf(address)
+0x16b4	transfer(address,uint256)
+0xa180x216	tokenApproveFallback(address,uint256)
+0xa180x42c	tokenApproveFallback(address,uint256)
+0xa180x784	tokenApproveFallback(address,uint256)
+0xa180x7d2	tokenFallback(address,uint256)

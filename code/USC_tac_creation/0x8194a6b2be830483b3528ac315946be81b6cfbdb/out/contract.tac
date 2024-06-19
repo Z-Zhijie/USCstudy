@@ -1,0 +1,212 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0xc, 0x10]
+    =================================
+    0x0: v0(0x80) = CONST 
+    0x2: v2(0x40) = CONST 
+    0x4: MSTORE v2(0x40), v0(0x80)
+    0x5: v5 = CALLVALUE 
+    0x7: v7 = ISZERO v5
+    0x8: v8(0x10) = CONST 
+    0xb: JUMPI v8(0x10), v7
+
+    Begin block 0xc
+    prev=[0x0], succ=[]
+    =================================
+    0xc: vc(0x0) = CONST 
+    0xf: REVERT vc(0x0), vc(0x0)
+
+    Begin block 0x10
+    prev=[0x0], succ=[0x2f, 0x33]
+    =================================
+    0x12: v12(0x40) = CONST 
+    0x14: v14 = MLOAD v12(0x40)
+    0x15: v15(0x505) = CONST 
+    0x18: v18 = CODESIZE 
+    0x19: v19 = SUB v18, v15(0x505)
+    0x1b: v1b(0x505) = CONST 
+    0x1f: CODECOPY v14, v1b(0x505), v19
+    0x22: v22 = ADD v19, v14
+    0x23: v23(0x40) = CONST 
+    0x25: MSTORE v23(0x40), v22
+    0x26: v26(0x20) = CONST 
+    0x29: v29 = LT v19, v26(0x20)
+    0x2a: v2a = ISZERO v29
+    0x2b: v2b(0x33) = CONST 
+    0x2e: JUMPI v2b(0x33), v2a
+
+    Begin block 0x2f
+    prev=[0x10], succ=[]
+    =================================
+    0x2f: v2f(0x0) = CONST 
+    0x32: REVERT v2f(0x0), v2f(0x0)
+
+    Begin block 0x33
+    prev=[0x10], succ=[0x5f]
+    =================================
+    0x35: v35 = MLOAD v14
+    0x36: v36(0x47) = CONST 
+    0x39: v39 = CALLER 
+    0x3a: v3a(0x1) = CONST 
+    0x3c: v3c(0x1) = CONST 
+    0x3e: v3e(0xe0) = CONST 
+    0x40: v40(0x100000000000000000000000000000000000000000000000000000000) = SHL v3e(0xe0), v3c(0x1)
+    0x41: v41(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB v40(0x100000000000000000000000000000000000000000000000000000000), v3a(0x1)
+    0x42: v42(0x5f) = CONST 
+    0x45: v45(0x5f) = AND v42(0x5f), v41(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+    0x46: JUMP v45(0x5f)
+
+    Begin block 0x5f
+    prev=[0x33], succ=[0x47]
+    =================================
+    0x60: v60(0x0) = CONST 
+    0x62: v62(0x40) = CONST 
+    0x64: v64 = MLOAD v62(0x40)
+    0x67: v67(0x4ba) = CONST 
+    0x6a: v6a(0x21) = CONST 
+    0x6d: CODECOPY v64, v67(0x4ba), v6a(0x21)
+    0x6e: v6e(0x40) = CONST 
+    0x70: v70 = MLOAD v6e(0x40)
+    0x74: v74(0x0) = SUB v64, v70
+    0x75: v75(0x21) = CONST 
+    0x77: v77(0x21) = ADD v75(0x21), v74(0x0)
+    0x79: v79 = SHA3 v70, v77(0x21)
+    0x7d: SSTORE v79, v39
+    0x80: JUMP v36(0x47)
+
+    Begin block 0x47
+    prev=[0x5f], succ=[0x81]
+    =================================
+    0x48: v48(0x59) = CONST 
+    0x4c: v4c(0x1) = CONST 
+    0x4e: v4e(0x1) = CONST 
+    0x50: v50(0xe0) = CONST 
+    0x52: v52(0x100000000000000000000000000000000000000000000000000000000) = SHL v50(0xe0), v4e(0x1)
+    0x53: v53(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB v52(0x100000000000000000000000000000000000000000000000000000000), v4c(0x1)
+    0x54: v54(0x81) = CONST 
+    0x57: v57(0x81) = AND v54(0x81), v53(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+    0x58: JUMP v57(0x81)
+
+    Begin block 0x81
+    prev=[0x47], succ=[0xff]
+    =================================
+    0x82: v82(0x0) = CONST 
+    0x84: v84(0x94) = CONST 
+    0x87: v87(0x1) = CONST 
+    0x89: v89(0x1) = CONST 
+    0x8b: v8b(0xe0) = CONST 
+    0x8d: v8d(0x100000000000000000000000000000000000000000000000000000000) = SHL v8b(0xe0), v89(0x1)
+    0x8e: v8e(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB v8d(0x100000000000000000000000000000000000000000000000000000000), v87(0x1)
+    0x8f: v8f(0xff) = CONST 
+    0x92: v92(0xff) = AND v8f(0xff), v8e(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+    0x93: JUMP v92(0xff)
+
+    Begin block 0xff
+    prev=[0x81], succ=[0x94]
+    =================================
+    0x100: v100(0x0) = CONST 
+    0x103: v103(0x40) = CONST 
+    0x105: v105 = MLOAD v103(0x40)
+    0x108: v108(0x4db) = CONST 
+    0x10b: v10b(0x2a) = CONST 
+    0x10e: CODECOPY v105, v108(0x4db), v10b(0x2a)
+    0x10f: v10f(0x40) = CONST 
+    0x111: v111 = MLOAD v10f(0x40)
+    0x115: v115(0x0) = SUB v105, v111
+    0x116: v116(0x2a) = CONST 
+    0x118: v118(0x2a) = ADD v116(0x2a), v115(0x0)
+    0x11a: v11a = SHA3 v111, v118(0x2a)
+    0x11b: v11b = SLOAD v11a
+    0x121: JUMP v84(0x94)
+
+    Begin block 0x94
+    prev=[0xff], succ=[0xb1, 0xb5]
+    =================================
+    0x98: v98(0x1) = CONST 
+    0x9a: v9a(0x1) = CONST 
+    0x9c: v9c(0xa0) = CONST 
+    0x9e: v9e(0x10000000000000000000000000000000000000000) = SHL v9c(0xa0), v9a(0x1)
+    0x9f: v9f(0xffffffffffffffffffffffffffffffffffffffff) = SUB v9e(0x10000000000000000000000000000000000000000), v98(0x1)
+    0xa0: va0 = AND v9f(0xffffffffffffffffffffffffffffffffffffffff), v35
+    0xa2: va2(0x1) = CONST 
+    0xa4: va4(0x1) = CONST 
+    0xa6: va6(0xa0) = CONST 
+    0xa8: va8(0x10000000000000000000000000000000000000000) = SHL va6(0xa0), va4(0x1)
+    0xa9: va9(0xffffffffffffffffffffffffffffffffffffffff) = SUB va8(0x10000000000000000000000000000000000000000), va2(0x1)
+    0xaa: vaa = AND va9(0xffffffffffffffffffffffffffffffffffffffff), v11b
+    0xab: vab = EQ vaa, va0
+    0xac: vac = ISZERO vab
+    0xad: vad(0xb5) = CONST 
+    0xb0: JUMPI vad(0xb5), vac
+
+    Begin block 0xb1
+    prev=[0x94], succ=[]
+    =================================
+    0xb1: vb1(0x0) = CONST 
+    0xb4: REVERT vb1(0x0), vb1(0x0)
+
+    Begin block 0xb5
+    prev=[0x94], succ=[0x122]
+    =================================
+    0xb6: vb6(0xc7) = CONST 
+    0xba: vba(0x1) = CONST 
+    0xbc: vbc(0x1) = CONST 
+    0xbe: vbe(0xe0) = CONST 
+    0xc0: vc0(0x100000000000000000000000000000000000000000000000000000000) = SHL vbe(0xe0), vbc(0x1)
+    0xc1: vc1(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff) = SUB vc0(0x100000000000000000000000000000000000000000000000000000000), vba(0x1)
+    0xc2: vc2(0x122) = CONST 
+    0xc5: vc5(0x122) = AND vc2(0x122), vc1(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+    0xc6: JUMP vc5(0x122)
+
+    Begin block 0x122
+    prev=[0xb5], succ=[0xc7]
+    =================================
+    0x123: v123(0x0) = CONST 
+    0x125: v125(0x40) = CONST 
+    0x127: v127 = MLOAD v125(0x40)
+    0x12a: v12a(0x4db) = CONST 
+    0x12d: v12d(0x2a) = CONST 
+    0x130: CODECOPY v127, v12a(0x4db), v12d(0x2a)
+    0x131: v131(0x40) = CONST 
+    0x133: v133 = MLOAD v131(0x40)
+    0x137: v137(0x0) = SUB v127, v133
+    0x138: v138(0x2a) = CONST 
+    0x13a: v13a(0x2a) = ADD v138(0x2a), v137(0x0)
+    0x13c: v13c = SHA3 v133, v13a(0x2a)
+    0x140: SSTORE v13c, v35
+    0x143: JUMP vb6(0xc7)
+
+    Begin block 0xc7
+    prev=[0x122], succ=[0x59]
+    =================================
+    0xc8: vc8(0x40) = CONST 
+    0xca: vca = MLOAD vc8(0x40)
+    0xcb: vcb(0x1) = CONST 
+    0xcd: vcd(0x1) = CONST 
+    0xcf: vcf(0xa0) = CONST 
+    0xd1: vd1(0x10000000000000000000000000000000000000000) = SHL vcf(0xa0), vcd(0x1)
+    0xd2: vd2(0xffffffffffffffffffffffffffffffffffffffff) = SUB vd1(0x10000000000000000000000000000000000000000), vcb(0x1)
+    0xd4: vd4 = AND v35, vd2(0xffffffffffffffffffffffffffffffffffffffff)
+    0xd6: vd6(0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b) = CONST 
+    0xf8: vf8(0x0) = CONST 
+    0xfb: LOG2 vca, vf8(0x0), vd6(0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b), vd4
+    0xfe: JUMP v48(0x59)
+
+    Begin block 0x59
+    prev=[0xc7], succ=[0x144]
+    =================================
+    0x5b: v5b(0x144) = CONST 
+    0x5e: JUMP v5b(0x144)
+
+    Begin block 0x144
+    prev=[0x59], succ=[]
+    =================================
+    0x145: v145(0x367) = CONST 
+    0x149: v149(0x153) = CONST 
+    0x14c: v14c(0x0) = CONST 
+    0x14e: CODECOPY v14c(0x0), v149(0x153), v145(0x367)
+    0x14f: v14f(0x0) = CONST 
+    0x151: RETURN v14f(0x0), v145(0x367)
+
+}
+

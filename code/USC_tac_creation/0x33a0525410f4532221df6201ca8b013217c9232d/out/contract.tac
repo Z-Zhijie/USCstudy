@@ -1,0 +1,55 @@
+function __function_selector__() public {
+    Begin block 0x0
+    prev=[], succ=[0xc, 0x10]
+    =================================
+    0x0: v0(0x80) = CONST 
+    0x2: v2(0x40) = CONST 
+    0x4: MSTORE v2(0x40), v0(0x80)
+    0x5: v5 = CALLVALUE 
+    0x7: v7 = ISZERO v5
+    0x8: v8(0x10) = CONST 
+    0xb: JUMPI v8(0x10), v7
+
+    Begin block 0xc
+    prev=[0x0], succ=[]
+    =================================
+    0xc: vc(0x0) = CONST 
+    0xf: REVERT vc(0x0), vc(0x0)
+
+    Begin block 0x10
+    prev=[0x0], succ=[0x5d]
+    =================================
+    0x12: v12(0x5d) = CONST 
+    0x15: v15 = CALLER 
+    0x16: v16(0x40) = CONST 
+    0x19: v19 = MLOAD v16(0x40)
+    0x1a: v1a(0x666169726d696e742e626561636f6e70726f78792e626561636f6e0000000000) = CONST 
+    0x3b: v3b(0x20) = CONST 
+    0x3f: v3f = ADD v19, v3b(0x20)
+    0x43: MSTORE v3f, v1a(0x666169726d696e742e626561636f6e70726f78792e626561636f6e0000000000)
+    0x45: v45 = MLOAD v16(0x40)
+    0x46: v46(0x1b) = CONST 
+    0x4a: v4a(0x0) = SUB v19, v45
+    0x4b: v4b(0x1b) = ADD v4a(0x0), v46(0x1b)
+    0x4d: MSTORE v45, v4b(0x1b)
+    0x4e: v4e(0x3b) = CONST 
+    0x52: v52 = ADD v19, v4e(0x3b)
+    0x55: MSTORE v16(0x40), v52
+    0x57: v57(0x1b) = MLOAD v45
+    0x59: v59 = ADD v3b(0x20), v45
+    0x5a: v5a = SHA3 v59, v57(0x1b)
+    0x5b: SSTORE v5a, v15
+    0x5c: JUMP v12(0x5d)
+
+    Begin block 0x5d
+    prev=[0x10], succ=[]
+    =================================
+    0x5e: v5e(0x172) = CONST 
+    0x62: v62(0x6c) = CONST 
+    0x65: v65(0x0) = CONST 
+    0x67: CODECOPY v65(0x0), v62(0x6c), v5e(0x172)
+    0x68: v68(0x0) = CONST 
+    0x6a: RETURN v68(0x0), v5e(0x172)
+
+}
+

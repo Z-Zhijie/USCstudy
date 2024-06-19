@@ -1,0 +1,10 @@
+0x0	__function_selector__
+0x82	logShareBurnedWithId(uint256,address,uint256,uint256,uint256)
+0xc2	logDelegatorUnstakedWithId(uint256,address,uint256,uint256)
+0xfa	registry()
+0x11e	logRewardParams(uint256,uint256,uint256)
+0x147	logSharesTransfer(uint256,address,address,uint256)
+0x183	initialize(address)
+0x1a9	logUpdateCommissionRate(uint256,uint256,uint256)
+0x986	()
+0x986	fallback()

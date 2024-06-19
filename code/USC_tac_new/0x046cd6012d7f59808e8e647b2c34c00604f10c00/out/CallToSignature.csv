@@ -1,0 +1,8 @@
+0x107a	getTokenInfo(uint256,uint256)
+0x1159	balanceOf(address)
+0x122b	burn(address,uint256)
+0x19ce	getMarketDetailsByID(uint256)
+0x1ea5	createRetryableTicket(address,uint256,uint256,address,address,uint256,uint256,bytes)
+0x165eS0x687	getMarketDetailsByID(uint256)
+0x2152S0x16deS0x687	getTokenInfo(uint256,uint256)
+0x22a8S0x16deS0x687	totalSupply()
