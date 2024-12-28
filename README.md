@@ -1,5 +1,5 @@
 # USCstudy
-This is the repository for "Lenses from the Practice: Exploring Developers’ Struggles in Developing Upgradeable Smart Contracts".
+This is the repository for "Towards Exploring Developers’ Struggles in Developing Upgradeable Smart Contracts".
 
 ## StackExchange_proxy.csv
 The categorization of StackExchange posts with the keyword "proxy"
