@@ -1,0 +1,33 @@
+URL: https://ethereum.stackexchange.com/questions/156253/oz-transparent-upgradeable-proxy-admin-reverts-when-trying-upgrade-an-implementa/156257?r=SearchResults#156257
+
+Title: OZ transparent upgradeable proxy admin reverts when trying upgrade an implementation
+
+Details: I have this transparent upgradeable proxy deployed on sepolia - 0x2dFC2A866eac363cAFF516b5ce7aCd6bae1F21C1
+This is the admin contract - 0x6d429719f78b146892403d06df677afa6f968d91
+When I try to call the upgradeAndCall function with the data being 0x it reverts at some point. I'm passing the data as 0x because I don't wanna initialize the proxy again, I am just upgrading the implementation. Reference
+After the transaction failed, I tried to run a simulation in tenderly, I got to know that the error was coming from the implementation contract. Attaching the screenshot below.
+As you can see, 0x577a342e99b0064ea759ca22e5630a6da20c6c5c reverts the tx, and it is the current implementation.
+I am confused, what am I doing wrong with it. Any help is appreciated.
+Forum Discussion
+EDIT: I tried the same process in Goerli. Deployed new proxy, proxy admin, implementation, and then tried to upgrade the implementation. The result is the same.
+
+Question Comments:
+- Thank you so much. Just tried out and got the point. I had a question, can I now change the owner of the admin contract to my EOA so that I can continue using the same proxy instead of deploying all over again? I don't think there's any way to do that, but maybe, if you have any idea?
+- Doesn't seem possible to me because the current owner is another admin contract, which doesn't have a way to call changeOwner in the real admin contract
+- Thanks for your answer, it's the most clear and clean answer I found.
+
+Answer 1: OpenZeppelin v5 TransparentUpgradeableProxy creates(deploys) its own ProxyAdmin contract. Now, in the proxy constructor you should provide not the ProxyAdmin contract address, but let's say the Admin's address of the future ProxyAdmin Contracts. The address of the automated created contract you take from Logs on Proxy creation: e.g. https://sepolia.etherscan.io/tx/0xef33c51cf395e6143928aa90a62579cb8410ec847481176e07bf53c33220cdff#eventlog AdminChanged
+So the issue you have is that your admin contract is not the admin of the proxy, that's why the upgradeAndCall call is forwarded to the implementation, and the method does not exist.
+Share
+Edit
+Follow
+answered Nov 8, 2023 at 9:14
+tenbits
+2,4585
+5 silver badges
+12
+12 bronze badges
+
+Answer Comments:
+- No comments
+

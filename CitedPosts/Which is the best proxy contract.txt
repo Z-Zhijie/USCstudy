@@ -1,0 +1,52 @@
+URL: https://ethereum.stackexchange.com/questions/140153/which-is-the-best-proxy-contract/140156?r=SearchResults#140156
+
+Title: Which is the best proxy contract?
+
+Details: I am learning how to write proxy contract for a smart contract . I am across this article . Here are many standards specified for writing a proxy contract . Which one of them is "best" ? By "best" I mean most secure and popular .
+https://ethereum-blockchain-developer.com/110-upgrade-smart-contracts/03-upgrade-eip-standards/
+
+Question Comments:
+- Hi @Sky eips.ethereum.org/EIPS/eip-1822 shows status as stagnant .
+- Hi @Maximillan , eips.ethereum.org/EIPS/eip-1822 shows status as stagnant .
+- @GauravPant check docs.openzeppelin.com/contracts/4.x/api/proxy#UUPSUpgradeable - 'stagnant' doesn't mean 'withdrawn' - simply that there have been no recent updates to the EIP. I can confirm UUPS still works, although again would encourage implementing Transparent Pattern initially (given no knowledge of your application)
+
+Answer 1: In my experience, there are two leading contenders here:
+1: UUPS (Universal Upgradeable Proxy Standard)
+2: Dimond Pattern
+They both have amazing libraries, comunity and are supported by Hardhat.
+However, there isn't such thing as the "Best One." It all depends on your use case. But if you are only starting with upgradable SmartContract, I would advise using UUPS, as it's simple to implement and rather forgiving for newcomers because it's supported by OpenZeppelin library.
+Here is a good tutorial on UUPS: UUPS tutorial
+Share
+Edit
+Follow
+edited Nov 28, 2022 at 9:11
+answered Nov 28, 2022 at 8:56
+Sky
+2,3602
+2 gold badges
+8
+8 silver badges
+26
+26 bronze badges
+
+Answer Comments:
+- No comments
+
+Answer 2: @Gaurav Pant there are many many proxy patterns out there. It really depends on:
+The complexity of your architecture (i.e. how many contracts are calling your desired proxy, etc)
+Your needs, i.e how much more than just a proxy are you looking for? (e.g. do you want to be able to remove the upgradable functionality? Are you running on testnet or mainnet? How do gas considerations come into your application?)
+...for simplicity, the most effective low level proxy pattern is the Transparent Proxy Pattern. As mentioned by @Sky, the next step in complexity lands on UUPS. Past that, it really depends on how much more complex your needs are than these patterns provide. You would have to do you own research and reading.
+From a development perspective, the first questions I would ask are; what kind of application are you trying to develop? How many proxies do you want? For no-knowledge advice, and if it's simple, I would say go for Transparent: easy to deploy and maintain, and the best first learning step.
+Share
+Edit
+Follow
+answered Nov 28, 2022 at 9:43
+immaxkent
+5192
+2 silver badges
+15
+15 bronze badges
+
+Answer Comments:
+- No comments
+

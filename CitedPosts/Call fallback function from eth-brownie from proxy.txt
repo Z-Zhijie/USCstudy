@@ -1,0 +1,68 @@
+URL: https://ethereum.stackexchange.com/questions/100223/call-fallback-function-from-eth-brownie-from-proxy/100246?r=SearchResults#100246
+
+Title: Call fallback function from eth-brownie from proxy
+
+Details: I have a contract that has a fallback function to delegatecall all function calls to a different contract. I can't seem to use my typical API to interact with the contract it delegates a call to.
+I have a contract called Box.sol with a retrieve function. My TransparentUpgradeableProxy proxy contract delegates all calls to that contract. However, if I call retrieve on the proxy contract, I get:
+AttributeError: Contract 'TransparentUpgradeableProxy' object has no attribute 'retrieve'
+Here is how the code should look
+from brownie import Box, TransparentUpgradeableProxy
+
+account = accounts[0]
+print(f"Deploying to {network.show_active()}")
+box = Box[len(Box) - 1]
+proxy = TransparentUpgradeableProxy[len(TransparentUpgradeableProxy) - 1]
+print(proxy.retrieve())
+
+Question Comments:
+- No comments
+
+Answer 1: You need to use
+The actual ABI of the implementation instead of the ABI file of the proxy contract
+Address of the proxy contract
+from brownie import Box, TransparentUpgradeableProxy, Contract
+
+account = accounts[0]
+proxy = TransparentUpgradeableProxy[-1]
+proxy_box = Contract.from_abi("Box", proxy.address, Box.abi)
+print(proxy_box.retrieve())
+Share
+Edit
+Follow
+edited Jun 3, 2021 at 14:06
+Patrick Collins
+11.9k6
+6 gold badges
+45
+45 silver badges
+102
+102 bronze badges
+answered Jun 3, 2021 at 11:22
+Mikko Ohtamaa
+22.8k6
+6 gold badges
+62
+62 silver badges
+129
+129 bronze badges
+
+Answer Comments:
+- No comments
+
+Answer 2: I found today another way to do it which is very convenient especially when fetching contracts from explorer and you don't want to bother importing its ABI.
+In your case you could use:
+proxy_box = Contract.from_explorer(TransparentUpgradeableProxy.address,
+                                   as_proxy_for=Box.address)
+print(proxy_box.retrieve())
+Brownie doc about it: https://eth-brownie.readthedocs.io/en/stable/api-network.html?highlight=from_explorer#brownie.network.account.Account
+Share
+Edit
+Follow
+answered Aug 24, 2022 at 8:28
+Cheen
+411
+1 bronze badge
+
+Answer Comments:
+- No comments
+

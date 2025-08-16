@@ -1,0 +1,107 @@
+URL: https://ethereum.stackexchange.com/questions/66276/proxy-contract-delegatecall-to-pass-a-dynamic-array-to-a-function-in-the-target?r=SearchResults
+
+Title: Proxy contract DELEGATECALL to pass a DYNAMIC array to a function in the target contract
+
+Details: I'm trying to get a Proxy contract to correctly do a delegatecall to a function in another 'target' contract. The problem is, that I need to pass a dynamic array as the parameter to this function.
+Q: Is there a way to edit my Proxy contract's inline assembly code to correctly forward msg.data which contains a DYNAMIC array? (I really need dynamic arrays to be passed to the function in the target contract).
+My Proxy contract is similar to the OpenZeppelin implementation:
+assembly {
+      let ptr := mload(0x40)
+      calldatacopy(ptr, 0, calldatasize)
+      let result := delegatecall(gas, _impl, ptr, calldatasize, 0, 0)
+      let size := returndatasize
+      returndatacopy(ptr, 0, size)
+
+      switch result
+      case 0 { revert(ptr, size) }
+      default { return(ptr, size) }
+    }
+I give a simple example of the problem below:
+This is the function which I wish to call through the Proxy contract: function myDynamicFunction(uint[2][] myArray)
+The delegatecall to this fails.
+If I remove the 'dynamic' nature of the array, then the function is correctly executed. E.g.: function myDynamicFunction(uint[2][4] myArray) (fixed array size of 4).
+The delegatecall to this works.
+Here's what I think the problem is:
+Say I want to pass the following array (an array of 4 arrays of 2 elements) to myDynamicFunction:
+[["0x1111111111111111111111111111111111111111111111111111111111111111",
+"0x2222222222222222222222222222222222222222222222222222222222222222"],
+["0x3333333333333333333333333333333333333333333333333333333333333333",
+"0x4444444444444444444444444444444444444444444444444444444444444444"],
+["0x5555555555555555555555555555555555555555555555555555555555555555",
+"0x6666666666666666666666666666666666666666666666666666666666666666"],
+["0x7777777777777777777777777777777777777777777777777777777777777777",
+"0x8888888888888888888888888888888888888888888888888888888888888888"]]
+This is the correct msg.data of a dynamic array, which is passed into the Proxy:
+0x
+5a3d9eaf // (1) function signature
+0000000000000000000000000000000000000000000000000000000000000020 // (2) the 'start' of the dynamic array's data starts after 32 bytes
+0000000000000000000000000000000000000000000000000000000000000004 // (3) the dynamic array has 4 elements
+1111111111111111111111111111111111111111111111111111111111111111 // (4) element 1 [0]
+2222222222222222222222222222222222222222222222222222222222222222 // (5) element 1 [1]
+3333333333333333333333333333333333333333333333333333333333333333 // (6) element 2 [0]
+4444444444444444444444444444444444444444444444444444444444444444 // (7) element 2 [1]
+5555555555555555555555555555555555555555555555555555555555555555 // (8) element 3 [0]
+6666666666666666666666666666666666666666666666666666666666666666 // (9) element 3 [1]
+7777777777777777777777777777777777777777777777777777777777777777 // (10) element 4 [0]
+8888888888888888888888888888888888888888888888888888888888888888 // (11) element 4 [1]
+However, I believe the delegatecall reformats this message data into an incorrect format as follows (see the solidity code further below to see how I deduced this in remix):
+0x
+d608741f  // (1) incorrect function signature?
+// then the array being passed as though it is of fixed size (rather than a dynamic encoding):
+1111111111111111111111111111111111111111111111111111111111111111 // (2) element 1 [0]
+2222222222222222222222222222222222222222222222222222222222222222 // (3) element 1 [1]
+3333333333333333333333333333333333333333333333333333333333333333 // (4) element 2 [0]
+4444444444444444444444444444444444444444444444444444444444444444 // (5) element 2 [1]
+5555555555555555555555555555555555555555555555555555555555555555 // (6) element 3 [0]
+6666666666666666666666666666666666666666666666666666666666666666 // (7) element 3 [1]
+7777777777777777777777777777777777777777777777777777777777777777 // (8) element 4 [0]
+8888888888888888888888888888888888888888888888888888888888888888 // (9) element 4 [1]
+I deduced the above by inspecting the transaction details of the below in remix (although note that the body of code in the below myDynamicFunction is used just as a 'rough' way to explore the msg.data of a delegatecall of a dynamic array - it is not the body of code I'm actually implementing):
+pragma solidity ^0.4.24;
+contract myContract {
+   event Debug(bytes data);
+   function myDynamicFunction(uint[2][] myArray) public returns (bytes) {       
+       address(this).delegatecall(bytes4(sha3("myDynamicFunction(uint[2][])")), myArray);
+       return msg.data;
+   }
+   function () {
+       emit Debug(msg.data); //reading the event logs shows that the delegatecall is forwarding incorrectly encoded msg.data!
+   }
+}
+Interestingly, if I edit the above Solidity delegatecall (with hardcoded function signature values) as follows, the delegatecall forwards the msg.data correctly - but I need to implement the delegatecall of any function signature (particularly ones which take a dynamic array of unknown size) in assembly:
+pragma solidity ^0.4.24;
+contract myContract {
+    event Debug(bytes data);
+    function myDynamicFunction(uint[2][] myArray) public returns (bytes) {       
+        address(this).delegatecall(
+            bytes4(sha3("myDynamicFunction(uint[2][])")),
+            uint256(32), //the 'start position' of myArray in msg.data
+            uint256(myArray.length), //the length of myArray
+            myArray);
+        return msg.data;
+    }
+    function () {
+        emit Debug(msg.data); //reading the event logs shows that the delegatecall is now forwarding correctly encoded msg.data! But how to achieve this with assembly, without hard-coding the function signature?
+    }
+}
+How can I edit the assembly so that dynamic arrays are passed to the contract correctly, by the Proxy? Current assembly in the proxy:
+assembly {
+      let ptr := mload(0x40)
+      calldatacopy(ptr, 0, calldatasize)
+      let result := delegatecall(gas, _impl, ptr, calldatasize, 0, 0)
+      let size := returndatasize
+      returndatacopy(ptr, 0, size)
+
+      switch result
+      case 0 { revert(ptr, size) }
+      default { return(ptr, size) }
+    }
+
+Question Comments:
+- I have a same issue. Is there no solutions?
+
+Answer 1: No answers found
+
+Answer Comments:
+- No comments
+

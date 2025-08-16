@@ -1,0 +1,16 @@
+URL: https://ethereum.stackexchange.com/questions/92384/how-to-obtain-the-implementation-address-from-an-upgradeable-proxy-smart-contrac?r=SearchResults
+
+Title: How to obtain the implementation address from an upgradeable proxy smart contract?
+
+Details: Is there any way to externally obtain the current implementation address of a proxy that doesn't involve interacting actively with it (e.g. calling a transfer or approve function, i.e. without using gas)?
+Let's use for example the USDC ERC-20 token, which its upgradeable proxy smart contract's address is: 0xA0b8...eB48 and it's current contract implementation to which it delegates to with the fallback function is 0xb727...78a2.
+Is it possible?
+
+Question Comments:
+- No comments
+
+Answer 1: No answers found
+
+Answer Comments:
+- No comments
+

@@ -1,0 +1,28 @@
+URL: https://ethereum.stackexchange.com/questions/92574/if-contracts-can-be-proxied-to-other-contracts-how-can-a-user-trust-them?r=SearchResults
+
+Title: If contracts can be proxied to other contracts, how can a user trust them?
+
+Details: Based on the upgradeable smart contract pattern, a smart contract author can create a contract x that proxies to contract y. Let's say the contract is an ERC20 token where Alice buys 100 tokens.
+How can Alice now trust that the developer of the contract will not simply proxy x -> z which contains a new version of transfer() is called, it redirects the tokens to someone else?
+If there is no guarantee of not changing, what makes it different to trusting any other third party like a bank or facebook who can change access at any time?
+
+Question Comments:
+- No comments
+
+Answer 1: Nothing really. An authorized account can make an upgradable contract do anything they want.
+On the other hand projects have created Governance contracts that impose certain restrictions on upgrades. A period of time to validate the upgrade, or withdraw if they don't agree on it.
+Share
+Edit
+Follow
+answered Jan 21, 2021 at 1:24
+Ismael♦
+30.5k23
+23 gold badges
+54
+54 silver badges
+96
+96 bronze badges
+
+Answer Comments:
+- No comments
+

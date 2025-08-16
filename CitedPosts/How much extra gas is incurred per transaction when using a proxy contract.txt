@@ -1,0 +1,74 @@
+URL: https://ethereum.stackexchange.com/questions/117567/how-much-extra-gas-is-incurred-per-transaction-when-using-a-proxy-contract/149395?r=SearchResults#149395
+
+Title: How much extra gas is incurred per transaction when using a proxy contract?
+
+Details: Say I have a contract Foo with method bar that has a gas cost per call of x, now say I choose to implement a proxy contract Proxy for interacting with Foo to allow for upgradability to FooV2 if the need arises, what additional gas cost is incurred for invoking Foo.bar() via the Proxy contract as opposed to directly calling it? I'm assuming it should be a fixed static additional gas independent of the method called.
+
+Question Comments:
+- Based on my understanding this OpenZeppelin forum discussion it varies based on the proxy pattern from [~1500, ~3000], though I'm not sure if the overhead is independent of the implementation contract method, etc. forum.openzeppelin.com/t/…
+- It is not fixed the input data has to be copied into memory and the same with the returned data.
+
+Answer 1: There are a few key details to consider here.
+For example: Which proxy pattern are you using?
+a.) Transparent proxy(As in that case there's an additional check to see if the caller is authorized to upgrade the contract),
+b.) UUPS and Diamond that have no such downsides ??
+Here is short comparison (from top of my head):
+1. Transparent Proxy:
+Retrieve Admin Address: 1 SLOAD (2100 gas).
+Compare Caller with Admin Address: Minimal (a few gas).
+Retrieve Implementation Address: 1 SLOAD (2100 gas).
+Delegatecall: Base cost (700 gas).
+Total overhead (approximate): ~4900 gas.
+2. UUPS:
+Retrieve Implementation Address: 1 SLOAD (2100 gas).
+Delegatecall: Base cost (700 gas).
+Total overhead (approximate): ~2800 gas.
+3. DiamondProxy (Simple, Single Facet):
+Retrieve Facet Address for the Called Function: This typically involves reading from a mapping, so let's assume 1 SLOAD (2100 gas). But it can be more if there's more complex logic.
+Delegatecall: Base cost (700 gas).
+Total overhead (approximate): ~2800 gas.
+So in general, it is around 3000gas, but do treat this as a rough estimate. Especially if you are using Diamond as its designed for modularity and can have varying costs based on how it's set up. A single-facet diamond might be as efficient as UUPS, but as the complexity grows, so can the overhead.
+However, as you noted, invoking a function through a proxy contract will generally incur additional gas costs compared to a direct call.
+Share
+Edit
+Follow
+edited Oct 11, 2023 at 7:33
+answered Oct 11, 2023 at 7:28
+Sky
+2,3602
+2 gold badges
+8
+8 silver badges
+26
+26 bronze badges
+
+Answer Comments:
+- No comments
+
+Answer 2: When using a proxy contract to interact with another contract, there is indeed an additional gas cost incurred. This cost is not fixed but depends on the specific interaction with the proxy contract and the forward process. The gas cost of interacting with a proxy contract typically involves a fixed base cost for the proxy contract's functions, plus the gas cost of forwarding the call to the target contract.
+Share
+Edit
+Follow
+answered Oct 11, 2023 at 5:40
+Canard Coca
+2811
+1 silver badge
+8
+8 bronze badges
+
+Answer Comments:
+- No comments
+
+Answer 3: There's no static answer for this. It depends on storage layout as well as overall layout of proxy contract. But it is in range of few hundred to few thousand more. In your case, should be few hundred.
+Share
+Edit
+Follow
+edited Apr 24, 2023 at 5:32
+answered Apr 24, 2023 at 5:31
+Kartik Hira
+11
+1 bronze badge
+
+Answer Comments:
+- No comments
+

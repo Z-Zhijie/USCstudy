@@ -1,0 +1,72 @@
+URL: https://ethereum.stackexchange.com/questions/109323/ownable-in-upgradeable-contracts/109325?r=SearchResults#109325
+
+Title: Ownable in upgradeable contracts
+
+Details: I'm trying to get my head around the Ownable role in Upgradeable contracts in open zeppelin.
+It seems there have been a lot of updates recently and most tutorials and answers are therefore outdated.
+I've used this tutorial: https://medium.com/upstate-interactive/how-to-build-a-contract-factory-that-creates-contract-clones-efcc9619be0b
+It mentions the use of @openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol that has an initiate function that I should use.
+However, this package seems to be outdated an there is now import @openzeppelin/upgrades/contracts/ownership/Ownable.sol, containing a promising OpenZeppelinUpgradesOwnable, but it seems to be just a copy and paste from the normal Ownable.
+I basically want to have a simple thing: Deploy a contract via a Proxy Factory and set the owner within contact creation as argument:
+function initialize(string memory tokenName, string memory tokenSymbol, address owner) public {
+        _name = tokenName;
+        _symbol = tokenSymbol;
+        // SET THE OWNER HERE
+    }
+What are best practises around that?
+Is it as well possible to add multiple owners?
+
+Question Comments:
+- Okay, I noticed that I am using a deprecated package and that's where the problems arise.
+- Thanks for that, it clears things up a bit. However I want to implement a Factor pattern where the factory can create multiple contracts and I want to set the owner of those contracts.
+- A factory can deploy Implementarion with normal O'Malley and then call transferOwnership to give it up to, say, msg.sender. Or, the factory can deploy Proxies and configure them to use an existing Implementation with the UpgradeableOwnable and then call init and then transfer ownership.
+- There is always some choreography involved.
+
+Answer 1: You simply need to call the init method of OpenZeppelinUpgradesOwnable, which is __Ownable_init(), inside your initialize(...) method body. Also, remember to use the initializer to so as to restrict initialize(...) to only be callable once, just like the constructor method in non-upgradable contracts.
+function initialize(string memory tokenName, string memory tokenSymbol, address owner) public initializer {
+    _name = tokenName;
+    _symbol = tokenSymbol;
+    // SET THE OWNER HERE
+    __Ownable_init();
+}
+Share
+Edit
+Follow
+answered Sep 3, 2021 at 23:46
+Ahmed Ihsan Tawfeeq
+4,5942
+2 gold badges
+19
+19 silver badges
+47
+47 bronze badges
+
+Answer Comments:
+- No comments
+
+Answer 2: A basic upgradeable contract using Proxy consists of two contracts, the Proxy and the Implementation. Let's say Proxy.sol and Implementation.sol.
+When you deploy the Implementation, the constructor fires. So, if contract Implementation is Ownable then the _owner is set to msg.sender in the usual pattern.
+A Proxy using DELEGATECALL can run functions in the Implementation in its own context. If storage is set, it is set in the Proxy, not in the Implementation. In reverse, it inspects its own storage.
+So, if a Proxy DELEGATECALLS to a function in the Implementation, say ...
+function doSomething() public onlyOwner ...
+Then the modifier in the Implementation will inspect in the _owner stored in the Proxy, because all references to storage are always in the Proxy. It hasn't been set. It is address(0) because it's unset. It's unset because the Proxy never ran the constructor in the Implementation. In fact, there is no way that it could.
+Therefore, the usual pattern is to migrate all the constructor work to an init() function in the Implementation and, if you want to be cautious, use Implementation is Initializable and protect functions that should not run until something initializes the upgradeable contract instance in the Proxy with another modifier. IIRC, OpenZeppelin calls it initialized.
+function onlyAfterSomeoneOwnsThis() public initialized ... 
+OpenZeppelin have this well-solved. They introduce a ProxyAdmin contract that is itself Ownable and gets set up for the sole purpose of managing upgrades. This is so there is no ambiguity about which contract to call for functions like transferOwnership() where there would be name conflicts and more possibility of confusion about what's going on.
+User == owns ==> ProxyAdmin == owns ==> TransparentUpgradeableProxy == delegates ==> Implementation
+Hope it helps.
+Share
+Edit
+Follow
+answered Sep 3, 2021 at 23:49
+Rob Hitchens
+55.5k11
+11 gold badges
+91
+91 silver badges
+146
+146 bronze badges
+
+Answer Comments:
+- No comments
+

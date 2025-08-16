@@ -1,0 +1,14 @@
+URL: https://ethereum.stackexchange.com/questions/149380/what-does-a-minimal-erc-1967-proxy-in-vyper-look-like?r=SearchResults
+
+Title: What does a minimal ERC-1967 proxy in vyper look like?
+
+Details: What does a minimal ERC-1967 vyper proxy look like?
+
+Question Comments:
+- No comments
+
+Answer 1: No answers found
+
+Answer Comments:
+- No comments
+
