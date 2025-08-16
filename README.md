@@ -16,3 +16,6 @@ The url to the studied security incidents in RQ3.
 
 ## code
 Contains the code and intermediate result used in RQ3.2
+
+## CitedPosts
+Contains the title, content, and comments of the posts cited in RQ1, as the original content may be deleted over time.
